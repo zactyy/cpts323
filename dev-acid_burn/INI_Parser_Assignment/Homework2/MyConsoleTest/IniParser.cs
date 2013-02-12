@@ -1,4 +1,5 @@
-﻿using System;
+﻿#undef DEBUG
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,44 +12,28 @@ namespace IniParser
     public class IniParser
     {
         /// <summary>
-        /// make it read two different files, prefix them, 
-        /// to add comd line args, right click on the solution properties
-        /// 
-        /// to 
-        /// 
+        /// This is simply an interface to the IniLibrary.  
+        /// This class checks the extension of the file name passed, then 
+        /// calls the inifileparser to deal with the file.  
         /// </summary>
-        /// <param name="args"></param>
+        /// <param name="args">the name of an ini file to be parsed</param>
         
         public static void Main(string[] args)
         {
             Output temp = new Output();
             
-            //REMOVE
-            //string[] lines = File.ReadAllLines(args[0]);
-            //string[] lines = File.ReadAllLines("filename");
-
             //check for valid file type
             string extension = Path.GetExtension(args[0]);
-            if (!extension.Equals("ini", StringComparison.OrdinalIgnoreCase))
+            if (extension.Equals(".ini", StringComparison.CurrentCultureIgnoreCase) )
             {
                 temp.ParseIniFile(args[0]);
             }
             else
             {
-                Console.Write("Invalid File Type [");
+                Console.Write("Invalid File Type '");
                 Console.Write(extension);
-                Console.WriteLine("]");
+                Console.WriteLine("'");
             }
-
-            /*
-             * REMOVE
-            foreach (string line in lines) 
-            {
-                //temp.Print(line);
-                temp.ReadFile(args[0]);
-            }
-             * */
-
             Console.ReadLine();
         }
     }

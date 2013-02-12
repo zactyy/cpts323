@@ -7,6 +7,7 @@ using System.IO;
 
 namespace IniLibrary
 {
+    // Admittedly, my class and function names are not that great.  
     public class Output
     {
         /// <summary>
@@ -19,14 +20,26 @@ namespace IniLibrary
         }
 
         /// <summary>
-        /// Reads a INI format file, checks for correct syntax in groups 
+        /// Reads an INI format file, checks for correct syntax in groups 
         /// and keywords, appends a prefix to all keys and groups, then writes 
         /// it all back to the modified file.  
+        /// 
+        /// Other things to do with this function:
+        /// The function is long and would benefit from being broken up.  
+        /// 
+        /// I'd like to put the targets into a "Target" class that stores the key
+        /// value pairs and then have a seperate class that writes ini files
+        /// but the need to keep the comments intact makes that a more difficult
+        /// task and since we won't need to track the comments from the ini
+        /// file for the project, I'll just keep this function this way for now.  
+        /// 
         /// </summary>
         /// <param name="filepath"></param>
         public void ParseIniFile(string filepath)
         {
-            //TODO: Clean this function up - break it up?
+            // Other ways to handle this:
+            // I'd like to put the targets into a class that has attributes for 
+            // key value pairs, but 
 
             // Create new file name
             string extension = Path.GetExtension(filepath);
@@ -42,13 +55,17 @@ namespace IniLibrary
                     if (string.IsNullOrWhiteSpace(line))
                     {
                         // blank line, so don't prefix
+#if (DEBUG)
                         printer.Print(line);
+#endif
                         writer.WriteLine(line);
                     }
                     else if (line[0] == ';')
                     {
                         // This is a comment, just write it as is
+#if (DEBUG)
                         printer.Print(line);
+#endif
                         writer.WriteLine(line);
                     }
                     else
@@ -65,7 +82,8 @@ namespace IniLibrary
                                 Console.Write("Invalid format '");
                                 Console.Write(line);
                                 Console.WriteLine("'");
-                                // TODO: finda better way - return to main?
+                                // Exiting could be done better, 
+                                // perhaps with an exception or returning to main
                                 Console.ReadLine();
                                 Environment.Exit(0);
                             }
@@ -73,7 +91,9 @@ namespace IniLibrary
                             {
                                 // Its good, so prefix it
                                 string prefixedline = line.Insert(1, "prefixedGroup-");
+#if (DEBUG)
                                 printer.Print(prefixedline);
+#endif
                                 writer.WriteLine(prefixedline);
                             }
                         }
@@ -87,16 +107,18 @@ namespace IniLibrary
                                 Console.Write("Invalid format '");
                                 Console.Write(line);
                                 Console.WriteLine("'");
-                                // TODO: finda better way - return to main?
+                                // Exiting could be done better, 
+                                // perhaps with an exception or returning to main
                                 Console.ReadLine();
                                 Environment.Exit(0);
                             }
                             else 
                             {
                                 // Its good, so prefix the key
-                                //REMOVEstring prefixedline = "prefixed-" + line;
                                 string prefixedline = line.Insert(0, "prefixedKey-");
+#if (DEBUG)
                                 printer.Print(prefixedline);
+#endif  
                                 writer.WriteLine(prefixedline);
                             }
                         }

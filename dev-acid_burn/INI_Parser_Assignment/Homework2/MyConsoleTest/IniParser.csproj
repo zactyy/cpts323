@@ -48,9 +48,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\InOutLibrary.csproj">
+    <ProjectReference Include="..\ClassLibrary1\IniLibrary.csproj">
       <Project>{b5665a39-316e-4e20-b7e2-0a2b35a6c184}</Project>
-      <Name>InOutLibrary</Name>
+      <Name>IniLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

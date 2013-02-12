@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IniParser", "MyConsoleTest\IniParser.csproj", "{DB493ED6-0757-43A6-A1A2-2DCBA19A3093}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InOutLibrary", "ClassLibrary1\InOutLibrary.csproj", "{B5665A39-316E-4E20-B7E2-0A2B35A6C184}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IniLibrary", "ClassLibrary1\IniLibrary.csproj", "{B5665A39-316E-4E20-B7E2-0A2B35A6C184}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
