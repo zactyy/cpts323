@@ -1,4 +1,5 @@
-﻿using System;
+﻿//#define DEBUG
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -55,7 +56,7 @@ namespace IniLibrary
                     if (string.IsNullOrWhiteSpace(line))
                     {
                         // blank line, so don't prefix
-#if (DEBUG)
+#if DEBUG
                         printer.Print(line);
 #endif
                         writer.WriteLine(line);
@@ -63,7 +64,7 @@ namespace IniLibrary
                     else if (line[0] == ';')
                     {
                         // This is a comment, just write it as is
-#if (DEBUG)
+#if DEBUG
                         printer.Print(line);
 #endif
                         writer.WriteLine(line);
@@ -91,7 +92,7 @@ namespace IniLibrary
                             {
                                 // Its good, so prefix it
                                 string prefixedline = line.Insert(1, "prefixedGroup-");
-#if (DEBUG)
+#if DEBUG
                                 printer.Print(prefixedline);
 #endif
                                 writer.WriteLine(prefixedline);
@@ -116,7 +117,7 @@ namespace IniLibrary
                             {
                                 // Its good, so prefix the key
                                 string prefixedline = line.Insert(0, "prefixedKey-");
-#if (DEBUG)
+#if DEBUG
                                 printer.Print(prefixedline);
 #endif  
                                 writer.WriteLine(prefixedline);
