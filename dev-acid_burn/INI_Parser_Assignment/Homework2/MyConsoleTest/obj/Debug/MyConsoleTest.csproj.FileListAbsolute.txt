@@ -1,0 +1,8 @@
+c:\users\jen\documents\visual studio 2012\Projects\MyConsoleTest\MyConsoleTest\bin\Debug\MyConsoleTest.exe.config
+c:\users\jen\documents\visual studio 2012\Projects\MyConsoleTest\MyConsoleTest\obj\Debug\MyConsoleTest.csprojResolveAssemblyReference.cache
+c:\users\jen\documents\visual studio 2012\Projects\MyConsoleTest\MyConsoleTest\bin\Debug\MyConsoleTest.exe
+c:\users\jen\documents\visual studio 2012\Projects\MyConsoleTest\MyConsoleTest\bin\Debug\MyConsoleTest.pdb
+c:\users\jen\documents\visual studio 2012\Projects\MyConsoleTest\MyConsoleTest\obj\Debug\MyConsoleTest.exe
+c:\users\jen\documents\visual studio 2012\Projects\MyConsoleTest\MyConsoleTest\obj\Debug\MyConsoleTest.pdb
+c:\users\jen\documents\visual studio 2012\Projects\MyConsoleTest\MyConsoleTest\bin\Debug\ClassLibrary1.dll
+c:\users\jen\documents\visual studio 2012\Projects\MyConsoleTest\MyConsoleTest\bin\Debug\ClassLibrary1.pdb

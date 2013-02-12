@@ -1,0 +1,24 @@
+C:\Users\jen\Documents\Visual Studio 2012\Projects\MyConsoleTest\MyConsoleTest\bin\Debug\MyConsoleTest.exe.config
+C:\Users\jen\Documents\Visual Studio 2012\Projects\MyConsoleTest\MyConsoleTest\bin\Debug\MyConsoleTest.exe
+C:\Users\jen\Documents\Visual Studio 2012\Projects\MyConsoleTest\MyConsoleTest\bin\Debug\MyConsoleTest.pdb
+C:\Users\jen\Documents\Visual Studio 2012\Projects\MyConsoleTest\MyConsoleTest\bin\Debug\ClassLibrary1.dll
+C:\Users\jen\Documents\Visual Studio 2012\Projects\MyConsoleTest\MyConsoleTest\bin\Debug\ClassLibrary1.pdb
+C:\Users\jen\Documents\Visual Studio 2012\Projects\MyConsoleTest\MyConsoleTest\obj\Debug\IniParser.csprojResolveAssemblyReference.cache
+C:\Users\jen\Documents\Visual Studio 2012\Projects\MyConsoleTest\MyConsoleTest\obj\Debug\MyConsoleTest.exe
+C:\Users\jen\Documents\Visual Studio 2012\Projects\MyConsoleTest\MyConsoleTest\obj\Debug\MyConsoleTest.pdb
+C:\Users\jen\Documents\Visual Studio 2012\Projects\Homework2\MyConsoleTest\obj\Debug\IniParser.csprojResolveAssemblyReference.cache
+C:\Users\jen\Documents\Visual Studio 2012\Projects\Homework2\MyConsoleTest\bin\Debug\IniParser.exe.config
+C:\Users\jen\Documents\Visual Studio 2012\Projects\Homework2\MyConsoleTest\bin\Debug\IniParser.exe
+C:\Users\jen\Documents\Visual Studio 2012\Projects\Homework2\MyConsoleTest\bin\Debug\IniParser.pdb
+C:\Users\jen\Documents\Visual Studio 2012\Projects\Homework2\MyConsoleTest\bin\Debug\IniLibrary.dll
+C:\Users\jen\Documents\Visual Studio 2012\Projects\Homework2\MyConsoleTest\bin\Debug\IniLibrary.pdb
+C:\Users\jen\Documents\Visual Studio 2012\Projects\Homework2\MyConsoleTest\obj\Debug\IniParser.exe
+C:\Users\jen\Documents\Visual Studio 2012\Projects\Homework2\MyConsoleTest\obj\Debug\IniParser.pdb
+C:\Users\jen\Documents\GitHub\cpts323\dev-acid_burn\INI_Parser_Assignment\Homework2\MyConsoleTest\bin\Debug\IniParser.exe.config
+C:\Users\jen\Documents\GitHub\cpts323\dev-acid_burn\INI_Parser_Assignment\Homework2\MyConsoleTest\bin\Debug\IniParser.exe
+C:\Users\jen\Documents\GitHub\cpts323\dev-acid_burn\INI_Parser_Assignment\Homework2\MyConsoleTest\bin\Debug\IniParser.pdb
+C:\Users\jen\Documents\GitHub\cpts323\dev-acid_burn\INI_Parser_Assignment\Homework2\MyConsoleTest\bin\Debug\IniLibrary.dll
+C:\Users\jen\Documents\GitHub\cpts323\dev-acid_burn\INI_Parser_Assignment\Homework2\MyConsoleTest\bin\Debug\IniLibrary.pdb
+C:\Users\jen\Documents\GitHub\cpts323\dev-acid_burn\INI_Parser_Assignment\Homework2\MyConsoleTest\obj\Debug\IniParser.csprojResolveAssemblyReference.cache
+C:\Users\jen\Documents\GitHub\cpts323\dev-acid_burn\INI_Parser_Assignment\Homework2\MyConsoleTest\obj\Debug\IniParser.exe
+C:\Users\jen\Documents\GitHub\cpts323\dev-acid_burn\INI_Parser_Assignment\Homework2\MyConsoleTest\obj\Debug\IniParser.pdb
