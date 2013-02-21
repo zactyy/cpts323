@@ -1,0 +1,5 @@
+C:\Users\jen\Documents\GitHub\cpts323\dev-acid_burn\File_Readers\homework3\TargetClass\bin\Debug\TargetClass.dll
+C:\Users\jen\Documents\GitHub\cpts323\dev-acid_burn\File_Readers\homework3\TargetClass\bin\Debug\TargetClass.pdb
+C:\Users\jen\Documents\GitHub\cpts323\dev-acid_burn\File_Readers\homework3\TargetClass\obj\Debug\TargetClass.csprojResolveAssemblyReference.cache
+C:\Users\jen\Documents\GitHub\cpts323\dev-acid_burn\File_Readers\homework3\TargetClass\obj\Debug\TargetClass.dll
+C:\Users\jen\Documents\GitHub\cpts323\dev-acid_burn\File_Readers\homework3\TargetClass\obj\Debug\TargetClass.pdb

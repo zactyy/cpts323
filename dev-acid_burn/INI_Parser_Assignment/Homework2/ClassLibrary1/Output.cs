@@ -1,4 +1,8 @@
-﻿//#define DEBUG
+﻿// Jennifer Mendez
+// CptS 323, Spring 2013
+// Homework 2 - INI File Reader
+// Filename: Output.cs
+//#define DEBUG
 using System;
 using System.Collections.Generic;
 using System.Linq;

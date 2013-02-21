@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homework3", "homework3\homework3.csproj", "{1B5A6D98-CD1D-4A01-988A-09AC1DB76F61}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FCA1E651-50A3-419C-9E20-2D65FA039AE6} = {FCA1E651-50A3-419C-9E20-2D65FA039AE6}
+	EndProjectSection
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ParserModeling", "ModelingProject1\ParserModeling.modelproj", "{F481D350-A13A-4F1D-B8DA-55FAEF530C9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File_Readers", "File_Readers\File_Readers.csproj", "{FCA1E651-50A3-419C-9E20-2D65FA039AE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TargetClass", "TargetClass\TargetClass.csproj", "{F80F6018-AC26-4862-8636-17E764E15CE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B5A6D98-CD1D-4A01-988A-09AC1DB76F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B5A6D98-CD1D-4A01-988A-09AC1DB76F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B5A6D98-CD1D-4A01-988A-09AC1DB76F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B5A6D98-CD1D-4A01-988A-09AC1DB76F61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F481D350-A13A-4F1D-B8DA-55FAEF530C9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F481D350-A13A-4F1D-B8DA-55FAEF530C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F481D350-A13A-4F1D-B8DA-55FAEF530C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F481D350-A13A-4F1D-B8DA-55FAEF530C9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCA1E651-50A3-419C-9E20-2D65FA039AE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCA1E651-50A3-419C-9E20-2D65FA039AE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCA1E651-50A3-419C-9E20-2D65FA039AE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCA1E651-50A3-419C-9E20-2D65FA039AE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F80F6018-AC26-4862-8636-17E764E15CE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F80F6018-AC26-4862-8636-17E764E15CE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F80F6018-AC26-4862-8636-17E764E15CE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F80F6018-AC26-4862-8636-17E764E15CE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

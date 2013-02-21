@@ -2,3 +2,4 @@ C:\Users\jen\Documents\GitHub\cpts323\dev-acid_burn\INI_Parser_Assignment\Homewo
 C:\Users\jen\Documents\GitHub\cpts323\dev-acid_burn\INI_Parser_Assignment\Homework2\ClassLibrary1\bin\Debug\IniLibrary.pdb
 C:\Users\jen\Documents\GitHub\cpts323\dev-acid_burn\INI_Parser_Assignment\Homework2\ClassLibrary1\obj\Debug\IniLibrary.dll
 C:\Users\jen\Documents\GitHub\cpts323\dev-acid_burn\INI_Parser_Assignment\Homework2\ClassLibrary1\obj\Debug\IniLibrary.pdb
+C:\Users\jen\Documents\GitHub\cpts323\dev-acid_burn\INI_Parser_Assignment\Homework2\ClassLibrary1\obj\Debug\IniLibrary.csprojResolveAssemblyReference.cache

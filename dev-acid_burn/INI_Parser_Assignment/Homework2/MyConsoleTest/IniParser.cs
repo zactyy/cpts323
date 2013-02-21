@@ -1,4 +1,8 @@
-﻿using System;
+﻿// Jennifer Mendez
+// CptS 323, Spring 2013
+// Homework 2 - INI File Reader
+// Filename: IniParser.cs
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

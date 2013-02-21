@@ -1,0 +1,2 @@
+C:\Users\jen\Documents\GitHub\cpts323\dev-acid_burn\File_Readers\homework3\homework3\bin\Debug\homework3.exe.config
+C:\Users\jen\Documents\GitHub\cpts323\dev-acid_burn\File_Readers\homework3\homework3\obj\Debug\homework3.csprojResolveAssemblyReference.cache
