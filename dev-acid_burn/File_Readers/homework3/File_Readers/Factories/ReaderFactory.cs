@@ -8,7 +8,8 @@ namespace File_Readers.Factories
     /// </summary>
     public class Reader_Factory
     {
-        /// <summary>
+
+         /// <summary>
         /// Create a reader based on a type directive.  
         /// </summary>
         /// <param name="reader_type"></param>
@@ -26,6 +27,7 @@ namespace File_Readers.Factories
                     reader = new XML_File_Reader();
                     break;
                 default:
+                    //TODO: Throw exception?
                     break;
              }
             return reader;

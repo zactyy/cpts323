@@ -21,6 +21,15 @@ namespace TargetClass
     /// </summary>
     public class ActualTarget
     {
+        public ActualTarget()
+        {
+            Name = null;
+            X_coordinate = 0;
+            Y_coordinate = 0;
+            Z_coordinate = 0;
+            Friend = true;
+        }
+
         public ActualTarget(string i_name, int i_x_coordinate, int i_y_coordinate, int i_z_coordinate, bool i_friend)
         {
             Name = i_name;

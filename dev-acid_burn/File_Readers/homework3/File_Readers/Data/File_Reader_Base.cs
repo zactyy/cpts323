@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TargetClass;
 
 namespace File_Readers.Data
 {
@@ -20,8 +22,7 @@ namespace File_Readers.Data
         public virtual string[] Read_File(string filename)
         {
             //TODO check for path or file name? 
-            // Read file       
-            string[] lines = File.ReadAllLines(filepath);
+            string[] lines = File.ReadAllLines(filename);
             return lines;
         }
 
@@ -40,20 +41,14 @@ namespace File_Readers.Data
         /// </summary>
         /// <param name="targets_to_write">list of targets to write</param>
         /// <param name="file_to_write">file targets will be written to</param>
-        public abstract void Write_File(List<ActualTarget> targets_to_write, string file_to_write)
-        {
-
-        }
+        public abstract void Write_File(List<ActualTarget> targets_to_write, string file_to_write);
 
         /// <summary>
         /// The actual file parsing should happen here and return a list of Targets.
         /// </summary>
         /// <param name="lines">a string array of lines to be parsed</param>
         /// <returns>A list of Targets</returns>
-        abstract List<ActualTarget> Acquire_Targets(string file_to_read)
-        {
-
-        }
+        public abstract List<ActualTarget> Acquire_Targets(string file_to_read);
 
         ///// <summary>
         ///// REMOVE?  This is a Factory Method that will use the file extension 

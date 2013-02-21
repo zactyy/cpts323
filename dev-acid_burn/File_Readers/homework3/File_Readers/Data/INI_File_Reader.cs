@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Collections.Generic;
 using TargetClass;
 
 namespace File_Readers.Data
@@ -16,7 +16,7 @@ namespace File_Readers.Data
         /// </summary>
         /// <param name="targets_to_write">list of targets to write</param>
         /// <param name="file_to_write">file targets will be written to</param>
-        public abstract void Write_File(List<ActualTarget> targets_to_write, string file_to_write)
+        public override void Write_File(List<ActualTarget> targets_to_write, string file_to_write)
         {
             using (TextWriter writer = File.CreateText(file_to_write))
             {
@@ -52,10 +52,10 @@ namespace File_Readers.Data
         /// </summary>
         /// <param name="lines">a string array of lines to be parsed</param>
         /// <returns>A list of Targets</returns>
-        abstract List<ActualTarget> Acquire_Targets(string file_to_read)
+        public override List<ActualTarget> Acquire_Targets(string file_to_read)
         {
-            List<ActualTarget> target_list;
-            ActualTarget tempTarget;
+            List<ActualTarget> target_list = new List<ActualTarget>();
+            ActualTarget tempTarget = new ActualTarget();
             string[] filelines = Read_File(file_to_read);
             int step = 0;
 
@@ -90,10 +90,10 @@ namespace File_Readers.Data
                         }
                         break;
                     case 1:  // Get Name (or X if no name)
-                        string value;
+                        string value = null;
                         if (Is_KeyMatch(line, "name", ref value))
                         {
-                            tempTarget.Name = Convert.ToInt32(value);
+                            tempTarget.Name = value;
                             step = 2; // Now get x
                         }
                         else if (Is_KeyMatch(line, "x", ref value))
@@ -155,6 +155,7 @@ namespace File_Readers.Data
                         }
                         break;
                     case 5:  // Get Friend
+                        value = "";
                         if (Is_KeyMatch(line, "friend", ref value))
                         {
                             if (value == "yes")
@@ -189,7 +190,10 @@ namespace File_Readers.Data
                     default:
                         break;
                 }
+
+                //end switch
             }
+            return target_list;
         }
 
         /// <summary>
@@ -278,7 +282,6 @@ namespace File_Readers.Data
             }
             return true;
         }
-
 
         //end INI_File_Reader Class
     }

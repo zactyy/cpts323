@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 using TargetClass;
 
 namespace File_Readers.Data
@@ -17,7 +18,7 @@ namespace File_Readers.Data
         /// </summary>
         /// <param name="targets_to_write">list of targets to write</param>
         /// <param name="file_to_write">file targets will be written to</param>
-        public abstract void Write_File(List<ActualTarget> targets_to_write, string file_to_write)
+        public override void Write_File(List<ActualTarget> targets_to_write, string file_to_write)
         {
 
         }
@@ -27,16 +28,17 @@ namespace File_Readers.Data
         /// </summary>
         /// <param name="lines">a string array of lines to be parsed</param>
         /// <returns>A list of Targets</returns>
-        abstract List<ActualTarget> Acquire_Targets(string file_to_read)
+        public override List<ActualTarget> Acquire_Targets(string file_to_read)
         {
 
-            List<ActualTarget> targetList;
-            ActualTarget friendTarget("friendTarget", 10, 11, 12, true);
-            ActualTarget foeTarget("foeTarget", 20, 21, 22, false);
-            ActualTarget nonameTarget(30, 31, 32, true);
-            targetList.Add(friendTarget);
-            targetList.Add(foeTarget);
-            targetList.Add(nonameTarget);
+            List<ActualTarget> targetList = new List<ActualTarget>();
+            //ActualTarget friendTarget("friendTarget", 10, 11, 12, true);
+            //ActualTarget foeTarget("foeTarget", 20, 21, 22, false);
+            //ActualTarget nonameTarget(30, 31, 32, true);
+            //targetList.Add(friendTarget);
+            targetList.Add(new ActualTarget(100, 200, 300, true));
+            targetList.Add(new ActualTarget("friendTarget", 10, 11, 12, true));
+            targetList.Add(new ActualTarget("foeTarget", 20, 21, 22, false));
 
             return targetList;
         }
