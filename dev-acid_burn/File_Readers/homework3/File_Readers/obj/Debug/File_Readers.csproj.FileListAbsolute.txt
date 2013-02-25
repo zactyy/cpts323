@@ -1,8 +1,0 @@
-C:\Users\jen\Documents\GitHub\cpts323\dev-acid_burn\File_Readers\homework3\File_Readers\obj\Debug\File_Readers.csprojResolveAssemblyReference.cache
-C:\Users\d3p165\Documents\GitHub\cpts323\dev-acid_burn\File_Readers\homework3\File_Readers\obj\Debug\File_Readers.csprojResolveAssemblyReference.cache
-C:\Users\d3p165\Documents\GitHub\cpts323\dev-acid_burn\File_Readers\homework3\File_Readers\bin\Debug\File_Readers.dll
-C:\Users\d3p165\Documents\GitHub\cpts323\dev-acid_burn\File_Readers\homework3\File_Readers\bin\Debug\File_Readers.pdb
-C:\Users\d3p165\Documents\GitHub\cpts323\dev-acid_burn\File_Readers\homework3\File_Readers\bin\Debug\TargetClass.dll
-C:\Users\d3p165\Documents\GitHub\cpts323\dev-acid_burn\File_Readers\homework3\File_Readers\bin\Debug\TargetClass.pdb
-C:\Users\d3p165\Documents\GitHub\cpts323\dev-acid_burn\File_Readers\homework3\File_Readers\obj\Debug\File_Readers.dll
-C:\Users\d3p165\Documents\GitHub\cpts323\dev-acid_burn\File_Readers\homework3\File_Readers\obj\Debug\File_Readers.pdb
