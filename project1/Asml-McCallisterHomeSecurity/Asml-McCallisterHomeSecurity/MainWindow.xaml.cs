@@ -25,9 +25,9 @@ namespace Asml_McCallisterHomeSecurity
             InitializeComponent();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void MoveUpButton(object sender, RoutedEventArgs e)
         {
-
+            OperationsManager.TurretMove
         }
     }
 }
