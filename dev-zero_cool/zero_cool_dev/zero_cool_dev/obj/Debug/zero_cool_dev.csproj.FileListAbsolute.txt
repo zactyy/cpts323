@@ -1,6 +1,0 @@
-C:\Users\Zachary\Documents\GitHub\cpts323\dev-zero_cool\zero_cool_dev\zero_cool_dev\bin\Debug\zero_cool_dev.exe.config
-C:\Users\Zachary\Documents\GitHub\cpts323\dev-zero_cool\zero_cool_dev\zero_cool_dev\bin\Debug\zero_cool_dev.exe
-C:\Users\Zachary\Documents\GitHub\cpts323\dev-zero_cool\zero_cool_dev\zero_cool_dev\bin\Debug\zero_cool_dev.pdb
-C:\Users\Zachary\Documents\GitHub\cpts323\dev-zero_cool\zero_cool_dev\zero_cool_dev\obj\Debug\zero_cool_dev.csprojResolveAssemblyReference.cache
-C:\Users\Zachary\Documents\GitHub\cpts323\dev-zero_cool\zero_cool_dev\zero_cool_dev\obj\Debug\zero_cool_dev.exe
-C:\Users\Zachary\Documents\GitHub\cpts323\dev-zero_cool\zero_cool_dev\zero_cool_dev\obj\Debug\zero_cool_dev.pdb

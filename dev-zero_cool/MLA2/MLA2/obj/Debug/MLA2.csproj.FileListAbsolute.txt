@@ -1,0 +1,7 @@
+c:\users\zachary\documents\visual studio 2012\Projects\MLA2\MLA2\bin\Debug\MLA2.exe.config
+c:\users\zachary\documents\visual studio 2012\Projects\MLA2\MLA2\bin\Debug\MLA2.exe
+c:\users\zachary\documents\visual studio 2012\Projects\MLA2\MLA2\bin\Debug\MLA2.pdb
+c:\users\zachary\documents\visual studio 2012\Projects\MLA2\MLA2\bin\Debug\USBLib.DLL
+c:\users\zachary\documents\visual studio 2012\Projects\MLA2\MLA2\obj\Debug\MLA2.exe
+c:\users\zachary\documents\visual studio 2012\Projects\MLA2\MLA2\obj\Debug\MLA2.pdb
+c:\users\zachary\documents\visual studio 2012\Projects\MLA2\MLA2\obj\Debug\MLA2.csprojResolveAssemblyReference.cache
