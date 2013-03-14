@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Asml_McCallisterHomeSecurity.OperationsManager;
+using Microsoft.Win32;
 
 namespace Asml_McCallisterHomeSecurity
 {
@@ -21,9 +22,12 @@ namespace Asml_McCallisterHomeSecurity
     /// </summary>
     public partial class MainWindow : Window
     {
+        private OperationsManager.OperationsManager  _rules_them_all;
         public MainWindow()
         {
+
             InitializeComponent();
+            _rules_them_all = OperationsManager.OperationsManager.GetInstance();
         }
 
         private void MoveUpButton(object sender, RoutedEventArgs e)
@@ -38,17 +42,46 @@ namespace Asml_McCallisterHomeSecurity
 
         private void MoveLeftButton(object sender, RoutedEventArgs e)
         {
-            OperationsManager.TurretMoveLeft();
+            _rules_them_all.TurretMoveLeft();
         }
 
         private void MoveRightButton(object sender, RoutedEventArgs e)
         {
-            OperationsManager.TurretMoveRight();
+           _rules_them_all.TurretMoveRight();
         }
 
         private void TurretFireClick(object sender, RoutedEventArgs e)
         {
-            OperationsManager.
+            _rules_them_all.TurretFire();
+        }
+
+        /// <summary>
+        /// retrieves a filename via OpenFileDialog and then attempts to process it for targets.
+        /// if an error occurs, reports it to the user va a messagebox.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnLoad_Click(object sender, RoutedEventArgs e)
+        {
+            Microsoft.Win32.OpenFileDialog dialog = new Microsoft.Win32.OpenFileDialog();
+            dialog.FileName = "";
+            dialog.Filter = "Target Files(.ini, .xml)|*.ini;*.xml";
+
+            Nullable<bool> result = dialog.ShowDialog();
+            string _file_name = null;
+
+            if (result == true)
+            {
+                _file_name = dialog.FileName;
+                try
+                {
+                    _rules_them_all.LoadFile(_file_name);
+                }
+                catch (Exception ex)
+                {
+                    System.Windows.MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
         }
     }
 }

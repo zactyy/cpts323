@@ -16,17 +16,21 @@
         <Button Content="Dw" HorizontalAlignment="Left" Margin="144,454,0,0" VerticalAlignment="Top" Width="35" Height="32" Grid.Column="1"/>
         <Button Content="Rst" HorizontalAlignment="Left" Margin="144,416,0,0" VerticalAlignment="Top" Width="35" Height="32" Grid.Column="1"/>
         <Button Content="R" HorizontalAlignment="Left" Margin="184,416,0,0" VerticalAlignment="Top" Width="35" Height="32" Grid.Column="1"/>
-        <Button Content="Fire" HorizontalAlignment="Left" Margin="229,380,0,0" VerticalAlignment="Top" Width="53" Height="32" Grid.Column="1" Click="Button_Click_1"/>
+        <Button Content="Fire" HorizontalAlignment="Left" Margin="229,380,0,0" VerticalAlignment="Top" Width="53" Height="32" Grid.Column="1"/>
         <Button Content="Reload" HorizontalAlignment="Left" Margin="229,476,0,0" VerticalAlignment="Top" Width="53" Height="20" Grid.Column="1"/>
         <ListView HorizontalAlignment="Left" Height="59" Margin="34,427,0,0" VerticalAlignment="Top" Width="424" Grid.ColumnSpan="2">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn/>
+                    <GridViewColumn Width="140" Header="Target Name"/>
+                    <GridViewColumn Width="70" Header="x" />
+                    <GridViewColumn Width="70" Header="y" />
+                    <GridViewColumn Width="70" Header="z" />
+                    <GridViewColumn Width="70" Header="Friend" />
                 </GridView>
             </ListView.View>
         </ListView>
         <Label Content="Target Information" HorizontalAlignment="Left" Margin="197,354,0,0" VerticalAlignment="Top" Height="26" Width="109"/>
         <Label Content="Manual Launcher Control" HorizontalAlignment="Left" Margin="130,354,0,0" VerticalAlignment="Top" Height="26" Width="144" Grid.Column="1"/>
-        <Button Content="Load " HorizontalAlignment="Left" Margin="140,156,0,0" VerticalAlignment="Top" Width="75" Height="22" Grid.Column="1"/>
+        <Button x:Name="btnLoad" Content="Load " HorizontalAlignment="Left" Margin="140,156,0,0" VerticalAlignment="Top" Width="75" Height="22" Grid.Column="1" Click="btnLoad_Click"/>
     </Grid>
 </Window>

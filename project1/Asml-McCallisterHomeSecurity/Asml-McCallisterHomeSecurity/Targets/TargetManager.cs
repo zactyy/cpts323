@@ -5,7 +5,7 @@
 // CptS323, Spring 2013
 // Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
 // Written by: Jennifer Mendez
-// Last modified by: Jennifer Mendez
+// Last modified by: Chris Walters
 // Date modified: March 14, 2013
 
 using System;
@@ -69,9 +69,9 @@ namespace Asml_McCallisterHomeSecurity.Targets
         /// file into the target list.  
         /// </summary>
         /// <param name="listOfTargets"></param>
-        public void LoadList(List<Target> listOfTargets)
+        public void AddTargets(List<Target> listOfTargets)
         {
-            _targets = listOfTargets;
+            _targets.AddRange(listOfTargets);
         }
 
         /// <summary>

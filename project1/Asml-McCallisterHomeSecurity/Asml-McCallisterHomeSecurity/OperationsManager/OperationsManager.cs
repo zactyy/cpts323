@@ -3,7 +3,7 @@
 // CptS323, Spring 2013
 // Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
 // Written by: Jennifer Mendez
-// Last modified by: Jennifer Mendez
+// Last modified by: Chris Walters
 // Date modified: March 14, 2013
 
 using System;
@@ -12,6 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Asml_McCallisterHomeSecurity.Targets;
+using Asml_McCallisterHomeSecurity.FileProcessors;
 
 namespace Asml_McCallisterHomeSecurity.OperationsManager
 {
@@ -29,14 +30,18 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
         /// Singleton reference to track creation of 
         /// one instance of Operations Manager.
         /// </summary>
-        public static OperationsManager _rules_them_all = null;
+        private static OperationsManager _rules_them_all = null;
                 
         /// <summary>
         /// OperationsManager has one target manager, this is it.  
         /// </summary>
         private TargetManager _target_manager;
-        //TODO-ADD private Reader _reader;
-        //TODO-ADD private Turret _turret;
+
+        /// <summary>
+        /// Factory for file readers.
+        /// </summary>
+        private FileProcessorFactory _reader_factory;
+       //TODO-ADD private Turret _turret;
 
         public static OperationsManager GetInstance()
         {
@@ -51,6 +56,7 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
         {
             // Set up access to all needed objects
             _target_manager = TargetManager.GetInstance();
+            _reader_factory = new FileProcessorFactory();
             // Create a Turret object here 
             // Create a Reader object here
         }
@@ -85,8 +91,8 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
         // Interface with the File Reader(s)
         public void LoadFile(string targetfile)
         {
-            //TODO- Replace _reader.GetTargets with appropriate call that returns a list of targets.  
-            //_target_manager.LoadList(_reader.GetTargets());
+            FileProcessor _reader = _reader_factory.Create(targetfile); 
+            _target_manager.AddTargets(_reader.ProcessFile());
         }
         
         // Interface with Target Manager
