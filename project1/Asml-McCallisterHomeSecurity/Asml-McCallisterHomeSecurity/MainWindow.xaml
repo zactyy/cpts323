@@ -16,7 +16,7 @@
         <Button Content="Dw" HorizontalAlignment="Left" Margin="144,454,0,0" VerticalAlignment="Top" Width="35" Height="32" Grid.Column="1"/>
         <Button Content="Rst" HorizontalAlignment="Left" Margin="144,416,0,0" VerticalAlignment="Top" Width="35" Height="32" Grid.Column="1"/>
         <Button Content="R" HorizontalAlignment="Left" Margin="184,416,0,0" VerticalAlignment="Top" Width="35" Height="32" Grid.Column="1"/>
-        <Button Content="Fire" HorizontalAlignment="Left" Margin="229,380,0,0" VerticalAlignment="Top" Width="53" Height="32" Grid.Column="1"/>
+        <Button Content="Fire" HorizontalAlignment="Left" Margin="229,380,0,0" VerticalAlignment="Top" Width="53" Height="32" Grid.Column="1" Click="Button_Click_1"/>
         <Button Content="Reload" HorizontalAlignment="Left" Margin="229,476,0,0" VerticalAlignment="Top" Width="53" Height="20" Grid.Column="1"/>
         <ListView HorizontalAlignment="Left" Height="59" Margin="34,427,0,0" VerticalAlignment="Top" Width="424" Grid.ColumnSpan="2">
             <ListView.View>

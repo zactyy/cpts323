@@ -53,8 +53,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="TargetManager\Target.cs" />
-    <Compile Include="TargetManager\TargetManager.cs" />
+    <Compile Include="Targets\Target.cs" />
+    <Compile Include="Targets\TargetManager.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

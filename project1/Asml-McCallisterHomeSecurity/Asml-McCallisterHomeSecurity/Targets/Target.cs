@@ -1,14 +1,22 @@
-﻿using System;
+﻿// Target.cs
+// Class definition for a Target.  
+// CptS323, Spring 2013
+// Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
+// Written by: Jennifer Mendez
+// Last modified by: Jennifer Mendez
+// Date modified: March 14, 2013
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Asml_McCallisterHomeSecurity.TargetManager
+namespace Asml_McCallisterHomeSecurity.Targets
 {
     public class Target
     {
-        public ActualTarget()
+        public Target()
         {
             Name = null;
             X_coordinate = 0;
@@ -17,7 +25,7 @@ namespace Asml_McCallisterHomeSecurity.TargetManager
             Friend = true;
         }
 
-        public ActualTarget(string i_name, int i_x_coordinate, int i_y_coordinate, int i_z_coordinate, bool i_friend)
+        public Target(string i_name, int i_x_coordinate, int i_y_coordinate, int i_z_coordinate, bool i_friend)
         {
             Name = i_name;
             X_coordinate = i_x_coordinate;
@@ -26,7 +34,7 @@ namespace Asml_McCallisterHomeSecurity.TargetManager
             Friend = i_friend;
         }
 
-        public ActualTarget(int i_x_coordinate, int i_y_coordinate, int i_z_coordinate, bool i_friend)
+        public Target(int i_x_coordinate, int i_y_coordinate, int i_z_coordinate, bool i_friend)
         {
             Name = null;
             X_coordinate = i_x_coordinate;

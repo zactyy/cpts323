@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Asml_McCallisterHomeSecurity.OperationsManager;
 
 namespace Asml_McCallisterHomeSecurity
 {
@@ -27,7 +28,27 @@ namespace Asml_McCallisterHomeSecurity
 
         private void MoveUpButton(object sender, RoutedEventArgs e)
         {
-            OperationsManager.TurretMove
+            _rules_them_all.TurretMoveUp();
+        }
+
+        private void MoveDownButton(object sender, RoutedEventArgs e)
+        {
+            _rules_them_all.TurretMoveDown();
+        }
+
+        private void MoveLeftButton(object sender, RoutedEventArgs e)
+        {
+            OperationsManager.TurretMoveLeft();
+        }
+
+        private void MoveRightButton(object sender, RoutedEventArgs e)
+        {
+            OperationsManager.TurretMoveRight();
+        }
+
+        private void TurretFireClick(object sender, RoutedEventArgs e)
+        {
+            OperationsManager.
         }
     }
 }
