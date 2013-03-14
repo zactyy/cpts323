@@ -83,5 +83,13 @@ namespace Asml_McCallisterHomeSecurity
                 }
             }
         }
+
+        private void TurretReset(object sender, RoutedEventArgs e)
+        {
+            _rules_them_all.TurretReset();
+        }
+
+
+       
     }
 }

@@ -1,10 +1,11 @@
-﻿// OperationsManager.cs
-// This file defines an operations manager class that should...
-// CptS323, Spring 2013
-// Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
-// Written by: Jennifer Mendez
-// Last modified by: Chris Walters
-// Date modified: March 14, 2013
+﻿/* OperationsManager.cs
+ * This file defines an operations manager class that should...
+ * CptS323, Spring 2013
+ * Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
+ * Written by: Jennifer Mendez
+ * Last modified by: Chris Walters
+ * Date modified: March 14, 2013
+ */
 
 using System;
 using System.Collections.Generic;
@@ -66,26 +67,39 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
         {
             //TODO-ADD
             //_turret.MoveLeft();
+            throw new NotImplementedException();
         }
         public void TurretMoveRight()
         {
             //TODO-ADD
             //_turret.MoveRight();
+            throw new NotImplementedException();
         }
         public void TurretMoveUp()
         {
             //TODO-ADD
             //_turret.MoveUp();
+            throw new NotImplementedException();
         }
         public void TurretMoveDown()
         {
             //TODO-ADD
             //_turret.MoveDown();
+            throw new NotImplementedException();
         }
         public void TurretFire()
         {
             //TODO-ADD
             //_turret.Fire();
+            throw new NotImplementedException();
+        }
+
+        public void TurretReset()
+        {
+            // Not sure if we were going to have this one or not, but there is a placeholder for it.  
+            // TODO-ADD
+            //_turret.Reset();
+            throw new NotImplementedException();
         }
 
         // Interface with the File Reader(s)

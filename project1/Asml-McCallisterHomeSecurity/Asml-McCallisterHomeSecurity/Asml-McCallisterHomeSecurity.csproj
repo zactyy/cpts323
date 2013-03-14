@@ -63,6 +63,7 @@
     <Compile Include="FileProcessors\NotAnIniFile.cs" />
     <Compile Include="FileProcessors\ProcessorTest.cs" />
     <Compile Include="FileProcessors\XMLProcessor.cs" />
+    <Compile Include="OperationsManager\OperationsError.cs" />
     <Compile Include="Targets\Target.cs" />
     <Compile Include="Targets\TargetManager.cs" />
     <Page Include="MainWindow.xaml">

@@ -11,12 +11,12 @@
         <Rectangle Fill="White" HorizontalAlignment="Left" Height="335" Margin="64,10,0,0" Stroke="#FF474545" VerticalAlignment="Top" Width="232" Grid.Column="1"/>
         <Rectangle Fill="White" HorizontalAlignment="Left" Height="156" Margin="10,350,0,0" Stroke="#FF474545" VerticalAlignment="Top" Width="476" Grid.ColumnSpan="2"/>
         <Rectangle Fill="White" HorizontalAlignment="Left" Height="335" Margin="10,10,0,0" Stroke="#FF474545" VerticalAlignment="Top" Width="476" Grid.ColumnSpan="2"/>
-        <Button Content="Up" HorizontalAlignment="Left" Margin="140,380,0,0" VerticalAlignment="Top" Width="39" Height="32" Grid.Column="1"/>
-        <Button Content="Up" HorizontalAlignment="Left" Margin="100,416,0,0" VerticalAlignment="Top" Width="39" Height="32" Grid.Column="1"/>
-        <Button Content="Dw" HorizontalAlignment="Left" Margin="144,454,0,0" VerticalAlignment="Top" Width="35" Height="32" Grid.Column="1"/>
-        <Button Content="Rst" HorizontalAlignment="Left" Margin="144,416,0,0" VerticalAlignment="Top" Width="35" Height="32" Grid.Column="1"/>
-        <Button Content="R" HorizontalAlignment="Left" Margin="184,416,0,0" VerticalAlignment="Top" Width="35" Height="32" Grid.Column="1"/>
-        <Button Content="Fire" HorizontalAlignment="Left" Margin="229,380,0,0" VerticalAlignment="Top" Width="53" Height="32" Grid.Column="1"/>
+        <Button Content="Up" HorizontalAlignment="Left" Margin="140,380,0,0" VerticalAlignment="Top" Width="39" Height="32" Grid.Column="1" Click="MoveUpButton"/>
+        <Button Content="L" HorizontalAlignment="Left" Margin="100,416,0,0" VerticalAlignment="Top" Width="39" Height="32" Grid.Column="1" Click="MoveLeftButton"/>
+        <Button Content="Dw" HorizontalAlignment="Left" Margin="144,454,0,0" VerticalAlignment="Top" Width="35" Height="32" Grid.Column="1" Click="MoveDownButton"/>
+        <Button Content="Rst" HorizontalAlignment="Left" Margin="144,416,0,0" VerticalAlignment="Top" Width="35" Height="32" Grid.Column="1" Click="TurretReset"/>
+        <Button Content="R" HorizontalAlignment="Left" Margin="184,416,0,0" VerticalAlignment="Top" Width="35" Height="32" Grid.Column="1" Click="MoveRightButton"/>
+        <Button Content="Fire" HorizontalAlignment="Left" Margin="229,380,0,0" VerticalAlignment="Top" Width="53" Height="32" Grid.Column="1" Click="TurretFireClick"/>
         <Button Content="Reload" HorizontalAlignment="Left" Margin="229,476,0,0" VerticalAlignment="Top" Width="53" Height="20" Grid.Column="1"/>
         <ListView HorizontalAlignment="Left" Height="59" Margin="34,427,0,0" VerticalAlignment="Top" Width="424" Grid.ColumnSpan="2">
             <ListView.View>
@@ -30,7 +30,7 @@
             </ListView.View>
         </ListView>
         <Label Content="Target Information" HorizontalAlignment="Left" Margin="197,354,0,0" VerticalAlignment="Top" Height="26" Width="109"/>
-        <Label Content="Manual Launcher Control" HorizontalAlignment="Left" Margin="130,354,0,0" VerticalAlignment="Top" Height="26" Width="144" Grid.Column="1"/>
+        <Label Content="Manual Launcher Control" HorizontalAlignment="Left" Margin="111,350,0,0" VerticalAlignment="Top" Height="26" Width="144" Grid.Column="1"/>
         <Button x:Name="btnLoad" Content="Load " HorizontalAlignment="Left" Margin="140,156,0,0" VerticalAlignment="Top" Width="75" Height="22" Grid.Column="1" Click="btnLoad_Click"/>
     </Grid>
 </Window>
