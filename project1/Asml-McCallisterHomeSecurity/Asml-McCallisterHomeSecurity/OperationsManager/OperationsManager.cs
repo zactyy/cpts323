@@ -57,7 +57,7 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
         {
             // Set up access to all needed objects
             _target_manager = TargetManager.GetInstance();
-            _reader_factory = new FileProcessorFactory();
+            _reader_factory = FileProcessorFactory.GetInstance();
             // Create a Turret object here 
             // Create a Reader object here
         }
