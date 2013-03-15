@@ -5,7 +5,7 @@
  * Team McCallister Home Security: Chris Walters, Jennifer Mendez, Zachary Tynnisma
  * Written By: Chris Walters
  * Last Modified By: Chris Walters
- * Last Modified On: March 13, 2013
+ * Date Modified: March 13, 2013
  */ 
 using System;
 using System.Collections.Generic;

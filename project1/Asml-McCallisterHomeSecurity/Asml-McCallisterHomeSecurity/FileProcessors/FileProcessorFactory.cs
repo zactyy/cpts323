@@ -5,7 +5,7 @@
  * Team McCallister Home Security: Chris Walters, Jennifer Mendez, Zachary Tynnisma
  * Written By: Chris Walters
  * Last Modified By: Chris Walters
- * Last Modified On: March 13, 2013
+ * Date Modified: March 13, 2013
  */
 using System;
 using System.Collections.Generic;
@@ -13,11 +13,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Threading;
 
 namespace Asml_McCallisterHomeSecurity.FileProcessors
 {
     class FileProcessorFactory
     {
+        private static FileProcessorFactory _instance = null;
+
+        private FileProcessorFactory() { }
+
+        public static FileProcessorFactory GetInstance()
+        {
+            if (_instance == null)
+            {
+                _instance = new FileProcessorFactory();
+            }
+            return _instance;        
+        }
+
         /// <summary>
         /// Factory method, Creates a file processor for the given file type, or throws an
         /// ArgumentException if the file type is unsupported.

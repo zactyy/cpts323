@@ -4,7 +4,7 @@
  * Written for CptS323 at Washington State University, Spring 2013
  * Written By: Chris Walters
  * Last Modified By: Chris Walters
- * Last Modified: March 14, 2013
+ * Date Modified: March 14, 2013
  */
 using System;
 using System.Collections.Generic;
