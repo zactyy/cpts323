@@ -3,8 +3,8 @@
 // CptS323, Spring 2013
 // Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
 // Written by: Jennifer Mendez
-// Last modified by: Jennifer Mendez
-// Date modified: March 14, 2013
+// Last modified by: Chris Walters
+// Date modified: March 16, 2013
 
 using System;
 using System.Collections.Generic;
