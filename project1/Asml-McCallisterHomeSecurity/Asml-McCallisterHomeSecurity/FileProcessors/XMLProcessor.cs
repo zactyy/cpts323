@@ -50,43 +50,20 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
                             {
                                 // each attribute should be a target object attribute name and corresponding value.
                                 string attribute_name = fr.Name.ToLower();
+                                string attribute_value = fr.Value.ToLower();
                                 if (attribute_name != "isfriend" && attribute_name != "name") 
-                                {
-                                        switch (attribute_name)
-                                        {
-                                            case "xpos":
-                                                _current_target.X_coordinate = Convert.ToDecimal(fr.Value);
-                                                break;
-                                            case "ypos":
-                                                _current_target.Y_coordinate = Convert.ToDecimal(fr.Value);
-                                                break;
-                                            case "zpos":
-                                                _current_target.Z_coordinate = Convert.ToDecimal(fr.Value);
-                                                break;
-                                            default:
-                                                throw new XmlException("Invalid Format");
-                                        }
+                                {                                  
+                                    SetTargetPositionValue(_current_target, attribute_name, attribute_value);
                                 }
                                 else
                                 {
-                                    if (fr.Name == "isFriend")
+                                    if (attribute_name == "isfriend")
                                     {
-                                        if (fr.Value.ToLower() == "true")
-                                        {
-                                            _current_target.Friend = true;
-                                        }
-                                        else if (fr.Value.ToLower() == "false")
-                                        {
-                                            _current_target.Friend = false;
-                                        }
-                                        else
-                                        {
-                                            throw new XmlException("Invalid Format");
-                                        }
+                                        SetTargetFriend(_current_target, attribute_value);
                                     }
-                                    else if (fr.Name.ToLower() == "name")
+                                    else if (attribute_name == "name")
                                     {
-                                        _current_target.Name = fr.Value;
+                                        _current_target.Name = attribute_value;
                                     }
                                 }
                             }
@@ -106,6 +83,51 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
                 }
             }
             return _output;
+        }
+
+        /// <summary>
+        /// Set the friend property of the target
+        /// </summary>
+        /// <param name="_current_target">A target object</param>
+        /// <param name="attribute_value">a string containing "true" or "false"</param>
+        private void SetTargetFriend(Target _current_target, string attribute_value)
+        {
+            if (attribute_value == "true")
+            {
+                _current_target.Friend = true;
+            }
+            else if (attribute_value == "false")
+            {
+                _current_target.Friend = false;
+            }
+            else
+            {
+                throw new XmlException("Invalid Format");
+            }
+        }
+
+        /// <summary>
+        /// Set x,y,z position value, or throw an error if attribute_name isn't xpos, ypos, or zpos.
+        /// </summary>
+        /// <param name="_current_target">a Target obj</param>
+        /// <param name="attribute_name">a string containing the attribute name</param>
+        /// <param name="value">a string containing the attribue value</param>
+        private void SetTargetPositionValue(Target _current_target, string attribute_name, string value)
+        {
+            switch (attribute_name)
+            {
+                case "xpos":
+                    _current_target.X_coordinate = Convert.ToDecimal(value);
+                    break;
+                case "ypos":
+                    _current_target.Y_coordinate = Convert.ToDecimal(value);
+                    break;
+                case "zpos":
+                    _current_target.Z_coordinate = Convert.ToDecimal(value);
+                    break;
+                default:
+                    throw new XmlException("Invalid Format");
+            }
         }
     }
 }

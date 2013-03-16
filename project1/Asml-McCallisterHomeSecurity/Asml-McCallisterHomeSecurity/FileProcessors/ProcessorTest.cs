@@ -25,7 +25,7 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
         public void IniTest()
         {
             FileProcessorFactory fact = FileProcessorFactory.GetInstance();
-            FileProcessor proc = fact.Create("E:\\users\\chris\\Documents\\testfiles\\good.ini");
+            FileProcessor proc = fact.Create("E:\\users\\chris\\documents\\GitHub\\testfiles\\good.ini");
             List<Target> _targets = proc.ProcessFile();
         }
 
@@ -34,7 +34,7 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
         public void IniTestReject()
         {
             FileProcessorFactory fact = FileProcessorFactory.GetInstance();
-            FileProcessor proc = fact.Create("E:\\users\\chris\\documents\\testfiles\\rejects.ini");
+            FileProcessor proc = fact.Create("E:\\users\\chris\\documents\\GitHub\\testfiles\\rejects.ini");
             proc.ProcessFile();
         }
 
@@ -42,7 +42,7 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
         public void XmlTest()
         {
             FileProcessorFactory fact = FileProcessorFactory.GetInstance();
-            FileProcessor proc = fact.Create("E:\\users\\chris\\documents\\testfiles\\good.xml");
+            FileProcessor proc = fact.Create("E:\\users\\chris\\documents\\GitHub\\testfiles\\good.xml");
             List<Target> _targets = proc.ProcessFile();
             Assert.AreEqual(3, _targets.Count);
         }
@@ -52,7 +52,7 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
         public void XmlTestReject()
         {
             FileProcessorFactory fact = FileProcessorFactory.GetInstance();
-            FileProcessor proc = fact.Create("E:\\users\\chris\\documents\\testfiles\\shouldreject.xml");
+            FileProcessor proc = fact.Create("E:\\users\\chris\\documents\\GitHub\\testfiles\\shouldreject.xml");
             proc.ProcessFile();
         }
     }

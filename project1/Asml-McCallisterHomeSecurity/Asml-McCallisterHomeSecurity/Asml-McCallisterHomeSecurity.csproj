@@ -98,7 +98,6 @@
     <Compile Include="FileProcessors\FileProcessors.cs" />
     <Compile Include="FileProcessors\IniProcessor.cs" />
     <Compile Include="FileProcessors\InvalidIniFormat.cs" />
-    <Compile Include="FileProcessors\NotAnIniFile.cs" />
     <Compile Include="FileProcessors\ProcessorTest.cs" />
     <Compile Include="FileProcessors\XMLProcessor.cs" />
     <Compile Include="OperationsManager\OperationsError.cs" />
@@ -172,6 +171,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

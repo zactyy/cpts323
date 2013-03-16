@@ -56,7 +56,7 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
             }
             else
             {
-                throw new ArgumentException("Invalid file.");
+                throw new ArgumentException("Invalid file. Targets may be loaded only from INI or XML file types.");
             }
             return createdProcessor;
         }

@@ -90,7 +90,13 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
         return _output;
         }
 
-        private static void TargetSetPositionValue(Target _current_target, string key, string value)
+        /// <summary>
+        /// Set x,y,z position value of target
+        /// </summary>
+        /// <param name="_current_target">A target object</param>
+        /// <param name="key">string containing the key</param>
+        /// <param name="value">string containing the value</param>
+        private void TargetSetPositionValue(Target _current_target, string key, string value)
         {
             /* try/catch exceptions from Convert operation, solely for the purpose of changing them to InvalidIniFormat exceptions */
             try
@@ -121,6 +127,11 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
             }
         }
 
+        /// <summary>
+        /// Set the friend property
+        /// </summary>
+        /// <param name="_current_target">A target object</param>
+        /// <param name="value">string containing "true" or "false"</param>
         private void TargetSetFriend(Target _current_target, string value)
         {
             if (value == "yes")

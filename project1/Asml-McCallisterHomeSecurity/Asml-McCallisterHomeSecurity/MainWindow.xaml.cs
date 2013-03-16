@@ -37,7 +37,7 @@ namespace Asml_McCallisterHomeSecurity
 
 
         /* I put all the methods for turret control buttons in this region block...makes 'em easier to find and hide.
-         * **********we also need to document these, and go over naming convetions!**********
+         * **********we also need to document these, and go over naming conventions!**********
          */
         #region Turret_Controls 
 
@@ -76,23 +76,23 @@ namespace Asml_McCallisterHomeSecurity
         /// retrieves a filename via OpenFileDialog and then attempts to process it for targets.
         /// if an error occurs, reports it to the user va a messagebox.
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Object representing the control</param>
+        /// <param name="e">RoutedEventArgs</param>
         private void btnLoad_Click(object sender, RoutedEventArgs e)
         {
             Microsoft.Win32.OpenFileDialog dialog = new Microsoft.Win32.OpenFileDialog();
             dialog.FileName = "";
-            dialog.Filter = "Target Files(.ini, .xml)|*.ini;*.xml";
+            dialog.Filter = "Target Files(.ini, .xml)|*.ini;*.xml| All Files(*.*)|*.*";
 
             Nullable<bool> result = dialog.ShowDialog();
-            string _file_name = null;
+            string file_name = null;
 
             if (result == true)
             {
-                _file_name = dialog.FileName;
+                file_name = dialog.FileName;
                 try
                 {
-                    _rules_them_all.LoadFile(_file_name);
+                    _rules_them_all.LoadFile(file_name);
                 }
                 catch (Exception ex)
                 {
