@@ -24,7 +24,7 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
         [Test]
         public void IniTest()
         {
-            FileProcessorFactory fact = new FileProcessorFactory();
+            FileProcessorFactory fact = FileProcessorFactory.GetInstance();
             FileProcessor proc = fact.Create("E:\\users\\chris\\Documents\\testfiles\\good.ini");
             List<Target> _targets = proc.ProcessFile();
         }
@@ -33,7 +33,7 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
         [ExpectedException(typeof(InvalidIniFormat))]
         public void IniTestReject()
         {
-            FileProcessorFactory fact = new FileProcessorFactory();
+            FileProcessorFactory fact = FileProcessorFactory.GetInstance();
             FileProcessor proc = fact.Create("E:\\users\\chris\\documents\\testfiles\\rejects.ini");
             proc.ProcessFile();
         }
@@ -41,7 +41,7 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
         [Test]
         public void XmlTest()
         {
-            FileProcessorFactory fact = new FileProcessorFactory();
+            FileProcessorFactory fact = FileProcessorFactory.GetInstance();
             FileProcessor proc = fact.Create("E:\\users\\chris\\documents\\testfiles\\good.xml");
             List<Target> _targets = proc.ProcessFile();
             Assert.AreEqual(3, _targets.Count);
@@ -51,7 +51,7 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
         [ExpectedException(typeof(XmlException))]
         public void XmlTestReject()
         {
-            FileProcessorFactory fact = new FileProcessorFactory();
+            FileProcessorFactory fact = FileProcessorFactory.GetInstance();
             FileProcessor proc = fact.Create("E:\\users\\chris\\documents\\testfiles\\shouldreject.xml");
             proc.ProcessFile();
         }
