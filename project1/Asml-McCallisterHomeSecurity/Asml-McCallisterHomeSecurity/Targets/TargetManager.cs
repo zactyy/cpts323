@@ -6,10 +6,11 @@
 // Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
 // Written by: Jennifer Mendez
 // Last modified by: Chris Walters
-// Date modified: March 14, 2013
+// Date modified: March 16, 2013
 
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,11 +28,8 @@ namespace Asml_McCallisterHomeSecurity.Targets
         /// Singleton instance of TargetManager
         /// </summary>
         private static TargetManager _instance;
-        private List<Target> _targets
-        {
-            get;
-            set;
-        }
+        private ObservableCollection<Target> _targets;
+  
 
         public static TargetManager GetInstance()
         {
@@ -47,7 +45,7 @@ namespace Asml_McCallisterHomeSecurity.Targets
         /// </summary>
         private TargetManager()
         {
-            _targets = new List<Target>();
+            _targets = new ObservableCollection<Target>();         
         }
 
         /// <summary>
@@ -71,16 +69,20 @@ namespace Asml_McCallisterHomeSecurity.Targets
         /// <param name="listOfTargets"></param>
         public void AddTargets(List<Target> listOfTargets)
         {
-            _targets.AddRange(listOfTargets);
+            listOfTargets.ForEach(_targets.Add);
         }
 
         /// <summary>
         /// Simply returns the current list of targets.  
         /// </summary>
         /// <returns></returns>
-        public List<Target> GetTargets()
+        public ObservableCollection<Target> Targets
         {
-            return _targets;
+            get
+            {
+                return _targets;
+
+            }
         }
 
         /// <summary>

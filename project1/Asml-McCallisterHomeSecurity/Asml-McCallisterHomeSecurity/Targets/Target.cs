@@ -49,19 +49,19 @@ namespace Asml_McCallisterHomeSecurity.Targets
             set;
         }
 
-        public int X_coordinate
+        public decimal X_coordinate
         {
             get;
             set;
         }
 
-        public int Y_coordinate
+        public decimal Y_coordinate
         {
             get;
             set;
         }
         
-        public int Z_coordinate
+        public decimal Z_coordinate
         {
             get;
             set;

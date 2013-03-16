@@ -56,7 +56,7 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
                 }
                 else
                 {
-                    if (lineMatches(trimedLine)) // if line is a group declaration add new target to the list
+                    if (lineMatches(trimedLine)) // if line is a group declaration add new target to the list.
                     {
                         _current_target = new Target();
                         _output.Add(_current_target);
@@ -69,22 +69,11 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
                             throw new InvalidIniFormat(_invalid_ini_format_message);
                         }
                         string[] keyvalue = trimedLine.Split('=');
-                        string key = keyvalue[0].Trim().ToLower();
-                        string value = keyvalue[1].Trim().ToLower();
+                        string key = keyvalue[0].Trim().ToLower(); // grab key, trim whitespace, and make all lower.
+                        string value = keyvalue[1].Trim().ToLower(); // same as above but for value.
                         if (key == "friend") // if the left side of the keyvalue pair is "isFriend" set the friend value of the target.
                         {
-                            if (value == "yes")
-                            {
-                                _current_target.Friend = true;
-                            }
-                            else if (value == "no")
-                            {
-                                _current_target.Friend = false;
-                            }
-                            else
-                            {
-                                throw new InvalidIniFormat(_invalid_ini_format_message); // if the value is invalid throw exception.
-                            }
+                            TargetSetFriend(_current_target, value);
                         }
                         else if (key == "name") // if the left side of the keyvalue pair is "name" set the name of the target.
                         {
@@ -92,35 +81,8 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
                         }
                         else
                         {
-                            /* try/catch exceptions from Convert operation, solely for the purpose of changing
-                              them to InvalidIniFormat exceptions */
-                            try
-                            {
-                                /* turn the left side of the key value pair into ASCII and check to make sure
-                                  it is either x, y, or z, then add value to target if possible. */
-                                switch (key)
-                                {
-                                    case "x":
-                                        _current_target.X_coordinate = Convert.ToInt32(value);
-                                        break;
-                                    case "y": 
-                                        _current_target.Y_coordinate = Convert.ToInt32(value);
-                                        break;
-                                    case "z":
-                                        _current_target.Z_coordinate = Convert.ToInt32(value);
-                                        break;
-                                    default: // if it reaches this point, it is an invalid file
-                                        throw new InvalidIniFormat(_invalid_ini_format_message); 
-                                }
-                            }
-                            catch (FormatException) // change exception from convert to invalidiniformat.
-                            {
-                                throw new InvalidIniFormat(_invalid_ini_format_message);
-                            }
-                            catch (OverflowException) // change exception from convert to invalidinitformat.
-                            {
-                                throw new InvalidIniFormat(_invalid_ini_format_message);
-                            }                            
+                            
+                            TargetSetPositionValue(_current_target, key, value);                            
                         }
                     }
                 }
@@ -128,16 +90,63 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
         return _output;
         }
 
+        private static void TargetSetPositionValue(Target _current_target, string key, string value)
+        {
+            /* try/catch exceptions from Convert operation, solely for the purpose of changing them to InvalidIniFormat exceptions */
+            try
+            {
+                /* turn the left side of the key value pair into ASCII and check to make sure it is either x, y, or z, then add value to target if possible. */
+                switch (key)
+                {
+                    case "x":
+                        _current_target.X_coordinate = Convert.ToDecimal(value);
+                        break;
+                    case "y":
+                        _current_target.Y_coordinate = Convert.ToDecimal(value);
+                        break;
+                    case "z":
+                        _current_target.Z_coordinate = Convert.ToDecimal(value);
+                        break;
+                    default: // if it reaches this point, it is an invalid file
+                        throw new InvalidIniFormat(_invalid_ini_format_message);
+                }
+            }
+            catch (FormatException ex) // change exception from convert to invalidiniformat, but keep previous exception around for debugging.
+            {
+                throw new InvalidIniFormat(_invalid_ini_format_message, ex);
+            }
+            catch (OverflowException ex) // change exception from convert to invalidinitformat, but keep previous exception around for debugging.
+            {
+                throw new InvalidIniFormat(_invalid_ini_format_message, ex);
+            }
+        }
+
+        private void TargetSetFriend(Target _current_target, string value)
+        {
+            if (value == "yes")
+            {
+                _current_target.Friend = true;
+            }
+            else if (value == "no")
+            {
+                _current_target.Friend = false;
+            }
+            else
+            {
+                throw new InvalidIniFormat(_invalid_ini_format_message); // if the value is invalid throw exception.
+            }
+        }
+
         /// <summary>
-        /// determines if the given line is of the [groupname] or key=value format
-        /// and throws an exception if the line matches neither.
+        /// determines if the given line is of the [groupname] or key=value format and throws an exception if the line 
+        /// matches neither.
         /// </summary>
         /// <param name="trimedLine"></param>
         /// <returns></returns>
         private bool lineMatches(string trimedLine)
         {
             /* if the line is of the form "[groupname]" make a new Target return True as it matches a new target
-             * declaration, if it matches the form "key=value" return false as it is a key=value pair. Otherwise 
+             * declaration, if it matches the form "key=value" return false as it is a key=value pair. Otherwise   
              * throw an exception as the file is invalid
              */
             if (Regex.IsMatch(trimedLine, "^\\[[^\\[-^\\]]+\\]$"))

@@ -4,11 +4,12 @@
  * Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
  * Written by: Jennifer Mendez
  * Last modified by: Chris Walters
- * Date modified: March 14, 2013
+ * Date modified: March 16, 2013
  */
 
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -107,19 +108,19 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
         // Interface with the File Reader(s)
         public void LoadFile(string targetfile)
         {
-            FileProcessor _reader = _reader_factory.Create(targetfile); 
+            FileProcessor _reader = _reader_factory.Create(targetfile);
+            _target_manager.ClearTargetList();
             _target_manager.AddTargets(_reader.ProcessFile());
         }
         
         // Interface with Target Manager
-        public List<Target> GetTargetInfo()
+        public ObservableCollection<Target> TargetInfo
         {
-            List<Target> tempTargets = new List<Target>();
-            _target_manager.AddTarget(100, 200, 300, true, "mytarget");
-            _target_manager.AddTarget(111, 222, 333, false, "enemy");
-            _target_manager.AddTarget(123, 234, 345, true, "sometarget");
-            tempTargets = _target_manager.GetTargets();
-            return tempTargets;
+            get
+            {
+                return _target_manager.Targets;
+            }
+            private set {}
         }
 
         /// <summary>

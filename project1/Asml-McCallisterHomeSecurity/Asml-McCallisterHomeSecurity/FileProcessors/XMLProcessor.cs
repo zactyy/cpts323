@@ -34,47 +34,38 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
             Target _current_target;
             while (fr.Read())  // read the xml file until the end.
             {
+                string node_name = fr.Name.ToLower();
                 switch (fr.NodeType)
                 {
                     case XmlNodeType.Element:
-                        if (fr.Name != "Targets" && fr.Name != "Target") // if element is not named Targets or Target, file format is invalid.
+                        if (node_name != "targets" && node_name != "target") // if element is not named Targets or Target, file format is invalid.
                         {
                             throw new XmlException("Invalid Format.");
                         }
                         // if element is named Target, read it's attributes and store them as a Target.
-                        else if (fr.Name == "Target") 
+                        else if (node_name == "target") 
                         {
                             _current_target = new Target();
                             while (fr.MoveToNextAttribute())
                             {
                                 // each attribute should be a target object attribute name and corresponding value.
-                                if (fr.Name != "isFriend" && fr.Name != "name") 
+                                string attribute_name = fr.Name.ToLower();
+                                if (attribute_name != "isfriend" && attribute_name != "name") 
                                 {
-                                    try
-                                    {
-                                        switch (Convert.ToInt32(fr.Name))
+                                        switch (attribute_name)
                                         {
-                                            case 120:
-                                                _current_target.X_coordinate = Convert.ToInt32(fr.Value);
+                                            case "xpos":
+                                                _current_target.X_coordinate = Convert.ToDecimal(fr.Value);
                                                 break;
-                                            case 121:
-                                                _current_target.Y_coordinate = Convert.ToInt32(fr.Value);
+                                            case "ypos":
+                                                _current_target.Y_coordinate = Convert.ToDecimal(fr.Value);
                                                 break;
-                                            case 122:
-                                                _current_target.Z_coordinate = Convert.ToInt32(fr.Value);
+                                            case "zpos":
+                                                _current_target.Z_coordinate = Convert.ToDecimal(fr.Value);
                                                 break;
                                             default:
                                                 throw new XmlException("Invalid Format");
                                         }
-                                    }
-                                    catch (FormatException)
-                                    {
-
-                                    }
-                                    catch (OverflowException)
-                                    {
-
-                                    }
                                 }
                                 else
                                 {

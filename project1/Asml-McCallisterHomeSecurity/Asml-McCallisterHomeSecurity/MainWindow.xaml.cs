@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Asml_McCallisterHomeSecurity.OperationsManager;
 using Microsoft.Win32;
+using System.Reflection;
 
 namespace Asml_McCallisterHomeSecurity
 {
@@ -28,7 +29,17 @@ namespace Asml_McCallisterHomeSecurity
 
             InitializeComponent();
             _rules_them_all = OperationsManager.OperationsManager.GetInstance();
+            this.DataContext = this._rules_them_all;
+            string version_string = Assembly.GetExecutingAssembly().GetName().Version.Major.ToString() + "." + Assembly.GetExecutingAssembly().GetName().Version.Minor.ToString();
+            string program_title = "ASML-McCallister Home Security ";
+            this.Title = program_title + version_string;
         }
+
+
+        /* I put all the methods for turret control buttons in this region block...makes 'em easier to find and hide.
+         * **********we also need to document these, and go over naming convetions!**********
+         */
+        #region Turret_Controls 
 
         private void MoveUpButton(object sender, RoutedEventArgs e)
         {
@@ -54,6 +65,12 @@ namespace Asml_McCallisterHomeSecurity
         {
             _rules_them_all.TurretFire();
         }
+
+        private void TurretReset(object sender, RoutedEventArgs e)
+        {
+            _rules_them_all.TurretReset();
+        }
+        #endregion
 
         /// <summary>
         /// retrieves a filename via OpenFileDialog and then attempts to process it for targets.
@@ -83,13 +100,5 @@ namespace Asml_McCallisterHomeSecurity
                 }
             }
         }
-
-        private void TurretReset(object sender, RoutedEventArgs e)
-        {
-            _rules_them_all.TurretReset();
-        }
-
-
-       
     }
 }
