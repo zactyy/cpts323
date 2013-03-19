@@ -4,7 +4,7 @@
  * Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
  * Written by: Jennifer Mendez
  * Last modified by: Chris Walters
- * Date modified: March 16, 2013
+ * Date modified: March 18, 2013
  */
 
 using System;
@@ -27,7 +27,7 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
     /// perform an action and if the attempt fails, an exception should
     /// be thrown.  
     /// </summary>
-    public class OperationsManager
+    public class OperationsManager:IDisposable 
     {
         /// <summary>
         /// Singleton reference to track creation of 
@@ -54,6 +54,38 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
                 _rules_them_all = new OperationsManager();
             }
             return _rules_them_all;
+        }
+
+        /// <summary>
+        /// Finalize method
+        /// </summary>
+        ~OperationsManager()
+        {
+            this.Dispose(false);
+        }
+
+        /// <summary>
+        /// public dispose
+        /// </summary>
+        public void Dispose()
+        {
+            this.Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        /// <summary>
+        /// actual disposal method.
+        /// </summary>
+        /// <param name="dispose_others"></param>
+        private void Dispose(bool dispose_others)
+        {
+            if (dispose_others == true)
+            {
+                _target_manager.Dipose();
+                /* _turret.Dispose(); currently not disposable */
+                _reader_factory.Dispose();
+            }
+            _rules_them_all = null;
         }
 
         private OperationsManager()
@@ -120,6 +152,7 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
             {
                 return _target_manager.Targets;
             }
+            // the collection should not be changed from here. Only the TargetManager should change it.
             private set {}
         }
 

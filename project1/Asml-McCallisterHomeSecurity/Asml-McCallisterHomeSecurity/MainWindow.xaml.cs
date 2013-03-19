@@ -72,6 +72,8 @@ namespace Asml_McCallisterHomeSecurity
         }
         #endregion
 
+
+        #region target_info controls
         /// <summary>
         /// retrieves a filename via OpenFileDialog and then attempts to process it for targets.
         /// if an error occurs, reports it to the user va a messagebox.
@@ -100,5 +102,6 @@ namespace Asml_McCallisterHomeSecurity
                 }
             }
         }
+        #endregion
     }
 }
