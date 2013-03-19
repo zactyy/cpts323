@@ -26,7 +26,7 @@ namespace Asml_McCallisterHomeSecurity.TurretManagement
         /// <summary>
         /// Turret manager controls a Turret, this is it
         /// </summary>
-        private Turret ActiveTurret;
+        private ILauncher ActiveTurret;
 
         /// <summary>
         /// azimuth value or angle on the x plane

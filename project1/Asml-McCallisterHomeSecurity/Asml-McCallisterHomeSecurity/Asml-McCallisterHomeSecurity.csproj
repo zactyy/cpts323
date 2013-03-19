@@ -83,7 +83,7 @@
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
     <Reference Include="USBLib">
-      <HintPath>TurretManager\USBLib.DLL</HintPath>
+      <HintPath>.\USBLib.DLL</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
@@ -103,9 +103,10 @@
     <Compile Include="OperationsManager\OperationsError.cs" />
     <Compile Include="Targets\Target.cs" />
     <Compile Include="Targets\TargetManager.cs" />
-    <Compile Include="TurretManager\SingletonException.cs" />
-    <Compile Include="TurretManager\TurrentManager.cs" />
-    <Compile Include="TurretManager\TurretControl.cs" />
+    <Compile Include="TurretManagement\ILauncher.cs" />
+    <Compile Include="TurretManagement\SingletonException.cs" />
+    <Compile Include="TurretManagement\TurretManager.cs" />
+    <Compile Include="TurretManagement\TurretControl.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

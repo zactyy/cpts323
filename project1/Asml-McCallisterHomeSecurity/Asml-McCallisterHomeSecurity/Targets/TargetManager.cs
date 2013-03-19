@@ -58,7 +58,7 @@ namespace Asml_McCallisterHomeSecurity.Targets
         /// <summary>
         /// public dispose
         /// </summary>
-        public void Dipose()
+        public void Dispose()
         {
             this.Dispose(true);
             GC.SuppressFinalize(this);

@@ -81,7 +81,7 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
         {
             if (dispose_others == true)
             {
-                _target_manager.Dipose();
+                _target_manager.Dispose();
                 /* _turret.Dispose(); currently not disposable */
                 _reader_factory.Dispose();
             }
