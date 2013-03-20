@@ -172,8 +172,12 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <Resource Include="Resources\arrow_Down.png" />
+    <Resource Include="Resources\arrow_Left.png" />
+    <Resource Include="Resources\arrow_Right.png" />
+    <Resource Include="Resources\arrow_Up.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

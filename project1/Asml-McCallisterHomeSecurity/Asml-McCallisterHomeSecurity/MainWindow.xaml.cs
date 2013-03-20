@@ -41,32 +41,32 @@ namespace Asml_McCallisterHomeSecurity
          */
         #region Turret_Controls 
 
-        private void MoveUpButton(object sender, RoutedEventArgs e)
+        private void btnUp_Click(object sender, RoutedEventArgs e)
         {
             _rules_them_all.TurretMoveUp();
         }
 
-        private void MoveDownButton(object sender, RoutedEventArgs e)
+        private void btnDown_Click(object sender, RoutedEventArgs e)
         {
             _rules_them_all.TurretMoveDown();
         }
 
-        private void MoveLeftButton(object sender, RoutedEventArgs e)
+        private void btnLeft_Click(object sender, RoutedEventArgs e)
         {
             _rules_them_all.TurretMoveLeft();
         }
 
-        private void MoveRightButton(object sender, RoutedEventArgs e)
+        private void btnRight_Click(object sender, RoutedEventArgs e)
         {
            _rules_them_all.TurretMoveRight();
         }
 
-        private void TurretFireClick(object sender, RoutedEventArgs e)
+        private void btnFire_Click(object sender, RoutedEventArgs e)
         {
             _rules_them_all.TurretFire();
         }
 
-        private void TurretReset(object sender, RoutedEventArgs e)
+        private void btnReset_Click(object sender, RoutedEventArgs e)
         {
             _rules_them_all.TurretReset();
         }
@@ -99,6 +99,11 @@ namespace Asml_McCallisterHomeSecurity
                     System.Windows.MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
+        }
+
+        private void btnReload_Click(object sender, RoutedEventArgs e)
+        {
+            _rules_them_all.ReloadTurret();
         }
     }
 }

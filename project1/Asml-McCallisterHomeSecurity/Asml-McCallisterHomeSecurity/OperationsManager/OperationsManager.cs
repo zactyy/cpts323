@@ -3,8 +3,8 @@
  * CptS323, Spring 2013
  * Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
  * Written by: Jennifer Mendez
- * Last modified by: Chris Walters
- * Date modified: March 16, 2013
+ * Last modified by: Jennifer Mendez
+ * Date modified: March 20, 2013
  */
 
 using System;
@@ -58,11 +58,12 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
 
         private OperationsManager()
         {
+            NumberMissiles = 4;
             // Set up access to all needed objects
             _target_manager = TargetManager.GetInstance();
             _reader_factory = FileProcessorFactory.GetInstance();
             _turret = TurretManager.GetInstance();
-            // Create a Reader object here
+            
         }
         
         // Interface with the Turret - for Manual Operation
@@ -74,13 +75,11 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
         }
         public void TurretMoveRight()
         {
-            //TODO-ADD
             _turret.IncreaseAzimuth(10);
             
         }
         public void TurretMoveUp()
         {
-            //TODO-ADD
             _turret.IncreaseAttitude(10);
             
         }
@@ -92,8 +91,15 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
         }
         public void TurretFire()
         {
-            //TODO-ADD
-            _turret.Fire();
+            if (NumberMissiles > 0)
+            {
+                NumberMissiles--;
+                _turret.Fire();
+            }
+            else
+            {
+                //TODO-ADD no missiles remaining error?
+            }
             
         }
 
@@ -121,6 +127,17 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
                 return _target_manager.Targets;
             }
             private set {}
+        }
+
+        public void ReloadTurret()
+        {
+            NumberMissiles = 4;
+        }
+
+        public int NumberMissiles
+        {
+            get;
+            set;
         }
 
         /// <summary>
