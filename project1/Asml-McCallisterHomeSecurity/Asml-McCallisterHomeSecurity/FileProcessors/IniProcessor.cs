@@ -5,7 +5,7 @@
  * Team McCallister Home Security: Chris Walters, Jennifer Mendez, Zachary Tynnisma
  * Written By: Chris Walters
  * Last Modified By: Chris Walters
- * Date Modified: March 16, 2013
+ * Date Modified: March 18, 2013
  */ 
 using System;
 using System.Collections.Generic;
@@ -22,15 +22,14 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
     public class IniProcessor:FileProcessor
     {
         private static string _invalid_ini_format_message = "invalid format";
-        private string _file_path = null;
-        
+      
         /// <summary>
         ///  Class constructor.
         /// </summary>
         /// <param name="fp">a string containing the filepath of the file to process.</param>
         public IniProcessor(string fp)
         {
-            this._file_path = fp;
+            this.FilePath = fp;
         }
 
         /// <summary>
@@ -40,7 +39,7 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
         /// <exception cref="InvalidIniFormat"></exception>
         public override List<Target> ProcessFile()
         {
-            string[] fileLines = File.ReadAllLines(_file_path);
+            string[] fileLines = File.ReadAllLines(this.FilePath);
             List<Target> _output = new List<Target>();
             Target _current_target = null;
             foreach (string line in fileLines)

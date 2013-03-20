@@ -5,7 +5,7 @@
  *  Team McCallister Home Security: Chris Walters, Jennifer Mendez, Zachary Tynnisma
  *  Written By: Chris Walters
  *  Last Modified By: Chris Walters
- *  Date Modified: March 13, 2013
+ *  Date Modified: March 18, 2013
  */
 using System;
 using System.Collections.Generic;
@@ -25,7 +25,18 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
     /// </summary>
     public abstract class FileProcessor
     {
+        private string _file_path = null;
+
        // a concrete class must implement processFile to inherit the class.
        public abstract List<Target> ProcessFile();
+
+        /// <summary>
+        /// Automatic filepath property.
+        /// </summary>
+       public string FilePath
+       {
+           get;
+           set;
+       } 
     }
 }

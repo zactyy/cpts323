@@ -4,7 +4,7 @@
  * Written for CptS323 at Washington State University, Spring 2013
  * Written By: Chris Walters
  * Last Modified By: Chris Walters
- * Date Modified: March 16, 2013
+ * Date Modified: March 18, 2013
  */
 using System;
 using System.Collections.Generic;
@@ -20,16 +20,14 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
 {
     class XMLProcessor : FileProcessor
     {
-        string _filePath = null;
-
-        public XMLProcessor(string fileP)
+        public XMLProcessor(string fp)
         {
-            this._filePath = fileP;
+            this.FilePath = fp;
         }
         
         public override List<Target> ProcessFile()
         {
-            XmlReader fr = XmlReader.Create(_filePath);
+            XmlReader fr = XmlReader.Create(this.FilePath);
             List<Target> _output = new List<Target>();
             Target _current_target;
             while (fr.Read())  // read the xml file until the end.

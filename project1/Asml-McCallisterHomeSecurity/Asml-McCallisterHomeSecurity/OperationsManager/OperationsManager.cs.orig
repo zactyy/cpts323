@@ -4,12 +4,12 @@
  * Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
  * Written by: Jennifer Mendez
 <<<<<<< HEAD
- * Last modified by: Jennifer Mendez
- * Date modified: March 20, 2013
-=======
  * Last modified by: Chris Walters
  * Date modified: March 18, 2013
->>>>>>> 6375811c250cd606e205a9e2d5e2b17daa635ed1
+=======
+ * Last modified by: Jennifer Mendez
+ * Date modified: March 20, 2013
+>>>>>>> GUI Update
  */
 
 using System;

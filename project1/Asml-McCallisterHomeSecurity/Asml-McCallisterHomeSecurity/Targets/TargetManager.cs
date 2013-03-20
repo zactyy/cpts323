@@ -6,7 +6,7 @@
 // Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
 // Written by: Jennifer Mendez
 // Last modified by: Chris Walters
-// Date modified: March 16, 2013
+// Date modified: March 18, 2013
 
 using System;
 using System.Collections.Generic;
@@ -22,15 +22,22 @@ namespace Asml_McCallisterHomeSecurity.Targets
     /// knowledge of all the targets and controls additions to
     /// and information about the Target list.  
     /// </summary>
-    class TargetManager
+    class TargetManager:IDisposable 
     {
         /// <summary>
         /// Singleton instance of TargetManager
         /// </summary>
         private static TargetManager _instance;
+        /// <summary>
+        /// Targets list.
+        /// </summary>
         private ObservableCollection<Target> _targets;
   
 
+        /// <summary>
+        ///  returns insance of TargetManager
+        /// </summary>
+        /// <returns></returns>
         public static TargetManager GetInstance()
         {
             if (_instance == null)
@@ -38,6 +45,37 @@ namespace Asml_McCallisterHomeSecurity.Targets
                 _instance = new TargetManager();
             }
             return _instance;
+        }
+
+        /// <summary>
+        ///  Finalize method
+        /// </summary>
+        ~TargetManager()
+        {
+            this.Dispose(false);
+        }
+
+        /// <summary>
+        /// public dispose
+        /// </summary>
+        public void Dispose()
+        {
+            this.Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        /// <summary>
+        /// actualy disposal method
+        /// </summary>
+        /// <param name="dispose_others"></param>
+        protected virtual void Dispose(bool dispose_others)
+        {
+            if (dispose_others == true)
+            {
+                this._targets.Clear();
+                this._targets = null;
+                _instance = null;
+            }
         }
 
         /// <summary>

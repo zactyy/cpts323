@@ -7,7 +7,7 @@ namespace Asml_McCallisterHomeSecurity.TurretManagement
     /// <summary>
     /// this class is from the provided API
     /// </summary>
-    public class Turret
+    public class Turret : ILauncher
     {
         // API confirms there is a device present
         private bool DevicePresent;

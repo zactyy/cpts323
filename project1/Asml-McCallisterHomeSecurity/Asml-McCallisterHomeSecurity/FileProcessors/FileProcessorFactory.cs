@@ -5,7 +5,7 @@
  * Team McCallister Home Security: Chris Walters, Jennifer Mendez, Zachary Tynnisma
  * Written By: Chris Walters
  * Last Modified By: Chris Walters
- * Date Modified: March 13, 2013
+ * Date Modified: March 18, 2013
  */
 using System;
 using System.Collections.Generic;
@@ -17,7 +17,7 @@ using System.Threading;
 
 namespace Asml_McCallisterHomeSecurity.FileProcessors
 {
-    class FileProcessorFactory
+    class FileProcessorFactory:IDisposable 
     {
         private static FileProcessorFactory _instance = null;
 
@@ -30,6 +30,36 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
                 _instance = new FileProcessorFactory();
             }
             return _instance;        
+        }
+
+        /// <summary>
+        /// finalize method
+        /// </summary>
+        ~FileProcessorFactory()
+        {
+            this.Dispose(false);
+        }
+
+        /// <summary>
+        /// public dispose
+        /// </summary>
+        public void Dispose()
+        {
+            this.Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        /// <summary>
+        /// actual diposal method.
+        /// </summary>
+        /// <param name="dispose_others"></param>
+        protected void Dispose(bool dispose_others)
+        {
+            if (dispose_others == true)
+            {
+                //nothing to do here...
+            }
+            _instance = null;
         }
 
         /// <summary>
