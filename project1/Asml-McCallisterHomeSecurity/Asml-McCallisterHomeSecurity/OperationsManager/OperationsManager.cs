@@ -45,6 +45,7 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
         /// </summary>
         private FileProcessorFactory _reader_factory;
         private IMissileLauncher _turret;
+        private const int MAX_MISSILES = 4;
 
         public static OperationsManager GetInstance()
         {
@@ -89,7 +90,7 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
 
         private OperationsManager()
         {
-            NumberMissiles = 4;
+            NumberMissiles = MAX_MISSILES;
             // Set up access to all needed objects
             _target_manager = TargetManager.GetInstance();
             _reader_factory = FileProcessorFactory.GetInstance();
@@ -162,7 +163,7 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
 
         public void ReloadTurret()
         {
-            NumberMissiles = 4;
+            NumberMissiles = MAX_MISSILES;
         }
 
         public int NumberMissiles

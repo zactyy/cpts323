@@ -33,46 +33,96 @@ namespace Asml_McCallisterHomeSecurity
             string version_string = Assembly.GetExecutingAssembly().GetName().Version.Major.ToString() + "." + Assembly.GetExecutingAssembly().GetName().Version.Minor.ToString();
             string program_title = "ASML-McCallister Home Security ";
             this.Title = program_title + version_string;
+            lblNumMissiles.Content = _rules_them_all.NumberMissiles.ToString();
         }
 
 
-        /* I put all the methods for turret control buttons in this region block...makes 'em easier to find and hide.
-         * **********we also need to document these, and go over naming conventions!**********
+        /*
+         * Turret controls in this region 
          */
         #region Turret_Controls 
 
         private void btnUp_Click(object sender, RoutedEventArgs e)
         {
-            _rules_them_all.TurretMoveUp();
+            try
+            {
+                _rules_them_all.TurretMoveUp();
+            }
+            catch (Exception ex)
+            {
+                DisplayError(ex.Message);
+            }
         }
 
         private void btnDown_Click(object sender, RoutedEventArgs e)
         {
-            _rules_them_all.TurretMoveDown();
+            try
+            {
+                _rules_them_all.TurretMoveDown();
+            }
+            catch (Exception ex)
+            {
+                DisplayError(ex.Message);
+            }
         }
 
         private void btnLeft_Click(object sender, RoutedEventArgs e)
         {
-            _rules_them_all.TurretMoveLeft();
+            try
+            {
+                _rules_them_all.TurretMoveLeft();
+            }
+            catch (Exception ex)
+            {
+                DisplayError(ex.Message);
+            }
         }
 
         private void btnRight_Click(object sender, RoutedEventArgs e)
         {
-           _rules_them_all.TurretMoveRight();
+            try
+            {
+                _rules_them_all.TurretMoveRight();
+                winHomeScreen.Focus();
+            }
+            catch (Exception ex)
+            {
+                DisplayError(ex.Message);
+            }
         }
 
         private void btnFire_Click(object sender, RoutedEventArgs e)
         {
-            _rules_them_all.TurretFire();
+            try
+            {
+                _rules_them_all.TurretFire();
+                lblNumMissiles.Content = _rules_them_all.NumberMissiles.ToString();
+                winHomeScreen.Focus();
+            }
+            catch (Exception ex)
+            {
+                DisplayError(ex.Message);
+            }
         }
 
         private void btnReset_Click(object sender, RoutedEventArgs e)
         {
-            _rules_them_all.TurretReset();
+            try
+            {
+                _rules_them_all.TurretReset();
+                winHomeScreen.Focus();
+            }
+            catch (Exception ex)
+            {
+                DisplayError(ex.Message);
+            }
         }
         #endregion
 
 
+        /*
+         * Target info controls in this region
+         */
         #region target_info controls
         /// <summary>
         /// retrieves a filename via OpenFileDialog and then attempts to process it for targets.
@@ -95,18 +145,36 @@ namespace Asml_McCallisterHomeSecurity
                 try
                 {
                     _rules_them_all.LoadFile(file_name);
+                    lblTargetFileName.Content = file_name;
                 }
                 catch (Exception ex)
                 {
-                    System.Windows.MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    DisplayError(ex.Message);
+                    lblTargetFileName.Content = "No Targets Detected.";
                 }
             }
+            Keyboard.Focus(winHomeScreen);
+            winHomeScreen.Focus();
         }
 
         private void btnReload_Click(object sender, RoutedEventArgs e)
         {
-            _rules_them_all.ReloadTurret();
+            try
+            {
+                _rules_them_all.ReloadTurret();
+                lblNumMissiles.Content = _rules_them_all.NumberMissiles;
+            }
+            catch (Exception ex)
+            {
+                DisplayError(ex.Message);
+            }
+            Keyboard.Focus(winHomeScreen);     
         }
         #endregion
+
+        private void DisplayError(string Message)
+        {
+            System.Windows.MessageBox.Show(Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);            
+        }
     }
 }
