@@ -1,4 +1,14 @@
-﻿using System;
+﻿// TurretManager.cs
+// The TurretManager is a singleton manages an ILauncher
+// it provides tracking of positions and acknowledges
+// degree agruement adjustments to 
+// CptS323, Spring 2013
+// Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
+// Written by: Zachary Tyynismaa
+// Last modified by: Zachary Tyynismaa
+// Date modified: March 21, 2013
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -182,6 +192,32 @@ namespace TurretManagement
         public void Fire()
         {
             ActiveTurret.command_Fire();
+        }
+
+         ~TurretManager()
+        {
+            this.Dispose(false);
+        }
+
+        /// public dispose
+        /// </summary>
+        public void Dispose()
+        {
+            this.Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        /// <summary>
+        /// actualy disposal method
+        /// </summary>
+        /// <param name="dispose_others"></param>
+        protected virtual void Dispose(bool dispose_others)
+        {
+            if (dispose_others == true)
+            {
+                this.ActiveTurret.Dispose();
+            }
+            _instance = null;
         }
     }
 }

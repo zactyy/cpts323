@@ -1,10 +1,22 @@
-﻿using System;
+﻿// ILauncher.cs
+// The provides adapters and interfaces for ILauncher, IMissileLauncher adn MissileLauncherAdapter
+// CptS323, Spring 2013
+// Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
+// Written by: Zachary Tyynismaa
+// Last modified by: Zachary Tyynismaa
+// Date modified: March 21, 2013
+
+
+using System;
 using System.Threading;
 using UsbLibrary;
 
 namespace TurretManagement
 {
-    public interface ILauncher 
+    /// <summary>
+    /// ILauncher is used by as an interface for Turret, practice for adapter implementation
+    /// </summary>
+    public interface ILauncher : IDisposable
     {
         void command_Right(int degrees);
         void command_Left(int degrees);

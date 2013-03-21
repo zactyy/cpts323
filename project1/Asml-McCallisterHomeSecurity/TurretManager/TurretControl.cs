@@ -1,4 +1,13 @@
-﻿using System;
+﻿// TurretControl.cs
+// The Turret is a singleton class realizes ILauncher
+// it controls and communicates the hadware launcher
+// CptS323, Spring 2013
+// Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
+// Written by: Zachary Tyynismaa
+// Last modified by: Zachary Tyynismaa
+// Date modified: March 21, 2013
+
+using System;
 using System.Threading;
 using UsbLibrary;
 
@@ -21,6 +30,35 @@ namespace TurretManagement
                 _instance = new Turret();
             }
             return _instance;
+        }
+
+
+        ~Turret()
+        {
+            
+            this.Dispose(false);
+        }
+
+        /// public dispose
+        /// </summary>
+        public void Dispose()
+        {
+            this.Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        /// <summary>
+        /// actualy disposal method
+        /// </summary>
+        /// <param name="dispose_others"></param>
+        protected virtual void Dispose(bool dispose_others)
+        {
+            if (dispose_others == true)
+            {
+                USB.Dispose();
+                
+            }
+            _instance = null;
         }
 
         //Bytes used in command
