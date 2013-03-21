@@ -12,7 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Asml_McCallisterHomeSecurity.Targets
+namespace TargetManagement
 {
     public class Target
     {

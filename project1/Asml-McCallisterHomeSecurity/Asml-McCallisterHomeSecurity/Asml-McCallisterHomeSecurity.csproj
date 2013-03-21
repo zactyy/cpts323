@@ -94,19 +94,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="FileProcessors\FileProcessorFactory.cs" />
-    <Compile Include="FileProcessors\FileProcessors.cs" />
-    <Compile Include="FileProcessors\IniProcessor.cs" />
-    <Compile Include="FileProcessors\InvalidIniFormat.cs" />
-    <Compile Include="FileProcessors\ProcessorTest.cs" />
-    <Compile Include="FileProcessors\XMLProcessor.cs" />
-    <Compile Include="OperationsManager\OperationsError.cs" />
-    <Compile Include="Targets\Target.cs" />
-    <Compile Include="Targets\TargetManager.cs" />
-    <Compile Include="TurretManagement\ILauncher.cs" />
-    <Compile Include="TurretManagement\SingletonException.cs" />
-    <Compile Include="TurretManagement\TurretManager.cs" />
-    <Compile Include="TurretManagement\TurretControl.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -121,7 +108,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OperationsManager\OperationsManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -173,7 +159,12 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\OperationsManager\OperationsManager.csproj">
+      <Project>{a8ef2ca4-a64a-4700-9454-470a667707cc}</Project>
+      <Name>OperationsManager</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\arrow_Down.png" />
     <Resource Include="Resources\arrow_Left.png" />

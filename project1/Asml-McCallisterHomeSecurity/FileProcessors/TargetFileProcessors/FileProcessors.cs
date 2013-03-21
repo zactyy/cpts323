@@ -13,9 +13,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
-using Asml_McCallisterHomeSecurity.Targets;
+using Targets;
 
-namespace Asml_McCallisterHomeSecurity.FileProcessors
+namespace TargetFileProcessors
 {
     /// <summary>
     /// FileProcessor abstract class
@@ -25,8 +25,6 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
     /// </summary>
     public abstract class FileProcessor
     {
-        private string _file_path = null;
-
        // a concrete class must implement processFile to inherit the class.
        public abstract List<Target> ProcessFile();
 

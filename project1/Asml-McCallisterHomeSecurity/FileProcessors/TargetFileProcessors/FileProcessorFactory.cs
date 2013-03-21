@@ -15,9 +15,9 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Threading;
 
-namespace Asml_McCallisterHomeSecurity.FileProcessors
+namespace TargetFileProcessors
 {
-    class FileProcessorFactory:IDisposable 
+    public class FileProcessorFactory:IDisposable 
     {
         private static FileProcessorFactory _instance = null;
 
@@ -53,7 +53,7 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
         /// actual diposal method.
         /// </summary>
         /// <param name="dispose_others"></param>
-        protected void Dispose(bool dispose_others)
+        protected virtual void Dispose(bool dispose_others)
         {
             if (dispose_others == true)
             {

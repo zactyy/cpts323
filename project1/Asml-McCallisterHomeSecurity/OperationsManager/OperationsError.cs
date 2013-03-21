@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Asml_McCallisterHomeSecurity.OperationsManager
+namespace OperationsManager
 {
     /// <summary>
     /// Operations Manager error, a standard exception to clarify why it is being thrown. 

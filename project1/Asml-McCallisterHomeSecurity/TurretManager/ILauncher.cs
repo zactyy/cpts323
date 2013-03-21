@@ -2,7 +2,7 @@
 using System.Threading;
 using UsbLibrary;
 
-namespace Asml_McCallisterHomeSecurity.TurretManagement
+namespace TurretManagement
 {
     public interface ILauncher 
     {

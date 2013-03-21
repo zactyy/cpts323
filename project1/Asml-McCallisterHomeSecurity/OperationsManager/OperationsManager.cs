@@ -3,13 +3,8 @@
  * CptS323, Spring 2013
  * Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
  * Written by: Jennifer Mendez
-<<<<<<< HEAD
  * Last modified by: Chris Walters
- * Date modified: March 18, 2013
-=======
- * Last modified by: Jennifer Mendez
- * Date modified: March 20, 2013
->>>>>>> GUI Update
+ * Date modified: March 21, 2013
  */
 
 using System;
@@ -18,11 +13,11 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Asml_McCallisterHomeSecurity.Targets;
-using Asml_McCallisterHomeSecurity.FileProcessors;
-using Asml_McCallisterHomeSecurity.TurretManagement;
+using TargetManagement;
+using TargetManagement.TargetFileProcessors;
+using TurretManagement;
 
-namespace Asml_McCallisterHomeSecurity.OperationsManager
+namespace OperationsManager
 {
     /// <summary>
     /// The Operations Manager class serves as the interface between the 
@@ -45,12 +40,8 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
         /// </summary>
         private TargetManager _target_manager;
 
-        /// <summary>
-        /// Factory for file readers.
-        /// </summary>
-        private FileProcessorFactory _reader_factory;
-       //TODO-ADD private Turret _turret;
-        private TurretManager _turret;
+        private IMissileLauncher _turret;
+        private const int MAX_MISSILES = 4;
 
         public static OperationsManager GetInstance()
         {
@@ -87,45 +78,40 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
             if (dispose_others == true)
             {
                 _target_manager.Dispose();
-                /* _turret.Dispose(); currently not disposable */
-                _reader_factory.Dispose();
+                _turret.Dispose();// currently not disposable */
             }
             _rules_them_all = null;
         }
 
         private OperationsManager()
         {
-            NumberMissiles = 4;
+            NumberMissiles = MAX_MISSILES;
             // Set up access to all needed objects
             _target_manager = TargetManager.GetInstance();
-            _reader_factory = FileProcessorFactory.GetInstance();
-            _turret = TurretManager.GetInstance();
-            
+            _turret = new MissileLauncherAdapter();
         }
         
         // Interface with the Turret - for Manual Operation
         public void TurretMoveLeft()
         {
-            //TODO-ADD
-            _turret.DecreaseAzimuth(10);
-           
+            _turret.MoveBy(0,-10);           
         }
+
         public void TurretMoveRight()
         {
-            _turret.IncreaseAzimuth(10);
-            
+            _turret.MoveBy(0, 10);
         }
+
         public void TurretMoveUp()
         {
-            _turret.IncreaseAttitude(10);
-            
+            _turret.MoveBy(10, 0);            
         }
+
         public void TurretMoveDown()
         {
-            //TODO-ADD
-            _turret.DecreaseAttitude(10);
-           
+            _turret.MoveBy(-10, 0);           
         }
+
         public void TurretFire()
         {
             if (NumberMissiles > 0)
@@ -135,7 +121,8 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
             }
             else
             {
-                //TODO-ADD no missiles remaining error?
+                // should probably replace this with a custom LauncherAmmunitionDepletedException later.
+                throw new Exception("No missiles remaining! Game over man! Game over!(unless you hit the reload button)");
             }
             
         }
@@ -144,16 +131,14 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
         {
             // Not sure if we were going to have this one or not, but there is a placeholder for it.  
             // TODO-ADD
-            _turret.ResetToOrigin();
+            _turret.Reset();
             
         }
 
         // Interface with the File Reader(s)
         public void LoadFile(string targetfile)
         {
-            FileProcessor _reader = _reader_factory.Create(targetfile);
-            _target_manager.ClearTargetList();
-            _target_manager.AddTargets(_reader.ProcessFile());
+            _target_manager.LoadFromFile(targetfile);
         }
         
         // Interface with Target Manager
@@ -169,7 +154,7 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
 
         public void ReloadTurret()
         {
-            NumberMissiles = 4;
+            NumberMissiles = MAX_MISSILES;
         }
 
         public int NumberMissiles
@@ -180,8 +165,7 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
 
         /// <summary>
         /// A method to add targets identified by the video feed.  This will add
-        /// them to the list one at a time.  This will be called by the 
-        /// module that analyzes the video images.  
+        /// them to the list one at a time.        
         /// </summary>
         /// <param name="x"></param>
         /// <param name="y"></param>

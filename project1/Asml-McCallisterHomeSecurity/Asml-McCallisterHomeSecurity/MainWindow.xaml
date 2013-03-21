@@ -2,9 +2,7 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="McCallister Home Security - Version 1.0" Background="#FFA4A3A3" Margin="0" Width="745.948" Height="553.051" ResizeMode="NoResize">
-    <Window.Resources>
-    </Window.Resources>
-    <Grid>
+      <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="387.823"/>
             <ColumnDefinition Width="39.177"/>

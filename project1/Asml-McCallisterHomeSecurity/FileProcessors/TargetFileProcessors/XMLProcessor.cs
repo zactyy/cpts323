@@ -14,13 +14,13 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.IO;
 using System.Globalization;
-using Asml_McCallisterHomeSecurity.Targets;
+using Targets;
 
-namespace Asml_McCallisterHomeSecurity.FileProcessors
+namespace TargetFileProcessors
 {
     class XMLProcessor : FileProcessor
     {
-        public XMLProcessor(string fp)
+        public XMLProcessor(string fp = null)
         {
             this.FilePath = fp;
         }

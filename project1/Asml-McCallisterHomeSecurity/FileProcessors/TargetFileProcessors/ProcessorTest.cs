@@ -13,10 +13,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
-using Asml_McCallisterHomeSecurity.Targets;
+using Targets;
 using System.Xml;
 
-namespace Asml_McCallisterHomeSecurity.FileProcessors
+namespace TargetFileProcessors
 {
     [TestFixture]
     class ProcessorTest

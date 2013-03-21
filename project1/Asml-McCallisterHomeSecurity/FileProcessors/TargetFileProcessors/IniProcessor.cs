@@ -15,9 +15,9 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Xml;
-using Asml_McCallisterHomeSecurity.Targets; // for Target object.
+using Targets; // for Target object.
 
-namespace Asml_McCallisterHomeSecurity.FileProcessors
+namespace TargetFileProcessors
 {
     public class IniProcessor:FileProcessor
     {
@@ -27,7 +27,7 @@ namespace Asml_McCallisterHomeSecurity.FileProcessors
         ///  Class constructor.
         /// </summary>
         /// <param name="fp">a string containing the filepath of the file to process.</param>
-        public IniProcessor(string fp)
+        public IniProcessor(string fp = null)
         {
             this.FilePath = fp;
         }

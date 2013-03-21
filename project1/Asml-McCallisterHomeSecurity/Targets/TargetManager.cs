@@ -6,7 +6,7 @@
 // Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
 // Written by: Jennifer Mendez
 // Last modified by: Chris Walters
-// Date modified: March 18, 2013
+// Date modified: March 21, 2013
 
 using System;
 using System.Collections.Generic;
@@ -15,19 +15,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Asml_McCallisterHomeSecurity.Targets
+namespace TargetManagement
 {
     /// <summary>
     /// The TargetManager is a Singleton that maintains 
     /// knowledge of all the targets and controls additions to
     /// and information about the Target list.  
     /// </summary>
-    class TargetManager:IDisposable 
+    public class TargetManager:IDisposable 
     {
         /// <summary>
         /// Singleton instance of TargetManager
         /// </summary>
         private static TargetManager _instance;
+        /// <summary>
+        /// singleton fileprocessorfactory. Only one is needed.
+        /// </summary>
+        private static TargetFileProcessors.FileProcessorFactory _reader_factory; 
         /// <summary>
         /// Targets list.
         /// </summary>
@@ -83,7 +87,8 @@ namespace Asml_McCallisterHomeSecurity.Targets
         /// </summary>
         private TargetManager()
         {
-            _targets = new ObservableCollection<Target>();         
+            _targets = new ObservableCollection<Target>();
+            _reader_factory = TargetFileProcessors.FileProcessorFactory.GetInstance();
         }
 
         /// <summary>
@@ -119,8 +124,14 @@ namespace Asml_McCallisterHomeSecurity.Targets
             get
             {
                 return _targets;
-
             }
+        }
+
+        public void LoadFromFile(string fp)
+        {
+            TargetFileProcessors.FileProcessor _reader = _reader_factory.Create(fp);
+            this.ClearTargetList();
+            this.AddTargets(_reader.ProcessFile());
         }
 
         /// <summary>

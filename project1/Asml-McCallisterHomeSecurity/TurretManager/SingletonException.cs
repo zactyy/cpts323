@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Asml_McCallisterHomeSecurity.TurretManagement// singleton exception class
+namespace TurretManagement// singleton exception class
 {
     [Serializable]
     class SingletonException : Exception

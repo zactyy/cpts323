@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Asml_McCallisterHomeSecurity.TurretManagement
+namespace TurretManagement
 {
     public class TurretManager// class manages turret status
     {

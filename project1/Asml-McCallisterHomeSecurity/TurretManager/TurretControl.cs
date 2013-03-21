@@ -2,7 +2,7 @@
 using System.Threading;
 using UsbLibrary;
 
-namespace Asml_McCallisterHomeSecurity.TurretManagement
+namespace TurretManagement
 {
     /// <summary>
     /// this class is from the provided API
