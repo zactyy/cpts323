@@ -44,8 +44,7 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
         /// Factory for file readers.
         /// </summary>
         private FileProcessorFactory _reader_factory;
-       //TODO-ADD private Turret _turret;
-        private TurretManager _turret;
+        private IMissileLauncher _turret;
 
         public static OperationsManager GetInstance()
         {
@@ -94,31 +93,30 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
             // Set up access to all needed objects
             _target_manager = TargetManager.GetInstance();
             _reader_factory = FileProcessorFactory.GetInstance();
-            _turret = TurretManager.GetInstance();
-            
+            _turret = new MissileLauncherAdapter();
+
         }
         
         // Interface with the Turret - for Manual Operation
         public void TurretMoveLeft()
         {
             //TODO-ADD
-            _turret.DecreaseAzimuth(10);
+            _turret.MoveBy(0,-10);
            
         }
         public void TurretMoveRight()
         {
-            _turret.IncreaseAzimuth(10);
-            
+            _turret.MoveBy(0, 10);
         }
+
         public void TurretMoveUp()
         {
-            _turret.IncreaseAttitude(10);
-            
+            _turret.MoveBy(10, 0);            
         }
         public void TurretMoveDown()
         {
             //TODO-ADD
-            _turret.DecreaseAttitude(10);
+            _turret.MoveBy(-10, 0);
            
         }
         public void TurretFire()
@@ -139,7 +137,7 @@ namespace Asml_McCallisterHomeSecurity.OperationsManager
         {
             // Not sure if we were going to have this one or not, but there is a placeholder for it.  
             // TODO-ADD
-            _turret.ResetToOrigin();
+            _turret.Reset();
             
         }
 
