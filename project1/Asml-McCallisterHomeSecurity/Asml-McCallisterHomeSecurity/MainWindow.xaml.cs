@@ -102,14 +102,11 @@ namespace Asml_McCallisterHomeSecurity
                 }
             }
         }
-<<<<<<< HEAD
 
         private void btnReload_Click(object sender, RoutedEventArgs e)
         {
             _rules_them_all.ReloadTurret();
         }
-=======
         #endregion
->>>>>>> 6375811c250cd606e205a9e2d5e2b17daa635ed1
     }
 }
