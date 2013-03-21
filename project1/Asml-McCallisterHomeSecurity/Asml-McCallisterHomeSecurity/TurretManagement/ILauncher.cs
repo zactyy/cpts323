@@ -4,7 +4,7 @@ using UsbLibrary;
 
 namespace Asml_McCallisterHomeSecurity.TurretManagement
 {
-    public interface ILauncher
+    public interface ILauncher 
     {
         void command_Right(int degrees);
         void command_Left(int degrees);
@@ -12,12 +12,13 @@ namespace Asml_McCallisterHomeSecurity.TurretManagement
         void command_Down(int degrees);
         void command_Fire();
         void command_reset();
+        
     }
 
     /// <summary>
     /// Interface for controlling a missile launcher.
     /// </summary>
-    public interface IMissileLauncher
+    public interface IMissileLauncher : IDisposable
     {
         /// <summary>
         /// Resets the missile launcher 
@@ -47,9 +48,11 @@ namespace Asml_McCallisterHomeSecurity.TurretManagement
         /// Gets the psi position of the missile launcher.
         /// </summary>
         double Psi { get; }
+
+
     }
 
-    public class MissileLauncherAdapter : IMissileLauncher
+    public class MissileLauncherAdapter : IMissileLauncher , IDisposable
     {
         TurretManager m_launcher;
         public MissileLauncherAdapter()
@@ -93,6 +96,25 @@ namespace Asml_McCallisterHomeSecurity.TurretManagement
             {
                 return Convert.ToDouble(m_launcher.CurrentPosition()[0]);
             }
+        }
+
+        public void Dispose()
+        {
+            this.Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool dispose_others)
+        {
+            if (dispose_others == true)
+            {
+                this.m_launcher = null;
+            }
+        }
+
+        ~MissileLauncherAdapter()
+        {
+            this.Dispose(false);
         }
     }
 
