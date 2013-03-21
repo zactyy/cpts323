@@ -78,7 +78,7 @@ namespace OperationsManager
             if (dispose_others == true)
             {
                 _target_manager.Dispose();
-                _turret.Dispose();// currently not disposable */
+                _turret.Dispose();
             }
             _rules_them_all = null;
         }
