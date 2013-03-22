@@ -1,0 +1,3708 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="e93dbeb4-d0d4-4b89-a233-d4e929903311"
+  name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="ecc4394c-93ae-43b1-9bdb-721c78d2a13d"
+        name="Brian the Judge"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="6068cad1-f40f-491e-9d29-be11e272a7d5"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Manual Launcher Control"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f10bf2be-a7bc-46ed-b199-bc6a00444caa"
+              LastKnownName="Manual Launcher Control"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c7dd8e01-0b5f-4e79-9563-65ddf8d2da8f"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="83ee60a5-263f-4906-97f9-9deaee6f01ca"
+                  name="Manual Launcher Control"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="85745ef0-a000-43cb-b544-860a63683638"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Select Target File"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="9eb91932-5579-4392-90b5-238544b2d4f2"
+              LastKnownName="Select Target File"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8443cc87-03b6-41be-af3a-68fc7107be89"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="88b352eb-79fa-4250-bba1-77d72e40d826"
+                  name="Select Target File"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="00b3d0a7-c9c4-4294-a3e2-435854065a38"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Move Launcher Up"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2ce815c6-198f-41fa-aa1b-11ca0c59b590"
+              LastKnownName="Move Launcher Up"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="17cf346c-2ad7-4fe9-b19c-f53f59ce82b1"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="92888825-d5cd-4190-833b-3c508acad521"
+                  name="Move Launcher Up"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ef20fb81-e6b8-4d34-8f90-03222afdd4ba"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Move Launcher Left"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2283e271-a83a-4194-82de-d3dd56be62fc"
+              LastKnownName="Move Launcher Left"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fcc1b9ea-9969-4173-aae3-5f303544619a"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f9ddd900-7bb4-48d0-8eeb-1e1508e961ae"
+                  name="Move Launcher Left"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f9126550-8eee-4ca9-943f-65074c86036e"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Move Launcher Right"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="200c9edc-e5c8-4ccf-8bf0-406f32c67243"
+              LastKnownName="Move Launcher Right"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="277a278c-d1e1-446a-b102-1fe2c0bfdd43"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a29a5973-fb62-4281-bdae-a4205f3e828d"
+                  name="Move Launcher Right"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c33d24d7-8b3a-4a48-a711-7e1edce2f379"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Fire Missile"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5e4dfcb0-42ec-4b5f-b640-f1f754f130c5"
+              LastKnownName="Fire Missile"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f9748987-ad71-4e18-a721-5398306d09b1"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5d105989-e998-4153-a927-ce5e2b8c652b"
+                  name="Fire Missile"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="de9ab1e4-a04c-4085-be60-cf5d2a3c5a3d"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Move Launcher Down"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6e5f498f-1a13-42ca-a676-05a903e0b282"
+              LastKnownName="Move Launcher Down"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bb353d05-9bd4-473c-b979-9174c36d0fb1"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bfa2a9d7-2d16-4489-a1ae-1a0346350d36"
+                  name="Move Launcher Down"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="ef730971-d33d-402b-b85c-8e24a2f68a4e"
+        name="Launcher Controls"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5e4dfcb0-42ec-4b5f-b640-f1f754f130c5"
+        name="Fire Missile"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="6e5910fd-07d1-48c9-99df-5964faf4d1d7"
+            isDerived="false"
+            sourceEndRoleName="Fire Missile"
+            targetEndRoleName="Launcher"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="ef35de76-b7a3-4705-8e8b-831b761f6fd3"
+              LastKnownName="Launcher"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="27185bf4-ee1e-45db-8de8-e60ee3a47d58"
+                  name="Fire Missile"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a2a3c229-eb89-42a7-aeb9-a5825e7d71c7"
+                  name="Launcher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="ef730971-d33d-402b-b85c-8e24a2f68a4e"
+            LastKnownName="Launcher Controls"
+            LastKnownLocation="Asml-UseCaseDiagram.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="200c9edc-e5c8-4ccf-8bf0-406f32c67243"
+        name="Move Launcher Right"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="eac3420d-83c0-47af-b051-63a81d91d0dd"
+            isDerived="false"
+            sourceEndRoleName="Move Launcher Right"
+            targetEndRoleName="Launcher"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="ef35de76-b7a3-4705-8e8b-831b761f6fd3"
+              LastKnownName="Launcher"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f72d8932-4598-4772-a43c-2972e114441e"
+                  name="Move Launcher Right"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7994182e-7875-4bbc-b2c6-1307c5474d40"
+                  name="Launcher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="ef730971-d33d-402b-b85c-8e24a2f68a4e"
+            LastKnownName="Launcher Controls"
+            LastKnownLocation="Asml-UseCaseDiagram.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6e5f498f-1a13-42ca-a676-05a903e0b282"
+        name="Move Launcher Down"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="3263fd52-fd39-4e62-bba0-b91829a8d58d"
+            isDerived="false"
+            sourceEndRoleName="Move Launcher Down"
+            targetEndRoleName="Launcher"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="ef35de76-b7a3-4705-8e8b-831b761f6fd3"
+              LastKnownName="Launcher"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4b2850f3-a01c-40ec-882a-7b0cd3edc850"
+                  name="Move Launcher Down"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4e644ba5-80ca-4b55-9a02-b11464ee647d"
+                  name="Launcher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="ef730971-d33d-402b-b85c-8e24a2f68a4e"
+            LastKnownName="Launcher Controls"
+            LastKnownLocation="Asml-UseCaseDiagram.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2ce815c6-198f-41fa-aa1b-11ca0c59b590"
+        name="Move Launcher Up"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="47088a8b-171a-426c-bf89-8941108541a7"
+            isDerived="false"
+            sourceEndRoleName="Move Launcher Up"
+            targetEndRoleName="Launcher"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="ef35de76-b7a3-4705-8e8b-831b761f6fd3"
+              LastKnownName="Launcher"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2a5a8b1a-85fc-465b-836d-789413490854"
+                  name="Move Launcher Up"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ef1138cd-0178-4673-80ff-2aee8ba6777a"
+                  name="Launcher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="ef730971-d33d-402b-b85c-8e24a2f68a4e"
+            LastKnownName="Launcher Controls"
+            LastKnownLocation="Asml-UseCaseDiagram.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2283e271-a83a-4194-82de-d3dd56be62fc"
+        name="Move Launcher Left"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="4babeef0-e238-4e62-9812-ea9716a70696"
+            isDerived="false"
+            sourceEndRoleName="Move Launcher Left"
+            targetEndRoleName="Launcher"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="ef35de76-b7a3-4705-8e8b-831b761f6fd3"
+              LastKnownName="Launcher"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ca55a200-6fc5-407b-a942-fcbe0842cd45"
+                  name="Move Launcher Left"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="06f8c9be-198b-4395-b1c1-ae0898ac84e5"
+                  name="Launcher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="ef730971-d33d-402b-b85c-8e24a2f68a4e"
+            LastKnownName="Launcher Controls"
+            LastKnownLocation="Asml-UseCaseDiagram.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9eb91932-5579-4392-90b5-238544b2d4f2"
+        name="Select Target File"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="eda86c5f-ac0c-4f48-adb9-61b4a6e8206e">
+            <useCaseMoniker
+              Id="fcd450ea-ec01-4d2c-9727-1d991625a4a6"
+              LastKnownName="Read XML File"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+          </extend>
+          <extend
+            Id="7f5e9bce-eee8-4fc0-80ea-6c2614a463a5">
+            <useCaseMoniker
+              Id="da1daabf-b294-4eae-89ae-d84d7bc7619c"
+              LastKnownName="Read INI File"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="1f3c5095-f175-4afc-a1b0-24f366cf3cc7"
+            LastKnownName="Target File Readers"
+            LastKnownLocation="Asml-UseCaseDiagram.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1baef962-bdd4-4bc6-889c-d744afade40a"
+        name="Display Targets"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="be276171-9454-4116-a20e-8a08e7a7771d">
+            <useCaseMoniker
+              Id="fcd450ea-ec01-4d2c-9727-1d991625a4a6"
+              LastKnownName="Read XML File"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+          </dependency>
+          <dependency
+            Id="760a38c3-12c2-4b5b-9b36-dc88c2b97550">
+            <useCaseMoniker
+              Id="da1daabf-b294-4eae-89ae-d84d7bc7619c"
+              LastKnownName="Read INI File"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fcd450ea-ec01-4d2c-9727-1d991625a4a6"
+        name="Read XML File"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="e5058496-f0d0-4ce4-9998-a64b5d6a8e3f"
+            isDerived="false"
+            sourceEndRoleName="Read XML File"
+            targetEndRoleName="Target File"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="f2efc3fe-3067-4d33-af20-08f0241e08ab"
+              LastKnownName="Target File"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="00939649-a174-4fee-a181-be4fe439c4b2"
+                  name="Read XML File"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="733ec476-ea7b-4594-a335-e93576a2b1d0"
+                  name="Target File"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="1f3c5095-f175-4afc-a1b0-24f366cf3cc7"
+            LastKnownName="Target File Readers"
+            LastKnownLocation="Asml-UseCaseDiagram.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="da1daabf-b294-4eae-89ae-d84d7bc7619c"
+        name="Read INI File"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="186051d3-9c55-46d8-91bb-13cb100ef9f4"
+            isDerived="false"
+            sourceEndRoleName="Read INI File"
+            targetEndRoleName="Target File"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="f2efc3fe-3067-4d33-af20-08f0241e08ab"
+              LastKnownName="Target File"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="34140a3b-4f66-4d1d-b64b-d8dd8d305106"
+                  name="Read INI File"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="36cf5852-ab0f-4026-b456-d9585ec57caa"
+                  name="Target File"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="1f3c5095-f175-4afc-a1b0-24f366cf3cc7"
+            LastKnownName="Target File Readers"
+            LastKnownLocation="Asml-UseCaseDiagram.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="ef35de76-b7a3-4705-8e8b-831b761f6fd3"
+        name="Launcher"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="6b298155-35ba-405a-85ae-81d00a4ed05e"
+        name="Actor1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="1f3c5095-f175-4afc-a1b0-24f366cf3cc7"
+        name="Target File Readers"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f10bf2be-a7bc-46ed-b199-bc6a00444caa"
+        name="Manual Launcher Control"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="f2efc3fe-3067-4d33-af20-08f0241e08ab"
+        name="Target File"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="cc2a9fa0-29d0-44ef-baf0-4d4f6379e3a8"
+        name="Main Window"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="1210cad7-b363-4d43-9ee8-7eed15175b78"
+            isDerived="false"
+            sourceEndRoleName="Main Window"
+            targetEndRoleName="OperationsManager"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="08217027-ca21-4464-b747-780a00cf8963"
+              LastKnownName="OperationsManager"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7fa33945-42de-47a7-aa5f-2caec71fccec"
+                  name="Main Window"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fda2a249-9137-4901-9f14-e352c61b7b97"
+                  name="OperationsManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="86457a75-7480-4165-811a-0b059f10e273"
+            name="_rules_them_all"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="4288546c-f716-4ad5-8652-54887d7a25fb"
+                LastKnownName="OperationsManager"
+                LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="baddfa93-5dc9-4e3e-aa14-82edf95b4db5"
+            name="btnDown_Click"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b7440380-14d9-4cce-9746-2e10a79bbffa"
+            name="btnUp_Click"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c13a9a36-f742-490e-bcff-f156519c4744"
+            name="btnFire_Click"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="67759102-5818-421f-ba93-25e4f8df27fd"
+            name="btnLeft_Click"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f8995b76-c448-4233-adf1-525c038b8d3a"
+            name="btnRight_Click"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0fb253f3-3f8f-439d-918b-dc8ff128566a"
+            name="btnLoad_Click"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="63091fe4-dd0d-48e0-801b-bfbb2b837f98"
+            name="btnReset_Click"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a8dd4a5e-519e-49d4-8774-bada24ce170a"
+            name="btnReload_Click"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="4288546c-f716-4ad5-8652-54887d7a25fb"
+        name="OperationsManager" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="08217027-ca21-4464-b747-780a00cf8963"
+        name="OperationsManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="d1301e59-acee-4bb1-b917-3015727e6c6c"
+            isDerived="false"
+            sourceEndRoleName="OperationsManager"
+            targetEndRoleName="MissileLauncherAdapter"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5b8339ec-0575-4d75-8bc0-f67bf5c2f36b"
+              LastKnownName="MissileLauncherAdapter"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6b7f6ca7-b58f-4041-aa42-545e9bbd145b"
+                  name="OperationsManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1c8cf029-7f37-489c-b69e-f506309c14c1"
+                  name="MissileLauncherAdapter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="251ddc86-999c-42f6-b7e8-9fab72768cf0"
+            isDerived="false"
+            sourceEndRoleName="OperationsManager"
+            targetEndRoleName="TargetManager"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="52621940-8548-443f-8948-3525982ba559"
+              LastKnownName="TargetManager"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="41450ce4-65dd-4962-ad71-905930f19492"
+                  name="OperationsManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="39488274-c714-4cc5-96f0-255842b3ca87"
+                  name="TargetManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="57928078-45a7-404e-b99a-2bb48f5edcf8"
+            isDerived="false"
+            sourceEndRoleName="OperationsManager"
+            targetEndRoleName="IMissileLauncher"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="73f54311-b7c3-4f28-a2e7-fd9ffcdf2e1c"
+              LastKnownName="IMissileLauncher"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fb7a53f1-ffd5-424c-bfab-3639f921a3b1"
+                  name="OperationsManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9931e37c-2eb6-4ef5-aa79-d2e37daa4178"
+                  name="IMissileLauncher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="33d1b1ee-d4c5-4e40-bf27-9963964648f8"
+            name="_rules_them_all"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="08217027-ca21-4464-b747-780a00cf8963"
+                LastKnownName="OperationsManager"
+                LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e4d5ed3c-dcca-41f7-a01f-a3a7b956b994"
+            name="_target_manager"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e5f3f271-e7e6-4b4f-a473-f2c408562c9f"
+            name="_turret"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ba6574c9-7b10-4b59-a3da-52d0de236b99"
+            name="OperationsManager"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2ebadca2-a1b5-4632-9f56-c6caf34ba000"
+            name="Dispose"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="361864a9-51d4-4b2c-b769-8bda31b26cd8"
+            name="GetInstance"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="49253ef8-bb5c-4f87-8e5e-3ad2612b62be"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="08217027-ca21-4464-b747-780a00cf8963"
+                      LastKnownName="OperationsManager"
+                      LastKnownLocation="Asml-UseCaseDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9698adf7-f367-4fb4-92e4-f1e29e40cfdb"
+            name="LoadFile"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3cf67384-3f84-4a29-8271-95980c2843e9"
+            name="OperationsManager"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c7b96654-b135-4d6d-b560-c58e58ccccbe"
+            name="ReloadTurret"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="24366a12-ce01-4d90-9cb7-04ee5743008f"
+            name="TurretFire"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="271facbf-8dbd-48d0-9758-9f2a3d31f836"
+            name="TurretMoveDown"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c54ed86e-2951-409a-b310-812ca86f5f12"
+            name="TurretMoveUp"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="bdc75076-25de-4dfe-9e14-89642c65209f"
+            name="TurretMoveLeft"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="940b8250-151e-4005-b77f-a80f1e414b4e"
+            name="TurretMoveRight"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="90da873e-799c-40b1-b169-345c8becdd46"
+            name="TurretReset"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="305b9873-13dc-480a-8963-423eb9e06f22"
+        name="FileProcessor"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="9fc8df27-ae8f-43fb-846e-336879618483"
+            name="_file_path"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5b8339ec-0575-4d75-8bc0-f67bf5c2f36b"
+        name="MissileLauncherAdapter"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="732955a1-dd14-41bf-a4f9-efc0c012d68c"
+            name="m_launcher"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="5e22c8e8-372a-4199-ae62-d14182b137c2"
+            name="Phi"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="0ab177f8-a50b-4f0a-8ff5-33a5784d8531"
+            name="Psi"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="4e29ba3c-2597-4be1-b984-e60e188b9709"
+            name="Fire"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="36bc59c1-1e29-427f-a136-adc1c90b3abf"
+            name="Reset"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b9249051-99d3-48fd-ab79-496f9a385f73"
+            name="MoveTo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="01bd8e2b-d9d1-4b11-89a1-7dfda71cc67e"
+            name="MoveBy"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4378d821-76a4-450a-a4dc-4f99685cbd86"
+            name="MissileLauncherAdapter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="ad6294ea-5aa3-48b9-8dfb-818ab378c0d3"
+        name="ILauncher"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedOperations>
+          <operation
+            Id="27c8b1ff-be80-4949-abeb-fa4457fc02dd"
+            name="command_Down"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="67a39a95-ada1-4080-82c0-3ceb76bc53bd"
+            name="command_Fire"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="69a6e9d6-3066-4776-aaab-5ee7eebb5ae4"
+            name="command_Left"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0da6233b-02cf-4eb5-9350-17456b3c422f"
+            name="command_reset"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="492ec84b-9120-47f0-a610-1153396b6224"
+            name="command_Right"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="fb2bc774-4b24-4022-9002-55f29c78f0e2"
+            name="command_Up"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="73f54311-b7c3-4f28-a2e7-fd9ffcdf2e1c"
+        name="IMissileLauncher"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedAttributes>
+          <property
+            Id="052d1238-fb8a-4556-849f-2895b45e68c5"
+            name="Phi"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="622f852f-452e-42d0-bf8a-7c3fca8e0708"
+            name="Psi"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributes>
+        <ownedOperations>
+          <operation
+            Id="320648b9-f494-43aa-9f89-e4ae053e089f"
+            name="Fire"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b3329aa6-8f1d-480e-a07f-66bba387c1f9"
+            name="MoveBy"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e2b51375-0bf2-4411-bb8b-63836345f158"
+            name="MoveTo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="830f0de2-8395-46e0-a802-9bfdd6552999"
+            name="Reset"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f3baed57-736e-4f46-a8f8-df8c83ab1e77"
+        name="Turret"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="0108d4d9-0590-4336-a4c7-2d1146fb24d1">
+            <interfaceMoniker
+              Id="ad6294ea-5aa3-48b9-8dfb-818ab378c0d3"
+              LastKnownName="ILauncher"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="c4b35e07-aa69-4966-bfaa-4e5845898037"
+            name="_instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d9ab09e9-a3d9-4649-a9a8-5d5c0c1c4c89"
+            name="DevicePresent"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4fceca9d-e3b2-40d0-bf10-4032cf52e5b2"
+            name="DOWN"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="938b9e81-c7bd-4eaf-886b-3638986472ef"
+            name="FIRE"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b8aedfc6-99f1-4e08-b5c1-a7adf9c95abf"
+            name="LED_OFF"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b463e877-9ff4-41ee-b691-fc06105ceb86"
+            name="LED_ON"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3d762a49-d070-4fc2-b2f9-1df86692f241"
+            name="LEFT"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9c8a1577-24c7-49dc-82eb-deb659923e8d"
+            name="RIGHT"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c96ebf5f-22a7-4247-840f-e65afe081b1b"
+            name="STOP"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="86118645-03f6-46d0-a16e-a7c0f57b3ecf"
+            name="UP"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="fdc144a9-ea05-4bb5-928c-141332656eec"
+            name="USB"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="621b82ed-83d2-4a3a-a88b-dab0593ed1f7"
+            name="command_Down"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="dd0fd5ad-fe26-49f0-aa69-e605e5c8031c"
+            name="command_Fire"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a2dd5e60-e3f6-446b-b489-b090726e5192"
+            name="command_Left"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4065e164-766d-48e1-9742-745eeecce064"
+            name="command_reset"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3827cdb6-10c8-4e21-abff-719a2645e63b"
+            name="command_Right"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="403cba91-8712-4ef4-8d63-a0e08fd634dd"
+            name="command_Stop"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4d717f2b-eb61-4d6d-b147-def74468cd00"
+            name="command_switchLED"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a1255897-77e9-4fed-807e-b6a09a3311ad"
+            name="command_Up"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f2814a63-7fbb-44d0-9cbe-592185f3af0c"
+            name="GetInstance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b6e35cab-491c-4e72-a9d4-73bb1005daaf"
+            name="moveMissileLauncher"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0d25ee75-f1f6-4da0-a9cc-dc4e98c439d5"
+            name="SendUSBData"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="da7143bb-aed0-4528-9ab6-dd8e07678165"
+            name="Turret"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="cae57d7f-b677-4052-86ff-2e0dff33dd11"
+            name="USB_OnDataReceived"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="aa4a496b-d988-4225-88f1-8f22b1d35b45"
+            name="USB_OnSpecifiedDeviceArrived"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="cb44964b-cc0e-4f03-8792-e3fb1edfe063"
+            name="USB_OnSpecifiedDeviceRemoved"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="45465d7d-9ac9-4b45-a3e3-74ae7a3c9ab4"
+        name="TurretManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="17d39e79-4659-46df-80ed-b607789e5efa"
+            isDerived="false"
+            sourceEndRoleName="TurretManager"
+            targetEndRoleName="ILauncher"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="ad6294ea-5aa3-48b9-8dfb-818ab378c0d3"
+              LastKnownName="ILauncher"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8ba910a7-99b4-4004-b38a-bd77ce1bd675"
+                  name="TurretManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a1b328f4-7d8f-468b-bce1-1956b500daef"
+                  name="ILauncher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="0348ff7a-2757-4cae-8dd0-707c03f34035"
+            name="_instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c32dcd31-0192-42c8-9e0a-e842aeed059c"
+            name="ActiveTurret"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a6a1b4fe-076a-4180-a4e9-c73eb9840a52"
+            name="ThetaX"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7c03075a-9f67-4377-b1cb-94278d633b2b"
+            name="ThetaY"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="27b58568-1dfb-4cbe-bd43-7064027bc6ee"
+            name="AssumeFiringPosition"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f1ba2efc-9c99-4506-84b7-7979cc419dee"
+            name="CurrentPosition"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="677c24d4-d262-4460-91dc-4055fff3cf5b"
+            name="DecreaseAttitude"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2c374dc4-402e-4ab8-8963-503342d8b290"
+            name="DecreaseAzimuth"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0c6d0e27-230f-4511-9605-acc16a6fdd5f"
+            name="Fire"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5661699e-b8a3-4980-a9d7-65f526db54c8"
+            name="GetInstance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="24f27a5b-bdaa-4b62-8294-0ac83ba56bc3"
+            name="IncreaseAttitude"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="61a3c35e-54d4-4f0f-93e0-588e784b6163"
+            name="IncreaseAzimuth"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="aa3ed508-7f40-467b-908e-b32e83d68a64"
+            name="ModifyAttitude"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="412ead40-629c-41a5-93e0-097b24e4e6a0"
+            name="ModifyAzimuth"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c2360af7-8e68-4338-b57d-4deeb6a9c5b2"
+            name="ResetToOrigin"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="05d2a4e8-5ec5-4048-ba96-bf7afdf9c2b6"
+            name="TurretManager"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e8bb85f0-1d9e-40e7-87e9-a7a62a3dd86e"
+        name="FileProcessorFactory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="7ef9fcd3-1a9e-4c29-a91e-02f399a6dd16">
+            <classMoniker
+              Id="305b9873-13dc-480a-8963-423eb9e06f22"
+              LastKnownName="FileProcessor"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="c3e90e7e-df5a-408c-b4f4-ea6e95884dda"
+            name="_instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="18d887a2-2a3d-4f35-a3a7-56bc703e2045"
+            name="~FileProcessorFactory"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f026603a-c59d-4f36-9399-07826d72c86f"
+            name="Dispose"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="fa5e233c-2e8f-4b48-9e6d-4666ee85cfd0"
+            name="Create"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9b8a147c-087d-437a-a901-8086b8df8a14"
+            name="FileProcessorFactory"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="14e1d855-bf94-4a95-a023-48e04a70016c"
+            name="GetInstance"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1690b809-ce86-4bcb-be73-f2ae8cc8dfab"
+        name="IniProcessor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="713a9b2e-71be-4657-8340-451f3232b90b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="305b9873-13dc-480a-8963-423eb9e06f22"
+              LastKnownName="FileProcessor"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="c62f1d0d-b55a-4b33-824e-b8831fc99260"
+            name="_invalid_ini_format_message"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="00e552cf-4087-4058-a503-5f1f705d9e60"
+            name="IniProcessor"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9335527b-8031-494b-ab48-cf461b51161a"
+            name="lineMatches"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1d62f1ba-0234-4e60-a2ff-b95cb12b30c1"
+            name="ProcessFile"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b4d37892-71a0-462e-b59f-8519f01f9025"
+            name="TargetSetFriend"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="08394ef8-cb39-436a-b7c2-a22f34f422b6"
+            name="TargetSetPositionValue"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e2a574f6-cd63-45b1-a542-ff16041bd6d4"
+        name="XMLProcessor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="b4883475-dfb4-44b3-b890-057521520f7d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="305b9873-13dc-480a-8963-423eb9e06f22"
+              LastKnownName="FileProcessor"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a7d44b9b-b3db-4a18-8a58-7d091268503e"
+            name="ProcessFile"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="bfb70853-f6aa-4ef8-9962-c08be6714355"
+            name="SetTargetFriend"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="41b23991-a9c4-4c1e-a5f5-e8914ce8b9a9"
+            name="SetTargetPosition"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2f9dcef0-814d-4c6b-a454-816b6ef05457"
+            name="XMLProcessor"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="52621940-8548-443f-8948-3525982ba559"
+        name="TargetManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="c6bbb986-784b-47b1-b384-476fc7c05325"
+            isDerived="false"
+            sourceEndRoleName="TargetManager"
+            targetEndRoleName="Target"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="62e46d05-fcde-40f2-a5b8-0b6905b0ec58"
+              LastKnownName="Target"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6bb35c43-fcc0-48a9-be33-ace7547daa54"
+                  name="TargetManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1071fd87-d647-48a5-b7e7-2bb53935c211"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ba01b05c-fd28-455b-a165-942d4db31c1a"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fb9dd732-4d4d-4eca-982e-f537bc736211"
+                  name="Target"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="41787001-0cce-4069-b6b6-3a41ad5ec8a5"
+                      name="Lower"
+                      value="0*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d5d4afa0-cc76-4e5c-aea3-1d300c964ae9"
+                      name="Upper"
+                      value="0*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="a3344ea0-fdf3-4069-b31f-e3ca08ae23b9"
+            name="_instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="35ecea3e-bf71-4142-bb8c-9b2a89d6f277"
+            name="_targets"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a733daee-2206-45b5-9b97-ddafb49f38f7"
+            name="~TargetManager"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="8489b2b3-f9d0-467e-b0b0-bdfb1bf9ba2d"
+            name="AddTarget"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5ab5d575-0a69-411c-b11d-06b918af71c3"
+            name="AddTargets"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ea9762f8-4b42-44df-ad68-876244302e2e"
+            name="ClearTargetList"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6252fcdc-ece4-4d27-9439-1c972a2b25d1"
+            name="Dispose"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="8505970d-5b47-412f-9dec-4064ecc79f68"
+            name="GetInstance"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1105cd98-4868-467b-97f5-47bf66a875bc"
+            name="TargetManager"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="62e46d05-fcde-40f2-a5b8-0b6905b0ec58"
+        name="Target"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="4b4108b4-fc7f-4771-ae4f-6ec1a09b976c"
+            name="Friend"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b43add8b-a483-4453-9305-4a38eab90565"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a61a5dd3-3499-4528-a528-fb0bfec46dd6"
+            name="X_coordinate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2216cf86-32d7-4711-aa5d-acd430690f25"
+            name="Y_coordinate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4d6b47f3-0a3c-4383-aa43-4e53c0628da4"
+            name="Z_coordinate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="80fe8306-a44c-4426-962e-d31f0444c0ce"
+        name="Turret"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="b5282378-13e0-440a-978c-71accf853254"
+            name="_instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="5730f182-89a9-46fa-972a-d33b2d10ffdd"
+            name="DevicePresent"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6698a9e1-4125-4c77-94d5-c3f51f652990"
+            name="DOWN"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="14cd2349-d1e8-43e6-b0bc-e8784580ed1c"
+            name="FIRE"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="936d7504-8aea-43b4-baa0-d7990ebf0afa"
+            name="LED_OFF"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3e95d838-daab-42b1-8d70-2af3e6edddd0"
+            name="LED_ON"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="faded886-5a72-4064-9fab-82c75f59f5b9"
+            name="LEFT"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="5734e89f-d6d0-40cc-ae37-e5886bd5dc1b"
+            name="RIGHT"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3193f84c-ff68-4225-a4c0-97134d1f51d7"
+            name="STOP"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="72c8222a-2c5c-48c7-8cc9-9f70ec501dbd"
+            name="UP"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="16bbcb01-e2a0-4d7c-9ab8-34e32af0046f"
+            name="USB"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="24362937-616f-4557-b036-017caff86f6a"
+            name="command_Down"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="540fab29-418d-4ce2-9261-d78827010c76"
+            name="command_Fire"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="8f7ba336-8911-4c20-b06b-a7cfef7c1e9e"
+            name="command_Left"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="62c897e7-baf5-49c9-b81d-2be17c2a8310"
+            name="command_reset"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="cbf83e3e-8f0b-4db1-b680-d64eb459e739"
+            name="command_Right"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="42a887a0-fd18-48f1-bd23-99790d5a4937"
+            name="command_Stop"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="957b914a-10c7-4a1c-8f8c-4d7d6b660db7"
+            name="command_switchLED"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4c7aa0b7-9824-48c7-a674-919136e30f81"
+            name="command_Up"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2c320846-5cbb-47a6-a719-c5a8551cd423"
+            name="GetInstance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7fcb320d-d772-4d74-87d9-68157b65872b"
+            name="moveMissileLauncher"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c3925337-fb6e-45f5-a967-53b7905a746e"
+            name="SendUSBData"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="89f6fd68-7eae-46b2-ac53-b000ae62c417"
+            name="Turret"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9c5c851e-68a1-4f90-8197-5965d9c209d6"
+            name="USB_OnDataReceived"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="17160df8-4aaa-481e-8660-e6ce61353459"
+            name="USB_OnSpecifiedDeviceArrived"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="203170c6-a5ef-43fc-918f-e41c8153413c"
+            name="USB_OnSpecifiedDeviceRemoved"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="86b092d9-1879-4642-89fb-4b39d1945b67"
+        name="ILauncher"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="204edf72-3848-4231-bbd2-38dd615341c3"
+            isDerived="false"
+            sourceEndRoleName="ILauncher1"
+            targetEndRoleName="Turret1"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="80fe8306-a44c-4426-962e-d31f0444c0ce"
+              LastKnownName="Turret"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1bbbf06c-a063-4ac9-8067-83e8104d93cc"
+                  name="ILauncher1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d09af28e-8879-4520-a580-9fab12fd46eb"
+                  name="Turret1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperations>
+          <operation
+            Id="2f4a001c-20be-47cc-99da-2149515569f2"
+            name="command_Down"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="8c4897d1-49c5-493c-bc8c-7c2c1ac4450b"
+            name="command_Fire"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9ea90bb2-ff20-4650-b1c4-58c6e9438e2d"
+            name="command_Left"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="08612157-1e14-45ed-a293-25b94a16d298"
+            name="command_reset"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e380c0ed-cb7e-4b18-b10c-c49371c4753d"
+            name="command_Right"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2ad2f11d-38cf-4766-97ed-b23fee3521ac"
+            name="command_Up"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2645776d-c003-4514-88c0-b585f663ddda"
+        name="TurretManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="b080172b-d09c-4dc6-9b80-7b0b29eab6c1">
+            <interfaceMoniker
+              Id="86b092d9-1879-4642-89fb-4b39d1945b67"
+              LastKnownName="ILauncher"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="becd062a-d4a6-4180-86f1-1079b1decb75"
+            name="_instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8cd47589-fd78-4b7c-a341-79b03f02e151"
+            name="ActiveTurret"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="09940767-a300-422e-9f9d-46430c0a151a"
+            name="ThetaX"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a2d68061-e90e-4f0a-b361-32d1d64f98ba"
+            name="ThetaY"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="3346dbc0-5c68-4cfa-bb52-62b650e02918"
+            name="AssumeFiringPosition"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e32acf78-17c7-4b56-8a9b-5524191594c7"
+            name="CurrentPosition"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b7673384-97f0-42f4-9d30-c5856ac70ba1"
+            name="DecreaseAttitude"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="74f599d3-0623-4be5-9183-f0d4a0211211"
+            name="DecreaseAzimuth"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="83434479-3729-42bb-80b8-fe79143d2472"
+            name="Fire"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7160ac15-7494-4b4a-bf4c-c765e5031aa6"
+            name="GetInstance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1442b027-d86c-4dad-b8cb-790e35952711"
+            name="IncreaseAttitude"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3f6944dc-b35e-40b7-b3de-f9f10d502486"
+            name="IncreaseAzimuth"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b35d650e-2c0e-4780-be80-09b136ea0e9e"
+            name="ModifyAttitude"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="de54d4ae-a52d-4b4a-93df-3ae5122d24b3"
+            name="ModifyAzimuth"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f06f36ab-9d54-43d4-8889-61fef0d9a4f9"
+            name="ResetToOrigin"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f5c27aa3-6fc2-4980-b9f7-3ac70cb080c1"
+            name="TurretManager"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="01cd9c48-d70c-470e-b30e-813470993d0c"
+            name="command_Down"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a5bdacef-1937-4dab-b117-5c2963ceb172"
+            name="command_Fire"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0d43755f-1f7d-4a9a-8006-57991756dce5"
+            name="command_Left"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a7d44cfc-76c7-4585-88e4-181176d45092"
+            name="command_reset"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="73d6776f-904d-425f-a9b7-8ab03cdb767c"
+            name="command_Right"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ac037477-2511-43ef-a4f5-189ef2f875d7"
+            name="command_Up"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="72c4ad13-f97c-40e8-9e8d-2cb25b9134dc"
+        name="MissileLauncherAdapter"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="2167afa4-e380-41c3-ad6e-09a470ea4dcf">
+            <interfaceMoniker
+              Id="77914e98-4db1-413d-84ae-3e2cdf0e58d2"
+              LastKnownName="IMissileLauncher"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="7e093e0f-b5be-4258-a6a9-13214742bed3"
+            isDerived="false"
+            sourceEndRoleName="MissileLauncherAdapter1"
+            targetEndRoleName="TurretManager1"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="2645776d-c003-4514-88c0-b585f663ddda"
+              LastKnownName="TurretManager"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5c46014f-1050-4c6d-95a9-babf4444c71d"
+                  name="MissileLauncherAdapter1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0be45161-0e35-4c88-8224-f1ddda5512c9"
+                  name="TurretManager1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="06ee0408-01c7-45af-8a49-5cab417142f2"
+            name="m_launcher"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="662cf3e7-a883-42d7-a70b-8336da8f6878"
+            name="Phi"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="15089594-ab9b-42de-9687-69c137142ddc"
+            name="Psi"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="54c0360f-8ef0-4015-b18a-abdabd49143c"
+            name="Fire"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c31f450d-326e-4d28-a565-d68990f6970b"
+            name="Reset"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="60f9527e-c1db-49a5-933d-2867f4b692b6"
+            name="MoveTo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e1d80620-1c01-4542-b501-dddda52cf8f0"
+            name="MoveBy"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7426c9d6-672b-4561-8ca7-01fb3f7c4ca5"
+            name="MissileLauncherAdapter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="77914e98-4db1-413d-84ae-3e2cdf0e58d2"
+        name="IMissileLauncher"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedAttributes>
+          <property
+            Id="5f5dabf0-374e-4791-9c0d-7155665de77c"
+            name="Phi"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="53b98c89-fd44-422e-ae03-dbaf986609f2"
+            name="Psi"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributes>
+        <ownedOperations>
+          <operation
+            Id="6ff9e522-60e5-4aae-aa33-99ce940bedf4"
+            name="Fire"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="605b51de-8d7a-49ca-8f67-44fba365461b"
+            name="MoveBy"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e8b9cccf-354b-4709-bac5-41623740ded8"
+            name="MoveTo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="096316d4-8634-4bfa-af23-e7f41fc79f5e"
+            name="Reset"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="a60fafb8-718f-407f-8e42-6388aba0e305"
+        LastKnownName="Package1"
+        LastKnownLocation="Package_1601.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9261cbb6-ba93-448a-ba2b-e82226846227"
+        name="FileProcessorFactory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="551b6ef8-8df0-4eaf-96e5-8a7e0d295fbe">
+            <classMoniker
+              Id="2ab32004-f228-411c-b977-159613fdf437"
+              LastKnownName="FileProcessor"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="46757fa1-d849-42ec-bd14-8d67a0d46040"
+            name="_instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f2d811b9-38ce-44a9-8771-2d71dacbb698"
+            name="~FileProcessorFactory"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="668cfaba-ad6b-4fc2-ac12-15e95eb818d9"
+            name="Dispose"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9ff3efe8-43ad-40e6-89d9-467f7766f2c2"
+            name="Create"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6b897bc6-367b-406e-8825-981285db9a13"
+            name="FileProcessorFactory"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2de1d2b4-bf7c-4f79-80da-ab7d645ee458"
+            name="GetInstance"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="879eaf11-ff5b-4356-b500-5a6c1c1a3065"
+        name="XMLProcessor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="2ed0344d-d063-4c2e-8e73-321cf947b57b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2ab32004-f228-411c-b977-159613fdf437"
+              LastKnownName="FileProcessor"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="7713d856-5866-4c06-9fbc-ed3937d909af"
+            name="ProcessFile"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="001d174f-d6a2-4ca2-afc4-acc724dc8a73"
+            name="SetTargetFriend"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5cd06569-c0c6-43be-b585-033c587c1ed8"
+            name="SetTargetPosition"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f01021a2-ba83-437f-8405-45e22451b711"
+            name="XMLProcessor"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2ab32004-f228-411c-b977-159613fdf437"
+        name="FileProcessor"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="d3db35c7-8442-4d12-bd33-d9b539eb370a"
+            name="_file_path"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1aaf89d2-6775-43cc-939f-93e65d3bf489"
+        name="IniProcessor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="93f0b219-4e00-40fa-9844-6d16189afe82"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2ab32004-f228-411c-b977-159613fdf437"
+              LastKnownName="FileProcessor"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="5ee80045-14c6-4f42-9064-d712966dbdef"
+            name="_invalid_ini_format_message"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="fc03ae1d-e931-462a-8628-8c1f83505894"
+            name="IniProcessor"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="aaec88d2-6ee9-4937-a9ac-dd0fe836cd40"
+            name="lineMatches"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="22e686d5-33f5-4514-9e96-fce8a2caf051"
+            name="ProcessFile"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0aacb25f-3579-45cb-9c07-cdbcbcdc04a0"
+            name="TargetSetFriend"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="946ff7e3-2d52-47c5-a5cd-1b4cc2d7fefa"
+            name="TargetSetPositionValue"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9d3b9ffd-a7f3-4605-9f45-0af9db3a7681"
+        name="TargetManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="362d64bf-5b48-4840-b479-099c1d341ed7"
+            isDerived="false"
+            sourceEndRoleName="TargetManager"
+            targetEndRoleName="Target"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="da16b385-b419-4017-8a84-305f00e8c40d"
+              LastKnownName="Target"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="60907560-ee8d-4c23-8634-9ea9e358afb1"
+                  name="TargetManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="16d540d8-26df-4b28-868c-08c474c321ee"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="0f8c99d8-05a4-4f5a-9872-d6915da75d4d"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="01a7b4bc-d493-4fb2-89a3-26052d0f5693"
+                  name="Target"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6a3bb11d-20ad-483e-ba1d-5b91c1c7d54d"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9328dd40-0c41-42c5-a1cc-ca6ed4e3447e"
+                      name="Upper"
+                      value=".*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7ecf2894-aed8-44c2-a1a2-ae9cc346f1a4"
+            isDerived="false"
+            sourceEndRoleName="TargetManager"
+            targetEndRoleName="FileProcessorFactory"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="9261cbb6-ba93-448a-ba2b-e82226846227"
+              LastKnownName="FileProcessorFactory"
+              LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="01f645cf-3667-4dc8-94bf-a3114933a195"
+                  name="TargetManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b5a06c9f-9370-4713-a032-ce069b27a810"
+                  name="FileProcessorFactory"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="3eaf1afd-f381-42b4-9063-36d52d3f62e5"
+            name="_instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c4d9214b-5e67-4a57-8b74-093f337230bc"
+            name="_targets"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6e4bb2a0-cfba-4972-a6f0-3cbd0f68dc03"
+            name="_reader_factory"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="e8bb85f0-1d9e-40e7-87e9-a7a62a3dd86e"
+                LastKnownName="FileProcessorFactory"
+                LastKnownLocation="Asml-UseCaseDiagram.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f2a6f273-439e-428e-a066-3b0c93d6f617"
+            name="~TargetManager"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7d5b529d-47ed-4228-88d1-902acfc86bf5"
+            name="AddTarget"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0577a956-f65e-4393-b255-d4f68562150a"
+            name="AddTargets"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b01ab44a-9d3e-4cc1-ae53-1b8f862ca7aa"
+            name="ClearTargetList"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7fe3efa2-b6e3-4081-aa25-54e608f38013"
+            name="Dispose"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d7ff8d00-23b8-46ae-9678-2d838b08bd47"
+            name="GetInstance"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="302b9f2b-1d9c-43ee-8275-a894d1348d14"
+            name="TargetManager"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="99af5c34-b756-4662-9477-eed7e371afd9"
+            name="LoadFromFile"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="da16b385-b419-4017-8a84-305f00e8c40d"
+        name="Target"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="fa15e884-e873-42ec-bb30-675d8457efb2"
+            name="Friend"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="63e6f06f-0dee-49f6-a13b-84378b2f31a9"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6d96c3f7-b807-48f3-91e6-bc25899589f4"
+            name="X_coordinate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="47d5e6fe-e4df-4c1b-9ceb-6f42feba5cec"
+            name="Y_coordinate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="de38288c-1777-4da5-88d7-92458613007f"
+            name="Z_coordinate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
