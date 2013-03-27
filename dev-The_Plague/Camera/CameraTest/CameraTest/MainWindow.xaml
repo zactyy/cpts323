@@ -1,0 +1,9 @@
+﻿<Window x:Class="CameraTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Image x:Name="VideoBox" HorizontalAlignment="Left" Height="204" Margin="10,10,0,0" VerticalAlignment="Top" Width="483" RenderTransformOrigin="0.545,0.545"/>
+
+    </Grid>
+</Window>

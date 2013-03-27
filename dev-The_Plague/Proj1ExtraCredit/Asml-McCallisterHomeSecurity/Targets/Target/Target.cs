@@ -43,6 +43,15 @@ namespace TargetManagement
             Friend = i_friend;
         }
 
+        public Target(Target copy)
+        {
+            this.Name = copy.Name;
+            this.X_coordinate = copy.X_coordinate;
+            this.Y_coordinate = copy.Y_coordinate;
+            this.Z_coordinate = copy.Z_coordinate;
+            this.Friend = copy.Friend;
+        }
+
         public string Name
         {
             get;

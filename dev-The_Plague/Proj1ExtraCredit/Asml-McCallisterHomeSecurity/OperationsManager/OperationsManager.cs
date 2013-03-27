@@ -170,12 +170,13 @@ namespace OperationsManager
                 foreach (Target target in _target_manager.Targets)
                 {
                     var item = new ListViewItem();
-                    item.Content = target;
+                    // using a temp object prevents escape of the Targets in the target manager list.
+                    Target temp = new Target(target);
+                    item.Content = temp;
                     tmp.Add(item);
                 }
                 return tmp;
-            }
-            // the collection should not be changed from here. Only the TargetManager should change it.
+            }            
             private set {}
         }
 
