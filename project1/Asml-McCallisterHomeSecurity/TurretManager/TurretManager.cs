@@ -215,7 +215,7 @@ namespace TurretManagement
         {
             if (dispose_others == true)
             {
-                this.ActiveTurret.Dispose();
+                ((IDisposable)this.ActiveTurret).Dispose();
             }
             _instance = null;
         }

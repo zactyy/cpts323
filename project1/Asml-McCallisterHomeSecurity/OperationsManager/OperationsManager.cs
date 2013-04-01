@@ -15,6 +15,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TargetManagement;
 using TargetManagement.TargetFileProcessors;
+using ASMLEngineSdk;
 using TurretManagement;
 
 namespace OperationsManager
@@ -78,7 +79,9 @@ namespace OperationsManager
             if (dispose_others == true)
             {
                 _target_manager.Dispose();
-                _turret.Dispose();
+                ((IDisposable)_turret).Dispose();
+                
+                
             }
             _rules_them_all = null;
         }

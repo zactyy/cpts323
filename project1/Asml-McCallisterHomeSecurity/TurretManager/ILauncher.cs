@@ -10,13 +10,15 @@
 using System;
 using System.Threading;
 using UsbLibrary;
+using ASMLEngineSdk;
 
 namespace TurretManagement
 {
+    
     /// <summary>
     /// ILauncher is used by as an interface for Turret, practice for adapter implementation
     /// </summary>
-    public interface ILauncher : IDisposable
+    public interface ILauncher 
     {
         void command_Right(int degrees);
         void command_Left(int degrees);
@@ -30,7 +32,7 @@ namespace TurretManagement
     /// <summary>
     /// Interface for controlling a missile launcher.
     /// </summary>
-    public interface IMissileLauncher : IDisposable
+    /*public interface IMissileLauncher : IDisposable
     {
         /// <summary>
         /// Resets the missile launcher 
@@ -62,9 +64,9 @@ namespace TurretManagement
         double Psi { get; }
 
 
-    }
+    }*/
 
-    public class MissileLauncherAdapter : IMissileLauncher , IDisposable
+    public class MissileLauncherAdapter : IMissileLauncher
     {
         TurretManager m_launcher;
         public MissileLauncherAdapter()
