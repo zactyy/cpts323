@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asml-McCallisterHomeSecurity", "Asml-McCallisterHomeSecurity\Asml-McCallisterHomeSecurity.csproj", "{F476A17A-0AC1-4CA0-9934-54899D0F33BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asml-MHS", "Asml-MHS\Asml-MHS.csproj", "{F476A17A-0AC1-4CA0-9934-54899D0F33BD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TargetManager", "Targets\TargetManager.csproj", "{00B9A769-1000-4F60-9036-FFDFDFAB1829}"
 EndProject
