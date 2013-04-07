@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="fe3cf92c-77fb-4a2f-8e5c-1267cd5e2af1" name="TargetManager" linkedPackageId="89156676-7e6d-4c32-95be-f6411439c15f" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="bb313919-4393-4de2-ad2f-6da0c2c4f509">
+      <profileInstance Id="4cffc511-4d85-4256-80af-e9b9649c4634" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="0d8a9c92-c59d-48ed-a971-e714c3159149">
+      <profileInstance Id="a1436b57-dd4f-4536-a55d-46bd2de25bd5" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <referencedType Id="b889bd85-6cac-4281-8c58-61c16dbec4fe" name="ModelingProject1::FileProcessorFactory" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::FileProcessorFactory">
+        <elementDefinition Id="77ba76e8-c1bf-4bd6-90cc-b5d78537fc35" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5ecd91da-8a78-43c5-889f-18ebea46544b" name="FileProcessorFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4ffca3b5-c82e-42e8-be2b-29fce0a82159" />
+        <suppliersInternal>
+          <dependency Id="8fdc0a6c-75c9-49ab-b662-03fc8023448e">
+            <classMoniker Id="9a869ea2-0ec3-4f7a-8b48-898c4c8b12a1" LastKnownName="FileProcessor" />
+            <elementDefinition Id="371ed650-36c4-441b-95c2-ccdfb967095e" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="72763656-2f75-479d-a549-f83bafb3ed10" name="_instance" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ba962465-6b63-4225-9f62-4aae01a26a6f" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="fc89a9df-a85d-440a-91e0-19e2797b95b3" name="~FileProcessorFactory" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fe463d80-5644-43b9-801c-3067ce3a37cb" />
+          </operation>
+          <operation Id="0213b5e6-f297-48ac-a3ca-9cc7093f2ab3" name="Dispose" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="94bfaf84-1ac8-48fc-bced-52cec126e05f" />
+          </operation>
+          <operation Id="496fa034-cad0-4881-ad6a-2603a89c7328" name="Create" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4b6c5112-f4f8-4467-b0c8-6e8d23a5d96e" />
+          </operation>
+          <operation Id="2f45aba1-129a-4565-b40b-53cbeef041a9" name="FileProcessorFactory" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1abb3dd0-b0dd-4041-93ef-27a5761acf57" />
+          </operation>
+          <operation Id="22a7f1c3-471c-4c04-8e40-48e4fd65a245" name="GetInstance" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7d286d6e-8262-4ba4-a53e-dc1902ae96cc" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6d0a5482-bd89-46ce-b525-35ebf31a9000" name="XMLProcessor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a2679bfc-54bb-411c-ab3b-2a3f0fee1a90" />
+        <generalsInternal>
+          <generalization Id="8c07c818-fe12-49da-8e2e-53f150e8e25e" isSubstitutable="false">
+            <classMoniker Id="9a869ea2-0ec3-4f7a-8b48-898c4c8b12a1" LastKnownName="FileProcessor" />
+            <elementDefinition Id="36b63198-da44-418a-96b2-1c915c639a96" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="dbb8665c-8a0d-4e23-aac0-7e3b199db952" name="ProcessFile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="86f0da32-15ad-4700-b06c-251e8e98597f" />
+          </operation>
+          <operation Id="63761d22-d653-484e-bc16-867dc2a83d94" name="SetTargetFriend" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0066dc9d-c366-4c77-bb80-616809f4df83" />
+          </operation>
+          <operation Id="eea76fb1-8126-446e-9eb2-4bcfd93e8a72" name="SetTargetPosition" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="32cdd92e-cea0-44d3-bf96-fc3f06e6dc6b" />
+          </operation>
+          <operation Id="e119ebfe-87f9-474d-aefb-984b201fbbef" name="XMLProcessor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9faf4eb6-afe6-4dd4-9671-220e5ee56f55" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9a869ea2-0ec3-4f7a-8b48-898c4c8b12a1" name="FileProcessor" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5d5b8666-c18a-4b24-8af9-2960756646e6" />
+        <ownedAttributesInternal>
+          <property Id="3ef95ff7-31e8-4ec7-aa6b-d9636c18fcf7" name="_file_path" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="910a5c11-fa10-4f0f-8b92-f6b3957c4495" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a4bb9a24-6165-4676-9e16-19a72068da30" name="IniProcessor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e6cd1d74-aa68-4fa4-80cd-ea5276b0beb4" />
+        <generalsInternal>
+          <generalization Id="b9bd8f1d-d838-4f3c-bb9b-7002935793dd" isSubstitutable="false">
+            <classMoniker Id="9a869ea2-0ec3-4f7a-8b48-898c4c8b12a1" LastKnownName="FileProcessor" />
+            <elementDefinition Id="526ed33f-c876-4fac-b6de-69c501baa294" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="41c9c72f-f398-4e62-a002-a1c0d213a337" name="_invalid_ini_format_message" visibility="Private" isLeaf="false" isStatic="true" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="40569325-1927-4254-9688-5b40d983a6eb" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="e9b3a957-a814-4e3e-9861-e3947fbd0f95" name="IniProcessor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8afc1f1b-c5d5-424a-8915-3f75bb987cdc" />
+          </operation>
+          <operation Id="1bbc961a-579c-46c8-b9f8-153017bacd4c" name="lineMatches" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d7f7d611-79b8-488f-8ca5-c513334a1eb2" />
+          </operation>
+          <operation Id="e8e06fb7-34fc-4971-8391-dd6ef446a400" name="ProcessFile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1dc8fd56-3698-4328-a6d5-a6f0cc31a843" />
+          </operation>
+          <operation Id="aee7baa5-b1ad-4da4-998d-557f3101759d" name="TargetSetFriend" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="544d51be-a414-4390-901e-be6c7a1a1f95" />
+          </operation>
+          <operation Id="355e11f1-72f2-4c42-98db-ba99370c8912" name="TargetSetPositionValue" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9f1313db-ef9f-4b2e-939f-988ae532d2e2" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2bbceaaf-414f-41f8-9cfe-aeac1a9b40e5" name="TargetManager1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0daea0b9-ef87-4c88-aedf-da1e3185750d" />
+        <targetEnds>
+          <association Id="5a2a3fc3-5a63-486d-ac67-b7f7d3f1c5c5" isDerived="false" sourceEndRoleName="TargetManager" targetEndRoleName="Target" isLeaf="false" isAbstract="false">
+            <classMoniker Id="32e54d53-9961-4aa8-ad8c-29bcaa255214" LastKnownName="Target" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="029f9520-a164-44ce-9dcc-71544963f5d4" name="TargetManager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="c0d24154-0eb9-43a2-8bd6-861804ebd669" name="Lower" value="1">
+                      <elementDefinition Id="9a65f18b-c545-48f8-a26e-b3b77cf6f33c" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="2b7e2231-8cfd-4210-8879-2c0e0766fe1b" name="Upper" value="1">
+                      <elementDefinition Id="00baa714-81b0-427b-b0c9-43679dbb80e3" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="c5bbd39b-bea1-4298-955e-b9e71d7c4dd8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4b50c50e-73e4-4ef2-9d17-63203aef271e" name="Target" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="d2002492-6865-45e0-a26e-7bed95c45bfb" name="Lower" value="0">
+                      <elementDefinition Id="1b41a467-7cc8-4df5-a2ef-6c12e65f4b10" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="6f3f3608-89ba-44d1-b229-de05cda3c533" name="Upper" value=".*">
+                      <elementDefinition Id="228ab965-bed1-4d23-8b3c-16db44700c84" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="0bced863-adcc-467c-8d44-dd9d47006724" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dd2c2c11-008b-471c-a86e-6ef15343dfa5" />
+          </association>
+          <association Id="2da1fb33-6de5-4101-938d-e9a741b47d79" isDerived="false" sourceEndRoleName="TargetManager" targetEndRoleName="FileProcessorFactory" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5ecd91da-8a78-43c5-889f-18ebea46544b" LastKnownName="FileProcessorFactory" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7ecc5908-16ca-4818-a362-dc884894c562" name="TargetManager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3abc5ea2-2e71-4370-a36d-2f201fe24f9d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="78432f24-bda7-471f-a691-c7570f8a8d3f" name="FileProcessorFactory" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="69b16124-34e6-49e1-b266-ee98317b35aa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="23ba5867-ebd9-448e-9a84-37c5b48d9e16" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="6e9020e3-3dfd-4e90-9d52-34625d4d0c82" name="_instance" visibility="Private" isLeaf="false" isStatic="true" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e6ec08a8-f213-404b-be38-b2c9ae64a2f3" />
+          </property>
+          <property Id="cbb74b29-acc5-4985-a1bd-852c42c50141" name="_targets" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="596caaa4-772f-4eec-9a72-4af2d27de4e5" />
+          </property>
+          <property Id="b09094db-12f2-4f70-a817-77d0e22921a3" name="_reader_factory" visibility="Private" isLeaf="false" isStatic="true" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fae610c6-c946-4250-a2f1-655adce186d7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b889bd85-6cac-4281-8c58-61c16dbec4fe" LastKnownName="ModelingProject1::FileProcessorFactory" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="dcc1cda6-e92c-46c1-a3e9-a89e973344bb" name="~TargetManager" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="eadf2c45-4214-4e1a-9849-2205c57a6d73" />
+          </operation>
+          <operation Id="e93633fb-4e15-46f7-85a9-8e5c816c2324" name="AddTarget" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f81c870a-f904-4303-9063-25086f9fd6ac" />
+          </operation>
+          <operation Id="0f163423-c30c-48d9-b203-ca97264b9821" name="AddTargets" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c545bff3-7407-4924-8dfd-f0a053ad19ac" />
+          </operation>
+          <operation Id="559a210d-09c7-4c9b-96b3-24bf8f8cc8c7" name="ClearTargetList" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="717c3335-65a7-44d5-814c-af4e1791cdb2" />
+          </operation>
+          <operation Id="a33f79fa-7cd3-497e-abeb-0daef4c55374" name="Dispose" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ab0f0381-b592-4419-8fea-dd7670318a91" />
+          </operation>
+          <operation Id="79d0eb9d-b3c9-4d71-b7d9-2503624954b6" name="GetInstance" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0eec11e5-08ba-4faf-ae6c-318e73b50356" />
+          </operation>
+          <operation Id="7609bd44-2809-48f3-9aa2-ae38ed92289e" name="TargetManager" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1c3591f0-54c9-4bfa-a94d-8473de45f237" />
+          </operation>
+          <operation Id="f259921d-93dd-499d-b8bf-ed3a28a687e7" name="LoadFromFile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="88b2560f-3c72-4fdd-ba66-433cdc0479d5" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="32e54d53-9961-4aa8-ad8c-29bcaa255214" name="Target" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5f471aa0-d464-4e45-ad05-9d918d121572" />
+        <ownedAttributesInternal>
+          <property Id="299c73d1-9fc9-4a84-a5c9-cf019f46d8f4" name="Friend" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="11f458b8-60a2-4643-a290-850983237f65" />
+          </property>
+          <property Id="bcc42e38-c0ec-4bf8-bbbd-6de416daf240" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a699297a-50b2-469b-ba26-2318ea328634" />
+          </property>
+          <property Id="e135a2d9-0be4-4c07-822a-ba41c6443c0e" name="X_coordinate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="50bc2fe3-2fb9-4b1f-b659-5aa24eb6a704" />
+          </property>
+          <property Id="7c7eb07a-4f5a-43b0-b1dc-85c060c32007" name="Y_coordinate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ea691146-f29f-4adc-8692-bb41c2adf62e" />
+          </property>
+          <property Id="bd6e84d6-6fee-431f-8e3d-feeb14f9c0fb" name="Z_coordinate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="30fda4e5-57ce-46c5-9100-3e3385c31183" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="89156676-7e6d-4c32-95be-f6411439c15f" name="Asml-MHS-ModelingProject1">
+    <elementDefinition Id="254c6c84-496c-425b-a4a7-8779396807bf" />
+  </package>
+</logicalClassDesignerModel>
