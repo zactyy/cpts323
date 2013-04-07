@@ -1,0 +1,1843 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="052d13d0-4ddb-4592-a207-8dc0be570d30"
+  name="Asml-MHS-ModelingProject2" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="491d7ee9-2d61-4edb-ab6e-0f3c2f5ac889"
+        name="Brian the Judge"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="1ad30a84-e651-447a-9536-c2f99ac0f57d"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Select Target File"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ed93d094-50cf-48d8-9205-5365bb2f9e45"
+              LastKnownName="Select Target File"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3d96af0e-35b3-4cd2-a00d-1f6d68324c83"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e78ef07c-ac65-44f4-8d9e-356868db02d3"
+                  name="Select Target File"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="192104b9-85f6-41d6-b026-4b2871a229f3"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Move Launcher Up"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="aba5bc09-a485-46b7-b6da-03693fabf208"
+              LastKnownName="Move Launcher Up"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f625f1f8-f7ee-4ffa-ba2a-d4d31c9060b0"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a6525ddc-8b92-4e5d-8b8f-281e24fde0c2"
+                  name="Move Launcher Up"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="cf909165-2daa-4347-aaa4-3a95ebae1148"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Move Launcher Left"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6e25a396-c19a-4cd9-bcc2-378828a63e88"
+              LastKnownName="Move Launcher Left"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1cce55de-acd5-473a-a6e3-77959fd4332c"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dba31e5b-fa02-413b-bea4-e65f827c5691"
+                  name="Move Launcher Left"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a1984f2e-55f4-4b4a-b31a-8123406dc997"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Move Launcher Right"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f9a68989-de93-4d31-9108-184c6b4f19fd"
+              LastKnownName="Move Launcher Right"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5dd13004-0b09-4655-832f-34511288d758"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9b933a18-c4b8-41a0-92c4-3a7d9a282085"
+                  name="Move Launcher Right"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="20f28371-d6f8-47a5-891a-e471ba327cea"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Fire Missile"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4139436a-1bc9-47ec-9ec1-5a43a5f36a0b"
+              LastKnownName="Fire Missile"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e8179c02-58ba-4de7-be30-dd1966988ac0"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5d0c5f17-594a-4e57-9e1f-ee0ebbf71827"
+                  name="Fire Missile"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1c936fdb-8b95-425c-9ed6-62154d249030"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Move Launcher Down"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="71b1d07e-12ca-4ba4-9dc6-b04a7992d9ee"
+              LastKnownName="Move Launcher Down"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="97a3bc46-ff38-4ff6-9106-53e1e54935d2"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="03c939b3-1e2b-4680-83df-255eb880fad5"
+                  name="Move Launcher Down"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="32f60e20-1657-49bc-a7fa-89ddcddb70e2"
+        name="Launcher"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d83f6638-d6af-44c7-970d-576ff6be70a8"
+        name="Display Targets"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="8769751d-918f-4d4f-b166-50af2d163458">
+            <useCaseMoniker
+              Id="a53f4952-ac4f-4589-a919-dbdfb6724cc0"
+              LastKnownName="Read XML File"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+          </dependency>
+          <dependency
+            Id="7d934c7e-82fd-49ab-b7db-8781af5fc8ad">
+            <useCaseMoniker
+              Id="1c3e44cd-e2c4-4841-a0d9-a6377006d156"
+              LastKnownName="Read INI File"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="0c1b87bf-a8eb-4302-ad7c-5ffd27e2bf02"
+        name="Target File"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="e97e1a5c-0107-41d0-8fba-447f60314e86"
+        name="Launcher Controls"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4139436a-1bc9-47ec-9ec1-5a43a5f36a0b"
+        name="Fire Missile"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="13f2a560-e4e5-441b-958f-15126cbbc9bb"
+            isDerived="false"
+            sourceEndRoleName="Fire Missile"
+            targetEndRoleName="Launcher"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="32f60e20-1657-49bc-a7fa-89ddcddb70e2"
+              LastKnownName="Launcher"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1daebfb7-8bbc-4a17-80b4-27c27e304a24"
+                  name="Fire Missile"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f7c7e01d-b928-4ec0-ad85-49491e207382"
+                  name="Launcher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="e97e1a5c-0107-41d0-8fba-447f60314e86"
+            LastKnownName="Launcher Controls"
+            LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f9a68989-de93-4d31-9108-184c6b4f19fd"
+        name="Move Launcher Right"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="5fda434f-7e79-4cfb-9694-e879a5bda09a"
+            isDerived="false"
+            sourceEndRoleName="Move Launcher Right"
+            targetEndRoleName="Launcher"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="32f60e20-1657-49bc-a7fa-89ddcddb70e2"
+              LastKnownName="Launcher"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bb798886-96bd-4b0e-b553-31bec70249ec"
+                  name="Move Launcher Right"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2c302214-44b9-4a4b-b433-c1ab25448c13"
+                  name="Launcher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="e97e1a5c-0107-41d0-8fba-447f60314e86"
+            LastKnownName="Launcher Controls"
+            LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="71b1d07e-12ca-4ba4-9dc6-b04a7992d9ee"
+        name="Move Launcher Down"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="12e2d4f0-6ac6-4b7a-a04c-c50d99d2b914"
+            isDerived="false"
+            sourceEndRoleName="Move Launcher Down"
+            targetEndRoleName="Launcher"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="32f60e20-1657-49bc-a7fa-89ddcddb70e2"
+              LastKnownName="Launcher"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5093ae54-e0d7-426d-934f-f721ddd2f838"
+                  name="Move Launcher Down"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a3f42a32-45d4-4124-a24f-ddd469d1357f"
+                  name="Launcher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="e97e1a5c-0107-41d0-8fba-447f60314e86"
+            LastKnownName="Launcher Controls"
+            LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="aba5bc09-a485-46b7-b6da-03693fabf208"
+        name="Move Launcher Up"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="7e34e2ee-014e-4f8a-8be9-307a7f862da4"
+            isDerived="false"
+            sourceEndRoleName="Move Launcher Up"
+            targetEndRoleName="Launcher"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="32f60e20-1657-49bc-a7fa-89ddcddb70e2"
+              LastKnownName="Launcher"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="295cfc86-87af-4b24-a99d-6db447e00e1f"
+                  name="Move Launcher Up"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a8b3f29a-3ce7-40b2-be3d-c0632ec21c7a"
+                  name="Launcher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="e97e1a5c-0107-41d0-8fba-447f60314e86"
+            LastKnownName="Launcher Controls"
+            LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6e25a396-c19a-4cd9-bcc2-378828a63e88"
+        name="Move Launcher Left"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="ce62ab91-ead0-4b95-97d1-3814cc69f546"
+            isDerived="false"
+            sourceEndRoleName="Move Launcher Left"
+            targetEndRoleName="Launcher"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="32f60e20-1657-49bc-a7fa-89ddcddb70e2"
+              LastKnownName="Launcher"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e596a472-1fdd-4712-8257-a7972eb7c485"
+                  name="Move Launcher Left"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="193ea287-acf9-48c1-ab9d-0d42615fbcdc"
+                  name="Launcher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="e97e1a5c-0107-41d0-8fba-447f60314e86"
+            LastKnownName="Launcher Controls"
+            LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="807580a5-52ee-469e-b6ce-74527f2f76bb"
+        name="Target File Readers"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ed93d094-50cf-48d8-9205-5365bb2f9e45"
+        name="Select Target File"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="f316ce1d-0171-4890-89cf-4aa344f84ed2">
+            <useCaseMoniker
+              Id="a53f4952-ac4f-4589-a919-dbdfb6724cc0"
+              LastKnownName="Read XML File"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+          </extend>
+          <extend
+            Id="bba3ede7-b643-4361-8bf8-12da82414f99">
+            <useCaseMoniker
+              Id="1c3e44cd-e2c4-4841-a0d9-a6377006d156"
+              LastKnownName="Read INI File"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="807580a5-52ee-469e-b6ce-74527f2f76bb"
+            LastKnownName="Target File Readers"
+            LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a53f4952-ac4f-4589-a919-dbdfb6724cc0"
+        name="Read XML File"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="6127a847-1e10-466c-9fd0-e62a9d1e685d"
+            isDerived="false"
+            sourceEndRoleName="Read XML File"
+            targetEndRoleName="Target File"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="0c1b87bf-a8eb-4302-ad7c-5ffd27e2bf02"
+              LastKnownName="Target File"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b1eff177-27c6-4801-ae99-9744c3b326f1"
+                  name="Read XML File"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="02a3b9bb-327a-4fb5-8899-c5db80d1f5cc"
+                  name="Target File"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="807580a5-52ee-469e-b6ce-74527f2f76bb"
+            LastKnownName="Target File Readers"
+            LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1c3e44cd-e2c4-4841-a0d9-a6377006d156"
+        name="Read INI File"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="f09a5f99-d3cc-4578-9d6e-a04daaf93246"
+            isDerived="false"
+            sourceEndRoleName="Read INI File"
+            targetEndRoleName="Target File"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="0c1b87bf-a8eb-4302-ad7c-5ffd27e2bf02"
+              LastKnownName="Target File"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4595c9d2-8e0f-4690-8604-5fc1d912a2aa"
+                  name="Read INI File"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0ebb5ee3-ea87-4ab0-abda-8a1063bdb388"
+                  name="Target File"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="807580a5-52ee-469e-b6ce-74527f2f76bb"
+            LastKnownName="Target File Readers"
+            LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="88044fb1-b234-4ae0-b31e-434248752e67"
+        name="ModelingProject1::FileProcessorFactory" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2d2c8e16-06c0-47f3-ac87-750270e98a03"
+        name="FileProcessorFactory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="bc90dcf6-3562-4b49-9af7-86571fc28278">
+            <classMoniker
+              Id="20b41cfa-bbb6-4c27-bea5-e41320a355df"
+              LastKnownName="FileProcessor"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="77404c64-bfe2-4cee-8b8d-545ce836281f"
+            name="_instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="fc66423b-645a-407d-ac87-a343ffecd2d6"
+            name="~FileProcessorFactory"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="829fa102-fbe3-4502-80fa-754bd8865be9"
+            name="Dispose"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1c04065c-75c3-4963-aa29-edffd3bb637b"
+            name="Create"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="451c9c65-5157-4396-b680-10856ea25ef9"
+            name="FileProcessorFactory"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9aac8c48-32fe-44be-b96e-310c5c50b679"
+            name="GetInstance"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0e644986-39ea-4b3f-b447-050d40892772"
+        name="XMLProcessor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="fc7b9411-2fda-483c-80dc-1402421bfa32"
+            isSubstitutable="false">
+            <classMoniker
+              Id="20b41cfa-bbb6-4c27-bea5-e41320a355df"
+              LastKnownName="FileProcessor"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="99f684be-b646-4750-bb7a-43ca8129c5cc"
+            name="ProcessFile"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d0c46967-e85f-48a6-b287-309404fa1121"
+            name="SetTargetFriend"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4a42d708-5d96-48d1-a657-bd8e2db13666"
+            name="SetTargetPosition"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9ea517b8-12b8-4a47-a410-a9dc873397bd"
+            name="XMLProcessor"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="20b41cfa-bbb6-4c27-bea5-e41320a355df"
+        name="FileProcessor"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="24d1bd29-485f-442f-8d8b-959120630f87"
+            name="_file_path"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="67bc1313-0a5c-411f-9ae3-06477d79fd9a"
+        name="IniProcessor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="652965fa-ce4b-4bbf-9ab6-23b11b3c508d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="20b41cfa-bbb6-4c27-bea5-e41320a355df"
+              LastKnownName="FileProcessor"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="800126d0-41b1-4850-93e1-6ff6f8cdb906"
+            name="_invalid_ini_format_message"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="4f747894-3453-4921-afe3-2ea2b05f57ed"
+            name="IniProcessor"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="217c3941-111e-4823-91fa-e3e1c59173cf"
+            name="lineMatches"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="fc5d2052-4c6a-46b7-ab0b-362d2d292a37"
+            name="ProcessFile"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="af2aaabf-5a08-4a04-b3de-5c2776dde6fd"
+            name="TargetSetFriend"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b36bf0bd-129c-4135-b320-6830818413ae"
+            name="TargetSetPositionValue"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c978398f-8705-45a4-990f-9710aed713d8"
+        name="TargetManager1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="81ee52b4-828a-48ed-9114-3b93042a751d"
+            isDerived="false"
+            sourceEndRoleName="TargetManager"
+            targetEndRoleName="Target"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a03e5498-0edb-4eaa-89cb-e901a293bcdd"
+              LastKnownName="Target"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b4591042-6f9a-40a9-b26d-70d26319b6df"
+                  name="TargetManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="161ce351-91a5-455f-984e-b92e7ae0e085"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="2702f319-86ff-41dd-a667-ef7913d2ea37"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b144b9bd-e282-4f2c-82e7-fd76674dc40c"
+                  name="Target"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="2f007a43-4291-45ee-8ef7-29652656bc57"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9206c396-f3fd-4e4b-ad16-6342849bbba3"
+                      name="Upper"
+                      value=".*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="44465705-1109-4af5-9c16-456715ad4a73"
+            isDerived="false"
+            sourceEndRoleName="TargetManager"
+            targetEndRoleName="FileProcessorFactory"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="2d2c8e16-06c0-47f3-ac87-750270e98a03"
+              LastKnownName="FileProcessorFactory"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ae933875-c503-42f6-ab2d-288ea1582a4e"
+                  name="TargetManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="afdb9df6-5756-4ce7-a95c-36db0ce966bb"
+                  name="FileProcessorFactory"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="6a281218-933a-4120-8c8b-bd31db17e036"
+            name="_instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a147acf0-b26f-4bac-9ce9-2153fddbcf73"
+            name="_targets"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="17375967-4b17-4d2b-8683-5e3a48aa3d17"
+            name="_reader_factory"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="88044fb1-b234-4ae0-b31e-434248752e67"
+                LastKnownName="ModelingProject1::FileProcessorFactory"
+                LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2e95bc26-514f-4329-8627-4181f6e04372"
+            name="~TargetManager"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e8b311a7-f6eb-4095-9b7b-70729064159f"
+            name="AddTarget"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="18a533a6-389c-4ba5-8368-dc10827e0a56"
+            name="AddTargets"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5896df76-ad80-4cc9-af6d-17fa8fcdec80"
+            name="ClearTargetList"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="77990133-3d91-408c-8fbe-6c35d1eb7769"
+            name="Dispose"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="688e0406-b3f8-4324-af1f-a67105a75afb"
+            name="GetInstance"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f5bec5b5-97cb-43a0-8f14-f423a44e0820"
+            name="TargetManager"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2194d207-445e-49c9-922b-a5bb4c56094a"
+            name="LoadFromFile"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a03e5498-0edb-4eaa-89cb-e901a293bcdd"
+        name="Target"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="43de7e88-b2b0-44f3-aefc-fb3d01ac4f41"
+            name="Friend"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="db8cc7e9-08fd-4b74-b52b-9971457ebb4b"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9e6154f2-ab76-4a07-bf20-f71db799a142"
+            name="X_coordinate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="fd8aff83-65c9-4230-923f-cb9640910919"
+            name="Y_coordinate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="15fd71ce-3272-4bfd-a75c-1736837cdc57"
+            name="Z_coordinate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="5ce4fb0a-5b70-40fa-a258-4cfcf3812d39"
+        name="OperationsManager" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="dbd0f903-7226-463c-8c58-1cab9b078150"
+        name="ModelingProject1::OperationsManager" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="55c44855-14f2-4e65-be25-9b59f75b5a7d"
+        name="Main Window"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="6ae6bb38-80e0-49c4-9867-8f7c85bc2ecb"
+            isDerived="false"
+            sourceEndRoleName="Main Window"
+            targetEndRoleName="OperationsManager"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5e3122b7-196e-4bb8-82bc-07fc6e55b2d9"
+              LastKnownName="OperationsManager"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b0f2b50d-1aeb-4728-8d9d-9ad3e2b1c53d"
+                  name="Main Window"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7c281a65-834a-41a2-a347-4c6162e6ffb4"
+                  name="OperationsManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="d9ae4d8d-357d-44c7-8d03-56ad5e92f0c9"
+            name="_rules_them_all"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5ce4fb0a-5b70-40fa-a258-4cfcf3812d39"
+                LastKnownName="OperationsManager"
+                LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="3c04372b-c9fa-497e-85ba-9244568c19ec"
+            name="btnDown_Click"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3f7162e7-3c50-47d6-a19c-27a77fb12951"
+            name="btnUp_Click"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0493e0ef-99ec-444e-afea-26b587576a18"
+            name="btnFire_Click"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="94e884b1-5043-431f-a3b8-fee9e871b04b"
+            name="btnLeft_Click"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="eeadef09-1c4c-4b75-9e00-27e582d537e8"
+            name="btnRight_Click"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6c03ad77-2ad9-4fc1-a271-3030d1c3fc50"
+            name="btnLoad_Click"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="94497d33-61c2-4d30-86a0-b96d6f9ee993"
+            name="btnReset_Click"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="75337b57-42fa-4596-9b5b-2c60e0a62671"
+            name="btnReload_Click"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5e3122b7-196e-4bb8-82bc-07fc6e55b2d9"
+        name="OperationsManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="182a235a-d184-4d82-a198-1b93fcd71f08"
+            isDerived="false"
+            sourceEndRoleName="OperationsManager"
+            targetEndRoleName="TargetManager"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="73b9c6d3-ae69-4c25-b5d4-7bf8fda66ee5"
+              LastKnownName="TargetManager"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b0aeca50-f1a6-421c-b63c-4b24a4763179"
+                  name="OperationsManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bb3c094a-233a-4484-bf1a-a1a52a800505"
+                  name="TargetManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7339b1e4-deb2-4b08-b51b-a94963f7d709"
+            isDerived="false"
+            sourceEndRoleName="OperationsManager"
+            targetEndRoleName="IMissileLauncher"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="e8dac3ad-3c19-43e6-a429-2568017bc834"
+              LastKnownName="IMissileLauncher"
+              LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="23fb13fe-d82e-4259-81eb-8c554ed5af2c"
+                  name="OperationsManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="26edb805-2f77-4802-b0dd-a1329bb6670f"
+                  name="IMissileLauncher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="3f786758-c09f-4010-b06b-f09c5df12780"
+            name="_rules_them_all"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dbd0f903-7226-463c-8c58-1cab9b078150"
+                LastKnownName="ModelingProject1::OperationsManager"
+                LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d783515a-45f1-405d-9184-15557c6e4052"
+            name="_target_manager"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="cb8ae4db-225e-43b2-9fb7-222a1a56a6fc"
+            name="_turret"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="946469a2-0fbc-4cf8-aa9c-025e4c3afcdd"
+            name="OperationsManager"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7ebbe2d2-cd95-4389-8751-edda26ecda90"
+            name="Dispose"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="41372977-5912-4149-ad3e-1b19b220582a"
+            name="GetInstance"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0eab4072-cc23-4934-8e56-bdedeff686b1"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="dbd0f903-7226-463c-8c58-1cab9b078150"
+                      LastKnownName="ModelingProject1::OperationsManager"
+                      LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d87952c0-5f95-4b25-926a-fa5d688cdca1"
+            name="LoadFile"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f6aa4618-ee8d-4e99-8785-bea2118a398e"
+            name="OperationsManager"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="042d8225-a695-4fe4-9b91-dea4fc1e8a6e"
+            name="ReloadTurret"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="96a6bc0b-a434-400b-af00-d810c1823aa6"
+            name="TurretFire"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e977f00c-5c85-40e2-9634-8596b159e9e9"
+            name="TurretMoveDown"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e3d6cba8-0daf-4dd1-b6c1-91eb76c65d89"
+            name="TurretMoveUp"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="62ea321f-50d7-4e07-a57a-bdd424d94420"
+            name="TurretMoveLeft"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0319cdec-01e1-4079-ad5a-2d2770ed4cde"
+            name="TurretMoveRight"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="081f557a-8350-4e5b-b324-2dc9a8e61877"
+            name="TurretReset"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="e8dac3ad-3c19-43e6-a429-2568017bc834"
+        name="IMissileLauncher"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedAttributes>
+          <property
+            Id="adcbe518-6ef9-4861-89aa-d5f53d649015"
+            name="Phi"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c1e30b51-4de5-4084-8fff-17fd343d4fe6"
+            name="Psi"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributes>
+        <ownedOperations>
+          <operation
+            Id="34bb4a57-4373-4100-b546-324b1c77c9c9"
+            name="Fire"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9f3029e6-c510-4ea9-8f71-1fccbf192b69"
+            name="MoveBy"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e3f8ae75-0ff7-4c22-8bb3-2e22fb27c19e"
+            name="MoveTo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7047d496-9eff-48ea-999e-f0d7dc9015b9"
+            name="Reset"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="73b9c6d3-ae69-4c25-b5d4-7bf8fda66ee5"
+        name="TargetManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="31e333f8-d1b3-4a71-8f6c-13cfac17833b"
+            name="_instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f76a7d51-4c01-4eb5-a465-7de8dd3ac545"
+            name="_targets"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="0769d1ed-50f1-45ea-af20-54223e81d3bb"
+            name="~TargetManager"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="35b59598-9628-4685-b5d0-73b34c911ff6"
+            name="AddTarget"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ecbc3a81-6c2a-4532-b822-35ddf2ad13d4"
+            name="AddTargets"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1fd08035-e6ab-46a0-a869-8521fa901236"
+            name="ClearTargetList"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b4bb1a62-8b5c-44e0-b675-26ffe2526cca"
+            name="Dispose"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="949a8432-1903-421f-83ed-52b2d7ebbf38"
+            name="GetInstance"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4a2179a4-5be6-4d12-8791-42cc1e828968"
+            name="TargetManager"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

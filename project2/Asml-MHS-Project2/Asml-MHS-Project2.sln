@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Asml-MHS-Project2", "Asml-MHS-Project2\Asml-MHS-Project2.modelproj", "{7C0E5012-2CEA-4CDE-BC13-E65A65909130}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Asml-MHS-ModelingProject2", "Asml-MHS-ModelingProject2\Asml-MHS-ModelingProject2.modelproj", "{6191094E-4CBC-4C02-AC7F-D1CD69111067}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C0E5012-2CEA-4CDE-BC13-E65A65909130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C0E5012-2CEA-4CDE-BC13-E65A65909130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C0E5012-2CEA-4CDE-BC13-E65A65909130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C0E5012-2CEA-4CDE-BC13-E65A65909130}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6191094E-4CBC-4C02-AC7F-D1CD69111067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6191094E-4CBC-4C02-AC7F-D1CD69111067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6191094E-4CBC-4C02-AC7F-D1CD69111067}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6191094E-4CBC-4C02-AC7F-D1CD69111067}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
