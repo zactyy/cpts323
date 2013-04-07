@@ -29,6 +29,13 @@
       <SubType>Content</SubType>
       <DependentUpon>MainandOperationsManager.classdiagram</DependentUpon>
     </Content>
+    <Content Include="MHS-Proj1-UseCaseDiagram.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="MHS-Proj1-UseCaseDiagram.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>MHS-Proj1-UseCaseDiagram.usecasediagram</DependentUpon>
+    </Content>
     <Content Include="TargetManager.classdiagram">
       <SubType>Content</SubType>
     </Content>

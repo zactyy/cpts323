@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="254c6c84-496c-425b-a4a7-8779396807bf"
   name="Asml-MHS-ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -1893,6 +1893,1384 @@
             isQuery="false" />
         </ownedOperations>
       </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="934ce62f-6700-4853-9766-2fb2d3bc995e"
+        name="Brian the Judge"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="1f624dc0-35b6-48cd-8333-62052d9ffcec"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Select Target File"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3bb54243-cacb-439b-af04-b22876646388"
+              LastKnownName="Select Target File"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="373e4010-f6ea-45a3-8fc1-4fc7ad73739b"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a462bc03-a60d-4b28-b5d1-dbe79212909e"
+                  name="Select Target File"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e0c9ebc4-269d-4cdc-a6fb-827323e2a9dc"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Move Launcher Up"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="578f94ba-51cb-4be8-8f03-b47c86a2ca15"
+              LastKnownName="Move Launcher Up"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2a0812bf-32e6-4424-9d3a-5d69c9849ccc"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a4b2d260-1c4d-4bca-a81d-181159a440f9"
+                  name="Move Launcher Up"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="530b8a7c-272e-4be8-b084-084437bee197"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Move Launcher Left"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ca621d3f-ab30-4c14-afde-ae88fb4e8744"
+              LastKnownName="Move Launcher Left"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8eb12914-e8c3-47bd-906b-4db9ee190254"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="849d5064-dbde-4f19-8a8a-6a323535a295"
+                  name="Move Launcher Left"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b1879b0c-ba88-42c0-bcb3-9e3ed9cba691"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Move Launcher Right"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="bf070a85-39fd-4911-bdfe-cb07d1e5efd6"
+              LastKnownName="Move Launcher Right"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9554b394-bee3-4961-9035-9beb84e91e83"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3f2f4561-02b4-4246-a0c6-de39be85eb54"
+                  name="Move Launcher Right"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1b0adcd8-0969-43e8-a145-188a3ef0297a"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Fire Missile"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8dc013e0-4ddc-46d9-a405-2e31176171ba"
+              LastKnownName="Fire Missile"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ad060d88-b160-4dbc-9255-37a6fa649b2c"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4aafd9bd-5e4e-4d64-9588-a26a0dc3628b"
+                  name="Fire Missile"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="76a489b4-7105-4198-af2d-7d1e300d9c2f"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Move Launcher Down"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f2284694-ef27-4289-9361-343e7a5304eb"
+              LastKnownName="Move Launcher Down"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a991fa70-fa5e-424f-bfa6-6f4ef4a062f9"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a7288c14-fed9-41a1-ba3d-a10e63a42933"
+                  name="Move Launcher Down"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="60650178-d309-4c5a-aa3b-8436a697962b"
+        name="Launcher"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="00f93541-81a3-4fb9-a90f-f502e3ac0192"
+        name="Display Targets"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="ef9cce8a-5390-4b41-beb1-74c508bc4be2">
+            <useCaseMoniker
+              Id="b62b3b20-e468-426e-bbf3-2d2b6a87300a"
+              LastKnownName="Read XML File"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+          </dependency>
+          <dependency
+            Id="308de8bf-3b37-4bd5-8ad1-7b73ae9c156b">
+            <useCaseMoniker
+              Id="071b8cb7-309f-4b35-b9fd-a9749e15e8ef"
+              LastKnownName="Read INI File"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="663d6734-939d-40b3-98ca-72bf074318d2"
+        name="Target File"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="af6b91fc-ad1e-4c71-a92c-73bf3bf75e32"
+        name="Launcher Controls"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8dc013e0-4ddc-46d9-a405-2e31176171ba"
+        name="Fire Missile"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="08a0e3ef-c011-4a7b-9edb-3a5e16a996d9"
+            isDerived="false"
+            sourceEndRoleName="Fire Missile"
+            targetEndRoleName="Launcher"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="60650178-d309-4c5a-aa3b-8436a697962b"
+              LastKnownName="Launcher"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cb07b5c5-8091-4929-bd5b-d3452d690d13"
+                  name="Fire Missile"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8c64d8ef-9f00-426a-8123-883b302055a8"
+                  name="Launcher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bf070a85-39fd-4911-bdfe-cb07d1e5efd6"
+        name="Move Launcher Right"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="20309c25-7d5a-4c05-8c5f-49c9cafa8413"
+            isDerived="false"
+            sourceEndRoleName="Move Launcher Right"
+            targetEndRoleName="Launcher"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="60650178-d309-4c5a-aa3b-8436a697962b"
+              LastKnownName="Launcher"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2101f43d-a926-4757-bb08-4c7ac1b29f7a"
+                  name="Move Launcher Right"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e7bd42d6-4972-4be8-8c2b-9380d693b716"
+                  name="Launcher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f2284694-ef27-4289-9361-343e7a5304eb"
+        name="Move Launcher Down"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="d26cd658-879f-4953-b366-9b150fb75916"
+            isDerived="false"
+            sourceEndRoleName="Move Launcher Down"
+            targetEndRoleName="Launcher"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="60650178-d309-4c5a-aa3b-8436a697962b"
+              LastKnownName="Launcher"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="86feb296-f83f-4d73-8bf0-945fb1914cf7"
+                  name="Move Launcher Down"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2fadcf59-b0d9-4ce7-b1ae-890481f9bdb2"
+                  name="Launcher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="578f94ba-51cb-4be8-8f03-b47c86a2ca15"
+        name="Move Launcher Up"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="02060468-5140-448f-b248-2647ecf30539"
+            isDerived="false"
+            sourceEndRoleName="Move Launcher Up"
+            targetEndRoleName="Launcher"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="60650178-d309-4c5a-aa3b-8436a697962b"
+              LastKnownName="Launcher"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="38e4d6d4-e3fc-4d86-a018-f5925caa038b"
+                  name="Move Launcher Up"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="edafbdc1-920d-454f-a6e2-6e1c708e0e30"
+                  name="Launcher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ca621d3f-ab30-4c14-afde-ae88fb4e8744"
+        name="Move Launcher Left"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="429a07ce-26b5-4734-8dce-c21cdd647ce2"
+            isDerived="false"
+            sourceEndRoleName="Move Launcher Left"
+            targetEndRoleName="Launcher"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="60650178-d309-4c5a-aa3b-8436a697962b"
+              LastKnownName="Launcher"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="81d3cf99-75c5-43c0-b80e-f7bb242e2cc4"
+                  name="Move Launcher Left"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0d8d95de-3c6a-4423-b4b3-728e32c5051a"
+                  name="Launcher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="985febb9-a6d4-44c4-9150-cd51a99387fa"
+        name="Target File Readers"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3bb54243-cacb-439b-af04-b22876646388"
+        name="Select Target File"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="02c9852b-31a0-4b7d-bde8-d2d9c2dfabb7">
+            <useCaseMoniker
+              Id="b62b3b20-e468-426e-bbf3-2d2b6a87300a"
+              LastKnownName="Read XML File"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+          </extend>
+          <extend
+            Id="84c68067-2b0b-4bcc-b84e-947b4f46bc4b">
+            <useCaseMoniker
+              Id="071b8cb7-309f-4b35-b9fd-a9749e15e8ef"
+              LastKnownName="Read INI File"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b62b3b20-e468-426e-bbf3-2d2b6a87300a"
+        name="Read XML File"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="26a8d4ce-f2c7-47ef-a3b2-46bf03abe94d"
+            isDerived="false"
+            sourceEndRoleName="Read XML File"
+            targetEndRoleName="Target File"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="663d6734-939d-40b3-98ca-72bf074318d2"
+              LastKnownName="Target File"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="499c7f4d-0b58-49ce-8037-bcc581223221"
+                  name="Read XML File"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a458007d-edba-42af-9166-d40002224b69"
+                  name="Target File"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="071b8cb7-309f-4b35-b9fd-a9749e15e8ef"
+        name="Read INI File"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="9a52a95c-c99a-4dad-8edc-56ffdd829292"
+            isDerived="false"
+            sourceEndRoleName="Read INI File"
+            targetEndRoleName="Target File"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="663d6734-939d-40b3-98ca-72bf074318d2"
+              LastKnownName="Target File"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f187da4e-eb02-40d1-a0e9-7b67a0ec5e26"
+                  name="Read INI File"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e778eba3-eab6-42e4-835d-182ec195dbfa"
+                  name="Target File"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="42eb4935-6faa-49ef-9e15-e828b75e0a20"
+        name="Brian the Judge"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="b84cfc67-ef7d-425d-afd0-13143f1aa863"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Select Target File"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2e00e46a-6347-4db5-98ae-e31e08ca4c14"
+              LastKnownName="Select Target File"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="754afe42-8344-4c11-b5f5-22c7928405a1"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5c4e0951-623f-4b42-bfb0-0aa25dbc74e6"
+                  name="Select Target File"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="91f8b82b-977a-47d3-8cfc-5b93787b93dc"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Move Launcher Up"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8bc25cbd-5333-4102-8559-82f3b37380a8"
+              LastKnownName="Move Launcher Up"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6da0806b-0a47-4035-91c5-05b66433c942"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8463d955-98e1-428f-8abd-1ab66f4d1b59"
+                  name="Move Launcher Up"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4642ae3e-e7fd-4e73-860d-7b9e0bf3f703"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Move Launcher Left"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ec72365a-3667-4031-9cc3-e3f5b93614f1"
+              LastKnownName="Move Launcher Left"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="185824f9-eb7f-48f2-9d21-ce143b4bb6c4"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="56a680f5-cf6d-4f9b-9865-776ea834ac49"
+                  name="Move Launcher Left"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ee14a9bd-cd95-439f-86aa-53f0b48e0382"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Move Launcher Right"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6380904a-bb57-43b8-b638-379b1413ba92"
+              LastKnownName="Move Launcher Right"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0291c2b4-58f4-4cb6-a5ea-f94ea1c9b2a2"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="898db823-6442-468a-b23d-fb25c748faa0"
+                  name="Move Launcher Right"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ce476dbd-a718-40ca-826e-f1cca81e8798"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Fire Missile"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b22fa1d5-02aa-491f-b0a2-067a31c11559"
+              LastKnownName="Fire Missile"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ac38e956-5d92-4d40-a44b-42842816df19"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5e18b069-1f58-4119-a4e0-11f58d09ff8f"
+                  name="Fire Missile"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="82ac60ae-a6e5-470b-bf4c-c48add22b1ba"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Move Launcher Down"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e0fc9590-6ec4-4a1b-bb65-5b6bbfe7c6c7"
+              LastKnownName="Move Launcher Down"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2c574eae-132f-46c8-a98e-a623a3c07e19"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d6543303-20fc-4473-845c-dfad9879a5c9"
+                  name="Move Launcher Down"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="c0b3107a-0b4e-47ad-b5a4-66bcc15f348e"
+        name="Launcher"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="aff07225-d87c-404f-9a97-005cbcc45baf"
+        name="Display Targets"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="7d788d81-4d51-4be8-85b5-10527f908a3e">
+            <useCaseMoniker
+              Id="2648a125-522f-40c6-a88b-50edd9068b41"
+              LastKnownName="Read XML File"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+          </dependency>
+          <dependency
+            Id="af9bcaa4-e1a0-4b33-adb0-58f87051989e">
+            <useCaseMoniker
+              Id="a117eaf0-1009-429f-94a4-0b7ecf4ceab0"
+              LastKnownName="Read INI File"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="c4523154-c958-4f61-98aa-897f779e3eac"
+        name="Target File"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="5fc69c38-65de-41b0-abe8-3540903edaf6"
+        name="Launcher Controls"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b22fa1d5-02aa-491f-b0a2-067a31c11559"
+        name="Fire Missile"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="794fbb77-fd14-46ca-b10b-95af99d444b6"
+            isDerived="false"
+            sourceEndRoleName="Fire Missile"
+            targetEndRoleName="Launcher"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="c0b3107a-0b4e-47ad-b5a4-66bcc15f348e"
+              LastKnownName="Launcher"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d5e8fb8c-6699-44e1-9956-5e126a02ecf3"
+                  name="Fire Missile"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="18879f93-889d-44c1-8d8e-af71eecdb452"
+                  name="Launcher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="5fc69c38-65de-41b0-abe8-3540903edaf6"
+            LastKnownName="Launcher Controls"
+            LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6380904a-bb57-43b8-b638-379b1413ba92"
+        name="Move Launcher Right"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="7a1d073a-b4a3-466d-8c0c-c72cd0909afd"
+            isDerived="false"
+            sourceEndRoleName="Move Launcher Right"
+            targetEndRoleName="Launcher"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="c0b3107a-0b4e-47ad-b5a4-66bcc15f348e"
+              LastKnownName="Launcher"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5a3c4971-aba2-4372-bf22-437cb61bac8a"
+                  name="Move Launcher Right"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0295137e-95b7-4e3f-8175-e9c9a2d15d0e"
+                  name="Launcher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="5fc69c38-65de-41b0-abe8-3540903edaf6"
+            LastKnownName="Launcher Controls"
+            LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e0fc9590-6ec4-4a1b-bb65-5b6bbfe7c6c7"
+        name="Move Launcher Down"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="e5020081-a02a-43c2-8ea1-3023a4190c41"
+            isDerived="false"
+            sourceEndRoleName="Move Launcher Down"
+            targetEndRoleName="Launcher"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="c0b3107a-0b4e-47ad-b5a4-66bcc15f348e"
+              LastKnownName="Launcher"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2cb540e8-e4df-4e25-a486-0c947b87f5a1"
+                  name="Move Launcher Down"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4d8bbe5d-90f5-4717-bac4-53ed83b6163f"
+                  name="Launcher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="5fc69c38-65de-41b0-abe8-3540903edaf6"
+            LastKnownName="Launcher Controls"
+            LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8bc25cbd-5333-4102-8559-82f3b37380a8"
+        name="Move Launcher Up"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="5404f769-7a8a-44e5-a8d3-84316dd99f40"
+            isDerived="false"
+            sourceEndRoleName="Move Launcher Up"
+            targetEndRoleName="Launcher"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="c0b3107a-0b4e-47ad-b5a4-66bcc15f348e"
+              LastKnownName="Launcher"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="58d4c4e2-6b6b-4997-b2c9-a32e2d99072f"
+                  name="Move Launcher Up"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3e1ee55e-24fe-4122-8a0c-23febb9dc78f"
+                  name="Launcher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="5fc69c38-65de-41b0-abe8-3540903edaf6"
+            LastKnownName="Launcher Controls"
+            LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ec72365a-3667-4031-9cc3-e3f5b93614f1"
+        name="Move Launcher Left"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="f4d6f568-5b69-4d4d-9556-856db7ca7fa3"
+            isDerived="false"
+            sourceEndRoleName="Move Launcher Left"
+            targetEndRoleName="Launcher"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="c0b3107a-0b4e-47ad-b5a4-66bcc15f348e"
+              LastKnownName="Launcher"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6a29cad8-9631-44f7-ac4f-a0e4f5661e5e"
+                  name="Move Launcher Left"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="86169b3e-6b7e-4643-84a1-0bf88202efc7"
+                  name="Launcher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="5fc69c38-65de-41b0-abe8-3540903edaf6"
+            LastKnownName="Launcher Controls"
+            LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="2ab7c7bd-6bfb-4062-9fde-c2dbf29a0990"
+        name="Target File Readers"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2e00e46a-6347-4db5-98ae-e31e08ca4c14"
+        name="Select Target File"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="e435f37f-e9c1-43d7-993a-993467bce97f">
+            <useCaseMoniker
+              Id="2648a125-522f-40c6-a88b-50edd9068b41"
+              LastKnownName="Read XML File"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+          </extend>
+          <extend
+            Id="3c9e961b-b4aa-420f-bf16-c55a03df0032">
+            <useCaseMoniker
+              Id="a117eaf0-1009-429f-94a4-0b7ecf4ceab0"
+              LastKnownName="Read INI File"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="2ab7c7bd-6bfb-4062-9fde-c2dbf29a0990"
+            LastKnownName="Target File Readers"
+            LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2648a125-522f-40c6-a88b-50edd9068b41"
+        name="Read XML File"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="257e458a-0389-4082-815b-e582e2526a3b"
+            isDerived="false"
+            sourceEndRoleName="Read XML File"
+            targetEndRoleName="Target File"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="c4523154-c958-4f61-98aa-897f779e3eac"
+              LastKnownName="Target File"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d1433e8f-5e68-48a8-9e52-0b76e4bf14cc"
+                  name="Read XML File"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5aa02019-afe5-40f0-aa3e-a183fc2a6182"
+                  name="Target File"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="2ab7c7bd-6bfb-4062-9fde-c2dbf29a0990"
+            LastKnownName="Target File Readers"
+            LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a117eaf0-1009-429f-94a4-0b7ecf4ceab0"
+        name="Read INI File"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="1e3ba335-45c5-4779-bd8d-55c605396540"
+            isDerived="false"
+            sourceEndRoleName="Read INI File"
+            targetEndRoleName="Target File"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="c4523154-c958-4f61-98aa-897f779e3eac"
+              LastKnownName="Target File"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b9f2b80e-1b89-447a-b771-a790bc0d6189"
+                  name="Read INI File"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="95d2afa1-308c-454b-b865-e3ca3337549b"
+                  name="Target File"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="2ab7c7bd-6bfb-4062-9fde-c2dbf29a0990"
+            LastKnownName="Target File Readers"
+            LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+        </subjects>
+      </useCase>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
