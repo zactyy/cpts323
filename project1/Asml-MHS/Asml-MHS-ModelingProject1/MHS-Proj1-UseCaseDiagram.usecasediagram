@@ -1,17 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="4ed9b14e-6c86-4639-93db-a2f316dd6efa" name="MHS-Proj1-UseCaseDiagram" linkedPackageId="8cf00d47-6ad5-42bb-ae6c-ff7efc4d7154" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="4ed9b14e-6c86-4639-93db-a2f316dd6efa" name="MHS-Proj1-UseCaseDiagram" linkedPackageId="8cf00d47-6ad5-42bb-ae6c-ff7efc4d7154" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <profileInstances>
-    <packageHasProfileInstances Id="b11afa2e-e8c8-4076-aa1c-a99e6b2d92f4">
-      <profileInstance Id="6335aef2-3819-442f-925f-3a81cdb6904a" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+    <packageHasProfileInstances Id="67b11696-5c29-4aea-a206-19e59851f3cf">
+      <profileInstance Id="131ba39e-8bc0-4162-b69e-ed7616609462" name="CSharpProfile">
+        <elementDefinition Id="8f365836-e2e9-4d49-9ef8-735b7d008030" />
       </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="0440d6a4-8515-4bc3-9536-52f10ef21fff">
-      <profileInstance Id="86ff8b42-f708-4b8f-86cb-eae5317d68a9" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      <elementDefinition Id="1b6f6a06-95da-4990-8230-4ccf2fa82de7" />
     </packageHasProfileInstances>
   </profileInstances>
   <packagedElements>
@@ -356,5 +350,19 @@
   </packagedElements>
   <package Id="8cf00d47-6ad5-42bb-ae6c-ff7efc4d7154" name="Asml-MHS-ModelingProject1">
     <elementDefinition Id="254c6c84-496c-425b-a4a7-8779396807bf" />
+    <profileInstances>
+      <packageHasProfileInstances Id="b11afa2e-e8c8-4076-aa1c-a99e6b2d92f4">
+        <profileInstance Id="6335aef2-3819-442f-925f-3a81cdb6904a" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="0440d6a4-8515-4bc3-9536-52f10ef21fff">
+        <profileInstance Id="86ff8b42-f708-4b8f-86cb-eae5317d68a9" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>
