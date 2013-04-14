@@ -22,12 +22,19 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
-    <Content Include="MainandOperationsMgr.classdiagram">
+    <Content Include="SearchModes.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="MainandOperationsMgr.classdiagram.layout">
+    <Content Include="SearchModes.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>MainandOperationsMgr.classdiagram</DependentUpon>
+      <DependentUpon>SearchModes.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="TargetMgr.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TargetMgr.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TargetMgr.classdiagram</DependentUpon>
     </Content>
     <Content Include="MHS-Proj2-UseCaseDiagram.usecasediagram">
       <SubType>Content</SubType>
@@ -36,19 +43,26 @@
       <SubType>Content</SubType>
       <DependentUpon>MHS-Proj2-UseCaseDiagram.usecasediagram</DependentUpon>
     </Content>
-    <Content Include="MissileLauncher.classdiagram">
+    <Content Include="TurretMgr.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="MissileLauncher.classdiagram.layout">
+    <Content Include="TurretMgr.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>MissileLauncher.classdiagram</DependentUpon>
+      <DependentUpon>TurretMgr.classdiagram</DependentUpon>
     </Content>
-    <Content Include="TargetMgr.classdiagram">
+    <Content Include="OperationsMgr.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="TargetMgr.classdiagram.layout">
+    <Content Include="OperationsMgr.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>TargetMgr.classdiagram</DependentUpon>
+      <DependentUpon>OperationsMgr.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="VideoMgr.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="VideoMgr.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>VideoMgr.classdiagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\Asml-MHS-ModelingProject2.uml">

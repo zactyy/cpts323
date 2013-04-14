@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.625" name="MissileLauncher">
+  <logicalClassDesignerModelMoniker Id="88bbb5fc-e9db-4d6c-a904-f0b524951581" />
+  <nestedChildShapes>
+    <classShape Id="ca01c92c-725a-4e0c-859f-5f3ead2a3997" absoluteBounds="1.125, 0.875, 4.125, 7.4687497814496346" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="6d941c90-f029-4d91-b62c-c6c459609891" LastKnownName="TurretManager" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="da2caa83-ed25-4855-aac8-ba966402defb" absoluteBounds="1.1399999999999997, 1.2650000000000001, 4.0950000000000006, 2.2832030529777207" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="f387e802-a148-4eb8-b756-03570ae196ec" absoluteBounds="1.1399999999999997, 3.5582030529777207, 4.0950000000000006, 4.6855467284719143" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f0ebd49d-c393-449e-8706-0d6a4490d67b" absoluteBounds="6.75, 1.625, 3.25, 2.6640624304612475" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="edc79d50-1a9c-4253-888c-51e63e80a94d" LastKnownName="MissileLauncherAdapter" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="47b018f2-bc06-4211-bd25-852a12b05577" absoluteBounds="6.7650000000000006, 2.015, 3.2199999999999998, 0.68164060264825832" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="926f3bcb-03b0-466f-8329-929cd16f90c1" absoluteBounds="6.7650000000000006, 2.7066406026482586, 3.2199999999999998, 1.4824218278129895" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <dependencyConnector edgePoints="[(6.75 : 2.95703121523062); (5.25 : 2.95703121523062)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="c7b0d162-a271-4209-a7da-89c820db7b96" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="f0ebd49d-c393-449e-8706-0d6a4490d67b" />
+        <classShapeMoniker Id="ca01c92c-725a-4e0c-859f-5f3ead2a3997" />
+      </nodes>
+    </dependencyConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>
