@@ -16,7 +16,7 @@
         <OperationElementListCompartment Id="926f3bcb-03b0-466f-8329-929cd16f90c1" absoluteBounds="6.7650000000000006, 2.7066406026482586, 3.2199999999999998, 1.4824218278129895" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <dependencyConnector edgePoints="[(6.75 : 2.95703121523062); (5.25 : 2.95703121523062)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+    <dependencyConnector edgePoints="[(6.75 : 2.95703121523062); (5.25 : 2.95703121523062)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
       <dependencyMoniker Id="c7b0d162-a271-4209-a7da-89c820db7b96" />
       <relativeChildShapes />
       <nodes>

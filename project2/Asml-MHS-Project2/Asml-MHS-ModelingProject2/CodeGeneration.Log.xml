@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 11.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2013-04-15T16:23:22" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2013-04-15T16:23:23" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2013-04-15T16:23:23" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2013-04-15T16:23:23" Importance="Diagnostic" Text="ProjectPath = ..\Asml-MHS-ModelingProject2Lib\Asml-MHS-ModelingProject2Lib.csproj" />
+  <Message Timestamp="2013-04-15T16:23:23" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2013-04-15T16:23:23" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2013-04-15T16:23:23" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2013-04-15T16:23:23" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2013-04-15T16:23:23" Importance="Medium" Text="Asml-MHS-ModelingProject2's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'Asml-MHS-ModelingProject2::OperationsManager' -  (Class) " />
+  <Message Timestamp="2013-04-15T16:23:24" Importance="Medium" Text="'Asml-MHS-ModelingProject2::OperationsManager' -  (Class) : success (file created) - C:\Users\jen\Documents\GitHub\cpts323\project2\Asml-MHS-Project2\Asml-MHS-ModelingProject2Lib\GeneratedCode\OperationsManager.cs" />
+  <Message Timestamp="2013-04-15T16:23:24" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2013-04-15T16:23:24" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2013-04-15T16:23:24" Importance="Diagnostic" Text="ProjectPath = ..\Asml-MHS-ModelingProject2Lib\Asml-MHS-ModelingProject2Lib.csproj" />
+  <Message Timestamp="2013-04-15T16:23:24" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2013-04-15T16:23:24" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2013-04-15T16:23:24" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2013-04-15T16:23:24" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2013-04-15T16:23:24" Importance="Medium" Text="Asml-MHS-ModelingProject2's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'Asml-MHS-ModelingProject2::OperationsManager' -  (Class) " />
+  <Message Timestamp="2013-04-15T16:23:24" Importance="Diagnostic" Text="'Asml-MHS-ModelingProject2::OperationsManager' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2013-04-15T16:23:24" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>
