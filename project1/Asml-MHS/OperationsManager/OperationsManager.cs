@@ -4,7 +4,7 @@
  * Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
  * Written by: Jennifer Mendez
  * Last modified by: Chris Walters
- * Date modified: March 21, 2013
+ * Date modified: April 17, 2013
  */
 
 using System;
@@ -17,6 +17,7 @@ using TargetManagement;
 using TargetManagement.TargetFileProcessors;
 using ASMLEngineSdk;
 using TurretManagement;
+using System.Windows.Controls;
 
 namespace OperationsManager
 {
@@ -43,6 +44,7 @@ namespace OperationsManager
 
         private IMissileLauncher _turret;
         private const int MAX_MISSILES = 4;
+
 
         public static OperationsManager GetInstance()
         {
@@ -92,6 +94,7 @@ namespace OperationsManager
             // Set up access to all needed objects
             _target_manager = TargetManager.GetInstance();
             _turret = new MissileLauncherAdapter();
+            _target_manager.TargetsChanged += on_targets_changed;
         }
         
         // Interface with the Turret - for Manual Operation
@@ -144,17 +147,6 @@ namespace OperationsManager
             _target_manager.LoadFromFile(targetfile);
         }
         
-        // Interface with Target Manager
-        public ObservableCollection<Target> TargetInfo
-        {
-            get
-            {
-                return _target_manager.Targets;
-            }
-            // the collection should not be changed from here. Only the TargetManager should change it.
-            private set {}
-        }
-
         public void ReloadTurret()
         {
             NumberMissiles = MAX_MISSILES;
@@ -165,6 +157,44 @@ namespace OperationsManager
             get;
             set;
         }
+        // Interface with Target Manager
+        public List<ListViewItem> TargetInfo
+        {
+            get
+            {
+                List<ListViewItem> tmp = new List<ListViewItem>();
+                foreach (Target target in _target_manager.Targets)
+                {
+                    var item = new ListViewItem();
+                    // using a temp object prevents escape of the Targets in the target manager list.
+                    Target temp = new Target(target);
+                    item.Content = temp;
+                    tmp.Add(item);
+                }
+                return tmp;
+            }
+            private set { }
+        }
+
+        #region Target List Event(s)
+        public delegate void TargetsChanged();
+
+        /// <summary>
+        /// used to pass a change in target list up the chain(if anyone is observing for a change).
+        /// </summary>
+        public TargetsChanged ChangedTargets;
+
+        /// <summary>
+        /// even handler for when targets list changes, passes event to observer, if any.
+        /// </summary>
+        private void on_targets_changed()
+        {
+            if (ChangedTargets != null)
+            {
+                ChangedTargets();
+            }
+        }
+        #endregion
 
         /// <summary>
         /// A method to add targets identified by the video feed.  This will add

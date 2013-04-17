@@ -104,13 +104,13 @@ namespace TargetManagement.TargetFileProcessors
                 switch (key)
                 {
                     case "x":
-                        _current_target.X_coordinate = Convert.ToDecimal(value);
+                        _current_target.X_coordinate = Convert.ToDouble(value);
                         break;
                     case "y":
-                        _current_target.Y_coordinate = Convert.ToDecimal(value);
+                        _current_target.Y_coordinate = Convert.ToDouble(value);
                         break;
                     case "z":
-                        _current_target.Z_coordinate = Convert.ToDecimal(value);
+                        _current_target.Z_coordinate = Convert.ToDouble(value);
                         break;
                     default: // if it reaches this point, it is an invalid file
                         throw new InvalidIniFormat(_invalid_ini_format_message);
@@ -172,7 +172,11 @@ namespace TargetManagement.TargetFileProcessors
             }
             else if (Regex.IsMatch(trimedLine, "^[\\s*\\w\\s*]+=[\\s*\\w\\s*]+$"))
             {
-                return false; // the line is a key=value piar.
+                return false; // the line is a key=value pair.
+            }
+            else if (Regex.IsMatch(trimedLine, "^[\\s*\\w\\s*]+=[\\s*\\d\\.\\d*\\s*]+$"))
+            {
+                return false; // the line is a key=value pair with a decimal number on the right side.
             }
             else
             {

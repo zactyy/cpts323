@@ -115,13 +115,13 @@ namespace TargetManagement.TargetFileProcessors
             switch (attribute_name)
             {
                 case "xpos":
-                    _current_target.X_coordinate = Convert.ToDecimal(value);
+                    _current_target.X_coordinate = Convert.ToDouble(value);
                     break;
                 case "ypos":
-                    _current_target.Y_coordinate = Convert.ToDecimal(value);
+                    _current_target.Y_coordinate = Convert.ToDouble(value);
                     break;
                 case "zpos":
-                    _current_target.Z_coordinate = Convert.ToDecimal(value);
+                    _current_target.Z_coordinate = Convert.ToDouble(value);
                     break;
                 default:
                     throw new XmlException("Invalid Format");

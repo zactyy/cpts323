@@ -3,8 +3,8 @@
 // CptS323, Spring 2013
 // Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
 // Written by: Jennifer Mendez
-// Last modified by: Zachary Tyynismaa
-// Date modified: April 15, 2013
+// Last modified by: Chris Walters
+// Date modified: April 17, 2013
 
 using System;
 using System.Collections.Generic;
@@ -27,7 +27,7 @@ namespace TargetManagement
             Phi = 0;
         }
 
-        public Target(string i_name, int i_x_coordinate, int i_y_coordinate, int i_z_coordinate, bool i_friend)
+        public Target(string i_name, double i_x_coordinate, double i_y_coordinate, double i_z_coordinate, bool i_friend)
         {
             Name = i_name;
             X_coordinate = i_x_coordinate;
@@ -37,7 +37,7 @@ namespace TargetManagement
             this.CalculateAngles();
         }
 
-        public Target(int i_x_coordinate, int i_y_coordinate, int i_z_coordinate, bool i_friend)
+        public Target(double i_x_coordinate, double i_y_coordinate, double i_z_coordinate, bool i_friend)
         {
             Name = null;
             X_coordinate = i_x_coordinate;
@@ -47,13 +47,23 @@ namespace TargetManagement
             this.CalculateAngles();
         }
 
+
+        public Target(Target copy)
+        {
+            this.Name = copy.Name;
+            this.X_coordinate = copy.X_coordinate;
+            this.Y_coordinate = copy.Y_coordinate;
+            this.Z_coordinate = copy.Z_coordinate;
+            this.Friend = copy.Friend;
+        }
+
         // determines angles from origin to targets coordinate assigns to Theta and Phi
         private void CalculateAngles()
         {
-            double temp = (double)(X_coordinate/Z_coordinate);
+            double temp = (X_coordinate/Z_coordinate);
             Theta = Math.Atan(temp);
-            double hypotnus = Math.Sqrt((double)(X_coordinate * X_coordinate + Z_coordinate * Z_coordinate));
-            Phi = Math.Atan((double)Y_coordinate / hypotnus);
+            double hypotnus = Math.Sqrt((X_coordinate * X_coordinate + Z_coordinate * Z_coordinate));
+            Phi = Math.Atan(Y_coordinate / hypotnus);
         }
 
         public string Name
@@ -62,19 +72,19 @@ namespace TargetManagement
             set;
         }
 
-        public decimal X_coordinate
+        public double X_coordinate
         {
             get;
             set;
         }
 
-        public decimal Y_coordinate
+        public double Y_coordinate
         {
             get;
             set;
         }
         
-        public decimal Z_coordinate
+        public double Z_coordinate
         {
             get;
             set;

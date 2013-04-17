@@ -34,6 +34,7 @@ namespace Asml_McCallisterHomeSecurity
             string program_title = "ASML-McCallister Home Security ";
             this.Title = program_title + version_string;
             lblNumMissiles.Content = _rules_them_all.NumberMissiles.ToString();
+            _rules_them_all.ChangedTargets += on_targets_changed;
         }
 
 
@@ -169,6 +170,15 @@ namespace Asml_McCallisterHomeSecurity
                 DisplayError(ex.Message);
             }
             Keyboard.Focus(winHomeScreen);     
+        }
+
+        private void on_targets_changed()
+        {
+            lstTargets.Items.Clear();
+            foreach (ListViewItem item in _rules_them_all.TargetInfo)
+            {
+                lstTargets.Items.Add(item);
+            }
         }
         #endregion
 

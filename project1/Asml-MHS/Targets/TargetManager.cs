@@ -6,7 +6,7 @@
 // Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
 // Written by: Jennifer Mendez
 // Last modified by: Chris Walters
-// Date modified: March 21, 2013
+// Date modified: April 17, 2013
 
 using System;
 using System.Collections.Generic;
@@ -35,8 +35,12 @@ namespace TargetManagement
         /// <summary>
         /// Targets list.
         /// </summary>
-        private ObservableCollection<Target> _targets;
-  
+        private List<Target> _targets;
+        
+        public delegate void targetsChanged();
+
+        public targetsChanged TargetsChanged;
+
 
         /// <summary>
         ///  returns insance of TargetManager
@@ -87,7 +91,7 @@ namespace TargetManagement
         /// </summary>
         private TargetManager()
         {
-            _targets = new ObservableCollection<Target>();
+            _targets = new List<Target>();
             _reader_factory = TargetFileProcessors.FileProcessorFactory.GetInstance();
         }
 
@@ -99,10 +103,14 @@ namespace TargetManagement
         /// <param name="new_y"></param>
         /// <param name="new_z"></param>
         /// <param name="friend"></param>
-        public void AddTarget(int new_x, int new_y, int new_z, bool friend, string new_name = "")
+        public void AddTarget(double new_x, double new_y, double new_z, bool friend, string new_name = "")
         {
             Target tempTarget = new Target(new_name, new_x, new_y, new_z, friend);
             _targets.Add(tempTarget);
+            if (TargetsChanged != null)
+            {
+                TargetsChanged();
+            }
         }
 
         /// <summary>
@@ -113,17 +121,22 @@ namespace TargetManagement
         public void AddTargets(List<Target> listOfTargets)
         {
             listOfTargets.ForEach(_targets.Add);
+            if (TargetsChanged != null)
+            {
+                TargetsChanged();
+            }
         }
 
         /// <summary>
         /// Simply returns the current list of targets.  
         /// </summary>
         /// <returns></returns>
-        public ObservableCollection<Target> Targets
+        public List<Target> Targets
         {
             get
             {
-                return _targets;
+                List<Target> temp = new List<Target>(_targets);
+                return temp;
             }
         }
 
