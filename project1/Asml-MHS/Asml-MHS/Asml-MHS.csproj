@@ -74,6 +74,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -163,6 +164,10 @@
     <ProjectReference Include="..\OperationsManager\OperationsManager.csproj">
       <Project>{a8ef2ca4-a64a-4700-9454-470a667707cc}</Project>
       <Name>OperationsManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Video\Video.csproj">
+      <Project>{69ab4c23-4f03-4d2a-8e8c-d40e69d63d4f}</Project>
+      <Name>Video</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

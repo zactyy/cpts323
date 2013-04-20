@@ -61,9 +61,11 @@ namespace TargetManagement
         private void CalculateAngles()
         {
             double temp = (X_coordinate/Z_coordinate);
-            Theta = Math.Atan(temp);
+            // multiply by 180/pi to convert from radians to degrees
+            Theta = Math.Atan(temp) * (180/Math.PI);
             double hypotnus = Math.Sqrt((X_coordinate * X_coordinate + Z_coordinate * Z_coordinate));
-            Phi = Math.Atan(Y_coordinate / hypotnus);
+            // multiply by 180/pi to convert radians to degrees.
+            Phi = Math.Atan(Y_coordinate / hypotnus) * (180/Math.PI);
         }
 
         public string Name

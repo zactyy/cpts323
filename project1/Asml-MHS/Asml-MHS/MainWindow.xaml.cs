@@ -13,8 +13,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using OperationsManager;
+using VideoSys;
 using Microsoft.Win32;
 using System.Reflection;
+using System.Drawing;
 
 namespace Asml_McCallisterHomeSecurity
 {
@@ -24,6 +26,9 @@ namespace Asml_McCallisterHomeSecurity
     public partial class MainWindow : Window
     {
         private OperationsManager.OperationsManager  _rules_them_all;
+        private List<IVideoPlugin> _video_plugins;
+        private IVideoPlugin _eye_of_sauron;
+        
         public MainWindow()
         {
 
@@ -35,6 +40,15 @@ namespace Asml_McCallisterHomeSecurity
             this.Title = program_title + version_string;
             lblNumMissiles.Content = _rules_them_all.NumberMissiles.ToString();
             _rules_them_all.ChangedTargets += on_targets_changed;
+            _video_plugins = new List<IVideoPlugin>();
+            // add plugins to list here
+            _video_plugins.Add(new DefaultVideo());
+            // set current plugin here.
+            _eye_of_sauron = _video_plugins.First();
+            _eye_of_sauron.Width = (int)imgVideo.Width;
+            _eye_of_sauron.Height = (int)imgVideo.Height;
+            _eye_of_sauron.NewImage += new EventHandler(on_image_changed);
+            _eye_of_sauron.Start();
         }
 
 
@@ -143,10 +157,11 @@ namespace Asml_McCallisterHomeSecurity
             if (result == true)
             {
                 file_name = dialog.FileName;
+                string display_name = dialog.SafeFileName; // just the file name, not the directory info.
                 try
                 {
                     _rules_them_all.LoadFile(file_name);
-                    lblTargetFileName.Content = file_name;
+                    lblTargetFileName.Content = display_name;
                 }
                 catch (Exception ex)
                 {
@@ -179,6 +194,15 @@ namespace Asml_McCallisterHomeSecurity
             {
                 lstTargets.Items.Add(item);
             }
+        }
+        #endregion
+
+        #region video
+
+        private void on_image_changed(Object sender, EventArgs e)
+        {
+            Bitmap image = ((IVideoPlugin)sender).GetImage();
+            imgVideo.Source = System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(image.GetHbitmap(), IntPtr.Zero, Int32Rect.Empty, System.Windows.Media.Imaging.BitmapSizeOptions.FromEmptyOptions());
         }
         #endregion
 

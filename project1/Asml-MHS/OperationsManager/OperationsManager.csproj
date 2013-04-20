@@ -38,6 +38,7 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -62,6 +63,10 @@
     <ProjectReference Include="..\TurretManager\TurretManager.csproj">
       <Project>{b69aa4c3-2fa9-4ef1-87c8-d88722e3e1f7}</Project>
       <Name>TurretManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Video\Video.csproj">
+      <Project>{69ab4c23-4f03-4d2a-8e8c-d40e69d63d4f}</Project>
+      <Name>Video</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

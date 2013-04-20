@@ -4,7 +4,7 @@
  * Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
  * Written by: Jennifer Mendez
  * Last modified by: Chris Walters
- * Date modified: April 17, 2013
+ * Date modified: April 18, 2013
  */
 
 using System;
@@ -18,6 +18,8 @@ using TargetManagement.TargetFileProcessors;
 using ASMLEngineSdk;
 using TurretManagement;
 using System.Windows.Controls;
+using System.Drawing;
+
 
 namespace OperationsManager
 {
@@ -45,6 +47,10 @@ namespace OperationsManager
         private IMissileLauncher _turret;
         private const int MAX_MISSILES = 4;
 
+        /// <summary>
+        /// List of available search modes.
+        /// </summary>
+        private Dictionary<int, string> _seach_mode_list;
 
         public static OperationsManager GetInstance()
         {
@@ -94,9 +100,21 @@ namespace OperationsManager
             // Set up access to all needed objects
             _target_manager = TargetManager.GetInstance();
             _turret = new MissileLauncherAdapter();
-            _target_manager.TargetsChanged += on_targets_changed;
+            _target_manager.TargetsChanged += on_targets_changed;          
         }
-        
+
+        #region TurretControls
+
+        public void ReloadTurret()
+        {
+            NumberMissiles = MAX_MISSILES;
+        }
+
+        public int NumberMissiles
+        {
+            get;
+            set;
+        }
         // Interface with the Turret - for Manual Operation
         public void TurretMoveLeft()
         {
@@ -140,23 +158,16 @@ namespace OperationsManager
             _turret.Reset();
             
         }
+        #endregion
 
+        #region TargetMangager
         // Interface with the File Reader(s)
         public void LoadFile(string targetfile)
         {
             _target_manager.LoadFromFile(targetfile);
         }
         
-        public void ReloadTurret()
-        {
-            NumberMissiles = MAX_MISSILES;
-        }
 
-        public int NumberMissiles
-        {
-            get;
-            set;
-        }
         // Interface with Target Manager
         public List<ListViewItem> TargetInfo
         {
@@ -208,5 +219,8 @@ namespace OperationsManager
         {
             _target_manager.AddTarget(x, y, z, friend);
         }
+        #endregion
+
     }
+        
 }
