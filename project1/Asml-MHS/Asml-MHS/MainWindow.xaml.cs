@@ -87,7 +87,7 @@ namespace Asml_McCallisterHomeSecurity
         private void btnVideoStop_Click(object sender, RoutedEventArgs e)
         {
             try{
-                _eye_of_sauron.Stop();
+                _eye_of_sauron.NewImage += on_image_changed;
             }
             catch (Exception ex)
             {
@@ -99,7 +99,7 @@ namespace Asml_McCallisterHomeSecurity
         {
             try
             {
-                _eye_of_sauron.Start();
+                _eye_of_sauron.NewImage -= on_image_changed;
             }
             catch (Exception ex)
             {
