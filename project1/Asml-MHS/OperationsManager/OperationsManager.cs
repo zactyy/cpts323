@@ -4,7 +4,7 @@
  * Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
  * Written by: Jennifer Mendez
  * Last modified by: Chris Walters
- * Date modified: April 18, 2013
+ * Date modified: April 21, 2013
  */
 
 using System;
@@ -31,8 +31,9 @@ namespace OperationsManager
     /// perform an action and if the attempt fails, an exception should
     /// be thrown.  
     /// </summary>
-    public class OperationsManager:IDisposable 
+    public class OperationsManager:IDisposable
     {
+        #region Member_Variables
         /// <summary>
         /// Singleton reference to track creation of 
         /// one instance of Operations Manager.
@@ -52,6 +53,24 @@ namespace OperationsManager
         /// </summary>
         private Dictionary<int, string> _seach_mode_list;
 
+        /// <summary>
+        /// Lock for thread safety.
+        /// </summary>
+        private Object _lock;
+
+        /// <summary>
+        ///  the current target of destroy mode.
+        /// </summary>
+        private Target _current_target;
+
+        /// <summary>
+        /// Event for updating current target.
+        /// </summary>
+        public delegate void TargetUpdate();
+        public TargetUpdate CurrentTargetChanged();
+        #endregion
+
+        #region OpsManager
         public static OperationsManager GetInstance()
         {
             if(_rules_them_all == null) 
@@ -69,6 +88,17 @@ namespace OperationsManager
             this.Dispose(false);
         }
 
+        private OperationsManager()
+        {
+            NumberMissiles = MAX_MISSILES;
+            // Set up access to all needed objects
+            _target_manager = TargetManager.GetInstance();
+            _turret = new MissileLauncherAdapter();
+            _target_manager.TargetAdded += on_targets_changed;
+        }
+        #endregion
+
+        #region Dispose
         /// <summary>
         /// public dispose
         /// </summary>
@@ -93,15 +123,7 @@ namespace OperationsManager
             }
             _rules_them_all = null;
         }
-
-        private OperationsManager()
-        {
-            NumberMissiles = MAX_MISSILES;
-            // Set up access to all needed objects
-            _target_manager = TargetManager.GetInstance();
-            _turret = new MissileLauncherAdapter();
-            _target_manager.TargetsChanged += on_targets_changed;          
-        }
+        #endregion 
 
         #region TurretControls
 
@@ -221,6 +243,30 @@ namespace OperationsManager
         }
         #endregion
 
+        #region Properties
+        public Target CurrentTarget
+        {
+
+            get
+            {
+                lock (_lock)
+                {
+                    return _current_target;
+                }
+            }
+            set
+            {
+                lock (_lock)
+                {
+                    _current_target = value;
+                    if (CurrentTarget != null)
+                    {
+                        CurrentTargetChanged();
+                    }
+                }
+            }
+        }
+        #endregion
     }
         
 }
