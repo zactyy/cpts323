@@ -1,1 +1,314 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="e197d762-f9ae-45be-84e3-e5701f142c0f" name="Project2Additions" linkedPackageId="a13f9e71-a1c7-4a1d-a70b-538face141ce" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="fcb2e482-8fbe-488c-a202-7ba89f61a2c6">
+      <elementDefinition Id="9b9b47b6-579e-4b50-8f1d-d203cd344b3f" />
+      <body>Diagramed on MHS-Proj1 UseCaseDiagram</body>
+      <annotatedElements>
+        <useCaseMoniker Id="a82efb46-cf15-46f0-bdb8-8ec2047e9ddf" LastKnownName="Acquire Targets" />
+        <useCaseMoniker Id="8e18d376-8321-43cc-9060-28f5f448e1ab" LastKnownName="Launcher controls" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="fe7df990-280d-4aca-8e70-a355ea845a83">
+      <profileInstance Id="a26c5671-ecbf-4bc6-b9bb-5358442063b4" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="594078d2-14ff-4983-8a63-21f5fcbe1083">
+      <profileInstance Id="9dddd4a6-27c1-4851-8d64-54c06c61d22d" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4cfc89bb-f052-4699-be02-c8a92fe0dfa2">
+      <profileInstance Id="c763f58e-8e38-40f8-9fa7-f38591cb0e1f" name="CSharpProfile">
+        <elementDefinition Id="8f365836-e2e9-4d49-9ef8-735b7d008030" />
+      </profileInstance>
+      <elementDefinition Id="1b6f6a06-95da-4990-8230-4ccf2fa82de7" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="3b1a795c-f1a7-4a80-853c-f56d994798b9" name="Brian the Judge" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="42eb4935-6faa-49ef-9e15-e828b75e0a20" />
+        <targetEnds>
+          <association Id="b1d48505-ba57-4ca0-9538-d5d4fb8ac46a" isDerived="false" sourceEndRoleName="Brian the Judge" targetEndRoleName="Select Mode" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b07df32b-9f92-4484-b4f9-8077e0ffd9c9" LastKnownName="Select Mode" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c0adeb7b-b7de-4c8f-acf9-63ec4737c708" name="Brian the Judge" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e7d279d9-3e7a-4b68-8f69-719d038ccc5f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="65b24c23-d47b-46ed-8eee-545a206c3404" name="Select Mode" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ad71e28d-4488-48c0-8298-637ac34ee274" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="baf60b9a-a781-49e6-83ce-6521d22f6002" />
+          </association>
+          <association Id="2936e60f-c79f-493e-b87b-c4928a0f8308" isDerived="false" sourceEndRoleName="Brian the Judge" targetEndRoleName="Stop Mode" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2c394ec5-6219-4830-90b3-0f71ca50ae41" LastKnownName="Stop Mode" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a21bbd84-f9b0-4c7f-a49a-65e589b9a4ef" name="Brian the Judge" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f659f0a5-4a61-462b-8340-3236c53813b8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="95ce2307-f1a0-4063-b13b-c42ed010b407" name="Stop Mode" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8d38b026-c5f9-4843-9b2d-a31ca08ecd17" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6d3d4502-fe3f-4b24-a262-2d96f3487a99" />
+          </association>
+          <association Id="3ba69687-1d1f-4d44-bce7-69b0ea451e58" isDerived="false" sourceEndRoleName="Brian the Judge" targetEndRoleName="Start Mode" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="eb4931db-f915-4638-9b52-46e879975f18" LastKnownName="Start Mode" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e3029d88-2738-4940-999e-adb2618f4d06" name="Brian the Judge" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="778bdfce-3360-4ce0-87df-5b581325dc52" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4a5d7f77-bae5-440f-ad55-56b1d9963b18" name="Start Mode" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3fead23b-43c2-4a3c-8ba7-89de2be61a77" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="faba8416-7f1b-4604-b53d-b7b7adf912c6" />
+          </association>
+          <association Id="409a44a2-8949-4a93-9207-63110130d761" isDerived="false" sourceEndRoleName="Brian the Judge" targetEndRoleName="Stop Video" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e2aca82d-2fe2-4332-8310-b42f727002d6" LastKnownName="Stop Video" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0382d9b0-2c29-4459-908f-57eae83efa59" name="Brian the Judge" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2b493565-1514-4712-af1c-aed89a25902b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="32a3f194-6401-49a1-90ad-62b00fc956ff" name="Stop Video" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="23a4c4d6-786a-408e-904a-73576641be50" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ec29625b-3143-483a-a3de-af8f22087250" />
+          </association>
+          <association Id="cfaa3833-1a7e-4d60-b462-6e712877a4a3" isDerived="false" sourceEndRoleName="Brian the Judge" targetEndRoleName="Start Video" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="febf5957-a20d-4c2a-a101-320deb946eb1" LastKnownName="Start Video" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2683a674-0cdd-4281-b063-bc69adfbc702" name="Brian the Judge" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a00c39c8-3b8c-4195-8750-f7d75c6552fa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fc26fb27-41e2-40e3-8f16-90627c30a5f7" name="Start Video" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="010b0e2b-da1b-4cea-9052-92dafb67e1da" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1b99ceb3-2d7e-4259-b086-a1095801f70c" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="3ae97cc0-a810-4efa-8109-3994f778af86" name="Launcher" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c0b3107a-0b4e-47ad-b5a4-66bcc15f348e" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="1dfe1a7a-95d3-4c12-8d61-6059e8d27936" name="Target File" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c4523154-c958-4f61-98aa-897f779e3eac" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="332e31c3-ed36-4ebe-b6d8-ce1d0b9e3dd2" name="Camera" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fb14a3b1-979c-4918-a416-00beb81511d5" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="5ec97dc4-cea9-40aa-984e-cfae4767c029" name="Search and Destroy Modes" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a1f32074-8e16-4fe3-899e-e790c96da474" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="b07df32b-9f92-4484-b4f9-8077e0ffd9c9" name="Select Mode" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a4116799-6aea-40d2-aff1-c52ccea8443a" />
+        <subjects>
+          <subsystemMoniker Id="5ec97dc4-cea9-40aa-984e-cfae4767c029" LastKnownName="Search and Destroy Modes" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="eb4931db-f915-4638-9b52-46e879975f18" name="Start Mode" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9a790055-bcea-4b35-b7d5-d49901d75896" />
+        <targetEnds>
+          <association Id="4165d713-346a-4f01-96c6-7aa0b7b23304" isDerived="false" sourceEndRoleName="Start Mode" targetEndRoleName="Launcher controls" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8e18d376-8321-43cc-9060-28f5f448e1ab" LastKnownName="Launcher controls" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="57e5111d-6f47-4be7-bf89-b59791e5b304" name="Start Mode" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="71acaa50-57d1-4144-b727-fe8658b79c67" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d14ff4be-774c-44c3-a1a3-d95fa7fad1bc" name="Launcher controls" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="86d26703-bd09-43f5-bb77-8bc82e5a2cb9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="766a4524-e319-40c5-b512-105c58a0ad02" />
+          </association>
+          <association Id="699fcb34-7473-448f-8b4f-b5c84f271bde" isDerived="false" sourceEndRoleName="Start Mode" targetEndRoleName="Acquire Targets" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a82efb46-cf15-46f0-bdb8-8ec2047e9ddf" LastKnownName="Acquire Targets" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8a8856e0-6c46-46e5-ade2-90ba28c2ac79" name="Start Mode" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="44ca9933-bbda-4c7d-9a84-56ae6d66900a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="35e70318-62c8-48d0-ba5f-47d7bff81df3" name="Acquire Targets" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="441e5269-9811-4d73-977a-d33095f02e99" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="abb6d5d4-97bb-4693-93ee-c90d4805d1f0" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="5ec97dc4-cea9-40aa-984e-cfae4767c029" LastKnownName="Search and Destroy Modes" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="2c394ec5-6219-4830-90b3-0f71ca50ae41" name="Stop Mode" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cf6d1d51-4aca-4dc9-a31b-7789258c2b23" />
+        <subjects>
+          <subsystemMoniker Id="5ec97dc4-cea9-40aa-984e-cfae4767c029" LastKnownName="Search and Destroy Modes" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="54763765-ab6f-4968-a20f-ba6c38c838d0" name="Launcher Control" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="14ef595f-90d6-4931-bf7e-e9e33cf1d11c" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="fce77f9b-90b2-4aca-b865-bf2ef16eb395" name="Video" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a35b5eef-1254-4299-b3fb-dfa2ecc68603" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="8e18d376-8321-43cc-9060-28f5f448e1ab" name="Launcher controls" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e6e630a4-0af2-4fd1-aca4-a56474b26969" />
+        <targetEnds>
+          <association Id="4615ba2a-1a96-432f-bc90-909b35aee411" isDerived="false" sourceEndRoleName="Launcher controls" targetEndRoleName="Launcher" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="3ae97cc0-a810-4efa-8109-3994f778af86" LastKnownName="Launcher" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6c23a949-b248-4def-a9dd-ba72925faf94" name="Launcher controls" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ef210762-012f-4037-bcfa-d8b9b9c45900" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c1071c31-f6f7-4c74-a0a2-438af6a6f639" name="Launcher" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="68a79585-ec49-4832-97ec-8ed24c54497e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="04f842a6-29b9-415d-a08f-cd2a54ae185f" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="54763765-ab6f-4968-a20f-ba6c38c838d0" LastKnownName="Launcher Control" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="e2aca82d-2fe2-4332-8310-b42f727002d6" name="Stop Video" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e766d964-ac3e-4528-be14-06ad10029a41" />
+        <targetEnds>
+          <association Id="995baecc-7fe8-4f81-9231-ad6cb7400295" isDerived="false" sourceEndRoleName="Stop Video" targetEndRoleName="Camera" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="332e31c3-ed36-4ebe-b6d8-ce1d0b9e3dd2" LastKnownName="Camera" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ca19385c-401a-433b-a561-833b192ef145" name="Stop Video" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a35d02ce-b306-47b3-8cba-e089dead6f63" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="47a3b6f3-6f77-4b66-9a20-3f309334c6a7" name="Camera" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="969eef86-aff0-4779-aa7e-82637964ad24" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bd5c029b-5f3b-49c1-870a-576f204d681a" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="fce77f9b-90b2-4aca-b865-bf2ef16eb395" LastKnownName="Video" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="febf5957-a20d-4c2a-a101-320deb946eb1" name="Start Video" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d37c4ed1-df7f-40ef-a89f-e43daea2f572" />
+        <targetEnds>
+          <association Id="1db0bc1f-c471-4b20-9733-bf185cb4412b" isDerived="false" sourceEndRoleName="Start Video" targetEndRoleName="Camera" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="332e31c3-ed36-4ebe-b6d8-ce1d0b9e3dd2" LastKnownName="Camera" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9b1f1543-6df5-421b-919a-3535d3bdc1f7" name="Start Video" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="469dc958-8bcb-4b7d-93ec-fb2b1815ddbc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="91d89483-4d21-4e22-ac4e-38eef75c7a10" name="Camera" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fa2f3bb1-e96b-49aa-908e-2a4f117b1346" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="387a5b05-aa03-4593-b2b9-a5de6e34ff9f" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="fce77f9b-90b2-4aca-b865-bf2ef16eb395" LastKnownName="Video" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a82efb46-cf15-46f0-bdb8-8ec2047e9ddf" name="Acquire Targets" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="73d30f93-4b1a-471a-a859-8d005736c157" />
+        <targetEnds>
+          <association Id="f32b7754-276a-4c2c-ab72-02c62ab18213" isDerived="false" sourceEndRoleName="Acquire Targets" targetEndRoleName="Target File" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="1dfe1a7a-95d3-4c12-8d61-6059e8d27936" LastKnownName="Target File" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c7961a8a-94bc-4329-956b-ffe144ccd766" name="Acquire Targets" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9f53219c-b7f8-4452-b1ea-84173a9dbe71" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="279914b3-03ff-4933-9a9c-a7a7e50694e6" name="Target File" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="43e7ad2b-d82b-4380-ab9c-4239f990567e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7d808927-a248-4f75-ad65-59f917a009d8" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="a13f9e71-a1c7-4a1d-a70b-538face141ce" name="Asml-MHS-ModelingProject1">
+    <elementDefinition Id="254c6c84-496c-425b-a4a7-8779396807bf" />
+  </package>
+</useCaseModelRoot>

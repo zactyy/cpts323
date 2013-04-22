@@ -5,8 +5,8 @@
 // CptS323, Spring 2013
 // Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
 // Written by: Jennifer Mendez
-// Last modified by: Chris Walters
-// Date modified: April 21, 2013
+// Last modified by: Jennifer Mendez
+// Date modified: April 22, 2013
 
 using System;
 using System.Collections.Generic;
@@ -61,6 +61,28 @@ namespace TargetManagement
         ~TargetManager()
         {
             this.Dispose(false);
+        }
+
+        /// <summary>
+        /// compares two targets to see if they are NOT the same.
+        /// </summary>
+        /// <param name="self">the current target.</param>
+        /// <param name="comparitor">a target to compare to.</param>
+        /// <returns></returns>
+        public override bool operator !=(Target self, Target comparitor)
+        {
+            /* if the two target objects share the same name, location, and friend status, they
+             * are the same target. */
+            if (self.Name == comparitor.Name &&
+                self.X_coordinate == comparitor.X_coordinate &&
+                self.Y_coordinate == comparitor.Y_coordinate &&
+                self.Z_coordinate == comparitor.Z_coordinate &&
+                self.Friend == comparitor.Friend
+                )
+            {
+                return false;
+            }
+            return true;
         }
 
         /// <summary>

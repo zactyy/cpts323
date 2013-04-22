@@ -124,7 +124,7 @@
         </Button>
         <Label Content="Targeting System Controls" HorizontalAlignment="Center" Margin="506,10,62,0" VerticalAlignment="Top" Height="26" Width="194" FontSize="14" FontWeight="Bold" FontFamily="Arial"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="118" Margin="496,47,0,0" VerticalAlignment="Top" Width="175">
-            <ListBox x:Name="lstModes" Margin="18,0,0,71" Height="23" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.478" HorizontalAlignment="Left" Width="137">
+            <ListBox x:Name="lstModes" Margin="18,0,0,71" Height="23" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.478" HorizontalAlignment="Left" Width="137" SelectionChanged="lstModes_SelectionChanged">
                 <ListBox.Effect>
                     <DropShadowEffect/>
                 </ListBox.Effect>

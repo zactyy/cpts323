@@ -210,5 +210,10 @@ namespace Asml_McCallisterHomeSecurity
         {
             System.Windows.MessageBox.Show(Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);            
         }
+
+        private void lstModes_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

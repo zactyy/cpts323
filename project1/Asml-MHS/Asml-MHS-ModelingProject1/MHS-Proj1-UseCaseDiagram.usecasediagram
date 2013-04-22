@@ -1,13 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="4ed9b14e-6c86-4639-93db-a2f316dd6efa" name="MHS-Proj1-UseCaseDiagram" linkedPackageId="8cf00d47-6ad5-42bb-ae6c-ff7efc4d7154" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
-  <profileInstances>
-    <packageHasProfileInstances Id="67b11696-5c29-4aea-a206-19e59851f3cf">
-      <profileInstance Id="131ba39e-8bc0-4162-b69e-ed7616609462" name="CSharpProfile">
-        <elementDefinition Id="8f365836-e2e9-4d49-9ef8-735b7d008030" />
-      </profileInstance>
-      <elementDefinition Id="1b6f6a06-95da-4990-8230-4ccf2fa82de7" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="4ed9b14e-6c86-4639-93db-a2f316dd6efa" name="MHS-Proj1-UseCaseDiagram" linkedPackageId="8cf00d47-6ad5-42bb-ae6c-ff7efc4d7154" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="fc92b93b-1593-4243-8a03-48fc0fd3c305" name="Brian the Judge" isAbstract="false" isLeaf="false">
@@ -138,7 +130,7 @@
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <subsystem Id="0c688412-ece6-4b0f-be47-29a8c7c27704" name="Launcher Controls" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <subsystem Id="0c688412-ece6-4b0f-be47-29a8c7c27704" name="Search and Destroy Mode" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="5fc69c38-65de-41b0-abe8-3540903edaf6" />
       </subsystem>
     </useCaseModelRootHasTypes>
@@ -164,7 +156,7 @@
           </association>
         </targetEnds>
         <subjects>
-          <subsystemMoniker Id="0c688412-ece6-4b0f-be47-29a8c7c27704" LastKnownName="Launcher Controls" />
+          <subsystemMoniker Id="0c688412-ece6-4b0f-be47-29a8c7c27704" LastKnownName="Search and Destroy Mode" />
         </subjects>
       </useCase>
     </useCaseModelRootHasTypes>
@@ -190,7 +182,7 @@
           </association>
         </targetEnds>
         <subjects>
-          <subsystemMoniker Id="0c688412-ece6-4b0f-be47-29a8c7c27704" LastKnownName="Launcher Controls" />
+          <subsystemMoniker Id="0c688412-ece6-4b0f-be47-29a8c7c27704" LastKnownName="Search and Destroy Mode" />
         </subjects>
       </useCase>
     </useCaseModelRootHasTypes>
@@ -216,7 +208,7 @@
           </association>
         </targetEnds>
         <subjects>
-          <subsystemMoniker Id="0c688412-ece6-4b0f-be47-29a8c7c27704" LastKnownName="Launcher Controls" />
+          <subsystemMoniker Id="0c688412-ece6-4b0f-be47-29a8c7c27704" LastKnownName="Search and Destroy Mode" />
         </subjects>
       </useCase>
     </useCaseModelRootHasTypes>
@@ -242,7 +234,7 @@
           </association>
         </targetEnds>
         <subjects>
-          <subsystemMoniker Id="0c688412-ece6-4b0f-be47-29a8c7c27704" LastKnownName="Launcher Controls" />
+          <subsystemMoniker Id="0c688412-ece6-4b0f-be47-29a8c7c27704" LastKnownName="Search and Destroy Mode" />
         </subjects>
       </useCase>
     </useCaseModelRootHasTypes>
@@ -268,7 +260,7 @@
           </association>
         </targetEnds>
         <subjects>
-          <subsystemMoniker Id="0c688412-ece6-4b0f-be47-29a8c7c27704" LastKnownName="Launcher Controls" />
+          <subsystemMoniker Id="0c688412-ece6-4b0f-be47-29a8c7c27704" LastKnownName="Search and Destroy Mode" />
         </subjects>
       </useCase>
     </useCaseModelRootHasTypes>
@@ -362,6 +354,12 @@
           <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
         </profileInstance>
         <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="67b11696-5c29-4aea-a206-19e59851f3cf">
+        <profileInstance Id="131ba39e-8bc0-4162-b69e-ed7616609462" name="CSharpProfile">
+          <elementDefinition Id="8f365836-e2e9-4d49-9ef8-735b7d008030" />
+        </profileInstance>
+        <elementDefinition Id="1b6f6a06-95da-4990-8230-4ccf2fa82de7" />
       </packageHasProfileInstances>
     </profileInstances>
   </package>

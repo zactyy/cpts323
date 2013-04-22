@@ -9,13 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperationsManager", "Operat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurretManager", "TurretManager\TurretManager.csproj", "{B69AA4C3-2FA9-4EF1-87C8-D88722E3E1F7}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Asml-MHS-ModelingProject1", "Asml-MHS-ModelingProject1\Asml-MHS-ModelingProject1.modelproj", "{770701DE-E5E8-4D2B-B80C-222372BE0E6F}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Asml-MHS-ModelingProject2", "Asml-MHS-ModelingProject1\Asml-MHS-ModelingProject2.modelproj", "{770701DE-E5E8-4D2B-B80C-222372BE0E6F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Video", "Video\Video.csproj", "{69AB4C23-4F03-4D2A-8E8C-D40E69D63D4F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camera", "Camera\Camera.csproj", "{26C83FA1-ABCD-4F95-A265-574EBB1DE9A8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DestroyMode", "DestroyMode\DestroyMode.csproj", "{435B6FFF-5191-4C36-89B3-BCF87707CA68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,10 +49,6 @@ Global
 		{26C83FA1-ABCD-4F95-A265-574EBB1DE9A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26C83FA1-ABCD-4F95-A265-574EBB1DE9A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26C83FA1-ABCD-4F95-A265-574EBB1DE9A8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{435B6FFF-5191-4C36-89B3-BCF87707CA68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{435B6FFF-5191-4C36-89B3-BCF87707CA68}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{435B6FFF-5191-4C36-89B3-BCF87707CA68}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{435B6FFF-5191-4C36-89B3-BCF87707CA68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

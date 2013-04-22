@@ -3,8 +3,8 @@
  * CptS323, Spring 2013
  * Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
  * Written by: Jennifer Mendez
- * Last modified by: Chris Walters
- * Date modified: April 21, 2013
+ * Last modified by: Jennifer Mendez
+ * Date modified: April 22, 2013
  */
 
 using System;
@@ -19,6 +19,7 @@ using ASMLEngineSdk;
 using TurretManagement;
 using System.Windows.Controls;
 using System.Drawing;
+using System.Threading;
 
 
 
@@ -69,6 +70,27 @@ namespace OperationsManager
         /// </summary>
         public delegate void TargetUpdate();
         public TargetUpdate CurrentTargetChanged();
+
+        /// <summary>
+        /// The thread the destroy mode will be run on.  
+        /// </summary>
+        private Thread _destroy_thread;
+        /// <summary>
+        /// Flag to track whether destroy should be currently running.  
+        /// </summary>
+        private bool _active_destroy_mode;
+        /// <summary>
+        /// Fired when the processing is started.
+        /// </summary>
+        public event EventHandler ThreadStarted;
+        /// <summary>
+        /// Fired when the processing is stopped.
+        /// </summary>
+        public event EventHandler ThreadStopped;
+        /// <summary>
+        /// Helps synchronize destroy thread event.
+        /// </summary>
+        private ManualResetEvent _wait_event;
         #endregion
 
         #region OpsManager
@@ -88,7 +110,9 @@ namespace OperationsManager
         {
             this.Dispose(false);
         }
-
+        /// <summary>
+        /// Operations Manager constructor.  
+        /// </summary>
         private OperationsManager()
         {
             NumberMissiles = MAX_MISSILES;
@@ -96,6 +120,14 @@ namespace OperationsManager
             _target_manager = TargetManager.GetInstance();
             _turret = new MissileLauncherAdapter();
             _target_manager.TargetAdded += on_targets_changed;
+            // this manual reset event helps synchronize between threads.  
+            _wait_event = new ManualResetEvent(false);
+            
+            _seach_mode_list.Add(0, "Idle");
+            _seach_mode_list.Add(1, "Foes");
+            _seach_mode_list.Add(2, "Friends");
+            _seach_mode_list.Add(3, "All");
+            
         }
         #endregion
 
@@ -126,20 +158,69 @@ namespace OperationsManager
         }
         #endregion 
 
+        public void SearchAndDestroy() 
+        {
+
+        }
+
+        public void SetMode(int index)
+        {
+            //CurrentMode = _seach_mode_list.
+        }
+
+        #region Destroy
         /// <summary>
-        /// 
+        /// Sets up and starts the destroy mode thread.  
+        /// </summary>
+        private void SetUpDestroyThread(List<Target> hitList)
+        {
+            // The () parameter is supposed to be 
+            _destroy_thread = new Thread(() => DestroyTargetsThread(hitList));
+            _destroy_thread.Start();
+        }
+
+        /// <summary>
+        /// This is the thread where the destroying of targets takes place.  
         /// </summary>
         /// <param name="fireTargets"></param>
-        public void DestroyTargets(List<Target> fireTargets)
+        public void DestroyTargetsThread(List<Target> fireTargets)
         {
+            WaitHandle[] events = new WaitHandle[] { _wait_event };
+            int runEvent = WaitHandle.WaitAny(events);
+            
+            
             foreach (Target target in fireTargets)
-            {
-                CurrentTarget = target;
-                _turret.MoveTo(target.Theta, target.Phi);
-                _turret.Fire();
+            {            
+                // We will wait a few milliseconds for an event.  
+                // Using events here as a trigger to either continue with this mode or abort.  
+                runEvent = WaitHandle.WaitAny(events, 50);
+                if (runEvent == 0)
+                {
+                    _wait_event.Reset();
+                }
+                else if (runEvent == 258) // timeout
+                {
+                    CurrentTarget = target;
+                    _turret.MoveTo(target.Theta, target.Phi);
+                    _turret.Fire();                      
+                }
             }
             CurrentTarget = null;
         }
+
+        /// <summary>
+        /// Stops the destroy mode from running.
+        /// </summary>
+        public void Stop()
+        {
+            _wait_event.Set();
+
+            if (ThreadStopped != null)
+            {
+                ThreadStopped(this, null);
+            }
+        }
+        #endregion
 
         #region TurretControls
 
@@ -265,6 +346,15 @@ namespace OperationsManager
         #endregion
 
         #region Properties
+        public string CurrentMode
+        {
+            get
+            {
+            }
+            set
+            {
+            }
+        }
         public Target CurrentTarget
         {
 
@@ -289,5 +379,4 @@ namespace OperationsManager
         }
         #endregion
     }
-        
 }

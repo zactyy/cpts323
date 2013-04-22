@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{770701de-e5e8-4d2b-b80c-222372be0e6f}</ProjectGuid>
     <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
-    <Name>Asml-MHS-ModelingProject1</Name>
+    <Name>Asml-MHS-ModelingProject2</Name>
     <RootNamespace>Asml-MHS-ModelingProject1</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
