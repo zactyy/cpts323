@@ -50,6 +50,7 @@
     <Compile Include="GeneratedCode\IniProcessor.cs" />
     <Compile Include="GeneratedCode\InvalidIniFormat.cs" />
     <Compile Include="GeneratedCode\MissileLauncherAdapter.cs" />
+    <Compile Include="GeneratedCode\OperationsManager.cs" />
     <Compile Include="GeneratedCode\OurCamera.cs" />
     <Compile Include="GeneratedCode\ProcessorTest.cs" />
     <Compile Include="GeneratedCode\TargetManager.cs" />

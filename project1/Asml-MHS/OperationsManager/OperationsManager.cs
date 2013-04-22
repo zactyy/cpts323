@@ -21,6 +21,7 @@ using System.Windows.Controls;
 using System.Drawing;
 
 
+
 namespace OperationsManager
 {
     /// <summary>
@@ -103,6 +104,21 @@ namespace OperationsManager
             _target_manager.TargetsChanged += on_targets_changed;          
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="fireTargets"></param>
+        public void DestroyTargets(List<Target> fireTargets)
+        {
+            foreach (Target target in fireTargets)
+            {
+                CurrentTarget = target;
+                _turret.MoveTo(target.Theta, target.Phi);
+                _turret.Fire();
+            }
+            CurrentTarget = null;
+        }
+
         #region TurretControls
 
         public void ReloadTurret()
@@ -115,7 +131,12 @@ namespace OperationsManager
             get;
             set;
         }
-        // Interface with the Turret - for Manual Operation
+        // Interface with the Turret 
+        public void TurretMoveToTarget(double theta_x, double theta_y)
+        {
+            _turret.MoveTo(theta_x, theta_y);
+        }
+
         public void TurretMoveLeft()
         {
             _turret.MoveBy(0,-10);           

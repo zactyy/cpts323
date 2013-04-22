@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm13="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="254c6c84-496c-425b-a4a7-8779396807bf"
   name="Asml-MHS-ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -8001,6 +8001,481 @@
         Id="b0fa6ebe-dea3-4342-a8ac-f24d86721656"
         LastKnownName="Asml_McCallisterHomeSecurity"
         LastKnownLocation="Package_1700.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="959f4e49-3f99-4f66-bcbb-5385b3769e51"
+        name="MissileLauncher"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="768465a6-a5c2-4211-8aac-c2426f475533"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="bd121035-a20e-4721-85fb-a01d269a2ed1"
+                LastKnownName="TurretControl"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="bd121035-a20e-4721-85fb-a01d269a2ed1"
+        name="TurretControl"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="4b20d8cb-a431-481f-a065-a7c3be62c5fb"
+        name="OperationsManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="730054f9-3412-45f9-a358-81aebf576846"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="b8afb70e-08d1-45c3-8d9f-5f71c73a5a1d">
+                <providedInterfaceMoniker
+                  Id="768465a6-a5c2-4211-8aac-c2426f475533"
+                  LastKnownName="Port1"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="a0728c30-5e59-4fbf-833e-18694e2741fb"
+                LastKnownName="TurrectControl"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface
+            Id="c4dbd63b-221c-488e-bc1a-e010296012e6"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="69529435-cdd4-45c9-bd1b-476b25cc1fff">
+                <providedInterfaceMoniker
+                  Id="a4c9bd7a-587c-49bd-bcd6-ba1303fe55ba"
+                  LastKnownName="Port1"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="d505333c-f09b-4d99-8918-c91c79d40347"
+                LastKnownName="VideoPluggin"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="a0728c30-5e59-4fbf-833e-18694e2741fb"
+        name="TurrectControl"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="d505333c-f09b-4d99-8918-c91c79d40347"
+        name="VideoPluggin"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="0d8b5ec2-1d0e-4d14-a369-65f16d11e501"
+        name="IVideoPluggin"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="a4c9bd7a-587c-49bd-bcd6-ba1303fe55ba"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="bda9ace6-b4e3-4150-80ca-c5d92eb6346b"
+                LastKnownName="VideoPluggin"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface
+            Id="6b0d676a-2aa3-4906-8577-15013b187976"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="2d89b553-47d8-4cf2-ab61-65be816fe3d8">
+                <providedInterfaceMoniker
+                  Id="37bfa3f7-bdaf-4157-884b-0b22d1c4433f"
+                  LastKnownName="Port1"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="0c92aede-ddf5-4e3c-b27d-f2ca3e71d2ea"
+                LastKnownName="WebCam"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="aa97e29b-51cc-4a6b-9184-675140b85640"
+        name="ISearch"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="5439ed67-694b-4a53-82ed-185b1972ebfe"
+        name="IVideo"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="37bfa3f7-bdaf-4157-884b-0b22d1c4433f"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="53c1b946-bbf8-46c8-9772-2ad0be5ebff0"
+                LastKnownName="WebCam"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="48bb931a-c9cd-4da5-b5e0-18b92f38c594"
+        name="MHSSequence"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="70850bdf-bdf8-4f80-9bda-36f1ce6cd53f"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="c014d6da-c853-4749-9662-b40e1e6aeaa2"
+                LastKnownName="DestroyMode"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="9840dd7b-9fba-4179-9b11-602d68c187db"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="469ec805-5661-4838-9dd4-1f730350c847"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="79f9957a-481c-4d10-a5e5-74ccdfa93252"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="bb5731dd-bb8f-44f6-861f-25c1c007b7ee"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="469ec805-5661-4838-9dd4-1f730350c847"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="96a7794a-9d96-4bb4-8f8d-eab4c054b6ac"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c014d6da-c853-4749-9662-b40e1e6aeaa2"
+                LastKnownName="DestroyMode"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f58adec5-eff1-4c0f-a715-6fa261daa2f1"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="a754e6de-75c2-4daa-90ef-f998a4503f6f"
+                LastKnownName="GUI"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="79f9957a-481c-4d10-a5e5-74ccdfa93252"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="c014d6da-c853-4749-9662-b40e1e6aeaa2"
+                LastKnownName="DestroyMode"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="bb5731dd-bb8f-44f6-861f-25c1c007b7ee"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="c014d6da-c853-4749-9662-b40e1e6aeaa2"
+                LastKnownName="DestroyMode"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f7975001-6577-45e7-9236-a20381436a06"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="a754e6de-75c2-4daa-90ef-f998a4503f6f"
+                LastKnownName="GUI"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="9840dd7b-9fba-4179-9b11-602d68c187db"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0df6c4cd-2765-4848-ae1e-5ae623e06dec"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c014d6da-c853-4749-9662-b40e1e6aeaa2"
+                LastKnownName="DestroyMode"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="a754e6de-75c2-4daa-90ef-f998a4503f6f"
+            name="GUI"
+            isActor="false"
+            lifelineDisplayName="GUI">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="f58adec5-eff1-4c0f-a715-6fa261daa2f1"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="f7975001-6577-45e7-9236-a20381436a06"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="c014d6da-c853-4749-9662-b40e1e6aeaa2"
+            name="DestroyMode"
+            isActor="false"
+            lifelineDisplayName="DestroyMode">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="469ec805-5661-4838-9dd4-1f730350c847"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="9840dd7b-9fba-4179-9b11-602d68c187db"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="26cb6ee6-714f-42c7-b8a3-67780eb62416"
+            name="List&lt;Target&gt;,"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f58adec5-eff1-4c0f-a715-6fa261daa2f1"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="79f9957a-481c-4d10-a5e5-74ccdfa93252"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="0b6fe9ed-8b61-4780-92c8-158f85e43347"
+            name="&lt;&lt;List&lt;Target&gt;&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="bb5731dd-bb8f-44f6-861f-25c1c007b7ee"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f7975001-6577-45e7-9236-a20381436a06"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="96a7794a-9d96-4bb4-8f8d-eab4c054b6ac"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0df6c4cd-2765-4848-ae1e-5ae623e06dec"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="bda9ace6-b4e3-4150-80ca-c5d92eb6346b"
+        name="VideoPluggin"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="0c92aede-ddf5-4e3c-b27d-f2ca3e71d2ea"
+        name="WebCam"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="53c1b946-bbf8-46c8-9772-2ad0be5ebff0"
+        name="WebCam"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="7ef5c141-6ad9-4cd4-859f-c08df6a8f507"
+        name="Activity1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="447eb88f-501c-42ec-9a1a-68ae8cbfd5d8"
+            name="Initial1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="54626964-5b81-4d66-99f2-d1f5bed54aea"
+            name="Action1"
+            isLeaf="false" />
+          <sendSignalAction
+            Id="66452501-2b38-4c02-93f5-37efd4f982f2"
+            name="Signal1"
+            isLeaf="false" />
+          <joinNode
+            Id="895e86c8-b683-40e1-ac1e-6ab8039720e8"
+            name="Join1"
+            isLeaf="false" />
+          <acceptEventAction
+            Id="8295997a-2575-4a8d-8362-3904f287d7c7"
+            name="Event1"
+            isLeaf="false"
+            isUnmarshall="false" />
+        </nodes>
+      </activity>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

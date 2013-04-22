@@ -23692,7 +23692,7 @@
     <packageHasNamedElement>
       <class
         Id="4b673ece-3212-4182-b127-c67594724a4e"
-        name="TargetManager"
+        name="DefaultTargetManager"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -23794,7 +23794,7 @@
             isAbstract="false">
             <classMoniker
               Id="258ad231-8100-4516-bd42-21bef763b905"
-              LastKnownName="Target"
+              LastKnownName="DefaultTarget"
               LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -24804,13 +24804,44 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
           </operation>
+          <operation
+            Id="9a24c935-e2b5-4b82-b23f-de12e05ae112"
+            name="virtual SearchMode"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="472919fb-ebd5-44e4-a411-fb09889b0ba1"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="dd4c8ae5-dde0-46fb-98fe-ada540e9b2ba"
+                      LastKnownName="List&lt;Target&gt;"
+                      LastKnownLocation="Asml-MHS-ModelingProject2.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="510ac578-341a-46e2-b40f-4481dd1dcc57"
+                  name="string mode"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
         Id="258ad231-8100-4516-bd42-21bef763b905"
-        name="Target"
+        name="DefaultTarget"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
