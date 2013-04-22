@@ -84,6 +84,29 @@ namespace Asml_McCallisterHomeSecurity
             }
         }
 
+        private void btnVideoStop_Click(object sender, RoutedEventArgs e)
+        {
+            try{
+                _eye_of_sauron.Stop();
+            }
+            catch (Exception ex)
+            {
+                DisplayError(ex.Message);
+            }
+        }
+
+        public void btnVideoStart_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                _eye_of_sauron.Start();
+            }
+            catch (Exception ex)
+            {
+                DisplayError(ex.Message);
+            }
+        }
+
         private void btnLeft_Click(object sender, RoutedEventArgs e)
         {
             try
