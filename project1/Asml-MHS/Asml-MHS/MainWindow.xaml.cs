@@ -49,6 +49,9 @@ namespace Asml_McCallisterHomeSecurity
             _eye_of_sauron.Height = (int)imgVideo.Height;
             _eye_of_sauron.NewImage += new EventHandler(on_image_changed);
             _eye_of_sauron.Start();
+
+            // Mode List initialization
+            lstModes.DataContext = _rules_them_all.SearchModeList
         }
 
 
@@ -212,6 +215,11 @@ namespace Asml_McCallisterHomeSecurity
         }
 
         private void lstModes_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void lstTargets_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }

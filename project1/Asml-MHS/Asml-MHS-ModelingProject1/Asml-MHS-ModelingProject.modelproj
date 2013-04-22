@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{770701de-e5e8-4d2b-b80c-222372be0e6f}</ProjectGuid>
     <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
-    <Name>Asml-MHS-ModelingProject2</Name>
+    <Name>Asml-MHS-ModelingProject</Name>
     <RootNamespace>Asml-MHS-ModelingProject1</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -125,6 +125,13 @@
     <Content Include="UMLActivityDiagram1.activitydiagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>UMLActivityDiagram1.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="UseCase-AllinOne.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UseCase-AllinOne.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UseCase-AllinOne.usecasediagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\Asml-MHS-ModelingProject1.uml">

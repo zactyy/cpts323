@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperationsManager", "Operat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurretManager", "TurretManager\TurretManager.csproj", "{B69AA4C3-2FA9-4EF1-87C8-D88722E3E1F7}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Asml-MHS-ModelingProject2", "Asml-MHS-ModelingProject1\Asml-MHS-ModelingProject2.modelproj", "{770701DE-E5E8-4D2B-B80C-222372BE0E6F}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Asml-MHS-ModelingProject", "Asml-MHS-ModelingProject1\Asml-MHS-ModelingProject.modelproj", "{770701DE-E5E8-4D2B-B80C-222372BE0E6F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Video", "Video\Video.csproj", "{69AB4C23-4F03-4D2A-8E8C-D40E69D63D4F}"
 EndProject

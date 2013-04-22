@@ -3017,6 +3017,201 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="ea26c80b-da21-479f-837f-25591dda6b4c"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Select Mode"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e4e9272b-74eb-44cc-b499-faf9ce7af90f"
+              LastKnownName="Select Mode"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="872aa7f5-38f8-43ff-9d85-fe9b86ce5546"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ba9d00ce-c290-4b47-b1a6-63b76063886d"
+                  name="Select Mode"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f8ed5e07-37d0-40d7-8ac2-419305862eb2"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Stop Mode"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="96b4acec-c1d8-4c9e-adbf-0229dc745862"
+              LastKnownName="Stop Mode"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="578167a2-374f-43f8-a0e1-4b5fd2ed0c5d"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="472f24e3-fad2-4be4-978f-51a592c00be5"
+                  name="Stop Mode"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="10f28f60-a1bc-4579-a427-18ea4524f87f"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Start Mode"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="dd939095-edaa-42e1-abaf-e107bdc49e19"
+              LastKnownName="Start Mode"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="14422d5a-cfe6-482d-8fba-b075620b58f2"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9599cdbe-0719-4ba1-b340-5b47af698036"
+                  name="Start Mode"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="edb79e06-9c28-4775-8b66-561e04669466"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Stop Video"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1e8c7898-a28d-498b-9b12-0efc7a19ac0a"
+              LastKnownName="Stop Video"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="93722374-f175-482f-9406-de8cb20e013c"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7d2a60c4-0167-4b57-a0c2-c7ea643c12a2"
+                  name="Stop Video"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="384dcf59-0f59-4b39-b0e5-d420852b5633"
+            isDerived="false"
+            sourceEndRoleName="Brian the Judge"
+            targetEndRoleName="Start Video"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4a32971b-5fbf-4e21-b3a8-bccc54e3f282"
+              LastKnownName="Start Video"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d2af274e-df24-4551-b47b-48d9eac64f9c"
+                  name="Brian the Judge"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9940673e-4109-4d52-9a15-a250644c9566"
+                  name="Start Video"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -9074,6 +9269,375 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="72fce2f3-443c-4919-a59f-7271f1415502"
+        name="Brian the Judge1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="dfe7994d-1c3e-44fc-b931-d14a8f4efbeb"
+        name="Launcher1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="4e510d55-a716-41dd-a5bd-22328b85d044"
+        name="Target File1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="029c5fd6-a678-404a-952d-6d99fe43a023"
+        name="Camera"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4eb0e255-5b80-421c-8bc4-edd53a5481b6"
+        name="Acquire Targets1"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="2265a80f-06a3-4d77-816f-fd708cda1336"
+            isDerived="false"
+            sourceEndRoleName="Acquire Targets"
+            targetEndRoleName="Target File"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="4e510d55-a716-41dd-a5bd-22328b85d044"
+              LastKnownName="Target File1"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="49dbd101-23f4-402a-8a19-0b6c9e21fdbf"
+                  name="Acquire Targets"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="081883f9-3390-4fba-b77f-5e82adee2600"
+                  name="Target File"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="270acbfa-0ed3-4d89-ba89-d6aaf17758e9"
+        name="Search and Destroy Modes"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e4e9272b-74eb-44cc-b499-faf9ce7af90f"
+        name="Select Mode"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="270acbfa-0ed3-4d89-ba89-d6aaf17758e9"
+            LastKnownName="Search and Destroy Modes"
+            LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="dd939095-edaa-42e1-abaf-e107bdc49e19"
+        name="Start Mode"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="d5f327bf-14fe-42f6-a878-e128f46dc940"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="b22fa1d5-02aa-491f-b0a2-067a31c11559"
+              LastKnownName="Fire Missile"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+          </generalization>
+          <generalization
+            Id="f57105a9-daa7-4a34-8317-6f744c0dd462"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="e0fc9590-6ec4-4a1b-bb65-5b6bbfe7c6c7"
+              LastKnownName="Move Launcher Down"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+          </generalization>
+          <generalization
+            Id="9046dfdf-3e22-4482-8338-a50d23f754b7"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="6380904a-bb57-43b8-b638-379b1413ba92"
+              LastKnownName="Move Launcher Right"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="db376c0d-bc8f-4191-8e36-fa78a02f1eb8"
+            isDerived="false"
+            sourceEndRoleName="Start Mode"
+            targetEndRoleName="Display Targets"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="aff07225-d87c-404f-9a97-005cbcc45baf"
+              LastKnownName="Display Targets"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2e6699e7-487e-4b97-b805-15d634d68112"
+                  name="Start Mode"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a27603ee-cfa6-4ddd-9933-45f3a01a79b7"
+                  name="Display Targets"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="270acbfa-0ed3-4d89-ba89-d6aaf17758e9"
+            LastKnownName="Search and Destroy Modes"
+            LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="96b4acec-c1d8-4c9e-adbf-0229dc745862"
+        name="Stop Mode"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="270acbfa-0ed3-4d89-ba89-d6aaf17758e9"
+            LastKnownName="Search and Destroy Modes"
+            LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="f39dc07d-695d-4d0b-8559-3dd050073e30"
+        name="Launcher Control1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c00f592f-f51c-4c26-9b47-808600d018d1"
+        name="Launcher controls1"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="71fa73a0-59ce-4375-86e7-0e0a872ed039"
+            isDerived="false"
+            sourceEndRoleName="Launcher controls"
+            targetEndRoleName="Launcher"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="dfe7994d-1c3e-44fc-b931-d14a8f4efbeb"
+              LastKnownName="Launcher1"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="83766664-2e29-4b84-9345-6161f564b873"
+                  name="Launcher controls"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="faa5b50e-e0f0-44f4-85f9-5ccfe76afab0"
+                  name="Launcher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="fd25621d-e59f-4da4-9c91-165c9c5f0fb9"
+        name="Video"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1e8c7898-a28d-498b-9b12-0efc7a19ac0a"
+        name="Stop Video"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="6f0f6934-62c0-4b0e-8b06-6e30bc16719e"
+            isDerived="false"
+            sourceEndRoleName="Stop Video"
+            targetEndRoleName="Camera"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="029c5fd6-a678-404a-952d-6d99fe43a023"
+              LastKnownName="Camera"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="86a46dca-d572-46c1-ba05-f316a24c0919"
+                  name="Stop Video"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="699b7b42-e3f4-4af9-af6e-065459c68f5e"
+                  name="Camera"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="fd25621d-e59f-4da4-9c91-165c9c5f0fb9"
+            LastKnownName="Video"
+            LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4a32971b-5fbf-4e21-b3a8-bccc54e3f282"
+        name="Start Video"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="00d7d66b-63d8-45c7-a1a8-3591acd86ced"
+            isDerived="false"
+            sourceEndRoleName="Start Video"
+            targetEndRoleName="Camera"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="029c5fd6-a678-404a-952d-6d99fe43a023"
+              LastKnownName="Camera"
+              LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4a838025-dd88-44ba-9041-9e80092bfce3"
+                  name="Start Video"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c8a54b7f-bf66-431a-bd41-7f061bfb95a7"
+                  name="Camera"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="fd25621d-e59f-4da4-9c91-165c9c5f0fb9"
+            LastKnownName="Video"
+            LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+        </subjects>
       </useCase>
     </packageHasNamedElement>
   </packagedElements>

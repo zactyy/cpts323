@@ -1,5 +1,6 @@
 ﻿/* OperationsManager.cs
- * This file defines an operations manager class that should...
+ * This file defines an operations manager class that acts as a mediator 
+ * between all other system components.  
  * CptS323, Spring 2013
  * Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
  * Written by: Jennifer Mendez
@@ -51,11 +52,6 @@ namespace OperationsManager
         private const int MAX_MISSILES = 4;
 
         /// <summary>
-        /// List of available search modes.
-        /// </summary>
-        private Dictionary<int, string> _seach_mode_list;
-
-        /// <summary>
         /// Lock for thread safety.
         /// </summary>
         private Object _lock;
@@ -69,7 +65,7 @@ namespace OperationsManager
         /// Event for updating current target.
         /// </summary>
         public delegate void TargetUpdate();
-        public TargetUpdate CurrentTargetChanged();
+        public TargetUpdate CurrentTargetChanged();  //jen
 
         /// <summary>
         /// The thread the destroy mode will be run on.  
@@ -158,17 +154,18 @@ namespace OperationsManager
         }
         #endregion 
 
+        #region Search and Destroy 
         public void SearchAndDestroy() 
         {
+            //Start timer
+
+            //Call zach's search and destroy 
+            //List<Target> tempHitList = SearchMode(_target_manager.Targets, CurrentMode);
+            SetUpDestroyThread(tempHitList);
 
         }
 
-        public void SetMode(int index)
-        {
-            //CurrentMode = _seach_mode_list.
-        }
-
-        #region Destroy
+        
         /// <summary>
         /// Sets up and starts the destroy mode thread.  
         /// </summary>
@@ -310,6 +307,7 @@ namespace OperationsManager
             }
             private set { }
         }
+        #endregion
 
         #region Target List Event(s)
         public delegate void TargetsChanged();
@@ -331,6 +329,7 @@ namespace OperationsManager
         }
         #endregion
 
+        #region Target Detection
         /// <summary>
         /// A method to add targets identified by the video feed.  This will add
         /// them to the list one at a time.        
@@ -348,12 +347,8 @@ namespace OperationsManager
         #region Properties
         public string CurrentMode
         {
-            get
-            {
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
         public Target CurrentTarget
         {
@@ -376,6 +371,15 @@ namespace OperationsManager
                     }
                 }
             }
+        }
+
+        /// <summary>
+        /// List of available search modes.
+        /// </summary>
+        public Dictionary<int, string> SeachModeList
+        {
+            get;
+            set;
         }
         #endregion
     }
