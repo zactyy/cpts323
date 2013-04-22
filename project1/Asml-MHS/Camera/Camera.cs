@@ -1,4 +1,11 @@
-﻿using System;
+﻿// Camera.cs
+// The camera is a singleton class that manages access to a locally connected webcam
+// CptS323, Spring 2013
+// Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
+// Written by: Chris Walters
+// Last Modified By: Chris Walters
+// Last Modified On: April 21, 2013
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,10 +16,25 @@ using System.Windows.Media;
 using ASMLEngineSdk;
 namespace WebCamera
 {
+    /// <summary>
+    /// The Camera class is a singleton that maintains access to a local connected webcam.
+    /// </summary>
     public class Camera:IVideo, IDisposable
     {
+        /// <summary>
+        ///  The singleton instance
+        /// </summary>
         private static Camera _instance;
+        
+        /// <summary>
+        /// The camera object, it is a emguCV Capture object
+        /// </summary>
         private Capture _webcamera;
+
+        /// <summary>
+        /// This camera object will potentially be accessed by multiple threads,
+        /// and as such, the access needs to be synchronized, this is the lock 
+        /// </summary>
         private Object _lock;
 
         private Camera()
@@ -36,6 +58,7 @@ namespace WebCamera
             return _instance;
         }
 
+        #region Dispose
         private void Dispose(bool cleanupOthers)
         {
             if (!IsDisposed)
@@ -62,6 +85,7 @@ namespace WebCamera
             * Dispose(true);
             * GC.SuppressFinalize(this);*/
         }
+        #endregion 
 
         /// <summary>
         ///  Return the latest Bitmap retrieved from the camera.

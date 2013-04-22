@@ -6,7 +6,7 @@
 // Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
 // Written by: Jennifer Mendez
 // Last modified by: Chris Walters
-// Date modified: April 17, 2013
+// Date modified: April 21, 2013
 
 using System;
 using System.Collections.Generic;
@@ -39,7 +39,7 @@ namespace TargetManagement
         
         public delegate void targetsChanged();
 
-        public targetsChanged TargetsChanged;
+        public targetsChanged TargetAdded;
 
 
         /// <summary>
@@ -61,6 +61,39 @@ namespace TargetManagement
         ~TargetManager()
         {
             this.Dispose(false);
+        }
+
+        /// <summary>
+        /// compares two targets to see if they are the same.
+        /// </summary>
+        /// <param name="self">the current target.</param>
+        /// <param name="comparitor">a target to compare to.</param>
+        /// <returns></returns>
+        public override bool operator ==(Target self, Target comparitor)
+        {
+            /* if the two target objects share the same name, location, and friend status, they
+             * are the same target. */
+            if (self.Name == comparitor.Name &&
+                self.X_coordinate == comparitor.X_coordinate &&
+                self.Y_coordinate == comparitor.Y_coordinate &&
+                self.Z_coordinate == comparitor.Z_coordinate &&
+                self.Friend == comparitor.Friend
+                )
+            {
+                return true;
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// validate target destruction.
+        /// </summary>
+        /// <param name="currTarget">a target whose status is to be determined.</param>
+        /// <returns></returns>
+        public bool validate(Target currTarget)
+        {
+            /* for now we just return true if target is shot at, due to lack of anyway to actually validate*/
+            return true;
         }
 
         /// <summary>
@@ -107,9 +140,9 @@ namespace TargetManagement
         {
             Target tempTarget = new Target(new_name, new_x, new_y, new_z, friend);
             _targets.Add(tempTarget);
-            if (TargetsChanged != null)
+            if (TargetAdded != null)
             {
-                TargetsChanged();
+                TargetAdded();
             }
         }
 
@@ -121,9 +154,9 @@ namespace TargetManagement
         public void AddTargets(List<Target> listOfTargets)
         {
             listOfTargets.ForEach(_targets.Add);
-            if (TargetsChanged != null)
+            if (TargetAdded != null)
             {
-                TargetsChanged();
+                TargetAdded();
             }
         }
 

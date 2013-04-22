@@ -1,5 +1,8 @@
 ﻿/*
+ * IVideoPlugin.cs
  * IVideoPlugin interface for video system.
+ * CptS323, Spring 3012
+ * Team McCallister Home Security: Chris Walters, Jennefier Mendez, Zachary Tynnisma
  * Written By Chris Walters
  * Last Modified: Chris Walters
  * Last Modified On: April 18, 2013

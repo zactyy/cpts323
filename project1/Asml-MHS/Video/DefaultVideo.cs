@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+ * DefaultVideo.cs
+ * Default video plugin for the application, just displays normal video, at 30fps
+ * CptS323, Spring 2013
+ * Team McCallister Home Security
+ * Written By: Chris Walters
+ * Last Modified By: Chris Walters
+ * Last Modified On: April 21, 2013
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +20,10 @@ using WebCamera;
 
 namespace VideoSys
 {
+    /// <summary>
+    /// Default video plugin class for the application, displays video at 30fps, but that
+    /// can be modified via the Framerate property(currently not accessible to user).
+    /// </summary>
     public class DefaultVideo:IDisposable, IVideoPlugin
     {
         private Camera _webcamera;
@@ -159,11 +172,15 @@ namespace VideoSys
         }
 
 
+        /// <summary>
+        /// Method to start the plugin capturing video.
+        /// </summary>
         public void Start()
         {
             _video_timer.Start();
         }
 
+        // Method to stop the plugin from capturing video.
         public void Stop()
         {
             _video_timer.Stop();
