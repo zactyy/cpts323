@@ -51,7 +51,7 @@ namespace Asml_McCallisterHomeSecurity
             _eye_of_sauron.Start();
 
             // Mode List initialization
-            lstModes.DataContext = _rules_them_all.SearchModeList
+           // lstModes.DataContext = _rules_them_all.SearchModeList
         }
 
 

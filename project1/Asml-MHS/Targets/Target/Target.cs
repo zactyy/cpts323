@@ -109,5 +109,38 @@ namespace TargetManagement
             get;
             set;
         }
+
+        /// <summary>
+        /// compares two targets to see if they are NOT the same.
+        /// </summary>
+        /// <param name="self">the current target.</param>
+        /// <param name="comparitor">a target to compare to.</param>
+        /// <returns></returns>
+        public static bool operator !=(Target self, Target comparitor)
+        {
+            return !(self == comparitor);
+        }
+
+        /// <summary>
+        /// compares two targets to see if they are the same.
+        /// </summary>
+        /// <param name="self">the current target.</param>
+        /// <param name="comparitor">a target to compare to.</param>
+        /// <returns></returns>
+        public static bool operator ==(Target self, Target comparitor)
+        {
+            /* if the two target objects share the same name, location, and friend status, they
+             * are the same target. */
+            if (self.Name == comparitor.Name &&
+                self.X_coordinate == comparitor.X_coordinate &&
+                self.Y_coordinate == comparitor.Y_coordinate &&
+                self.Z_coordinate == comparitor.Z_coordinate &&
+                self.Friend == comparitor.Friend
+                )
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

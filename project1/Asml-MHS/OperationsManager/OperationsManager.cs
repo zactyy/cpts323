@@ -65,7 +65,7 @@ namespace OperationsManager
         /// Event for updating current target.
         /// </summary>
         public delegate void TargetUpdate();
-        public TargetUpdate CurrentTargetChanged();  //jen
+        public TargetUpdate CurrentTargetChanged;
 
         /// <summary>
         /// The thread the destroy mode will be run on.  
@@ -118,11 +118,11 @@ namespace OperationsManager
             _target_manager.TargetAdded += on_targets_changed;
             // this manual reset event helps synchronize between threads.  
             _wait_event = new ManualResetEvent(false);
-            
-            _seach_mode_list.Add(0, "Idle");
-            _seach_mode_list.Add(1, "Foes");
-            _seach_mode_list.Add(2, "Friends");
-            _seach_mode_list.Add(3, "All");
+            _lock = new Object();
+            //_seach_mode_list.Add(0, "Idle");
+            //_seach_mode_list.Add(1, "Foes");
+            //_seach_mode_list.Add(2, "Friends");
+            //_seach_mode_list.Add(3, "All");
             
         }
         #endregion
@@ -161,7 +161,7 @@ namespace OperationsManager
 
             //Call zach's search and destroy 
             //List<Target> tempHitList = SearchMode(_target_manager.Targets, CurrentMode);
-            SetUpDestroyThread(tempHitList);
+            //SetUpDestroyThread(tempHitList);
 
         }
 
@@ -174,6 +174,7 @@ namespace OperationsManager
             // The () parameter is supposed to be 
             _destroy_thread = new Thread(() => DestroyTargetsThread(hitList));
             _destroy_thread.Start();
+            
         }
 
         /// <summary>
@@ -194,6 +195,7 @@ namespace OperationsManager
                 if (runEvent == 0)
                 {
                     _wait_event.Reset();
+                    break;
                 }
                 else if (runEvent == 258) // timeout
                 {
@@ -365,7 +367,7 @@ namespace OperationsManager
                 lock (_lock)
                 {
                     _current_target = value;
-                    if (CurrentTarget != null)
+                    if (CurrentTargetChanged != null)
                     {
                         CurrentTargetChanged();
                     }
