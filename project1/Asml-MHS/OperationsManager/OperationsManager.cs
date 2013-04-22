@@ -159,7 +159,6 @@ namespace OperationsManager
         {
             //Start timer
 
-            //Call zach's search and destroy 
             //List<Target> tempHitList = SearchMode(_target_manager.Targets, CurrentMode);
             //SetUpDestroyThread(tempHitList);
 

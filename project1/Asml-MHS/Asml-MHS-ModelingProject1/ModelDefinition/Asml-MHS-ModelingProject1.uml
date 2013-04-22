@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="254c6c84-496c-425b-a4a7-8779396807bf"
   name="Asml-MHS-ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -8633,44 +8633,64 @@
         isReentrant="false">
         <fragments>
           <behaviorExecutionSpecification
-            Id="70850bdf-bdf8-4f80-9bda-36f1ce6cd53f"
+            Id="2638fbcf-1944-4600-8a99-b0e4f95c14aa"
             name="BehaviorExecutionSpecification1">
             <coveredLifelines>
               <lifelineMoniker
                 Id="c014d6da-c853-4749-9662-b40e1e6aeaa2"
-                LastKnownName="DestroyMode"
+                LastKnownName="OperationsManager"
                 LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
             </coveredLifelines>
             <finish>
               <executionOccurrenceSpecificationMoniker
-                Id="9840dd7b-9fba-4179-9b11-602d68c187db"
+                Id="9ed567d2-cbbe-4ff8-80ea-ecb5ebdf8222"
                 LastKnownName="ExecutionOccurrenceSpecification2"
                 LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
             </finish>
             <start>
               <executionOccurrenceSpecificationMoniker
-                Id="469ec805-5661-4838-9dd4-1f730350c847"
+                Id="8388d513-49c1-4f1e-b727-8afe02941958"
                 LastKnownName="ExecutionOccurrenceSpecification1"
                 LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
             </start>
             <nestedOccurrences>
               <messageOccurrenceSpecificationMoniker
-                Id="79f9957a-481c-4d10-a5e5-74ccdfa93252"
+                Id="09ecd847-39a1-422f-b35a-333f48946a1f"
                 LastKnownName="MessageOccurrenceSpecification2"
                 LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
               <messageOccurrenceSpecificationMoniker
-                Id="bb5731dd-bb8f-44f6-861f-25c1c007b7ee"
-                LastKnownName="MessageOccurrenceSpecification3"
+                Id="9a9fd34e-82fb-4304-81fb-09207f4cea44"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="5997e911-72e5-4862-ad74-187e4c657291"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="dce10496-4b71-4068-9ef2-2687687e70e8"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="a77a5ece-8db7-41ed-9f74-8aa650de0f5d"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="c927365f-7c27-47f9-9619-87a0a9d99a69"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="5bc062d9-ebc5-4e4e-ad9f-34cc737dbd72"
+                LastKnownName="MessageOccurrenceSpecification15"
                 LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
             </nestedOccurrences>
           </behaviorExecutionSpecification>
           <executionOccurrenceSpecification
-            Id="469ec805-5661-4838-9dd4-1f730350c847"
+            Id="8388d513-49c1-4f1e-b727-8afe02941958"
             name="ExecutionOccurrenceSpecification1">
             <event>
               <executionOccurrenceSpecificationReferencesEvent>
                 <executionEventMoniker
-                  Id="96a7794a-9d96-4bb4-8f8d-eab4c054b6ac"
+                  Id="30746051-da50-4e6a-b65c-86a9b828464d"
                   LastKnownName="ExecutionEvent"
                   LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
               </executionOccurrenceSpecificationReferencesEvent>
@@ -8678,12 +8698,12 @@
             <covered>
               <lifelineMoniker
                 Id="c014d6da-c853-4749-9662-b40e1e6aeaa2"
-                LastKnownName="DestroyMode"
+                LastKnownName="OperationsManager"
                 LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="f58adec5-eff1-4c0f-a715-6fa261daa2f1"
+            Id="4fdbfc24-c9df-4f17-8ccb-12bc5473d424"
             name="MessageOccurrenceSpecification1">
             <covered>
               <lifelineMoniker
@@ -8693,42 +8713,448 @@
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="79f9957a-481c-4d10-a5e5-74ccdfa93252"
+            Id="09ecd847-39a1-422f-b35a-333f48946a1f"
             name="MessageOccurrenceSpecification2">
             <covered>
               <lifelineMoniker
                 Id="c014d6da-c853-4749-9662-b40e1e6aeaa2"
-                LastKnownName="DestroyMode"
+                LastKnownName="OperationsManager"
                 LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
             </covered>
           </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="60ba519a-39b5-45ea-b928-9178a8aebbf4"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="5757ca66-78d2-422b-af14-2f736bacc8a6"
+                LastKnownName="Timer"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="96c96d84-9d58-4469-a9f9-5096b631ae37"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="f9fd8f7f-ef13-4b36-a2a9-58ce22f5cc28"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="edfc272f-0e3b-447d-b1ad-86d22a5102eb"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="f9fd8f7f-ef13-4b36-a2a9-58ce22f5cc28"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="c8afab17-65ec-46f0-bb01-c445648d362f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5757ca66-78d2-422b-af14-2f736bacc8a6"
+                LastKnownName="Timer"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="bb5731dd-bb8f-44f6-861f-25c1c007b7ee"
-            name="MessageOccurrenceSpecification3">
+            Id="9a9fd34e-82fb-4304-81fb-09207f4cea44"
+            name="MessageOccurrenceSpecification5">
             <covered>
               <lifelineMoniker
                 Id="c014d6da-c853-4749-9662-b40e1e6aeaa2"
-                LastKnownName="DestroyMode"
+                LastKnownName="OperationsManager"
                 LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="f7975001-6577-45e7-9236-a20381436a06"
-            name="MessageOccurrenceSpecification4">
+            Id="edfc272f-0e3b-447d-b1ad-86d22a5102eb"
+            name="MessageOccurrenceSpecification6">
             <covered>
               <lifelineMoniker
-                Id="a754e6de-75c2-4daa-90ef-f998a4503f6f"
-                LastKnownName="GUI"
+                Id="5757ca66-78d2-422b-af14-2f736bacc8a6"
+                LastKnownName="Timer"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="f36c051a-2f50-45ce-b92e-9d9d4cb8adb1"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="e372337f-dd0c-41f3-8e62-031789823c7a"
+                LastKnownName="SearchMode"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="c2afdc18-8a0d-44a6-8338-28cc86fd9c04"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="4712024f-5254-48e6-8d24-54677536502e"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="77b6f566-f15b-4b74-b40e-368b71f89eb2"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="87722361-c690-4e52-b3b3-7fb779947f6e"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="4712024f-5254-48e6-8d24-54677536502e"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="9471c5ab-12c1-479f-9909-1d1117f78a75"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e372337f-dd0c-41f3-8e62-031789823c7a"
+                LastKnownName="SearchMode"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="77b6f566-f15b-4b74-b40e-368b71f89eb2"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="e372337f-dd0c-41f3-8e62-031789823c7a"
+                LastKnownName="SearchMode"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5997e911-72e5-4862-ad74-187e4c657291"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="c014d6da-c853-4749-9662-b40e1e6aeaa2"
+                LastKnownName="OperationsManager"
                 LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification
-            Id="9840dd7b-9fba-4179-9b11-602d68c187db"
+            Id="96c96d84-9d58-4469-a9f9-5096b631ae37"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="fdf6c934-0d23-4501-bbda-7b2b06c7b464"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5757ca66-78d2-422b-af14-2f736bacc8a6"
+                LastKnownName="Timer"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="87722361-c690-4e52-b3b3-7fb779947f6e"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="e372337f-dd0c-41f3-8e62-031789823c7a"
+                LastKnownName="SearchMode"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="dce10496-4b71-4068-9ef2-2687687e70e8"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="c014d6da-c853-4749-9662-b40e1e6aeaa2"
+                LastKnownName="OperationsManager"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="c2afdc18-8a0d-44a6-8338-28cc86fd9c04"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b5e08b23-f4bb-4f99-923a-1c043d829d90"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e372337f-dd0c-41f3-8e62-031789823c7a"
+                LastKnownName="SearchMode"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="f9f4eb18-8731-45ec-9fa7-7b504f9bb42b"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="2a062a26-78a1-4e44-9cc1-057be731a7c8"
+                LastKnownName="IMissileLauncher"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="7945761c-cd94-43ae-a42c-046dd058821f"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="a3da1007-ae51-4159-bcab-7e75e11ebe79"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="e11cd607-2a2a-41d3-938d-eadb7505935b"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="a3da1007-ae51-4159-bcab-7e75e11ebe79"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="69d48eca-b4ba-41b0-b1aa-2db70d0493fe"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2a062a26-78a1-4e44-9cc1-057be731a7c8"
+                LastKnownName="IMissileLauncher"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a77a5ece-8db7-41ed-9f74-8aa650de0f5d"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="c014d6da-c853-4749-9662-b40e1e6aeaa2"
+                LastKnownName="OperationsManager"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e11cd607-2a2a-41d3-938d-eadb7505935b"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="2a062a26-78a1-4e44-9cc1-057be731a7c8"
+                LastKnownName="IMissileLauncher"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="7945761c-cd94-43ae-a42c-046dd058821f"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="8211256e-f259-44d3-921d-8b89190bcae0"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2a062a26-78a1-4e44-9cc1-057be731a7c8"
+                LastKnownName="IMissileLauncher"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="97c97d80-641f-420f-98a4-8c690756668f"
+            name="BehaviorExecutionSpecification6">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="2a062a26-78a1-4e44-9cc1-057be731a7c8"
+                LastKnownName="IMissileLauncher"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="a1c14bf3-8b0e-4105-aa7b-7d0c22cbc320"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="a86f4cd8-ef38-499e-9bcf-d2f2395fdbc9"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="9e9c06eb-a600-4f75-b6f6-aa0670f806b0"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="a86f4cd8-ef38-499e-9bcf-d2f2395fdbc9"
+            name="ExecutionOccurrenceSpecification11">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0bfa5e5f-443e-4249-887f-8b59336aab5d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2a062a26-78a1-4e44-9cc1-057be731a7c8"
+                LastKnownName="IMissileLauncher"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c927365f-7c27-47f9-9619-87a0a9d99a69"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="c014d6da-c853-4749-9662-b40e1e6aeaa2"
+                LastKnownName="OperationsManager"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9e9c06eb-a600-4f75-b6f6-aa0670f806b0"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="2a062a26-78a1-4e44-9cc1-057be731a7c8"
+                LastKnownName="IMissileLauncher"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="a1c14bf3-8b0e-4105-aa7b-7d0c22cbc320"
+            name="ExecutionOccurrenceSpecification12">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d2c28f24-b7c7-4910-adfc-f572c9bb7acb"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2a062a26-78a1-4e44-9cc1-057be731a7c8"
+                LastKnownName="IMissileLauncher"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="99b31b8c-4c08-4f5d-936e-f87310f8d82e"
+            name="BehaviorExecutionSpecification7">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="5757ca66-78d2-422b-af14-2f736bacc8a6"
+                LastKnownName="Timer"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="3aab99e2-3203-4d6b-a888-654bf8e74421"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="658515fc-e09a-4c95-a9fd-39ddb57310c1"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="52cc2f58-d219-4594-903c-cf8a181b7e10"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="658515fc-e09a-4c95-a9fd-39ddb57310c1"
+            name="ExecutionOccurrenceSpecification13">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="79587bdc-d2c7-4931-8f26-2e62cd3d27ec"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5757ca66-78d2-422b-af14-2f736bacc8a6"
+                LastKnownName="Timer"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5bc062d9-ebc5-4e4e-ad9f-34cc737dbd72"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="c014d6da-c853-4749-9662-b40e1e6aeaa2"
+                LastKnownName="OperationsManager"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="52cc2f58-d219-4594-903c-cf8a181b7e10"
+            name="MessageOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="5757ca66-78d2-422b-af14-2f736bacc8a6"
+                LastKnownName="Timer"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="9ed567d2-cbbe-4ff8-80ea-ecb5ebdf8222"
             name="ExecutionOccurrenceSpecification2">
             <event>
               <executionOccurrenceSpecificationReferencesEvent>
                 <executionEventMoniker
-                  Id="0df6c4cd-2765-4848-ae1e-5ae623e06dec"
+                  Id="3ddd90c4-b9de-495a-b745-b535a50acd5a"
                   LastKnownName="ExecutionEvent"
                   LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
               </executionOccurrenceSpecificationReferencesEvent>
@@ -8736,7 +9162,25 @@
             <covered>
               <lifelineMoniker
                 Id="c014d6da-c853-4749-9662-b40e1e6aeaa2"
-                LastKnownName="DestroyMode"
+                LastKnownName="OperationsManager"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="3aab99e2-3203-4d6b-a888-654bf8e74421"
+            name="ExecutionOccurrenceSpecification14">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e0c5eb5b-57f4-4d00-a030-218555f6b261"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5757ca66-78d2-422b-af14-2f736bacc8a6"
+                LastKnownName="Timer"
                 LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
             </covered>
           </executionOccurrenceSpecification>
@@ -8749,83 +9193,272 @@
             lifelineDisplayName="GUI">
             <topLevelOccurrences>
               <messageOccurrenceSpecificationMoniker
-                Id="f58adec5-eff1-4c0f-a715-6fa261daa2f1"
+                Id="4fdbfc24-c9df-4f17-8ccb-12bc5473d424"
                 LastKnownName="MessageOccurrenceSpecification1"
-                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
-              <messageOccurrenceSpecificationMoniker
-                Id="f7975001-6577-45e7-9236-a20381436a06"
-                LastKnownName="MessageOccurrenceSpecification4"
                 LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
             </topLevelOccurrences>
           </lifeline>
           <lifeline
             Id="c014d6da-c853-4749-9662-b40e1e6aeaa2"
-            name="DestroyMode"
+            name="OperationsManager"
             isActor="false"
-            lifelineDisplayName="DestroyMode">
+            lifelineDisplayName="OperationsManager">
+            <represents>
+              <propertyMoniker
+                Id="d9a648f1-d36d-421b-8dbe-17763dc3820b"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </represents>
             <topLevelOccurrences>
               <executionOccurrenceSpecificationMoniker
-                Id="469ec805-5661-4838-9dd4-1f730350c847"
+                Id="8388d513-49c1-4f1e-b727-8afe02941958"
                 LastKnownName="ExecutionOccurrenceSpecification1"
                 LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
               <executionOccurrenceSpecificationMoniker
-                Id="9840dd7b-9fba-4179-9b11-602d68c187db"
+                Id="9ed567d2-cbbe-4ff8-80ea-ecb5ebdf8222"
                 LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="e372337f-dd0c-41f3-8e62-031789823c7a"
+            name="SearchMode"
+            isActor="false"
+            lifelineDisplayName="SearchMode">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="4712024f-5254-48e6-8d24-54677536502e"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="c2afdc18-8a0d-44a6-8338-28cc86fd9c04"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="2a062a26-78a1-4e44-9cc1-057be731a7c8"
+            name="IMissileLauncher"
+            isActor="false"
+            lifelineDisplayName="IMissileLauncher">
+            <represents>
+              <propertyMoniker
+                Id="a8ddc1f4-b2c3-4842-8711-cf3392647869"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="a3da1007-ae51-4159-bcab-7e75e11ebe79"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="7945761c-cd94-43ae-a42c-046dd058821f"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a86f4cd8-ef38-499e-9bcf-d2f2395fdbc9"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a1c14bf3-8b0e-4105-aa7b-7d0c22cbc320"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="5757ca66-78d2-422b-af14-2f736bacc8a6"
+            name="Timer"
+            isActor="false"
+            lifelineDisplayName="Timer">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="f9fd8f7f-ef13-4b36-a2a9-58ce22f5cc28"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="96c96d84-9d58-4469-a9f9-5096b631ae37"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="658515fc-e09a-4c95-a9fd-39ddb57310c1"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="3aab99e2-3203-4d6b-a888-654bf8e74421"
+                LastKnownName="ExecutionOccurrenceSpecification14"
                 LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
             </topLevelOccurrences>
           </lifeline>
         </lifelines>
         <messages>
           <message
-            Id="26cb6ee6-714f-42c7-b8a3-67780eb62416"
-            name="List&lt;Target&gt;,"
+            Id="d161df71-fe4f-41d7-9f36-4da3927f4b6f"
+            name="mode"
             messageKind="Complete"
-            messageSort="SynchCall"
+            messageSort="AsynchCall"
             createSelfMessage="false">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
-                Id="f58adec5-eff1-4c0f-a715-6fa261daa2f1"
+                Id="4fdbfc24-c9df-4f17-8ccb-12bc5473d424"
                 LastKnownName="MessageOccurrenceSpecification1"
                 LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
             </sendEvent>
             <receiveEvent>
               <messageOccurrenceSpecificationMoniker
-                Id="79f9957a-481c-4d10-a5e5-74ccdfa93252"
+                Id="09ecd847-39a1-422f-b35a-333f48946a1f"
                 LastKnownName="MessageOccurrenceSpecification2"
                 LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
             </receiveEvent>
           </message>
           <message
-            Id="0b6fe9ed-8b61-4780-92c8-158f85e43347"
-            name="&lt;&lt;List&lt;Target&gt;&gt;&gt;"
+            Id="f278b846-a27c-4cb4-8014-f13c71f1bea4"
+            name="start"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9a9fd34e-82fb-4304-81fb-09207f4cea44"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="edfc272f-0e3b-447d-b1ad-86d22a5102eb"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="014ce59e-5e7a-4223-84ef-ef2a7703be40"
+            name="targetList, mode"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5997e911-72e5-4862-ad74-187e4c657291"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="77b6f566-f15b-4b74-b40e-368b71f89eb2"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="3ff28ea8-af7c-413d-b581-3ed05a9b077a"
+            name="&lt;&lt;return hitList&gt;&gt;"
             messageKind="Complete"
             messageSort="Reply"
             createSelfMessage="false">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
-                Id="bb5731dd-bb8f-44f6-861f-25c1c007b7ee"
-                LastKnownName="MessageOccurrenceSpecification3"
+                Id="87722361-c690-4e52-b3b3-7fb779947f6e"
+                LastKnownName="MessageOccurrenceSpecification9"
                 LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
             </sendEvent>
             <receiveEvent>
               <messageOccurrenceSpecificationMoniker
-                Id="f7975001-6577-45e7-9236-a20381436a06"
-                LastKnownName="MessageOccurrenceSpecification4"
+                Id="dce10496-4b71-4068-9ef2-2687687e70e8"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="e8fa7117-9cd7-4d80-8170-d0d40535eae6"
+            name="move"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a77a5ece-8db7-41ed-9f74-8aa650de0f5d"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e11cd607-2a2a-41d3-938d-eadb7505935b"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="1c37f0b7-7bce-4f08-b7cf-00125b25cb92"
+            name="fire"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c927365f-7c27-47f9-9619-87a0a9d99a69"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9e9c06eb-a600-4f75-b6f6-aa0670f806b0"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="88ca0ee2-cb17-4b6e-817f-f7f9e0058546"
+            name="stop"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5bc062d9-ebc5-4e4e-ad9f-34cc737dbd72"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="52cc2f58-d219-4594-903c-cf8a181b7e10"
+                LastKnownName="MessageOccurrenceSpecification16"
                 LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
             </receiveEvent>
           </message>
         </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="d9a648f1-d36d-421b-8dbe-17763dc3820b"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="ec588ebb-8b7a-4e8f-823a-28e97362c1b8"
+                LastKnownName="OperationsManager"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a8ddc1f4-b2c3-4842-8711-cf3392647869"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="955cc9f4-4173-4a79-8b93-adfa65d3dac5"
+                LastKnownName="IMissileLauncher"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
       </interaction>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <executionEvent
-        Id="96a7794a-9d96-4bb4-8f8d-eab4c054b6ac"
-        name="ExecutionEvent" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <executionEvent
-        Id="0df6c4cd-2765-4848-ae1e-5ae623e06dec"
-        name="ExecutionEvent" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <Interface
@@ -9639,6 +10272,66 @@
             LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
         </subjects>
       </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="30746051-da50-4e6a-b65c-86a9b828464d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="3ddd90c4-b9de-495a-b745-b535a50acd5a"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c8afab17-65ec-46f0-bb01-c445648d362f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="fdf6c934-0d23-4501-bbda-7b2b06c7b464"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="9471c5ab-12c1-479f-9909-1d1117f78a75"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b5e08b23-f4bb-4f99-923a-1c043d829d90"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="69d48eca-b4ba-41b0-b1aa-2db70d0493fe"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8211256e-f259-44d3-921d-8b89190bcae0"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0bfa5e5f-443e-4249-887f-8b59336aab5d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d2c28f24-b7c7-4910-adfc-f572c9bb7acb"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="79587bdc-d2c7-4931-8f26-2e62cd3d27ec"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e0c5eb5b-57f4-4d00-a030-218555f6b261"
+        name="ExecutionEvent" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
