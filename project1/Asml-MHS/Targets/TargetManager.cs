@@ -76,6 +76,7 @@ namespace TargetManagement
             return true;
         }
 
+        #region Dispose
         /// <summary>
         /// public dispose
         /// </summary>
@@ -98,7 +99,8 @@ namespace TargetManagement
                 _instance = null;
             }
         }
-
+        #endregion
+       
         /// <summary>
         /// Target Manager Constructor
         /// </summary>

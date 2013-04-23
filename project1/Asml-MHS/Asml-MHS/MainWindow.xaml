@@ -153,12 +153,12 @@
                 <DropShadowEffect/>
             </Image.Effect>
         </Image>
-        <Button x:Name="btnVideoStart" Content="Start Video" HorizontalAlignment="Left" Margin="45,254,0,0" VerticalAlignment="Top" Width="89" RenderTransformOrigin="-1.56,0.455" Background="#FF3FAE1E" FontWeight="Bold">
+        <Button x:Name="btnVideoStart" Content="Start Video" HorizontalAlignment="Left" Margin="45,254,0,0" VerticalAlignment="Top" Width="89" RenderTransformOrigin="-1.56,0.455" Background="#FF3FAE1E" FontWeight="Bold" Click="btnVideoStart_Click">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Button x:Name="btnVideoStop" Content="Stop Video" HorizontalAlignment="Left" Margin="154,254,0,0" VerticalAlignment="Top" Width="89" Background="#FF3FAE1E" FontWeight="Bold">
+        <Button x:Name="btnVideoStop" Content="Stop Video" HorizontalAlignment="Left" Margin="154,254,0,0" VerticalAlignment="Top" Width="89" Background="#FF3FAE1E" FontWeight="Bold" Click="btnVideoStop_Click">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
@@ -173,7 +173,7 @@
         <Label x:Name="lblCurrentTargetLocation" Content="Theta,Phi" HorizontalAlignment="Left" Margin="585,251,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblCurrentTargetName" Content="TargetName" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="585,225,0,0"/>
         <Label x:Name="lblCurrentTargetStatus" Content="Friend/Foe" HorizontalAlignment="Left" Margin="585,277,0,0" VerticalAlignment="Top"/>
-        <ListBox x:Name="lstModes" Margin="539,0,0,443" Height="23" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.478" HorizontalAlignment="Left" Width="143" SelectionChanged="lstModes_SelectionChanged">
+        <ListBox x:Name="lstModes" Margin="538,0,0,435" Height="23" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.478" HorizontalAlignment="Left" Width="143" SelectionChanged="lstModes_SelectionChanged">
             <ListBox.Effect>
                 <DropShadowEffect/>
             </ListBox.Effect>

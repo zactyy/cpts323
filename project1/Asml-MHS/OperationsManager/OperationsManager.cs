@@ -71,18 +71,22 @@ namespace OperationsManager
         /// The thread the destroy mode will be run on.  
         /// </summary>
         private Thread _destroy_thread;
+        
         /// <summary>
         /// Flag to track whether destroy should be currently running.  
         /// </summary>
         private bool _active_destroy_mode;
+       
         /// <summary>
         /// Fired when the processing is started.
         /// </summary>
         public event EventHandler ThreadStarted;
+       
         /// <summary>
         /// Fired when the processing is stopped.
         /// </summary>
         public event EventHandler ThreadStopped;
+        
         /// <summary>
         /// Helps synchronize destroy thread event.
         /// </summary>
@@ -123,6 +127,7 @@ namespace OperationsManager
             //_seach_mode_list.Add(1, "Foes");
             //_seach_mode_list.Add(2, "Friends");
             //_seach_mode_list.Add(3, "All");
+            _current_target = new Target("Test", -12, 5, 10, true);
             
         }
         #endregion
@@ -163,8 +168,7 @@ namespace OperationsManager
             //SetUpDestroyThread(tempHitList);
 
         }
-
-        
+                
         /// <summary>
         /// Sets up and starts the destroy mode thread.  
         /// </summary>
@@ -372,6 +376,21 @@ namespace OperationsManager
                     }
                 }
             }
+        }
+
+
+        /// <summary>
+        /// CurrentTargetInfo passes target data to the GUI so it can be displayed on the video overlay.
+        /// </summary>
+        /// <returns>A tuple containing the name of the target, its angle theta, its angle phi, and a string containing the friend/foe status of the target.</returns>
+        public  Tuple<string, double, double, string> CurrentTargetInfo()
+        {
+            string friend = "Foe";
+            if (_current_target.Friend == true)
+            {
+                friend = "Friend";
+            }
+            return new Tuple<string, double, double, string>(_current_target.Name, Math.Round(_current_target.Theta, 2), Math.Round(_current_target.Phi, 2), friend);
         }
 
         /// <summary>

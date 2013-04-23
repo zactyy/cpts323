@@ -17,6 +17,7 @@ using VideoSys;
 using Microsoft.Win32;
 using System.Reflection;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 
 namespace Asml_McCallisterHomeSecurity
 {
@@ -77,29 +78,6 @@ namespace Asml_McCallisterHomeSecurity
             try
             {
                 _rules_them_all.TurretMoveDown();
-            }
-            catch (Exception ex)
-            {
-                DisplayError(ex.Message);
-            }
-        }
-
-        private void btnVideoStop_Click(object sender, RoutedEventArgs e)
-        {
-            try{
-                _eye_of_sauron.NewImage += new EventHandler(on_image_changed);
-            }
-            catch (Exception ex)
-            {
-                DisplayError(ex.Message);
-            }
-        }
-
-        public void btnVideoStart_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                _eye_of_sauron.NewImage -= new EventHandler(on_image_changed);
             }
             catch (Exception ex)
             {
@@ -194,9 +172,7 @@ namespace Asml_McCallisterHomeSecurity
                     DisplayError(ex.Message);
                     lblTargetFileName.Content = "No Targets Detected.";
                 }
-            }
-            Keyboard.Focus(winHomeScreen);
-            winHomeScreen.Focus();
+            }         
         }
 
         private void btnReload_Click(object sender, RoutedEventArgs e)
@@ -209,8 +185,7 @@ namespace Asml_McCallisterHomeSecurity
             catch (Exception ex)
             {
                 DisplayError(ex.Message);
-            }
-            Keyboard.Focus(winHomeScreen);     
+            }  
         }
 
         private void on_targets_changed()
@@ -224,13 +199,32 @@ namespace Asml_McCallisterHomeSecurity
         #endregion
 
         #region video
-
         private void on_image_changed(Object sender, EventArgs e)
         {
             Bitmap image = ((IVideoPlugin)sender).GetImage();
+            /* draw overlay on the image*/
+            using (Graphics g = Graphics.FromImage(image))
+            {
+                g.SmoothingMode = SmoothingMode.AntiAlias;
+                g.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                g.PixelOffsetMode = PixelOffsetMode.HighQuality;
+                System.Drawing.Brush brush = System.Drawing.Brushes.Crimson;
+                Font overlayFont = new Font("Calibri", 14);
+                Tuple<string, double, double, string> targetInfo = _rules_them_all.CurrentTargetInfo();
+                PointF upperLeft = new PointF(5, 5);
+                PointF bottomLeft = new PointF(5, (float)(imgVideo.ActualHeight-20));
+                PointF upperRight = new PointF((float)(imgVideo.ActualWidth - 120),  5);
+                PointF bottomRight = new PointF((float)(imgVideo.ActualWidth - 120), (float)(imgVideo.ActualHeight-20));
+                char degreeSymbol = (char)176;
+                g.DrawString("Current Target: " + targetInfo.Item1, overlayFont, brush, upperLeft);
+                g.DrawString("Loc: " + targetInfo.Item2.ToString() + degreeSymbol + " x " + targetInfo.Item3.ToString() + degreeSymbol, overlayFont, brush, bottomLeft);
+                g.DrawString("Time:00:00:00", overlayFont, brush, upperRight);
+                g.DrawString("Status: " + targetInfo.Item4.ToString(), overlayFont, brush, bottomRight);
+            }
+            /* set image source to new image*/
             imgVideo.Source = System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(image.GetHbitmap(), IntPtr.Zero, Int32Rect.Empty, System.Windows.Media.Imaging.BitmapSizeOptions.FromEmptyOptions());
         }
-        #endregion
+       
 
         private void DisplayError(string Message)
         {
@@ -239,12 +233,37 @@ namespace Asml_McCallisterHomeSecurity
 
         private void lstModes_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
         }
 
         private void lstTargets_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
+
+
+        private void btnVideoStop_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                _eye_of_sauron.NewImage -= new EventHandler(on_image_changed);
+            }
+            catch (Exception ex)
+            {
+                DisplayError(ex.Message);
+            }
+        }
+
+        public void btnVideoStart_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                _eye_of_sauron.NewImage += new EventHandler(on_image_changed);
+            }
+            catch (Exception ex)
+            {
+                DisplayError(ex.Message);
+            }
+        }
+        #endregion
     }
 }
