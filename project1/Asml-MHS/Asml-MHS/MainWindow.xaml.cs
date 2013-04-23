@@ -233,7 +233,7 @@ namespace Asml_McCallisterHomeSecurity
             {
                 /* setup necessary information and objects*/
                 g.SmoothingMode = SmoothingMode.AntiAlias;
-                g.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                //g.InterpolationMode = InterpolationMode.HighQualityBicubic;
                 g.PixelOffsetMode = PixelOffsetMode.HighQuality;
                 System.Drawing.Brush brush = System.Drawing.Brushes.Crimson;
                 Font overlayFont = new Font("Calibri", 14);

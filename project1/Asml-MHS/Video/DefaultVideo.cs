@@ -162,10 +162,10 @@ namespace VideoSys
         /// <returns>A bitmap image.</returns>
         public Bitmap GetImage()
         {
-                Bitmap temp = new Bitmap(_width, _height);
+            Bitmap temp = new Bitmap(_width, _height);
                 using (Graphics g = Graphics.FromImage((Image)temp))
                 {
-                    g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+                    //g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
                     g.DrawImage(_image, 0, 0, _width, _height);
                     g.Dispose();
                 }
@@ -194,13 +194,17 @@ namespace VideoSys
         /// <param name="e">event arguments</param>
         private void CollectImage(Object sender, EventArgs e)
         {
-                // get image from webcam
-                _image = _webcamera.GetImage();
-                // notify observers of new image.
-                if (NewImage != null)
-                {
-                    NewImage(this, new EventArgs());
-                }
+            if (_image != null)
+            {
+                _image.Dispose();
+            }
+            // get image from webcam
+            _image = _webcamera.GetImage();
+            // notify observers of new image.
+            if (NewImage != null)
+            {
+                NewImage(this, new EventArgs());
+            }
         }
 
     }
