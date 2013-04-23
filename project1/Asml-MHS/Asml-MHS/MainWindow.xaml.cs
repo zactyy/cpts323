@@ -58,6 +58,8 @@ namespace Asml_McCallisterHomeSecurity
             _eye_of_sauron.Start();
             // Mode List initialization
             cmbModes.ItemsSource = _rules_them_all.Modes;
+            _rules_them_all.OutOfAmmo += on_out_of_ammo;
+            _rules_them_all.AmmoReduced += On_Ammo_Reduced;
             this.Closing += MainWindow_Closing;
         }
 
@@ -211,6 +213,23 @@ namespace Asml_McCallisterHomeSecurity
             {
                 lstTargets.Items.Add(item);
             }
+        }
+
+        public void On_Ammo_Reduced()
+        {
+            if (!lblNumMissiles.CheckAccess())
+            {
+                lblNumMissiles.Dispatcher.Invoke(On_Ammo_Reduced);
+            }
+            else
+            {
+                lblNumMissiles.Content = _rules_them_all.NumberMissiles;
+            }
+        }
+
+        public void on_out_of_ammo()
+        {
+            DisplayError("Out of ammo! RELOAD! RELOAD!");
         }
         #endregion
 

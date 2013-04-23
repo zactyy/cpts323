@@ -74,10 +74,13 @@ namespace OperationsManager
         /// </summary>
         public delegate void AmmoUpdate();
         public AmmoUpdate OutOfAmmo;
+        public AmmoUpdate AmmoReduced;
 
         private searchmode _search_mode;
 
         private List<string> _search_modes;
+
+        private int _number_missiles;
 
         /// <summary>
         /// background worker for turret and S&D mode operations
@@ -331,8 +334,17 @@ namespace OperationsManager
 
         public int NumberMissiles
         {
-            get;
-            set;
+            get
+            {
+                return _number_missiles;
+            }
+            set{
+                _number_missiles = value;
+                if(AmmoReduced != null)
+                {
+                    AmmoReduced();
+                }
+            }
         }
         // Interface with the Turret 
         public void TurretMoveToTarget(double theta_x, double theta_y)
