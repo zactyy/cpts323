@@ -70,10 +70,10 @@ namespace TargetManagement
         /// </summary>
         /// <param name="currTarget">a target whose status is to be determined.</param>
         /// <returns></returns>
-        public bool validate(Target currTarget)
+        public void validate(Target currTarget)
         {
             /* for now we just return true if target is shot at, due to lack of anyway to actually validate*/
-            return true;
+            currTarget.Destroyed = true;
         }
 
         #region Dispose

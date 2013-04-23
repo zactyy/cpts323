@@ -193,10 +193,76 @@ namespace TurretManagement
             // TODO need catch for out of range angles
 
             // find how much turret must move from current position
-            NewThetaX = ThetaX - NewThetaX;
-            NewThetaY = ThetaY - NewThetaY;
-            ModifyAttitude(NewThetaY);
-            ModifyAzimuth(NewThetaX);
+            if (ThetaX > 0 && NewThetaX > ThetaX)
+            {
+                NewThetaX = ThetaX + (NewThetaX - ThetaX);
+            }
+            else if (ThetaX > 0 && NewThetaX < ThetaX)
+            {
+                NewThetaX = NewThetaX - ThetaX;
+            }
+            else if (ThetaX < 0 && NewThetaX < ThetaX)
+            {
+                NewThetaX = NewThetaX - ThetaX;
+            }
+            else if (ThetaX < 0 && NewThetaX > ThetaX)
+            {
+                NewThetaX = NewThetaX - ThetaX;
+            }
+            else if (ThetaX > 0 && NewThetaX < ThetaX)
+            {
+                NewThetaX = ThetaX - NewThetaX;
+            }
+
+            // find how much turret must move from current position
+            if (ThetaY > 0 && NewThetaY > ThetaY)
+            {
+                NewThetaY = ThetaY + (NewThetaY - ThetaY);
+            }
+            else if (ThetaY > 0 && NewThetaY < ThetaY)
+            {
+                NewThetaY = NewThetaY - ThetaY;
+            }
+            else if (ThetaY < 0 && NewThetaY < ThetaY)
+            {
+                NewThetaY = NewThetaY - ThetaY;
+            }
+            else if (ThetaY < 0 && NewThetaY > ThetaY)
+            {
+                NewThetaY = NewThetaY - ThetaY;
+            }
+            else if (ThetaY > 0 && NewThetaY < ThetaY)
+            {
+                NewThetaY = ThetaY - NewThetaY;
+            }
+            /* check to make sure it's within movement range*/
+            if (Math.Abs(NewThetaX) > 120)
+            {
+                if (NewThetaX < 0)
+                {
+                    NewThetaX = -120 + Math.Abs(ThetaX);
+                }
+                else
+                {
+                    NewThetaX = 120 - Math.Abs(ThetaX);
+                }
+            }
+            else if (NewThetaY > 45)
+            {
+                NewThetaY = 45 - Math.Abs(ThetaY);
+            }
+            else if (NewThetaY < -20)
+            {
+                NewThetaY = -20 + Math.Abs(ThetaY);
+            }
+            if (NewThetaY != ThetaY)
+            {
+                ModifyAttitude(NewThetaY);
+            }
+            if (NewThetaX != ThetaX)
+            {
+                ModifyAzimuth(NewThetaX);
+            }
         }
 
         /// <summary>

@@ -11,9 +11,15 @@ namespace searchmodes
     {
         public override List<Target> search(List<Target> targetlist)
         {
-            returnlist = new List<Target>(targetlist);
-
-            return returnlist;
+            List<Target> returnList = new List<Target>();
+            foreach (Target t in targetlist)
+            {
+                if (t.Destroyed == false)
+                {
+                    returnList.Add(t);
+                }
+            }         
+            return returnList;
         }
     }
 }

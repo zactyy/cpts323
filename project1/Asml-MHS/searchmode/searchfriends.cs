@@ -15,7 +15,10 @@ namespace searchmodes
             foreach (Target tango in targetlist)
             {
                 if (tango.Friend == true)
-                    returnlist.Add(tango);
+                    if (tango.Destroyed == false)
+                    {
+                        returnlist.Add(tango);
+                    }
             }
             return returnlist;
         }

@@ -69,6 +69,12 @@ namespace OperationsManager
         public delegate void TargetUpdate();
         public TargetUpdate CurrentTargetChanged;
 
+        /// <summary>
+        /// Event for notifying GUI about out of ammo status.
+        /// </summary>
+        public delegate void AmmoUpdate();
+        public AmmoUpdate OutOfAmmo;
+
         private searchmode _search_mode;
 
         private List<string> _search_modes;
@@ -82,6 +88,8 @@ namespace OperationsManager
         public ThreadedTimer.Timer _timer;
 
         private TimeSpan _time_elapsed;
+
+        private bool _ammo_notified;
         #endregion
 
         #region OpsManager
@@ -123,6 +131,7 @@ namespace OperationsManager
             _timer = new ThreadedTimer.Timer();
             _timer.TimeCaptured += new EventHandler<TimerEventArgs>(_timer_TimeCaptured);
             TurretReset();
+            _ammo_notified = false;
             
         }
 
@@ -160,6 +169,9 @@ namespace OperationsManager
         }
         #endregion 
 
+        /*
+         * search and destroy mode stuff
+         */
         #region Search and Destroy 
 
         public delegate void sdcomplete();
@@ -185,70 +197,112 @@ namespace OperationsManager
         }
 
         /// <summary>
-        /// 
+        ///  Search and Destroy
         /// </summary>
         public void SearchAndDestroy() 
         {
-            //Start timer
-
-            List<Target> tempHitList = _search_mode.search(_target_manager.Targets);
-            DestroyTargets(tempHitList);
-        }
-   
-        /// <summary>
-        /// This is the thread where the destroying of targets takes place.  
-        /// </summary>
-        /// <param name="fireTargets"></param>
-        public void DestroyTargets(List<Target> fireTargets)
-        {
-            if (fireTargets.Count > 0)
+            if (!_bw.IsBusy)
             {
-                if (!_bw.IsBusy)
-                {
-                    _bw.DoWork += DestroyTargetsThread;
-                    _timer.Start();
-                    _bw.RunWorkerAsync(fireTargets);
-                }
+                _bw.DoWork += DestroyTargetsThread;
+                _timer.Start();
+                _bw.RunWorkerAsync(new Tuple<searchmode, List<Target>>(_search_mode, _target_manager.Targets));
             }
             else
             {
-                throw new OperationsError("No targets matching that type detected!");
+                throw new Exception("Turret is busy.");
             }
+            
         }
-
+   
         public void DestroyTargetsThread(Object sender, DoWorkEventArgs e)
         {
             BackgroundWorker bw = sender as BackgroundWorker;
-            List<Target> fireTargets = (List<Target>)e.Argument;
-            foreach(Target target in fireTargets)
+            Tuple<searchmode, List<Target>> args = (Tuple<searchmode, List<Target>>)e.Argument;
+            searchmode search = args.Item1;
+            List<Target> searchableTargets = args.Item2;
+            while (_time_elapsed.Minutes < 2)
             {
                 if (bw.CancellationPending == true)
                 {
                     e.Cancel = true;
                     break;
                 }
-                else
+                else if (e.Cancel == true)
                 {
-                    /* if time elapsed is 2 minutes, destroy failed, end attempt*/
-                    if (_time_elapsed.Minutes == 2)
+                    break;   
+                }
+                List<Target> fireTargets = search.search(searchableTargets);
+                fireTargets.Sort(FastestPath);
+                foreach (Target target in fireTargets)
+                {
+                    if (bw.CancellationPending == true)
                     {
+                        e.Cancel = true;
                         break;
                     }
-                    CurrentTarget = target;
-                    _turret.MoveTo(target.Phi, target.Theta);
-                    _turret.Fire();
-                    _target_manager.validate(target);
+                    else
+                    {
+                        /* if time elapsed is 2 minutes, destroy failed, end attempt*/
+                        if (_time_elapsed.Minutes >= 2)
+                        {
+                            break;
+                        }
+                        if (NumberMissiles < 1)
+                        {
+                            if (OutOfAmmo != null && _ammo_notified == false)
+                            {
+                                OutOfAmmo();
+                                _ammo_notified = true;
+                            }
+                        }
+                        else
+                        {
+                            CurrentTarget = target;
+                            _turret.MoveTo(target.Theta, target.Phi);
+                            _turret.Fire();
+                            NumberMissiles -= 1;
+                            _target_manager.validate(target);
+                            CurrentTarget = null;
+                        }
+                    }
                 }
             }
             /* remove this event handler from the dowork event so the background worker can be reused by others
              at completion */
             _timer.Stop();
+            _turret.Reset();
+            _ammo_notified = false;
             bw.DoWork -= DestroyTargetsThread;
             /* notifyGUI that search and destroy has completed.*/
             if (sdCompleted != null)
             {
                 sdCompleted();
             }
+        }
+
+        private int FastestPath(Target t1, Target t2)
+        {
+            if(t1.Theta == t2.Theta)
+            {
+                return 0;
+            }
+            /*if t1 and t2 thetas are both negatives..reverse the sort order, this achieves the effect 
+             * of the path being from largest to smallest negative(aka -1 is shot at before -2)
+             * while in the other direction from smallest to largest.
+             *  This results in firing at each target in order of the closest one first as the turret swings 
+             *  left, then it moves to all targets right of the 0,0 point firing at them in order*/
+            else if (t1.Theta < 0 && t2.Theta < 0)
+            {
+                if(t1.Theta > t2.Theta)
+                {
+                    return -1;
+                }
+            }
+            else if (t1.Theta < t2.Theta)
+            {
+                return -1;
+            }
+            return 1;
         }
 
         /// <summary>
@@ -261,10 +315,14 @@ namespace OperationsManager
             {
                 _bw.CancelAsync();
                 _timer.Stop();
+                TurretReset();
             }
         }
         #endregion
 
+        /*
+         * Turret controls
+         */
         #region TurretControls
 
         public void ReloadTurret()
@@ -318,13 +376,15 @@ namespace OperationsManager
             
         }
 
-        public void TurretReset()
+        public bool TurretReset()
         {
             if (!_bw.IsBusy)
             {
                 _bw.DoWork += Turret_Reset_Work;
                 _bw.RunWorkerAsync();
+                return true;
             }
+            return false;
         }
 
         private void Turret_Reset_Work(object sender, DoWorkEventArgs e)
@@ -334,6 +394,9 @@ namespace OperationsManager
         }
         #endregion
 
+        /* 
+         * Target manager stuff
+         */
         #region TargetMangager
         // Interface with the File Reader(s)
         public void LoadFile(string targetfile)
@@ -437,10 +500,10 @@ namespace OperationsManager
 
 
         /// <summary>
-        /// CurrentTargetInfo passes target data to the GUI so it can be displayed on the video overlay.
+        /// CurrentTargetInfo passes data to the GUI so it can be displayed on the video overlay.
         /// </summary>
-        /// <returns>A tuple containing the name of the target, its angle theta, its angle phi, and a string containing the friend/foe status of the target.</returns>
-        public  Tuple<string, double, double, string> CurrentTargetInfo()
+        /// <returns>A tuple containing the name of the target, the turrrets angle theta and angle phi, and a string containing the friend/foe status of the target.</returns>
+        public  Tuple<string, double, double, string> CurrentGUIInfo()
         {
             Tuple<string, double, double, string> temp;
             if (_current_target != null)
@@ -450,7 +513,7 @@ namespace OperationsManager
                 {
                     friend = "Friend";
                 }
-                temp = new Tuple<string, double, double, string>(_current_target.Name, Math.Round(_current_target.Theta, 2), Math.Round(_current_target.Phi, 2), friend);
+                temp = new Tuple<string, double, double, string>(_current_target.Name, Math.Round(_turret.Theta, 2), Math.Round(_turret.Phi, 2), friend);
             }
             else
             {

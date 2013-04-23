@@ -25,6 +25,7 @@ namespace TargetManagement
             Friend = true;
             Theta = 0;
             Phi = 0;
+            Destroyed = false;
         }
 
         public Target(string i_name, double i_x_coordinate, double i_y_coordinate, double i_z_coordinate, bool i_friend)
@@ -34,6 +35,7 @@ namespace TargetManagement
             Y_coordinate = i_y_coordinate;
             Z_coordinate = i_z_coordinate;
             Friend = i_friend;
+            Destroyed = false;
             this.CalculateAngles();
         }
 
@@ -44,6 +46,7 @@ namespace TargetManagement
             Y_coordinate = i_y_coordinate;
             Z_coordinate = i_z_coordinate;
             Friend = i_friend;
+            Destroyed = false;
             this.CalculateAngles();
         }
 
@@ -55,6 +58,9 @@ namespace TargetManagement
             this.Y_coordinate = copy.Y_coordinate;
             this.Z_coordinate = copy.Z_coordinate;
             this.Friend = copy.Friend;
+            this.Destroyed = copy.Destroyed;
+            this.Theta = copy.Theta;
+            this.Phi = copy.Phi;
         }
 
         // determines angles from origin to targets coordinate assigns to Theta and Phi
@@ -105,6 +111,12 @@ namespace TargetManagement
         }
 
         public bool Friend
+        {
+            get;
+            set;
+        }
+
+        public bool Destroyed
         {
             get;
             set;

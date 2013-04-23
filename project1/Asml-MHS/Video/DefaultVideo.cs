@@ -166,7 +166,8 @@ namespace VideoSys
                 using (Graphics g = Graphics.FromImage((Image)temp))
                 {
                     g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-                    g.DrawImage(_image, 0, 0, _width, _height);         
+                    g.DrawImage(_image, 0, 0, _width, _height);
+                    g.Dispose();
                 }
                 return temp;
         }

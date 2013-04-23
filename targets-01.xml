@@ -3,6 +3,6 @@
 <Targets>
 	<Target Name="alpha"   xPos="24" yPos="1"  zPos="324"  isFriend="True"/>
 	<Target Name="beta"    xPos="2" yPos="21"  zPos="-5"    isFriend="False"/>
-	<Target Name="victor"  xPos="12" yPos="10" zPos="5"    isFriend="False"/>
+	<Target Name="victor"  xPos="12" yPos="5" zPos="5"    isFriend="False"/>
   <Target Name="charlie" xPos="-9" yPos="10" zPos="5"    isFriend="False"/>
 </Targets>

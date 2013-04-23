@@ -238,7 +238,7 @@ namespace Asml_McCallisterHomeSecurity
                 System.Drawing.Brush brush = System.Drawing.Brushes.Crimson;
                 Font overlayFont = new Font("Calibri", 14);
                 /* tuple holds the actual target info to be drawn*/
-                Tuple<string, double, double, string> targetInfo = _rules_them_all.CurrentTargetInfo();
+                Tuple<string, double, double, string> targetInfo = _rules_them_all.CurrentGUIInfo();
                 /* points are where the strings should be drawn on the image*/
                 PointF upperLeft = new PointF(5, 5);
                 PointF bottomLeft = new PointF(5, (float)(imgVideo.ActualHeight-20));
@@ -253,7 +253,9 @@ namespace Asml_McCallisterHomeSecurity
                 g.Dispose();
             }
             /* set image source to new image*/
+            imgVideo.Source = null;
             imgVideo.Source = System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(image.GetHbitmap(), IntPtr.Zero, Int32Rect.Empty, System.Windows.Media.Imaging.BitmapSizeOptions.FromEmptyOptions());
+            image.Dispose();
         }
        
         /// <summary>
@@ -321,8 +323,15 @@ namespace Asml_McCallisterHomeSecurity
         /// <param name="e"></param>
         private void btnStopMode_Click(object sender, RoutedEventArgs e)
         {
-            _rules_them_all.Stop();
-            Enable_Buttons();
+            try
+            {
+                _rules_them_all.Stop();
+                Enable_Buttons();
+            }
+            catch (Exception ex)
+            {
+                DisplayError(ex.Message);
+            }
         }
 
         private void Disable_Buttons()
