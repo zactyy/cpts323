@@ -1,1 +1,858 @@
-﻿
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="1f633db2-86c7-4256-a02f-02ad1a775dce"
+  name="WebCamera"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="59ba9f00-931c-4f21-932d-bf5e9f8c249a"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DWebCamera"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="b8aa8c32-2eab-4064-aafd-440cee1f4474"
+        name="Camera"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="cf777de2-fad6-4668-bbdd-b302692a3646"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FCamera%2Fbin%2FDebug%2FCamera.dll Namespace%3DWebCamera Type%3DCamera"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2ce40286-388d-4bc7-bfb2-931ebcba4687"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f9e0dfbd-ccc9-4dfe-b681-d5e4fd0b36bd">
+                <propertyInstance
+                  Id="5b1481cf-0ddc-4d77-b385-6d5e396f1d13"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4b009b3e-c827-4ead-8144-a563361a8152">
+                <propertyInstance
+                  Id="5e26b11d-d936-4cff-9471-661a1419defb"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c34d4247-9511-4e91-87fd-722905f95b5c">
+                <propertyInstance
+                  Id="be29faae-a11b-4274-9da9-b701c1b433f0"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0ebaf812-41b5-4353-ab19-1ca9aa8d88c3">
+                <propertyInstance
+                  Id="c2c952da-91c5-453e-8bc0-22b77464bbfb"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5fde631e-37dc-46bb-8201-ad4d09b8ecc7">
+                <propertyInstance
+                  Id="6b564a52-fda5-4fca-9756-4966828f6a20"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="4e2ccd34-88b1-4245-95b8-0e9f7e66829a">
+            <interfaceMoniker
+              Id="e7ff2401-2c9a-4699-bfc7-161605420286"
+              LastKnownName="IDisposable"
+              LastKnownLocation="Package1_1635.uml" />
+          </interfaceRealization>
+          <interfaceRealization
+            Id="db2577b2-248a-4c9b-89c6-41405be7dae0">
+            <interfaceMoniker
+              Id="406ccfb1-332d-4868-977b-7202148d2dfa"
+              LastKnownName="IVideo"
+              LastKnownLocation="Package5_1635.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="bfe4ef6c-a870-481c-8878-b0d082873e22"
+            isDerived="false"
+            sourceEndRoleName="Camera"
+            targetEndRoleName="DefaultVideo"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="0963df58-64a4-4280-b3d1-563fa76efa7f"
+              LastKnownName="DefaultVideo"
+              LastKnownLocation="Package_1034.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0d481fb1-45de-40cc-a1ba-d0c1a51c5ea6"
+                  name="Camera"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6677d5a8-db0b-48d1-9d0d-34d369050129"
+                  name="DefaultVideo"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="c28ce0a5-ebdb-4308-b58f-d9151f0e98c8"
+            name="IsDisposed"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5caae9c5-d5cf-44e6-9311-ff76cf2a9bf9"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FCamera%2Fbin%2FDebug%2FCamera.dll Namespace%3DWebCamera Type%3DCamera Member%3DIsDisposed"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="70a5a169-1a0c-4f91-a5e5-9329e1b5d5e5"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7e63abb-2aad-44d0-8795-5c84dd132fdf">
+                    <propertyInstance
+                      Id="fca1ed4e-0b28-4a17-b09e-f8bb3f9aea49"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="effd0dec-5453-4237-8637-f275dd7b6676">
+                    <propertyInstance
+                      Id="0554a015-3c21-49e2-9bfd-4df51db8b7d3"
+                      name="Get"
+                      value="private" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12a99965-915a-4310-9e53-39f0de3da498">
+                    <propertyInstance
+                      Id="affbfd17-86f8-417f-be10-552d93f9e4b6"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="943590bb-e91b-44e5-980c-6e96d68577e2">
+                    <propertyInstance
+                      Id="89aca96c-ba93-4230-92ca-7895315a1f12"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9efffb7-4089-45dc-a4d4-d154ec449f0d">
+                    <propertyInstance
+                      Id="41b05856-c014-4839-8f81-0537bd588fa6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75596d42-d630-456f-a6ce-bc5d2f9bc1bc">
+                    <propertyInstance
+                      Id="65c59942-f568-4297-b3a9-82cb7a7d5156"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd375148-039a-4bd4-b4e6-01ae7d2430d4">
+                    <propertyInstance
+                      Id="1586c093-39e3-4600-8bec-1704a0c0e6fc"
+                      name="Set"
+                      value="private" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e7436512-27e7-4621-9db8-724324f75546"
+            name="_instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="de9eb4b8-d3c2-4849-b80e-c300e2b327f2"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FCamera%2Fbin%2FDebug%2FCamera.dll Namespace%3DWebCamera Type%3DCamera Member%3D_instance"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="21c5d8ec-e256-4150-876d-07aa8542ada1"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35c95e4e-6d5a-4c15-958f-498bbfd59eb1">
+                    <propertyInstance
+                      Id="b368d489-da56-4b07-9527-b4677ec79163"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39c04d0e-2741-46e3-be16-0f38e6aab709">
+                    <propertyInstance
+                      Id="d44cc638-1057-46e9-81da-992493e64678"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="353115a6-126f-4a80-aace-18896366f825">
+                    <propertyInstance
+                      Id="f92a1efb-0107-4c3f-9718-c599ca947683"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39d16181-6e84-43dd-8d17-736f8cf1f781">
+                    <propertyInstance
+                      Id="2d22c6c5-4935-4e6f-968b-a2e673bdafd9"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf8cc03e-bb82-4b9d-8dfa-990ce6f48dc5">
+                    <propertyInstance
+                      Id="4ad2f0d0-71f8-40b3-8538-856e0aee95e6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="b8aa8c32-2eab-4064-aafd-440cee1f4474"
+                LastKnownName="Camera"
+                LastKnownLocation="Package1_1035.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ff60b918-d6c7-48da-b656-a72611cc7103"
+            name="_webcamera"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5defcf08-4a20-45b0-b7d7-069f9b5bd22a"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FCamera%2Fbin%2FDebug%2FCamera.dll Namespace%3DWebCamera Type%3DCamera Member%3D_webcamera"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2866985d-27e9-4d46-a9a3-8f3e3c803dfa"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0291ce67-9d73-49f8-9a50-86073e89b6a8">
+                    <propertyInstance
+                      Id="c2093878-efa9-4bb1-a93c-011eb92dd95b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e26e5d56-1197-471b-ab40-039bb6d50ff9">
+                    <propertyInstance
+                      Id="8b439d11-82fe-4533-99cf-403f3176d358"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab2b5bd4-b37e-47a5-b5a7-83fe4e111e24">
+                    <propertyInstance
+                      Id="1ca73423-e986-446d-bed8-5c97e1daadd4"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d0d979c9-bc5b-4fb9-8b67-a3d9081137ad">
+                    <propertyInstance
+                      Id="288f2a6f-cb90-4c11-8f89-f7795acb0db6"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60344a4e-9b8c-4489-92e9-7b1fbd59da5c">
+                    <propertyInstance
+                      Id="adc950df-2723-49aa-b9ff-81fb05ac89ae"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="f0bba2dc-3456-4e7e-a2bd-57d2aa9b9f5c"
+                LastKnownName="Capture"
+                LastKnownLocation="Package4_1035.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="62cf01c6-65cc-446a-8d87-c3b86152b5e9"
+            name="_lock"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="391f8c37-7719-450e-9705-0e8b75be5908"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FCamera%2Fbin%2FDebug%2FCamera.dll Namespace%3DWebCamera Type%3DCamera Member%3D_lock"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="550c951f-2c5d-475b-8943-f0d64bd7f27e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3dba4519-ea5c-4ad8-ae74-a8090a45b9ae">
+                    <propertyInstance
+                      Id="ccbb5cb9-be89-419e-a432-f738d7030906"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4713a87d-ca26-464a-8b75-33931c4107ab">
+                    <propertyInstance
+                      Id="3f29fd15-a733-4cb1-a231-6014e751bd89"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3982a107-730b-41eb-a980-0ab0c819c335">
+                    <propertyInstance
+                      Id="adb72fe9-65ec-4193-9892-eb5775409b22"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="300bb953-d9b5-4e74-908d-92f87073e57b">
+                    <propertyInstance
+                      Id="3fc1b02a-ac6a-4f49-a688-51798e5e3081"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="971598cd-cad6-4dd4-a50a-9d7fa40d2463">
+                    <propertyInstance
+                      Id="8ed7db69-a90b-4734-bcf7-d5db167f13dd"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="054ee506-7c81-420e-93e0-f29749d89a48"
+                LastKnownName="Object"
+                LastKnownLocation="Package1_1635.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="abef7793-aa9c-4fb1-8f86-33f6f43f6e67"
+            name="Camera"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="04d21f5e-1eb6-48e5-93d7-f6a1f00cc9e2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FCamera%2Fbin%2FDebug%2FCamera.dll Namespace%3DWebCamera Type%3DCamera Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a20cba7d-bc83-45b7-a149-54c367fa55f5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="97c2260a-60de-4deb-9eaf-acc31a9c171f">
+                    <propertyInstance
+                      Id="80676d63-2433-48ae-8cb6-180c6070392b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="542ebecd-f72a-4d6b-be36-39976f9fb502">
+                    <propertyInstance
+                      Id="459a040c-4d65-4515-a915-b0777b37a246"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6aff1e0f-3cec-490b-a286-b2c5b14f7629">
+                    <propertyInstance
+                      Id="300ea288-2bbc-4156-afb0-db85790f0eb4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0eb2b4a9-a6c7-4d0e-b97f-8105af66c2ee">
+                    <propertyInstance
+                      Id="47da98e8-d91a-4a5e-87fb-c539e87391ee"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce52f460-d1df-4e15-a38f-df19df412319">
+                    <propertyInstance
+                      Id="bef7faad-63e8-4733-9ca5-d140078c9868"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73fcaa76-f7e8-4902-9194-69fcdfd5badc">
+                    <propertyInstance
+                      Id="45142148-2e0b-4f0b-a1d5-1f1bc1ebde25"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="59cdfec6-178c-4dec-991d-1dc127c293be"
+            name="~Camera"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="948da9dc-e143-43b8-a598-ae0000e7eb58"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FCamera%2Fbin%2FDebug%2FCamera.dll Namespace%3DWebCamera Type%3DCamera Member%3DFinalize"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d73c723b-b8f1-4c64-9363-e9accab9ecd3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f6e662b0-34f2-46e8-b809-0339465292ab">
+                    <propertyInstance
+                      Id="472609f8-118a-438b-a778-6f6d6b78f506"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c9d498d-5099-4372-99e7-6d2a8a8004c6">
+                    <propertyInstance
+                      Id="018141b0-d551-4962-b6e1-3edc82185bf9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37e58b5a-e6fb-44cf-9168-a185ffaaa3d2">
+                    <propertyInstance
+                      Id="11c80a38-f3e2-4bae-a137-09a714e95922"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e4d81325-2d5e-40c3-9081-5aca5e06b309">
+                    <propertyInstance
+                      Id="88f9fa19-3117-4ba1-80fd-564f0004b2d8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d47fcf41-0b0a-4126-8267-071a4611f456">
+                    <propertyInstance
+                      Id="d2f746ce-0eb1-476b-861e-92e50cbcb353"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd4f16ea-5ec4-4657-85fb-d13eba389951">
+                    <propertyInstance
+                      Id="b4afb498-5ce1-4b95-bc89-45d28d7d400d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="ef13efc4-4c03-4fe6-aa90-c2031fac760a"
+            name="GetInstance"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="df4b4bd0-0e35-454c-aef2-3fdffccaa2d1"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FCamera%2Fbin%2FDebug%2FCamera.dll Namespace%3DWebCamera Type%3DCamera Member%3DGetInstance"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="47d5a320-69d3-4690-9764-982f8f7ca13a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="627f3dc2-6d01-4a4f-8ef1-f04bc3c48f35">
+                    <propertyInstance
+                      Id="4809d156-d54b-4aab-9d50-8a97ef80011e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="34445e92-414d-4c68-9381-ab0e7c1165e2">
+                    <propertyInstance
+                      Id="80a2c888-d2ab-43d5-a43d-5dc746a804ec"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57bfd398-7383-4c45-bd16-6c74f3697137">
+                    <propertyInstance
+                      Id="610fd5fe-b18f-472b-b275-cb1b8e45422f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="90210941-f22e-48b2-82b9-b98f7fa9835e">
+                    <propertyInstance
+                      Id="0f4fa8a1-f70f-4afc-a2e7-25b02e832f61"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6c719d8-9933-45d9-b9f0-275a6ebd78b1">
+                    <propertyInstance
+                      Id="704b19a3-e210-4a0f-adbe-3640ee43ee1e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1cc2eefd-b2ff-4554-ba2e-1c04577e1829">
+                    <propertyInstance
+                      Id="193860aa-63fe-4142-bdc2-4b0f56c62f5f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8542bf9f-9369-434a-aee9-0bdd6f860c46"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b8aa8c32-2eab-4064-aafd-440cee1f4474"
+                      LastKnownName="Camera"
+                      LastKnownLocation="Package1_1035.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="033087ad-76f6-4b28-99ce-3487a77c6909"
+            name="Dispose"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="cc130f4c-d93d-4ed0-9700-2b9c279eb190"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FCamera%2Fbin%2FDebug%2FCamera.dll Namespace%3DWebCamera Type%3DCamera Member%3D(Name%3DDispose OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="290b2738-93b4-4e88-8483-1e198219e74a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f46fe482-ad0f-4681-86d6-3e2fd545bae4">
+                    <propertyInstance
+                      Id="306f6e67-c101-485b-9d75-39fc02fe2f6f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe437b3d-f625-4e9d-adaf-666b746bd30c">
+                    <propertyInstance
+                      Id="a70722c9-5296-4222-a8b6-f01bce52a990"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83352d16-904d-4729-8ede-ffd9ac0310df">
+                    <propertyInstance
+                      Id="39e58af1-00f1-4f8f-9f3c-8c11a5e95fa4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f623ee59-4717-4468-88d1-f2ae9cdb6f8e">
+                    <propertyInstance
+                      Id="0b8fb6ee-918a-4cad-baa7-5bda657f0411"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4540cca4-58e5-463b-ba36-69ed005e9376">
+                    <propertyInstance
+                      Id="59b0af21-fa4f-4f44-aa07-91e1d98e5ae5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f647df21-2582-4dc6-90a2-5c3f103c5d37">
+                    <propertyInstance
+                      Id="b844b6bd-6245-464a-b265-57a7ee822196"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f66d19b7-9a58-416f-85fb-9ebc11dcdbec"
+                  name="cleanupOthers"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="bd231288-0fe9-4268-8b42-4ce4f3c9a334"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FCamera%2Fbin%2FDebug%2FCamera.dll Namespace%3DWebCamera Type%3DCamera Member%3D(Name%3DDispose OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3DcleanupOthers"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e9dfb9c8-e6f1-4602-83ca-0ad64b98743e"
+            name="Dispose"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c2480bc9-4599-46f2-a26c-aa5deacea9f7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FCamera%2Fbin%2FDebug%2FCamera.dll Namespace%3DWebCamera Type%3DCamera Member%3DDispose"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ee7a73c3-13fc-4977-b67d-ba674992809a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a1693b8-c9dd-473f-a6ee-0e94113c1987">
+                    <propertyInstance
+                      Id="6453c09e-6a4c-4fac-ad00-f88463093e0d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a3974555-c4b0-4d36-a658-870000e0b6ce">
+                    <propertyInstance
+                      Id="67e2c9bf-ad16-4d1d-be00-05367d6652e8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c5ea60bb-52bf-4467-affd-be04da2306ef">
+                    <propertyInstance
+                      Id="9913bb2b-19cd-40b8-ab45-574faf0b3aaf"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7828f618-1d8f-4145-abda-4b3b6cf6dbc7">
+                    <propertyInstance
+                      Id="d52d9550-1133-4d05-b6ce-04a8074c917a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="111ebb06-7aeb-4f29-a1e2-bd8c8d96522c">
+                    <propertyInstance
+                      Id="37a17af4-f615-43a8-987f-594fd79ccfa7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc444d08-2c9a-4c37-a9e5-b3aa3ba37abd">
+                    <propertyInstance
+                      Id="fb9fc391-c643-4ab2-b7fe-5db731d10fc3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="67c700ec-7505-48e0-8cf5-1995ef25086e"
+            name="GetImage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="097896cd-9404-4f99-b63e-46682688a4c3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FCamera%2Fbin%2FDebug%2FCamera.dll Namespace%3DWebCamera Type%3DCamera Member%3DGetImage"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c9a4b3dd-7c48-4d88-929a-0dd1d6c91f4b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a4338e1d-ae05-47bf-bbc3-39735caa56bc">
+                    <propertyInstance
+                      Id="c13697b0-2cb0-4cc4-8389-aa4084ad6af9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c2b237b1-fe84-4325-b92d-6a0a7d299a6b">
+                    <propertyInstance
+                      Id="9d7e872d-041b-499d-909e-2d5ef4b2ae43"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2eb31603-e233-40b4-b069-6b6c1377a06c">
+                    <propertyInstance
+                      Id="35b89f36-7216-444a-9f05-527100211d95"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="903adb2c-8a63-4e55-adea-0cb4c3bc0b70">
+                    <propertyInstance
+                      Id="daab4914-c60b-4320-9d79-6332fa3f6994"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db1c3eb3-9bbc-4e7b-a8e1-d205d024c08a">
+                    <propertyInstance
+                      Id="c6cc21ac-cb43-4540-a642-127035e07b05"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ee91113-9afd-4e61-bd7e-390910ea2927">
+                    <propertyInstance
+                      Id="f92b8255-5412-4f51-9f6a-677015416b40"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c8ba6c5a-62ba-4861-9825-827e6a2f1929"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="51739f6a-eac3-4e59-87ff-ea2a37552f96"
+                      LastKnownName="Image"
+                      LastKnownLocation="Package_1035.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

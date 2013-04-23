@@ -11464,6 +11464,24 @@
         LastKnownName="ThreadedTimer"
         LastKnownLocation="Package_1024.uml" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="fed2fb85-4242-4669-b3f4-2af49896dc45"
+        LastKnownName="VideoSys"
+        LastKnownLocation="Package_1034.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="1f633db2-86c7-4256-a02f-02ad1a775dce"
+        LastKnownName="WebCamera"
+        LastKnownLocation="Package1_1035.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e85c0365-a0da-441c-8b4c-a1e2a5dc0ddb"
+        LastKnownName="Emgu"
+        LastKnownLocation="Package3_1035.uml" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

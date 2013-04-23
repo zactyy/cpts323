@@ -1,1 +1,43 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.125, 9.25" name="CD-MainCameraandVideo">
+  <logicalClassDesignerModelMoniker Id="1da9511a-ca27-4ade-9108-6b4cd4747192" />
+  <nestedChildShapes>
+    <classShape Id="ae884e39-080c-49a0-a8c5-55eaf045b2a1" absoluteBounds="0.5, 0.75, 4.5, 7.9143979108333564" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="f8fa1880-0010-40ad-9088-0493cb4d061d" LastKnownName="MainWindow" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="0f8d927b-f4f7-4610-b885-1e10c02b0c15" absoluteBounds="0.515, 1.2653356393178306, 4.4700000000000006, 4.2050779933730755" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="bae183b1-7b3e-4ee4-86d4-734db7ce60b9" absoluteBounds="0.515, 5.4804136326909054, 4.4700000000000006, 3.0839842781424522" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="30ee5aff-1f54-4e87-a0f1-841bafee23b8" absoluteBounds="6.75, 4.75, 4.125, 4.2308042750755952" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="cdfc0b86-b88c-4e55-b360-3d21f3c1f1e3" LastKnownName="DefaultVideo" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="9df3f0e8-d990-4773-bd51-a932949c655d" absoluteBounds="6.765, 5.26533563931783, 4.0950000000000006, 2.1230468079447746" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="6223c71b-8bd0-4877-a2db-2f7787e95f93" absoluteBounds="6.765, 7.3983824472626054, 4.0950000000000006, 1.4824218278129897" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="24151f40-e17f-4c87-9e91-81dd2ff31ddf" absoluteBounds="6.75, 1, 3.5, 2.6292418247461313" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="a72e1bf4-ef76-4636-b41c-e1c39820c8f3" LastKnownName="Camera" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="d7506429-97cb-47db-baf6-89b2ada2b08a" absoluteBounds="6.7650000000000006, 1.5153356393178306, 3.4699999999999998, 0.84179684768120444" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="db5f5f87-883a-4a22-a455-7a9d7ed9f5b6" absoluteBounds="6.7650000000000006, 2.3671324869990347, 3.4699999999999998, 1.1621093377470968" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5 : 2.31462091237307); (6.75 : 2.31462091237307)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1">
+      <associationMoniker Id="06949dff-5241-4aaf-b23b-2a5e50abced2" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="ae884e39-080c-49a0-a8c5-55eaf045b2a1" />
+        <classShapeMoniker Id="24151f40-e17f-4c87-9e91-81dd2ff31ddf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 3.62924182474613); (8.5 : 4.75)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1">
+      <associationMoniker Id="7330e7f4-90b3-4db6-9aea-daafba9eacff" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="24151f40-e17f-4c87-9e91-81dd2ff31ddf" />
+        <classShapeMoniker Id="30ee5aff-1f54-4e87-a0f1-841bafee23b8" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

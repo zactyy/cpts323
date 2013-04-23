@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="b0fa6ebe-dea3-4342-a8ac-f24d86721656"
   name="Asml_McCallisterHomeSecurity"
@@ -88,20 +88,20 @@
         </generalsInternal>
         <targetEnds>
           <association
-            Id="26da2cfa-0f9e-4b2c-9815-fe42f59a28ac"
+            Id="18c19e6e-f064-482f-bbaa-2e3432c77302"
             isDerived="false"
             sourceEndRoleName="MainWindow"
-            targetEndRoleName="OperationsManager"
+            targetEndRoleName="Camera"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
-              Id="6476be01-bed2-40c6-bacc-76d44cb79e41"
-              LastKnownName="OperationsManager"
-              LastKnownLocation="Package_1635.uml" />
+              Id="b8aa8c32-2eab-4064-aafd-440cee1f4474"
+              LastKnownName="Camera"
+              LastKnownLocation="Package1_1035.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="64df892f-6880-4770-b779-7e0b83d3cade"
+                  Id="462fca14-7298-4607-ac8e-d3888b44e2ae"
                   name="MainWindow"
                   isLeaf="false"
                   isStatic="false"
@@ -114,8 +114,8 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="36d31ccc-c449-4b36-830c-58b54d9e60f7"
-                  name="OperationsManager"
+                  Id="e87f7bef-0d94-41d1-9f72-9e099c34c322"
+                  name="Camera"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -799,140 +799,6 @@
             </type_NamedElement>
           </property>
           <property
-            Id="6c476f20-2d25-4017-a184-690531306be4"
-            name="btnIdle"
-            visibility="Package"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <referencesInternal>
-              <reference
-                Id="f9d6511d-6372-445b-94f6-c37e002f0b7e"
-                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3DbtnIdle"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="c0234493-3c47-40d0-af13-e308ceec04fa"
-                name="field"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="cb52787d-bc81-4e53-bd50-17baf9038fdf">
-                    <propertyInstance
-                      Id="d81dcf05-362c-43bf-8863-15229d08d342"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="f88030c8-b609-4840-a86c-cb38feae4d45">
-                    <propertyInstance
-                      Id="106b1642-9a9d-466b-bc3f-ed41b8bcd25b"
-                      name="IsConst"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="7ae57401-a5f2-4f42-8832-53ef6edee5c1">
-                    <propertyInstance
-                      Id="8f48eedb-e354-444c-9217-ac1548849ba5"
-                      name="IsNullable"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="97875fca-4361-4ae1-b27b-e3e1ed8fe76d">
-                    <propertyInstance
-                      Id="b5cfc361-75dc-4f83-a4b3-8871398e64cd"
-                      name="IsVolatile"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="70c9aae9-bbde-4e9f-b41e-168560b5a3f2">
-                    <propertyInstance
-                      Id="25ec6fa4-c4f1-4ed5-9a3b-e3741bc25f11"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <classMoniker
-                Id="fa35d2bc-05c3-47ed-8862-d71d4e9d7db9"
-                LastKnownName="Button"
-                LastKnownLocation="Package2_1700.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="7930ab7e-d8e1-452d-95e4-870f4ab4413c"
-            name="btnSeachandDestroy"
-            visibility="Package"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <referencesInternal>
-              <reference
-                Id="123edfca-9e1c-413b-b7dd-775aca2d6a42"
-                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3DbtnSeachandDestroy"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="96848a92-5c29-4416-8878-993dfb4034dc"
-                name="field"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9689cd1f-686f-4dd4-a201-91294c8f0095">
-                    <propertyInstance
-                      Id="e417c64f-5234-40e3-9d60-a37597b0d694"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e645f0b7-1806-4b60-bc4d-7c3252491294">
-                    <propertyInstance
-                      Id="fa6ef528-ab16-49f6-a4cd-cf0f83578833"
-                      name="IsConst"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="8cad3551-97da-42d0-9c27-c58da83d106c">
-                    <propertyInstance
-                      Id="1b2c4a64-54da-49e4-a508-2f20e647f799"
-                      name="IsNullable"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="d0567248-421b-4b38-82eb-eb0adb6a0357">
-                    <propertyInstance
-                      Id="b9dd1faa-1113-4ae5-8b5b-01076880d641"
-                      name="IsVolatile"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="dfb2bc8f-2b36-48ff-9d3d-b21e78730f76">
-                    <propertyInstance
-                      Id="32bfb3e8-1ce3-4e0d-b987-11f45a1d4b2f"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <classMoniker
-                Id="fa35d2bc-05c3-47ed-8862-d71d4e9d7db9"
-                LastKnownName="Button"
-                LastKnownLocation="Package2_1700.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="d6b32533-9995-4b97-bb9a-c1fbab02269f"
             name="btnFrameAveraging"
             visibility="Package"
@@ -1334,73 +1200,611 @@
                 LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
             </type_NamedElement>
           </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation
-            Id="3748d065-15c7-4fd1-b824-aa7f875df4b1"
-            name="MainWindow"
+          <property
+            Id="3c40c38f-22cb-4341-b56a-091b15f8a3ac"
+            name="_video_plugins"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
             <referencesInternal>
               <reference
-                Id="dc877975-6327-4736-8898-437717a4f917"
-                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3D.ctor"
+                Id="af8fc6d5-cd5a-4acd-9df6-de7a151aa4c5"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3D_video_plugins"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
               <stereotypeInstance
-                Id="581564dc-8551-435a-826f-a9100c6c8c10"
-                name="method"
+                Id="afd9df6a-af03-47da-8c32-f28dc3fb1f69"
+                name="field"
                 profile="CSharpProfile">
                 <propertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="06c582e5-6bdb-4774-a6f1-75aadac1aecc">
+                    Id="6d6e5eec-8c30-4128-9bb9-b5952f25ddab">
                     <propertyInstance
-                      Id="08c509ad-9fef-43dd-8a3d-cef9a3315edc"
+                      Id="99921f7f-0556-471e-a32d-6bbd9864e3b6"
                       name="ClrAttributes" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="32526141-93ab-41ee-8d6c-6752ce32219f">
+                    Id="363241b0-4280-45ba-8fb3-2e553614c2fa">
                     <propertyInstance
-                      Id="13494914-4afe-4129-a6b3-098796f3ecd3"
-                      name="IsPartial"
+                      Id="0190c249-89bc-4593-883e-182667689f65"
+                      name="IsConst"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="f858fc3e-48b1-428f-8a17-5bc2f4e4ba9c">
+                    Id="64322c9c-3bbe-41e2-b2ac-39b1e37c5ba8">
                     <propertyInstance
-                      Id="8e97cc5a-2812-451f-8ee9-bc07b19c3ead"
-                      name="IsUnsafe"
+                      Id="00af53e9-9e44-440b-b9f6-3ccf51bc817f"
+                      name="IsNullable"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="523dacd8-2a95-4f33-b440-0c3fec0a3bd3">
+                    Id="cb26ff87-44a0-4fd3-94a4-129793975a05">
                     <propertyInstance
-                      Id="fde306ef-04ac-46e1-9643-3d6e6ff5e226"
-                      name="Inheritance"
-                      value="none" />
+                      Id="d168c56c-d183-4e7e-9435-51bf3e31ff57"
+                      name="IsVolatile"
+                      value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="66f2ae01-d739-49d7-b46a-31eb0b4f94f8">
+                    Id="5d28e7b2-3dc1-4e8f-b3e1-a9a99921bc21">
                     <propertyInstance
-                      Id="75aedb06-a900-40d7-949c-5c4694a52f84"
+                      Id="b9aaf5bb-3bc3-4721-b483-dd70f40c8688"
                       name="PackageVisibility"
                       value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="fd77a311-c10b-43ec-9010-7d7ec788735c">
-                    <propertyInstance
-                      Id="bc8af241-3966-42c5-91f3-a542062869c0"
-                      name="params"
-                      value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                 </propertyInstances>
               </stereotypeInstance>
             </appliedStereotypesInternal>
-          </operation>
+            <type_NamedElement>
+              <classMoniker
+                Id="eaed7588-4128-46b9-b8ba-e92f60d8a4c7"
+                LastKnownName="List&lt;IVideoPlugin‎&gt;"
+                LastKnownLocation="Package_1636.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5f9a0032-b473-43fb-a5dd-67b6f57c86d8"
+            name="_eye_of_sauron"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="e6a7dc09-9706-4af1-85d4-f384ded3d5ab"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3D_eye_of_sauron"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="58dd333c-69b0-49bd-9f4d-32f73b648853"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f08d6a35-c8b0-4a44-9d3e-742fb124535c">
+                    <propertyInstance
+                      Id="c4f8c260-9553-41d7-887a-b61d625ea3e7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f4e07cc-cda4-4c80-9deb-0a8110930a7a">
+                    <propertyInstance
+                      Id="1ebb322a-dcd4-4f80-ab2c-dd30e8828902"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a36247e3-6e95-4708-8320-5d98d3b64690">
+                    <propertyInstance
+                      Id="1e727dea-e9cf-4693-a7b3-def7de853d67"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a218227-9402-4107-8a37-c6050600f52f">
+                    <propertyInstance
+                      Id="3574792e-45a5-4e24-8a1b-c1502919e9af"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba81940d-8b16-4be2-b383-9e235ffeac2c">
+                    <propertyInstance
+                      Id="0b101ae1-ed98-4131-a02b-390c1b1f81db"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="43d481aa-1aa8-4185-b977-21e17e990469"
+                LastKnownName="IVideoPlugin"
+                LastKnownLocation="Package_1034.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8e26d566-03cf-465e-89d1-ce02fe9fe037"
+            name="btnStopMode"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="858e5076-eba1-4384-ba92-d1316cbf0b79"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3DbtnStopMode"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b8523057-05d5-4520-883f-e0fd5a4cf78a"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1507334-fdd9-4f88-9792-f0b1f1da9f29">
+                    <propertyInstance
+                      Id="92faf69e-0678-435e-a2d0-a9b356c1859b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b5e6e1b-1eb1-4ec2-bc70-4b9bb30a7561">
+                    <propertyInstance
+                      Id="f9555aed-79c7-4c28-9f8c-b72c77c00f9d"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa7c6981-838e-4f28-bee4-06332e9d749b">
+                    <propertyInstance
+                      Id="1e2de14e-6efe-4e8c-8611-d643cad7242c"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d833a98c-0b36-465a-b204-79d40b154651">
+                    <propertyInstance
+                      Id="15f5eeba-a549-4b70-89f2-0db312ae3a15"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1999e724-0458-4ec7-96aa-bc802f3c9053">
+                    <propertyInstance
+                      Id="b0963f0b-57ed-4630-bb52-9046a163dcfb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="fa35d2bc-05c3-47ed-8862-d71d4e9d7db9"
+                LastKnownName="Button"
+                LastKnownLocation="Package2_1700.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="baccff62-57da-4881-958a-90264c4fb8c6"
+            name="btnStartMode"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="2e973f96-7329-4958-a0cf-4e9f6b8b068c"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3DbtnStartMode"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="76ae82f6-9ef9-4e30-8d71-86b3275e1ad2"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88994300-73ed-4d23-9fb9-92974ef03648">
+                    <propertyInstance
+                      Id="ec6e0bf2-3be2-47b9-8bbe-587e7122c201"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="734a720f-98fc-461f-985a-ee3131b03b00">
+                    <propertyInstance
+                      Id="f0580762-19fc-40aa-b672-08f67869f533"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b4a2a69-4171-42f5-82dd-dc799ad8c364">
+                    <propertyInstance
+                      Id="c89384ad-d696-43b3-adc4-57d1603c0e95"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0353f9c-dc13-44a3-9f7a-f1b89f68536c">
+                    <propertyInstance
+                      Id="6e256dbd-1a66-4261-9311-49bd661832b7"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d6d1807-bba5-4b58-b5d5-c0c9f7d9e3f6">
+                    <propertyInstance
+                      Id="dfda8b65-0e56-42f1-b16b-a572ba6f8927"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="fa35d2bc-05c3-47ed-8862-d71d4e9d7db9"
+                LastKnownName="Button"
+                LastKnownLocation="Package2_1700.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="510737fb-b4e8-4f7f-893a-da7b9a569020"
+            name="lblCurrentMode"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="def0c944-d845-4f60-a6f9-120f07b92df0"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3DlblCurrentMode"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f1e37cce-d84d-4eeb-b9ad-e54d7f6cc5fc"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99fe4145-112b-43e9-880a-fb8f4ff6a8b4">
+                    <propertyInstance
+                      Id="008e4cae-98ed-4a31-ae96-bcf70faf38d5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b64e164-ad3b-4399-9f7a-ad50299e2095">
+                    <propertyInstance
+                      Id="418740fd-fc5e-41e4-9715-642ad75b2739"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="844b182f-c77f-4e42-8d91-e319ead97679">
+                    <propertyInstance
+                      Id="51e95bc2-ba0f-4438-aeea-7869dd86f536"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f72905b6-0a1e-47f4-96d4-0fcb9b0a80eb">
+                    <propertyInstance
+                      Id="e2883978-691f-40f8-9510-e4df1b3a3114"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea10e973-30f3-4ed5-9b6f-8f0da5df02f3">
+                    <propertyInstance
+                      Id="ec8a17d4-496f-425c-b2db-0e80016ca723"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="e71bc607-2c64-434b-a17a-3f823d1d22a5"
+                LastKnownName="Label"
+                LastKnownLocation="Package2_1700.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="45441d7a-8746-4081-8a51-f0d95dcd3a8c"
+            name="imgVideo"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="44c52be2-1a85-44da-a9a0-0c2295d674f3"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3DimgVideo"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ecdd95c9-6181-4f3c-8d34-9ef19b2b888e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f73c6dd-4183-4855-ad95-551e12f9bd79">
+                    <propertyInstance
+                      Id="38ae7fe1-cdf4-4f99-bb7c-f4afc025fe8e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="38a22bf2-d2b7-423d-9e4f-4c4542e01565">
+                    <propertyInstance
+                      Id="c9521834-3cd9-4b9d-9ee7-59f31df2e3e4"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fde27c06-2511-49de-8909-d07ed4404973">
+                    <propertyInstance
+                      Id="264d6aaa-5a81-4ac9-9ec0-a6ea494c57f6"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73a3a83a-464f-42c5-b17a-907a1106a39b">
+                    <propertyInstance
+                      Id="dcffac9a-4011-4332-8c19-3a0ddb465a1c"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6315ea7-a311-4f97-bfce-7c4f48797ed4">
+                    <propertyInstance
+                      Id="dae6d63c-64c6-49b0-b54a-28fbf97ae145"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="6cb6dc2e-9a5c-4532-b398-50f597d6e6e5"
+                LastKnownName="Image"
+                LastKnownLocation="Package2_1700.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="250f294c-3e15-470c-b9e7-fa7212ce47e4"
+            name="btnVideoStart"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="7afe25b5-4177-416f-bfa8-46ebb2b768e1"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3DbtnVideoStart"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e5d55357-2e87-4aa0-ac74-a09ab1bfd7d5"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="47e6e298-c5b5-4000-8838-14b9c93bb271">
+                    <propertyInstance
+                      Id="7906c5db-d2e1-4ad8-a6cb-865b2402c24f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a845cb8-3308-49e1-8ac8-f602ca9ad90b">
+                    <propertyInstance
+                      Id="caa6cb8d-3c36-4fcf-b169-b15d235160cf"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="586c467c-1376-4da5-b6b4-cef74bdf732e">
+                    <propertyInstance
+                      Id="cf35749b-f33c-4b72-a62f-f422045c903b"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d35e01fa-2f90-49d5-a947-24b59b81d820">
+                    <propertyInstance
+                      Id="e5421bc7-6102-42ad-8d82-b13c8dac605d"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18edad4b-f56c-41cf-b8ce-008da492289e">
+                    <propertyInstance
+                      Id="84a49d08-50bc-4b74-845a-94ff02265c46"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="fa35d2bc-05c3-47ed-8862-d71d4e9d7db9"
+                LastKnownName="Button"
+                LastKnownLocation="Package2_1700.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f6a18e74-16be-4796-9dbe-10ea14b53d1e"
+            name="btnVideoStop"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="55749859-62e9-4325-81dc-1526d9dc889b"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3DbtnVideoStop"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c20a9aaf-084d-40ad-8d46-91557dbf7fa1"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="24a16c49-f7aa-4754-a98b-a7710dd4ac44">
+                    <propertyInstance
+                      Id="ab227fa9-314c-4dae-b4ba-5c5925092ad6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08720639-5667-4231-babe-641628c31318">
+                    <propertyInstance
+                      Id="93e09592-1960-4036-9aa7-674ab8fe6571"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37a94a68-5427-4fc3-aa42-e4b8fc1a5174">
+                    <propertyInstance
+                      Id="46f9eac1-dd99-4cf7-8c14-45182098a8d4"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="804da178-5200-4653-9157-bebed88a45de">
+                    <propertyInstance
+                      Id="a79aa978-a465-42b7-b8b4-cef6e2043de8"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63e45f99-1a4e-42f6-9aeb-d43241690ee4">
+                    <propertyInstance
+                      Id="2d8fef2b-127a-4eed-8f37-6a25c57f123e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="fa35d2bc-05c3-47ed-8862-d71d4e9d7db9"
+                LastKnownName="Button"
+                LastKnownLocation="Package2_1700.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1e0551b3-a69f-455e-8f6b-d85509d8c183"
+            name="lstModes"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="509f7002-b9bb-4e3b-9f29-776b0c1bab51"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3DlstModes"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f6dca219-0f70-4125-9309-a099e281b510"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3f959eb4-4506-4d99-b931-c0650e6fb9d7">
+                    <propertyInstance
+                      Id="df19d0ea-17e8-4f85-9dda-a35eb086eda4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18bdfa27-97cc-4ebd-adfc-0db3ea59c974">
+                    <propertyInstance
+                      Id="6084bde5-5a98-46a0-8073-dcfe391671ba"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b942473b-87be-4da3-9ec7-c8be787bad52">
+                    <propertyInstance
+                      Id="4a656359-adaf-42a1-9513-112dc7161ed6"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="461a54f3-5962-457c-bdb9-a6df8cda4754">
+                    <propertyInstance
+                      Id="3d6d8470-5158-46f2-93f2-9f84a912a5db"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e29946be-0766-4e5c-9cb1-4c41d4f433a1">
+                    <propertyInstance
+                      Id="190231db-9018-4484-a2a4-e935ca9c13f0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="5df88e30-9711-484b-b5e8-d1c5fae82981"
+                LastKnownName="ListBox"
+                LastKnownLocation="Package2_1700.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
           <operation
             Id="179d28d1-65b3-4707-bacc-eed84c12f171"
             name="btnUp_Click"
@@ -2502,6 +2906,666 @@
                       Id="054ee506-7c81-420e-93e0-f29749d89a48"
                       LastKnownName="Object"
                       LastKnownLocation="Package1_1635.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="84e7adcf-d641-4f20-ae1b-181c18b5ded6"
+            name="MainWindow"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c3eaffb8-c6d9-478d-ada3-4ef144fe0efb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6d866e92-af9d-404a-b464-6f2dfeda8461"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0fade51-2f23-4749-b200-b7af91ce8577">
+                    <propertyInstance
+                      Id="60491909-991f-4884-ba78-4757bd44d196"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a3a563f-76d0-4899-8446-8ed789ddc878">
+                    <propertyInstance
+                      Id="0315e838-4eb6-432a-bed6-4d594fd6fca7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1e1b89d-275d-4681-8d70-65ad5f24112d">
+                    <propertyInstance
+                      Id="2a829840-d86c-4602-986d-8c53763fd796"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c734a8ee-a5f0-41dc-81d3-ffe7c29b0602">
+                    <propertyInstance
+                      Id="10aed267-8e7a-4edd-87ca-6be864d2c906"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa6ae87c-8050-42dc-8f80-51f9d516eee0">
+                    <propertyInstance
+                      Id="ba13dd07-9765-45e4-9569-47d7c10c5a2d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5708f049-0d5a-4fb7-8cf4-eabed281ff13">
+                    <propertyInstance
+                      Id="f87d15cb-9228-423d-8a51-ca6b205f51d8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="bce0f124-b4ea-4fe1-997c-787a220541e9"
+            name="on_targets_changed"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2a177524-da21-4765-aff9-a33e3be17396"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3Don_targets_changed"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3f79ab34-5387-4845-8749-4a7484d771e9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c08a814-140b-4463-8caa-1828228afc65">
+                    <propertyInstance
+                      Id="6b2ffe90-80df-4d97-932c-9e779dd57b39"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16ec0c88-8071-4746-a729-6d49d719996a">
+                    <propertyInstance
+                      Id="cbbf3f90-81ab-4fa4-ba8d-579a4d996b74"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e7b22c5-c9ad-4377-b6e5-5e2ece5c2ec6">
+                    <propertyInstance
+                      Id="f5ff5031-6221-4484-aa1c-7970e308d7a9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c26b964a-883e-48a4-849a-24e9982a0c89">
+                    <propertyInstance
+                      Id="a6776e7f-f608-4089-b0de-bb91a42e12dc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9b474a5-c308-4ddc-b2b5-f0a76bd2999f">
+                    <propertyInstance
+                      Id="4f297167-cb69-4ebc-8ff2-21e0c8750f07"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e482bbb-7b63-4549-b6d1-bbf4ab892253">
+                    <propertyInstance
+                      Id="0a2b3cd6-e03c-464d-a653-280667314b40"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="3d8242dd-855f-4a8b-9368-5e03a47e63ab"
+            name="on_image_changed"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="82e1bbd1-3ddb-4721-89af-82146eb12336"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3D(Name%3Don_image_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ad783ae2-6201-4b47-abb3-8f68e8d0fcb4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2784519-bd09-4b62-ad04-be2ec2932851">
+                    <propertyInstance
+                      Id="4764b204-07e9-4be3-af36-21462ad4a4a2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b9f31a6-92ed-4eb9-85ea-8ed088375217">
+                    <propertyInstance
+                      Id="6d896fc2-ea5f-4f48-a0d9-edd1c0061013"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a75272d8-3506-4a60-bbba-f67f122472da">
+                    <propertyInstance
+                      Id="8f80c44a-86c6-45be-9446-d2909ef3f844"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="135c37d2-671c-49ec-89a7-4d686ecaa02d">
+                    <propertyInstance
+                      Id="3c077a81-93b3-4a80-a3c0-7c4bb5d759d9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cdebf7c7-63ae-4ef1-8ac9-7dbd7711f28b">
+                    <propertyInstance
+                      Id="a74071f2-0ae1-4ec3-9963-65a344620f80"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bed6a661-2bdc-429b-a059-3790b5b43108">
+                    <propertyInstance
+                      Id="ac190247-3069-44d0-b907-24d289cb3db9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="67ffe587-5041-478a-a356-30a82720216c"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="333c32d7-86ed-486d-8955-ac007df31ca0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3D(Name%3Don_image_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="054ee506-7c81-420e-93e0-f29749d89a48"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1635.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="af33b599-f7fc-4c62-9d71-ac21c1f6b01e"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="2e124c36-df1c-4d10-b0f5-d153c2a3b468"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3D(Name%3Don_image_changed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="39f96b7f-0336-478e-acf7-33898c238d32"
+                      LastKnownName="EventArgs"
+                      LastKnownLocation="Package1_1635.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fe603838-8d57-4908-b012-f9a976ea92ed"
+            name="lstModes_SelectionChanged"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="bced48ad-5411-4366-869b-d846edd835d6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3D(Name%3DlstModes_SelectionChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DSelectionChangedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="859c6955-19f4-499f-8111-ac4ce3add0d0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="baf499ad-36c4-4a09-8c7a-98e6aa1838ec">
+                    <propertyInstance
+                      Id="f83e47fd-cb53-4806-8db8-648ffbeee4b8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="081ba10e-6b24-4b02-a514-38e1e6fb906d">
+                    <propertyInstance
+                      Id="f16977d7-283f-4b1e-85e7-29b0f7195b22"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cbde5ab9-99eb-41fd-bcca-fb73cccd8d73">
+                    <propertyInstance
+                      Id="261174f7-8e1c-44cc-955b-84e0bfe5a78d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1454a19-87bd-4d98-bd51-0f0347393f56">
+                    <propertyInstance
+                      Id="27c47f5e-76ac-4698-9279-4fab9dcc35c3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c8bb7eb0-714a-4a94-8104-7d477487875b">
+                    <propertyInstance
+                      Id="450e5a61-b59a-46da-9043-431c176d0f7c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dfe1cb76-1d50-411a-b786-23f0262fdf0d">
+                    <propertyInstance
+                      Id="306a1ff0-5969-4298-9135-c763adf1a7a0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f2ed4b66-a0d4-4356-85b8-e11da676063f"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="98aa31e8-2564-450c-a23b-de944f40833b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3D(Name%3DlstModes_SelectionChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DSelectionChangedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="054ee506-7c81-420e-93e0-f29749d89a48"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1635.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c02896fd-e3d1-414a-a3f3-701f02ed065e"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="edb29d6c-0b52-4ef8-be33-79ee05abca61"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3D(Name%3DlstModes_SelectionChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DSelectionChangedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a211520b-b30a-4cfd-8ed3-8c92c47b9396"
+                      LastKnownName="SelectionChangedEventArgs"
+                      LastKnownLocation="Package2_1700.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9c8b36d6-3c04-4377-9213-ccaafe437863"
+            name="lstTargets_SelectionChanged"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8304e917-6e6d-454d-ac02-564a91685261"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3D(Name%3DlstTargets_SelectionChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DSelectionChangedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="912ff9d1-3570-4263-8429-dfdf1f226032"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f324396-774f-428e-8b72-bd7ebbeb202f">
+                    <propertyInstance
+                      Id="0f5945e6-a8fe-4c72-a030-18bd6e774e1e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c109578f-d05e-401a-9ace-e9a38f8a7f55">
+                    <propertyInstance
+                      Id="e7df98ca-bd5d-4006-9b3a-c0571e33b84a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68c2d20c-d680-4cdd-ab19-f6913f4c04ad">
+                    <propertyInstance
+                      Id="0ea53de9-7a1a-4091-907a-127cd1fa5cd2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="71daefd4-c48f-4258-8a99-8836906c3bdc">
+                    <propertyInstance
+                      Id="343e35e7-3c84-4f2e-a165-a051eeaa91a8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba464814-6c8a-49c5-a0be-c1350413375d">
+                    <propertyInstance
+                      Id="b86ce6f0-47e8-44cd-bbf9-0f651c19d071"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fb449eb7-ea3a-4948-85a0-77cc42e1b5f6">
+                    <propertyInstance
+                      Id="4a92ba79-a8e4-4969-918c-b24a3eca0b8b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3c971e54-47b0-48c6-bf86-bc5f38026ed0"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9b333b6a-278c-41a0-8b33-f20d90491396"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3D(Name%3DlstTargets_SelectionChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DSelectionChangedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="054ee506-7c81-420e-93e0-f29749d89a48"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1635.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e5236715-a8ca-446d-8b14-5d91071d07b9"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8a602236-7edb-4c48-b5dc-f672ab272f53"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3D(Name%3DlstTargets_SelectionChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DSelectionChangedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a211520b-b30a-4cfd-8ed3-8c92c47b9396"
+                      LastKnownName="SelectionChangedEventArgs"
+                      LastKnownLocation="Package2_1700.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="935c5205-4016-4b24-89bd-b8de0ab1a15b"
+            name="btnVideoStop_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="60bd61a6-b32a-4aa9-aa75-e12e5fe925f9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3D(Name%3DbtnVideoStop_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b46f4317-cfd0-4c3d-80b3-238086d6ffd4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86befb83-a94f-48ae-8dc8-1edec88d4319">
+                    <propertyInstance
+                      Id="98c69df8-b3f4-4152-aa9a-22bcfa582951"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="251342be-d21d-4251-ba19-87110c9de39b">
+                    <propertyInstance
+                      Id="703b4c20-1ce2-4cdc-bfe3-96ededc08ed6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c34e35d-1f94-4dc6-b518-7aed6a81ae33">
+                    <propertyInstance
+                      Id="bc046310-df5f-4234-b20d-25a51508163e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c46a08c-7a84-4dcb-9dcb-fc8ebf0e4f9a">
+                    <propertyInstance
+                      Id="26c2084a-5ffa-4cbd-b455-d047b2bd98af"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9314128-3e1b-43f7-af47-4bcdbdd37d81">
+                    <propertyInstance
+                      Id="99ef6d54-3eaf-49f3-8363-0cda8446e3aa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a4982b55-9465-4da1-b1db-9151224c5412">
+                    <propertyInstance
+                      Id="25280150-30de-4395-b5c3-9d9b95edf0bf"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2b23342b-892c-4adc-b742-e7c5fe00e1d0"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="79978505-f23c-4855-b81a-65018950b458"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3D(Name%3DbtnVideoStop_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="054ee506-7c81-420e-93e0-f29749d89a48"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1635.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7c7cf9e1-8bdf-41da-9adc-754b33cd2ee6"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="2fed768c-24bf-4cee-b68b-63dbb0003585"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3D(Name%3DbtnVideoStop_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e9448308-90dd-44ff-91a1-b9f965c2efd2"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="Package1_1700.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4a175fd7-2624-4950-8df2-6ff75b502ac7"
+            name="btnVideoStart_Click"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="04d63dc4-1fd4-4ac8-8ff5-73ff2fa1bb30"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3D(Name%3DbtnVideoStart_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="188aa97e-54bc-4d3d-9c26-40390e36784e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c2b9243-a03e-4cc7-8442-72ca00090ed5">
+                    <propertyInstance
+                      Id="f2c1924e-dd9d-4eca-893a-787be8af740e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6bfe0343-e3c9-4e78-8ed6-15f127f9d592">
+                    <propertyInstance
+                      Id="31b8ee20-4dfb-48ef-8935-a0926c657abb"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aee40926-68a9-44de-8f53-caeef928d95e">
+                    <propertyInstance
+                      Id="5cb58cc9-6ae5-42f6-9736-53331baeda47"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab928ba0-e9bb-4b7d-a50d-2fee82405dd9">
+                    <propertyInstance
+                      Id="4ff03ecc-8c59-4455-bd2c-f0a83e8c8df2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5cbf4c29-7b1f-4b18-bee5-c74521eb4d4f">
+                    <propertyInstance
+                      Id="7fdbdf41-994e-46e0-b950-fc55adb3f019"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="090d07a9-5953-41b7-aefc-fd5bfdea6b55">
+                    <propertyInstance
+                      Id="f6961221-fce1-4b94-8d22-8e91dfd3f752"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f4375b82-3a52-4d85-9cdf-1c20f80a54e4"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9612e0e9-14e5-40a1-bf63-9665a69a1e73"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3D(Name%3DbtnVideoStart_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="054ee506-7c81-420e-93e0-f29749d89a48"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1635.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6ff4abc0-9ee3-47b8-9696-989a5ebfe4df"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5e550fdc-1b12-4744-922a-e56bac817df8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FAsml-MHS%2Fbin%2FDebug%2FAsml-McCallisterHomeSecurity.exe Namespace%3DAsml_McCallisterHomeSecurity Type%3DMainWindow Member%3D(Name%3DbtnVideoStart_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e9448308-90dd-44ff-91a1-b9f965c2efd2"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="Package1_1700.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>

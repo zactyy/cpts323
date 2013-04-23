@@ -963,5 +963,17 @@
         </ownedRedefinableTemplateSignatureInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="75315e96-6ddf-460a-a865-6df87d3a3aaf"
+        LastKnownName="Drawing"
+        LastKnownLocation="Package_1035.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="fd8c0f72-e611-453e-8954-d271c2fa0154"
+        LastKnownName="ComponentModel"
+        LastKnownLocation="Package_1311.uml" />
+    </packageHasNamedElement>
   </packagedElements>
 </package>
