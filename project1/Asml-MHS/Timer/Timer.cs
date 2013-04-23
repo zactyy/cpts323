@@ -3,8 +3,8 @@
  * CptS323, Spring 2013
  * Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
  * Written by: Jennifer Mendez  (inspired by ThreadingExample written by Brian 
- * Last modified by: Jennifer Mendez
- * Date modified: April 22, 2013
+ * Last modified by: Chris Walters 
+ * Date modified: April 23, 2013
  */
 using System;
 using System.Collections.Generic;
@@ -53,6 +53,7 @@ namespace ThreadedTimer
         /// To synchronize threads thread event.
         /// </summary>
         private ManualResetEvent _wait_event;
+        private ManualResetEvent _kill_event;
         #endregion
 
 
@@ -80,6 +81,7 @@ namespace ThreadedTimer
             _timer_start = DateTime.Now;
 
             _wait_event = new ManualResetEvent(false);
+            _kill_event = new ManualResetEvent(false);
 
             _is_active = true;
             _is_running = false;
@@ -97,8 +99,9 @@ namespace ThreadedTimer
         private void SetupThread()
         {
             ThreadStart start = new ThreadStart(TimerThread);
-            _thread = new Thread(start);
+            _thread = new Thread(start);            
             _thread.Start();
+            _wait_event.Set();
         }
 
         private void TimerThread()
@@ -108,7 +111,7 @@ namespace ThreadedTimer
             // Keep this thread alive and responsive to timer needs.  
             while (_is_active)
             {
-                int eventHandle = WaitHandle.WaitAny(events);
+                int eventHandle = WaitHandle.WaitAny(events, 50);
                 if (eventHandle == 0)
                 {
                     _wait_event.Reset();
@@ -148,7 +151,7 @@ namespace ThreadedTimer
         /// </summary>
         public void Start()
         {
-            _is_active = true;
+            _is_running = true;
             // This timer will start at zero, and count up.  
             lock (_lock_object)
             {
@@ -167,7 +170,7 @@ namespace ThreadedTimer
         /// </summary>
         public void Stop()
         {
-            _is_active = false;
+            _is_running = false;
             _wait_event.Set();
 
             if(ThreadStopped != null)
@@ -175,6 +178,16 @@ namespace ThreadedTimer
                 ThreadStopped(this, null);
             }
         }
+
+        /// <summary>
+        /// Kill the timer.
+        /// </summary>
+        public void Destroy()
+        {
+            _is_active = false;
+            _kill_event.Set();
+        }
+
         /// <summary>
         /// Returns the last time recorded.  
         /// </summary>

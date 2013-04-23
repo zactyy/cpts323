@@ -16,7 +16,7 @@ namespace TurretManagement
 {
     
 
-    public class MissileLauncherAdapter : IMissileLauncher
+    public class MissileLauncherAdapter : IMissileLauncher, IDisposable
     {
         TurretManager m_launcher;
         public MissileLauncherAdapter()

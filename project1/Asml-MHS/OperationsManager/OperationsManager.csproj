@@ -64,6 +64,10 @@
       <Project>{00b9a769-1000-4f60-9036-ffdfdfab1829}</Project>
       <Name>TargetManager</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Timer\Timer.csproj">
+      <Project>{79dea423-3b57-4624-9601-406a5832f673}</Project>
+      <Name>Timer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TurretManager\TurretManager.csproj">
       <Project>{b69aa4c3-2fa9-4ef1-87c8-d88722e3e1f7}</Project>
       <Name>TurretManager</Name>

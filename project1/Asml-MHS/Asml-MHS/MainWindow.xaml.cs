@@ -19,6 +19,7 @@ using Microsoft.Win32;
 using System.Reflection;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using ThreadedTimer;
 
 namespace Asml_McCallisterHomeSecurity
 {
@@ -30,7 +31,8 @@ namespace Asml_McCallisterHomeSecurity
         private OperationsManager.OperationsManager  _rules_them_all;
         private List<IVideoPlugin> _video_plugins;
         private IVideoPlugin _eye_of_sauron;
-        
+        private TimeSpan _elapsed_time;
+
         public MainWindow()
         {
 
@@ -43,6 +45,7 @@ namespace Asml_McCallisterHomeSecurity
             lblNumMissiles.Content = _rules_them_all.NumberMissiles.ToString();
             _rules_them_all.ChangedTargets += on_targets_changed;
             _rules_them_all.sdCompleted += Search_Destroy_Complete;
+            _rules_them_all._timer.TimeCaptured += new EventHandler<TimerEventArgs>(_timer_TimeCaptured);
             _video_plugins = new List<IVideoPlugin>();
             // add video plugins to list here
             _video_plugins.Add(new DefaultVideo());
@@ -55,6 +58,17 @@ namespace Asml_McCallisterHomeSecurity
             _eye_of_sauron.Start();
             // Mode List initialization
             cmbModes.ItemsSource = _rules_them_all.Modes;
+            this.Closing += MainWindow_Closing;
+        }
+
+        void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            _rules_them_all.Dispose();
+        }
+
+        void _timer_TimeCaptured(object sender, TimerEventArgs e)
+        {
+            _elapsed_time = e.LastTime;
         }
 
 
@@ -234,8 +248,9 @@ namespace Asml_McCallisterHomeSecurity
                 /*actually draw the overlay here*/
                 g.DrawString("Current Target: " + targetInfo.Item1, overlayFont, brush, upperLeft);
                 g.DrawString("Loc: " + targetInfo.Item2.ToString() + degreeSymbol + " x " + targetInfo.Item3.ToString() + degreeSymbol, overlayFont, brush, bottomLeft);
-                g.DrawString("Time:00:00:00", overlayFont, brush, upperRight);
+                g.DrawString("Time: " + new DateTime(_elapsed_time.Ticks).ToString("mm:ss.FFF"), overlayFont, brush, upperRight);
                 g.DrawString("Status: " + targetInfo.Item4.ToString(), overlayFont, brush, bottomRight);
+                g.Dispose();
             }
             /* set image source to new image*/
             imgVideo.Source = System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(image.GetHbitmap(), IntPtr.Zero, Int32Rect.Empty, System.Windows.Media.Imaging.BitmapSizeOptions.FromEmptyOptions());

@@ -165,6 +165,10 @@
       <Project>{a8ef2ca4-a64a-4700-9454-470a667707cc}</Project>
       <Name>OperationsManager</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Timer\Timer.csproj">
+      <Project>{79dea423-3b57-4624-9601-406a5832f673}</Project>
+      <Name>Timer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Video\Video.csproj">
       <Project>{69ab4c23-4f03-4d2a-8e8c-d40e69d63d4f}</Project>
       <Name>Video</Name>

@@ -23,7 +23,7 @@ using System.Drawing;
 using System.Threading;
 using searchmodes;
 using System.ComponentModel; // for background worker
-
+using ThreadedTimer;
 
 
 namespace OperationsManager
@@ -77,7 +77,11 @@ namespace OperationsManager
         /// background worker for turret and S&D mode operations
         /// </summary>
         /// <returns></returns>
-        private BackgroundWorker bw;
+        private BackgroundWorker _bw;
+
+        public ThreadedTimer.Timer _timer;
+
+        private TimeSpan _time_elapsed;
         #endregion
 
         #region OpsManager
@@ -114,10 +118,17 @@ namespace OperationsManager
             _search_modes.Add("Friends");
             _search_modes.Add("All");
             _search_mode = new searchfoe();
-            bw = new BackgroundWorker();
-            bw.WorkerSupportsCancellation = true;
+            _bw = new BackgroundWorker();
+            _bw.WorkerSupportsCancellation = true;
+            _timer = new ThreadedTimer.Timer();
+            _timer.TimeCaptured += new EventHandler<TimerEventArgs>(_timer_TimeCaptured);
             TurretReset();
             
+        }
+
+        void _timer_TimeCaptured(object sender, TimerEventArgs e)
+        {
+            _time_elapsed = e.LastTime;
         }
         #endregion
 
@@ -139,6 +150,7 @@ namespace OperationsManager
         {
             if (dispose_others == true)
             {
+                _timer.Destroy();
                 _target_manager.Dispose();
                 ((IDisposable)_turret).Dispose();
                 
@@ -182,17 +194,7 @@ namespace OperationsManager
             List<Target> tempHitList = _search_mode.search(_target_manager.Targets);
             DestroyTargets(tempHitList);
         }
-                
-        /// <summary>
-        /// Sets up and starts the destroy mode thread.  
-        /// </summary>
-        //private void SetUpDestroyThread(List<Target> hitList)
-        //{
-        //    _destroy_thread = new Thread(new ThreadStart(delegate() { DestroyTargetsThread(hitList); }));
-        //    _destroy_thread.Start();
-
-        //}
-
+   
         /// <summary>
         /// This is the thread where the destroying of targets takes place.  
         /// </summary>
@@ -201,10 +203,11 @@ namespace OperationsManager
         {
             if (fireTargets.Count > 0)
             {
-                if (!bw.IsBusy)
+                if (!_bw.IsBusy)
                 {
-                    bw.DoWork += DestroyTargetsThread;
-                    bw.RunWorkerAsync(fireTargets);
+                    _bw.DoWork += DestroyTargetsThread;
+                    _timer.Start();
+                    _bw.RunWorkerAsync(fireTargets);
                 }
             }
             else
@@ -226,6 +229,11 @@ namespace OperationsManager
                 }
                 else
                 {
+                    /* if time elapsed is 2 minutes, destroy failed, end attempt*/
+                    if (_time_elapsed.Minutes == 2)
+                    {
+                        break;
+                    }
                     CurrentTarget = target;
                     _turret.MoveTo(target.Phi, target.Theta);
                     _turret.Fire();
@@ -234,6 +242,7 @@ namespace OperationsManager
             }
             /* remove this event handler from the dowork event so the background worker can be reused by others
              at completion */
+            _timer.Stop();
             bw.DoWork -= DestroyTargetsThread;
             /* notifyGUI that search and destroy has completed.*/
             if (sdCompleted != null)
@@ -241,32 +250,6 @@ namespace OperationsManager
                 sdCompleted();
             }
         }
-       /* public void DestroyTargetsThread(List<Target> fireTargets)
-        {
-            WaitHandle[] events = new WaitHandle[] { _wait_event };
-            int runEvent = WaitHandle.WaitAny(events, 0);
-            
-            
-            foreach (Target target in fireTargets)
-            {            
-                // We will wait a few milliseconds for an event.  
-                // Using events here as a trigger to either continue with this mode or abort.  
-                runEvent = WaitHandle.WaitAny(events, 50);
-                if (runEvent == 0)
-                {
-                    _wait_event.Reset();
-                    break;
-                }
-                else if (runEvent == 258) // timeout
-                {
-                    CurrentTarget = target;
-                    _turret.MoveTo(target.Theta, target.Phi);
-                    _turret.Fire();
-                    _target_manager.validate(target);
-                }
-            }
-            CurrentTarget = null;
-        }*/
 
         /// <summary>
         /// Stops the destroy mode from running.
@@ -274,17 +257,11 @@ namespace OperationsManager
         public void Stop()
         {
 
-            if (bw.IsBusy)
+            if (_bw.IsBusy)
             {
-                bw.CancelAsync();
+                _bw.CancelAsync();
+                _timer.Stop();
             }
-            /*
-            _wait_event.Set();
-
-            if (ThreadStopped != null)
-            {
-                ThreadStopped(this, null);
-            }*/
         }
         #endregion
 
@@ -343,17 +320,17 @@ namespace OperationsManager
 
         public void TurretReset()
         {
-            if (!bw.IsBusy)
+            if (!_bw.IsBusy)
             {
-                bw.DoWork += Turret_Reset_Work;
-                bw.RunWorkerAsync();
+                _bw.DoWork += Turret_Reset_Work;
+                _bw.RunWorkerAsync();
             }
         }
 
         private void Turret_Reset_Work(object sender, DoWorkEventArgs e)
         {
             _turret.Reset();
-            bw.DoWork -= Turret_Reset_Work;
+            _bw.DoWork -= Turret_Reset_Work;
         }
         #endregion
 
