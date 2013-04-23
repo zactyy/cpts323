@@ -66,12 +66,12 @@ namespace TargetManagement
         // determines angles from origin to targets coordinate assigns to Theta and Phi
         public void CalculateAngles()
         {
-            double temp = (X_coordinate/Z_coordinate);
+            double temp = (X_coordinate/Y_coordinate);
             // multiply by 180/pi to convert from radians to degrees
             Theta = Math.Atan(temp) * (180/Math.PI);
-            double hypotnus = Math.Sqrt((X_coordinate * X_coordinate + Z_coordinate * Z_coordinate));
+            double hypotnus = Math.Sqrt((X_coordinate * X_coordinate + Y_coordinate * Y_coordinate));
             // multiply by 180/pi to convert radians to degrees.
-            Phi = Math.Atan(Y_coordinate / hypotnus) * (180/Math.PI);
+            Phi = Math.Atan(Z_coordinate / hypotnus) * (180/Math.PI);
         }
 
         public string Name
