@@ -5,8 +5,8 @@
 // CptS323, Spring 2013
 // Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
 // Written by: Zachary Tyynismaa
-// Last modified by: Zachary Tyynismaa
-// Date modified: April 10, 2013
+// Last modified by: Chris Walters
+// Date modified: April 23, 2013
 
 using System;
 using System.Collections.Generic;
@@ -122,8 +122,9 @@ namespace TurretManagement
 
             IntPtr handle = new IntPtr();
             this.USB.RegisterHandle(handle);
+            /*this reset was causing issues at startup, so changed where the reset occurs --Chris*/
             //reset turret so its ready
-            this.ResetToOrigin();
+            //this.ResetToOrigin();
         }
 
         /// <summary>

@@ -65,6 +65,7 @@ namespace TargetManagement.TargetFileProcessors
                                     }
                                 }
                             }
+                            _current_target.CalculateAngles();
                             _output.Add(_current_target);
                         }
                         break;

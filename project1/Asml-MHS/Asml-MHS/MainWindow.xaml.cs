@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -41,18 +42,19 @@ namespace Asml_McCallisterHomeSecurity
             this.Title = program_title + version_string;
             lblNumMissiles.Content = _rules_them_all.NumberMissiles.ToString();
             _rules_them_all.ChangedTargets += on_targets_changed;
+            _rules_them_all.sdCompleted += Search_Destroy_Complete;
             _video_plugins = new List<IVideoPlugin>();
-            // add plugins to list here
+            // add video plugins to list here
             _video_plugins.Add(new DefaultVideo());
             // set current plugin here.
             _eye_of_sauron = _video_plugins.First();
+            // setup resoultion information and event handler, start plugin.
             _eye_of_sauron.Width = (int)imgVideo.Width;
             _eye_of_sauron.Height = (int)imgVideo.Height;
             _eye_of_sauron.NewImage += new EventHandler(on_image_changed);
             _eye_of_sauron.Start();
-
             // Mode List initialization
-           // lstModes.DataContext = _rules_them_all.SearchModeList
+            cmbModes.ItemsSource = _rules_them_all.Modes;
         }
 
 
@@ -198,24 +200,38 @@ namespace Asml_McCallisterHomeSecurity
         }
         #endregion
 
+        /*
+         * video controls
+         */
         #region video
+        /// <summary>
+        /// whenever a new image is observed in the current plugin,
+        /// this event handler grabs that image and writes the overlay, 
+        /// then displays it.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void on_image_changed(Object sender, EventArgs e)
         {
             Bitmap image = ((IVideoPlugin)sender).GetImage();
             /* draw overlay on the image*/
             using (Graphics g = Graphics.FromImage(image))
             {
+                /* setup necessary information and objects*/
                 g.SmoothingMode = SmoothingMode.AntiAlias;
                 g.InterpolationMode = InterpolationMode.HighQualityBicubic;
                 g.PixelOffsetMode = PixelOffsetMode.HighQuality;
                 System.Drawing.Brush brush = System.Drawing.Brushes.Crimson;
                 Font overlayFont = new Font("Calibri", 14);
+                /* tuple holds the actual target info to be drawn*/
                 Tuple<string, double, double, string> targetInfo = _rules_them_all.CurrentTargetInfo();
+                /* points are where the strings should be drawn on the image*/
                 PointF upperLeft = new PointF(5, 5);
                 PointF bottomLeft = new PointF(5, (float)(imgVideo.ActualHeight-20));
                 PointF upperRight = new PointF((float)(imgVideo.ActualWidth - 120),  5);
                 PointF bottomRight = new PointF((float)(imgVideo.ActualWidth - 120), (float)(imgVideo.ActualHeight-20));
                 char degreeSymbol = (char)176;
+                /*actually draw the overlay here*/
                 g.DrawString("Current Target: " + targetInfo.Item1, overlayFont, brush, upperLeft);
                 g.DrawString("Loc: " + targetInfo.Item2.ToString() + degreeSymbol + " x " + targetInfo.Item3.ToString() + degreeSymbol, overlayFont, brush, bottomLeft);
                 g.DrawString("Time:00:00:00", overlayFont, brush, upperRight);
@@ -225,22 +241,11 @@ namespace Asml_McCallisterHomeSecurity
             imgVideo.Source = System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(image.GetHbitmap(), IntPtr.Zero, Int32Rect.Empty, System.Windows.Media.Imaging.BitmapSizeOptions.FromEmptyOptions());
         }
        
-
-        private void DisplayError(string Message)
-        {
-            System.Windows.MessageBox.Show(Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);            
-        }
-
-        private void lstModes_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-        }
-
-        private void lstTargets_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-
+        /// <summary>
+        /// video stop button event handler
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnVideoStop_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -253,6 +258,11 @@ namespace Asml_McCallisterHomeSecurity
             }
         }
 
+        /// <summary>
+        /// video start button event handler
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void btnVideoStart_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -264,6 +274,106 @@ namespace Asml_McCallisterHomeSecurity
                 DisplayError(ex.Message);
             }
         }
+        #endregion
+
+
+        /*
+         * mode controls
+         */
+        #region mode
+        /// <summary>
+        /// mode start button event handler
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnStartMode_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                _rules_them_all.SearchAndDestroy();
+                Disable_Buttons();
+            }
+            catch (Exception ex)
+            {
+                DisplayError(ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// mode stop button event handler
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnStopMode_Click(object sender, RoutedEventArgs e)
+        {
+            _rules_them_all.Stop();
+            Enable_Buttons();
+        }
+
+        private void Disable_Buttons()
+        {
+            btnStartMode.IsEnabled = false;
+            btnReset.IsEnabled = false;
+            btnRight.IsEnabled = false;
+            btnLeft.IsEnabled = false;
+            btnUp.IsEnabled = false;
+            btnDown.IsEnabled = false;
+            btnLoad.IsEnabled = false;
+            btnFire.IsEnabled = false;
+        }
+
+        private void Enable_Buttons()
+        {
+            if (!btnStartMode.Dispatcher.CheckAccess())
+            {
+                btnStartMode.Dispatcher.Invoke(Enable_Buttons);
+            }
+            else
+            {
+                btnStartMode.IsEnabled = true;
+                btnStopMode.IsEnabled = true;
+                btnReload.IsEnabled = true;
+                btnReset.IsEnabled = true;
+                btnRight.IsEnabled = true;
+                btnLeft.IsEnabled = true;
+                btnUp.IsEnabled = true;
+                btnDown.IsEnabled = true;
+                btnLoad.IsEnabled = true;
+                btnFire.IsEnabled = true;
+            }
+        }
+        #endregion
+
+        #region miscellaneous
+        /// <summary>
+        /// method to display error to user in a msgbox
+        /// </summary>
+        /// <param name="Message"></param>
+        private void DisplayError(string Message)
+        {
+            System.Windows.MessageBox.Show(Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
+
+        /// <summary>
+        /// event handler for when user selects a different mode in the GUI combobox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void cmbModes_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            int index = 0; // there should only be *one* selected mode, and thus there will be only this
+            string selectedMode = (string)e.AddedItems[index];
+            _rules_them_all.SetCurrentMode(selectedMode);
+        }
+
+        /// <summary>
+        /// event handler for when search and destroy mode ends.
+        /// </summary>
+        private void Search_Destroy_Complete()
+        {
+            Enable_Buttons();
+        }
+
         #endregion
     }
 }

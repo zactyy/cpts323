@@ -4,8 +4,8 @@
  * CptS323, Spring 2013
  * Team McCallister Home Security: Chris Walters, Jennifier Mendez, Zachary Tynnisma
  * Written by: Jennifer Mendez
- * Last modified by: Jennifer Mendez
- * Date modified: April 22, 2013
+ * Last modified by: Chris Walters
+ * Date modified: April 23, 2013
  */
 
 using System;
@@ -22,6 +22,7 @@ using System.Windows.Controls;
 using System.Drawing;
 using System.Threading;
 using searchmodes;
+using System.ComponentModel; // for background worker
 
 
 
@@ -68,22 +69,15 @@ namespace OperationsManager
         public delegate void TargetUpdate();
         public TargetUpdate CurrentTargetChanged;
 
-        public searchmode _search_mode;
+        private searchmode _search_mode;
+
+        private List<string> _search_modes;
 
         /// <summary>
-        /// The thread the destroy mode will be run on.  
+        /// background worker for turret and S&D mode operations
         /// </summary>
-        private Thread _destroy_thread;
-        
-        /// <summary>
-        /// Fired when the processing is stopped.
-        /// </summary>
-        public event EventHandler ThreadStopped;
-        
-        /// <summary>
-        /// Helps synchronize destroy thread event.
-        /// </summary>
-        private ManualResetEvent _wait_event;
+        /// <returns></returns>
+        private BackgroundWorker bw;
         #endregion
 
         #region OpsManager
@@ -113,14 +107,16 @@ namespace OperationsManager
             _target_manager = TargetManager.GetInstance();
             _turret = new MissileLauncherAdapter();
             _target_manager.TargetAdded += on_targets_changed;
-            // this manual reset event helps synchronize between threads.  
-            _wait_event = new ManualResetEvent(false);
             _lock = new Object();
-            //_seach_mode_list.Add(0, "Idle");
-            //_seach_mode_list.Add(1, "Foes");
-            //_seach_mode_list.Add(2, "Friends");
-            //_seach_mode_list.Add(3, "All");
-            _current_target = new Target("Test", -12, 5, 10, true);
+            /* we need a way to make these search modes more plug-n-play*/
+            _search_modes = new List<string>();
+            _search_modes.Add("Foes");
+            _search_modes.Add("Friends");
+            _search_modes.Add("All");
+            _search_mode = new searchfoe();
+            bw = new BackgroundWorker();
+            bw.WorkerSupportsCancellation = true;
+            TurretReset();
             
         }
         #endregion
@@ -153,10 +149,14 @@ namespace OperationsManager
         #endregion 
 
         #region Search and Destroy 
+
+        public delegate void sdcomplete();
+        public sdcomplete sdCompleted;
+
         public void SetCurrentMode(string selectedMode)
         {
-            CurrentMode = selectedMode;
-            switch (selectedMode)
+            CurrentMode = selectedMode.ToLower();
+            switch (CurrentMode)
             {
                 case "foes":
                     _search_mode = new searchfoe();
@@ -180,28 +180,71 @@ namespace OperationsManager
             //Start timer
 
             List<Target> tempHitList = _search_mode.search(_target_manager.Targets);
-            SetUpDestroyThread(tempHitList);
-
+            DestroyTargets(tempHitList);
         }
                 
         /// <summary>
         /// Sets up and starts the destroy mode thread.  
         /// </summary>
-        private void SetUpDestroyThread(List<Target> hitList)
-        {
-            _destroy_thread = new Thread(new ThreadStart(delegate() { DestroyTargetsThread(hitList); }));
-            _destroy_thread.Start();
+        //private void SetUpDestroyThread(List<Target> hitList)
+        //{
+        //    _destroy_thread = new Thread(new ThreadStart(delegate() { DestroyTargetsThread(hitList); }));
+        //    _destroy_thread.Start();
 
-        }
+        //}
 
         /// <summary>
         /// This is the thread where the destroying of targets takes place.  
         /// </summary>
         /// <param name="fireTargets"></param>
-        public void DestroyTargetsThread(List<Target> fireTargets)
+        public void DestroyTargets(List<Target> fireTargets)
+        {
+            if (fireTargets.Count > 0)
+            {
+                if (!bw.IsBusy)
+                {
+                    bw.DoWork += DestroyTargetsThread;
+                    bw.RunWorkerAsync(fireTargets);
+                }
+            }
+            else
+            {
+                throw new OperationsError("No targets matching that type detected!");
+            }
+        }
+
+        public void DestroyTargetsThread(Object sender, DoWorkEventArgs e)
+        {
+            BackgroundWorker bw = sender as BackgroundWorker;
+            List<Target> fireTargets = (List<Target>)e.Argument;
+            foreach(Target target in fireTargets)
+            {
+                if (bw.CancellationPending == true)
+                {
+                    e.Cancel = true;
+                    break;
+                }
+                else
+                {
+                    CurrentTarget = target;
+                    _turret.MoveTo(target.Phi, target.Theta);
+                    _turret.Fire();
+                    _target_manager.validate(target);
+                }
+            }
+            /* remove this event handler from the dowork event so the background worker can be reused by others
+             at completion */
+            bw.DoWork -= DestroyTargetsThread;
+            /* notifyGUI that search and destroy has completed.*/
+            if (sdCompleted != null)
+            {
+                sdCompleted();
+            }
+        }
+       /* public void DestroyTargetsThread(List<Target> fireTargets)
         {
             WaitHandle[] events = new WaitHandle[] { _wait_event };
-            int runEvent = WaitHandle.WaitAny(events);
+            int runEvent = WaitHandle.WaitAny(events, 0);
             
             
             foreach (Target target in fireTargets)
@@ -223,19 +266,25 @@ namespace OperationsManager
                 }
             }
             CurrentTarget = null;
-        }
+        }*/
 
         /// <summary>
         /// Stops the destroy mode from running.
         /// </summary>
         public void Stop()
         {
+
+            if (bw.IsBusy)
+            {
+                bw.CancelAsync();
+            }
+            /*
             _wait_event.Set();
 
             if (ThreadStopped != null)
             {
                 ThreadStopped(this, null);
-            }
+            }*/
         }
         #endregion
 
@@ -294,10 +343,17 @@ namespace OperationsManager
 
         public void TurretReset()
         {
-            // Not sure if we were going to have this one or not, but there is a placeholder for it.  
-            // TODO-ADD
+            if (!bw.IsBusy)
+            {
+                bw.DoWork += Turret_Reset_Work;
+                bw.RunWorkerAsync();
+            }
+        }
+
+        private void Turret_Reset_Work(object sender, DoWorkEventArgs e)
+        {
             _turret.Reset();
-            
+            bw.DoWork -= Turret_Reset_Work;
         }
         #endregion
 
@@ -329,6 +385,9 @@ namespace OperationsManager
         }
         #endregion
 
+        /*
+         * target list events
+         */
         #region Target List Event(s)
         public delegate void TargetsChanged();
 
@@ -349,6 +408,9 @@ namespace OperationsManager
         }
         #endregion
 
+        /*
+         * target detection stuff, not yet implemented
+         */
         #region Target Detection
         /// <summary>
         /// A method to add targets identified by the video feed.  This will add
@@ -364,6 +426,9 @@ namespace OperationsManager
         }
         #endregion
 
+        /*
+         * manager properties
+         */
         #region Properties
         public string CurrentMode
         {
@@ -400,21 +465,32 @@ namespace OperationsManager
         /// <returns>A tuple containing the name of the target, its angle theta, its angle phi, and a string containing the friend/foe status of the target.</returns>
         public  Tuple<string, double, double, string> CurrentTargetInfo()
         {
-            string friend = "Foe";
-            if (_current_target.Friend == true)
+            Tuple<string, double, double, string> temp;
+            if (_current_target != null)
             {
-                friend = "Friend";
+                string friend = "Foe";
+                if (_current_target.Friend == true)
+                {
+                    friend = "Friend";
+                }
+                temp = new Tuple<string, double, double, string>(_current_target.Name, Math.Round(_current_target.Theta, 2), Math.Round(_current_target.Phi, 2), friend);
             }
-            return new Tuple<string, double, double, string>(_current_target.Name, Math.Round(_current_target.Theta, 2), Math.Round(_current_target.Phi, 2), friend);
+            else
+            {
+                temp = new Tuple<string, double, double, string>("None", 0, 0, "Friend");
+            }
+            return temp;
         }
 
-        /// <summary>
-        /// List of available search modes.
-        /// </summary>
-        public Dictionary<int, string> SeachModeList
+        public List<string> Modes
         {
-            get;
-            set;
+            get
+            {
+                return _search_modes;
+            }
+            private set
+            {
+            }
         }
         #endregion
     }

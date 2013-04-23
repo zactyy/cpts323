@@ -12,6 +12,7 @@
             </Rectangle.Effect>
         </Rectangle>
         <Rectangle Fill="#FFE2DFDF" HorizontalAlignment="Left" Height="248" Margin="491,10,0,0" Stroke="#FF474545" VerticalAlignment="Top" Width="232">
+
             <Rectangle.Effect>
                 <DropShadowEffect/>
             </Rectangle.Effect>
@@ -101,7 +102,7 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <ListView Name="lstTargets" HorizontalAlignment="Left" Height="125" Margin="21,371,0,0" VerticalAlignment="Top" Width="453" RenderTransformOrigin="0.408,0.453" SelectionChanged="lstTargets_SelectionChanged">
+        <ListView Name="lstTargets" HorizontalAlignment="Left" Height="125" Margin="21,371,0,0" VerticalAlignment="Top" Width="453" RenderTransformOrigin="0.408,0.453">
             <ListView.Effect>
                 <DropShadowEffect/>
             </ListView.Effect>
@@ -122,14 +123,16 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Label Content="Targeting System Controls" HorizontalAlignment="Right" Margin="0,21,52,0" VerticalAlignment="Top" Height="26" Width="194" FontSize="14" FontWeight="Bold" FontFamily="Arial"/>
+
+            <Label Content="Targeting System Controls" HorizontalAlignment="Right" Margin="0,21,52,0" VerticalAlignment="Top" Height="26" Width="194" FontSize="14" FontWeight="Bold" FontFamily="Arial"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="128" Margin="503,61,0,0" VerticalAlignment="Top" Width="211"/>
         <Button x:Name="btnStopMode" Content="Stop Mode" HorizontalAlignment="Left" Margin="535,156,0,0" VerticalAlignment="Top" Width="144" FontFamily="Arial" FontWeight="Bold" Height="23" FontSize="10" Background="#FF2147F3" IsEnabled="False">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Button x:Name="btnStartMode" Content="Start Mode" HorizontalAlignment="Left" Margin="535,128,0,0" VerticalAlignment="Top" Width="144" FontFamily="Arial" FontWeight="Bold" Height="23" FontSize="10" IsEnabled="False">
+
+            <Button x:Name="btnStartMode" Content="Start Mode" HorizontalAlignment="Left" Margin="535,128,0,0" VerticalAlignment="Top" Width="144" FontFamily="Arial" FontWeight="Bold" Height="23" FontSize="10" IsEnabled="False">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
@@ -163,10 +166,6 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <ListBox x:Name="lstModes" Margin="535,0,0,412" Height="23" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.478" HorizontalAlignment="Left" Width="143" SelectionChanged="lstModes_SelectionChanged">
-            <ListBox.Effect>
-                <DropShadowEffect/>
-            </ListBox.Effect>
-        </ListBox>
+        <ComboBox x:Name="cmbModes" HorizontalAlignment="Left" Margin="540,101,0,0" VerticalAlignment="Top" Width="139" SelectedIndex="0"/>
     </Grid>
 </Window>

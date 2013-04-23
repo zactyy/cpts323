@@ -86,6 +86,7 @@ namespace TargetManagement.TargetFileProcessors
                     }
                 }
             }
+            foreach (Target target in _output) { target.CalculateAngles(); }
         return _output;
         }
 

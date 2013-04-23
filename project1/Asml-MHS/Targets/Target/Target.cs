@@ -58,7 +58,7 @@ namespace TargetManagement
         }
 
         // determines angles from origin to targets coordinate assigns to Theta and Phi
-        private void CalculateAngles()
+        public void CalculateAngles()
         {
             double temp = (X_coordinate/Z_coordinate);
             // multiply by 180/pi to convert from radians to degrees
@@ -131,7 +131,19 @@ namespace TargetManagement
         {
             /* if the two target objects share the same name, location, and friend status, they
              * are the same target. */
-            if (self.Name == comparitor.Name &&
+            if ((object)self == null && (object)comparitor == null)
+            {
+                return true;
+            }
+            else if ((object)self == null && (object)comparitor != null)
+            {
+                return false;
+            }
+            else if ((object)self != null && (object)comparitor == null)
+            {
+                return false;
+            }
+            else if (self.Name == comparitor.Name &&
                 self.X_coordinate == comparitor.X_coordinate &&
                 self.Y_coordinate == comparitor.Y_coordinate &&
                 self.Z_coordinate == comparitor.Z_coordinate &&
