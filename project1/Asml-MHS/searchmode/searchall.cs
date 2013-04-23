@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using TargetManagement;
 
-namespace searchmode
+namespace searchmodes
 {
-    class searchall : searchmode
+    public class searchall : searchmode
     {
         public override List<Target> search(List<Target> targetlist)
         {

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TargetManagement;
 
-namespace searchmode
+namespace searchmodes
 {
     public abstract class searchmode
     {

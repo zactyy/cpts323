@@ -21,6 +21,7 @@ using TurretManagement;
 using System.Windows.Controls;
 using System.Drawing;
 using System.Threading;
+using searchmodes;
 
 
 
@@ -67,21 +68,13 @@ namespace OperationsManager
         public delegate void TargetUpdate();
         public TargetUpdate CurrentTargetChanged;
 
+        public searchmode _search_mode;
+
         /// <summary>
         /// The thread the destroy mode will be run on.  
         /// </summary>
         private Thread _destroy_thread;
         
-        /// <summary>
-        /// Flag to track whether destroy should be currently running.  
-        /// </summary>
-        private bool _active_destroy_mode;
-       
-        /// <summary>
-        /// Fired when the processing is started.
-        /// </summary>
-        public event EventHandler ThreadStarted;
-       
         /// <summary>
         /// Fired when the processing is stopped.
         /// </summary>
@@ -160,12 +153,34 @@ namespace OperationsManager
         #endregion 
 
         #region Search and Destroy 
+        public void SetCurrentMode(string selectedMode)
+        {
+            CurrentMode = selectedMode;
+            switch (selectedMode)
+            {
+                case "foes":
+                    _search_mode = new searchfoe();
+                    break;
+                case "friends":
+                    _search_mode = new searchfriends();
+                    break;
+                case "all":
+                    _search_mode = new searchall();
+                    break;
+                default:
+                    throw new OperationsError("Invalid Mode");
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public void SearchAndDestroy() 
         {
             //Start timer
 
-            //List<Target> tempHitList = SearchMode(_target_manager.Targets, CurrentMode);
-            //SetUpDestroyThread(tempHitList);
+            List<Target> tempHitList = _search_mode.search(_target_manager.Targets);
+            SetUpDestroyThread(tempHitList);
 
         }
                 
@@ -174,10 +189,9 @@ namespace OperationsManager
         /// </summary>
         private void SetUpDestroyThread(List<Target> hitList)
         {
-            // The () parameter is supposed to be 
-            _destroy_thread = new Thread(() => DestroyTargetsThread(hitList));
+            _destroy_thread = new Thread(new ThreadStart(delegate() { DestroyTargetsThread(hitList); }));
             _destroy_thread.Start();
-            
+
         }
 
         /// <summary>
@@ -204,7 +218,8 @@ namespace OperationsManager
                 {
                     CurrentTarget = target;
                     _turret.MoveTo(target.Theta, target.Phi);
-                    _turret.Fire();                      
+                    _turret.Fire();
+                    _target_manager.validate(target);
                 }
             }
             CurrentTarget = null;

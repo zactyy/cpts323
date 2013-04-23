@@ -56,6 +56,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\searchmode\searchmode.csproj">
+      <Project>{6f8ec8c4-fd2f-4a49-a446-49e5deb8b0b3}</Project>
+      <Name>searchmode</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Targets\TargetManager.csproj">
       <Project>{00b9a769-1000-4f60-9036-ffdfdfab1829}</Project>
       <Name>TargetManager</Name>
