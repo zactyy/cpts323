@@ -1,0 +1,1456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="52a96387-9db8-4723-8dc8-fadf03fa77e4"
+  name="ThreadedTimer"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="de4b469a-a19c-4b26-9149-2354e4a9d36c"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DThreadedTimer"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="59d6c2e3-d719-49c7-b5fe-a2742656b5d9"
+        name="Timer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="73b4682e-4e2d-4b63-911e-7e3e299d5f0f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FTimer%2Fbin%2FDebug%2FTimer.dll Namespace%3DThreadedTimer Type%3DTimer"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="5d48c754-2482-43fa-ad8a-7c18b21ea7ea"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6cae9999-8205-422e-9ed3-c54dfa337a34">
+                <propertyInstance
+                  Id="6eda4a4e-fe90-4887-9ee6-84d6d29ca5d5"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d6db98d5-92a0-4c9d-9d54-f073335cdfc1">
+                <propertyInstance
+                  Id="eb774c38-4740-422f-804c-55e40ed71459"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="409e62ba-cca5-42d9-881d-b8c1bf438faa">
+                <propertyInstance
+                  Id="165d5c41-7b6b-4a82-8207-f12474fc3bf0"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="99c01934-3156-4af2-92cf-45df7da79c13">
+                <propertyInstance
+                  Id="6ad1a7e2-2361-4cda-9a2f-962e299d6a06"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5faba975-e88d-46b6-afc2-4da6b62485d0">
+                <propertyInstance
+                  Id="716bee82-ad18-4dca-9bf0-2f2d591a9573"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="82ec8c27-7f75-4f0b-a0bd-dc66f1171370"
+            name="_lock_object"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ddd21190-8acd-4c46-8d3c-fe4d35ca2127"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FTimer%2Fbin%2FDebug%2FTimer.dll Namespace%3DThreadedTimer Type%3DTimer Member%3D_lock_object"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="532b89e9-6f24-41c9-9839-c755a9b76a70"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3cab571f-263c-4895-b22e-d74c0cda9788">
+                    <propertyInstance
+                      Id="95bc0039-638d-42da-8583-0f6f58096870"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="42062756-bff6-447c-a7b4-8d4a08a3e853">
+                    <propertyInstance
+                      Id="ed71d034-44cf-4fff-98b2-f9a64b1c600b"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="839410fe-5a23-4122-a5e8-1658a681ce49">
+                    <propertyInstance
+                      Id="3fb5623b-1825-4ce8-aac1-9d8517a4ef46"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b76c6bd-78bf-496e-8ba5-6a411f0d14a5">
+                    <propertyInstance
+                      Id="b3386186-fced-4ef0-9088-868862bd0871"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="367d932e-cf36-4148-839d-9449f0ceb170">
+                    <propertyInstance
+                      Id="0b94e4c9-a6b9-429f-aa56-f0b7ad39de04"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="054ee506-7c81-420e-93e0-f29749d89a48"
+                LastKnownName="Object"
+                LastKnownLocation="Package1_1635.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4e9f0ca2-fb4a-4e3e-8eb3-0954d75ca16d"
+            name="_last_time"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="782f8591-c441-4121-ac2b-eea0dda42a0e"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FTimer%2Fbin%2FDebug%2FTimer.dll Namespace%3DThreadedTimer Type%3DTimer Member%3D_last_time"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e753bf77-1b6a-4173-a656-e7525c7d4753"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="abcae165-07bc-4507-bf0c-6e79eee2346f">
+                    <propertyInstance
+                      Id="a6d5f6bb-e3ff-4869-8e25-461d2b9a4278"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5fb2346c-e825-48d8-b3e0-e46e5332712c">
+                    <propertyInstance
+                      Id="0edb27ac-55f6-455a-afad-607ab3b12266"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cc85bc08-e6a8-4cfd-a849-8e5056f7b1ce">
+                    <propertyInstance
+                      Id="3451264f-aadc-4e01-8a43-7ff19c04e3ab"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3653757b-9ca7-4679-99c6-659b07c6d7f4">
+                    <propertyInstance
+                      Id="75e2469f-1f6c-43ee-b77d-2683f1d9e697"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4fae16dc-e580-4131-8f3e-d9e07e6cc670">
+                    <propertyInstance
+                      Id="8b313988-0068-4545-b056-66650c484e39"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="b5abec4d-81b1-4ac9-9736-9541a8f9eae4"
+                LastKnownName="TimeSpan"
+                LastKnownLocation="Package1_1635.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="169d6182-5103-4b4d-8ab9-fc992ffd1390"
+            name="_timer_start"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="729e0c24-539b-46f0-8a04-4226f3d66aa3"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FTimer%2Fbin%2FDebug%2FTimer.dll Namespace%3DThreadedTimer Type%3DTimer Member%3D_timer_start"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6066cb2b-c1f4-4e02-961d-629372c94f20"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48c045d6-1aea-43a7-aa23-ac8b1736cdb3">
+                    <propertyInstance
+                      Id="31b77ff9-56cd-4229-9065-e0298c2ac887"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3bc7c40a-3f80-47b8-9285-4559095a34b9">
+                    <propertyInstance
+                      Id="57312331-ec55-4270-b2fe-ef7eb1e61626"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eea23a2d-d56a-49cb-9a19-42cbcc1075ef">
+                    <propertyInstance
+                      Id="1b9d6a07-4d23-4ea8-94d7-abb2cd43f6d5"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d4f9b68-d619-433c-b134-414b5c0d87df">
+                    <propertyInstance
+                      Id="8a838228-bee6-4c2d-a2fe-dc4dc684f3b9"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a145d381-689b-489b-9448-518bfe918741">
+                    <propertyInstance
+                      Id="12cb34ec-69d7-488d-957d-1a697af94cfb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="bfd9bfdd-4a23-4203-a0aa-3081770703cd"
+                LastKnownName="DateTime"
+                LastKnownLocation="Package1_1635.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="bf255c1d-753e-4d63-afec-e59caf3d1046"
+            name="_thread"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="2036e782-6a96-463f-9942-2714d4970144"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FTimer%2Fbin%2FDebug%2FTimer.dll Namespace%3DThreadedTimer Type%3DTimer Member%3D_thread"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e22ff83a-5d41-4f72-b29d-ca4c299e1b28"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a25ffa61-caef-40f7-b003-f5dcc9a890aa">
+                    <propertyInstance
+                      Id="79b8ede7-8bbf-4964-9cc2-812f5178dc03"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75d8dff8-1813-4b95-b6ad-c28166f60727">
+                    <propertyInstance
+                      Id="493f86fc-decc-4b5f-a9ef-49a294d75a03"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="47e23f97-a615-4ca2-906d-74d8d43bd777">
+                    <propertyInstance
+                      Id="f9c2d9cb-9e75-464a-9dce-602a9e815c66"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26a7304d-13cd-4188-b584-a7af723c0ac2">
+                    <propertyInstance
+                      Id="d6051d9d-1a88-450e-9702-fcb84fe9aa55"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3de9e64-d521-4ef2-9d87-ecae1416bb63">
+                    <propertyInstance
+                      Id="000e2f46-407d-4cf8-8710-bd0aa28dfe79"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="e9458a77-ad3f-4a79-89fb-883a04b4ba02"
+                LastKnownName="Thread"
+                LastKnownLocation="Package1_1013.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f672078e-cec1-40fb-9d29-c961d5a57d22"
+            name="_is_active"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="64132964-4685-4caf-8116-80b9b0d387a4"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FTimer%2Fbin%2FDebug%2FTimer.dll Namespace%3DThreadedTimer Type%3DTimer Member%3D_is_active"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e7514a06-7de8-4ac3-b7c5-b2803d073da5"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ca93da4-d22b-433e-87ec-269f1f1c21fa">
+                    <propertyInstance
+                      Id="59abcd8e-18ed-4cdd-938e-0ddf16e6a8ca"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d91642ad-ea9d-4e42-b08e-f1bd95afb557">
+                    <propertyInstance
+                      Id="394f8bfc-d1af-4ebe-bbdb-e0ed8ad45a87"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b556d3ec-4a1a-4016-abfb-cd2c987fbaa9">
+                    <propertyInstance
+                      Id="2aaa6852-7e9f-426b-bac2-51a73b84a018"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c33fc01-a18b-4f8e-a852-39ebb48085d5">
+                    <propertyInstance
+                      Id="3cf7250a-db23-48ef-a73e-ad5de5d6671f"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2cd32192-48d9-4824-841f-44ee876bc139">
+                    <propertyInstance
+                      Id="7b5a6be2-0b1e-48d5-a10c-4507ea59011a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="51e1960a-1e49-4325-b3e0-ac0d768f8c46"
+            name="_is_running"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c3a4a609-b399-4444-a125-1f033f87a9a2"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FTimer%2Fbin%2FDebug%2FTimer.dll Namespace%3DThreadedTimer Type%3DTimer Member%3D_is_running"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c226d879-a297-4b43-8ff0-161e2d6d3f27"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb269f71-c9e6-49ca-8eef-54eec54f35e6">
+                    <propertyInstance
+                      Id="4d8ac082-cb10-4675-8d5f-e7d4e64998d3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52372683-7e14-4413-b2d3-dd56a7df5a5a">
+                    <propertyInstance
+                      Id="4e21231e-1995-4888-80f9-a667918f2a7c"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="976bbd2c-380f-4fad-9920-1be3293b6f6b">
+                    <propertyInstance
+                      Id="ac2a4e8c-3542-4770-a304-2988adbb54d8"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9cb28f47-c831-4866-8395-a2c6f5aaed20">
+                    <propertyInstance
+                      Id="206b8b38-256a-4df1-8ff1-bd98eb07b30b"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1885cc1-4911-46f0-b5ac-66c2abb352db">
+                    <propertyInstance
+                      Id="830811db-c915-4905-8386-9964da0fe7d6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1b274eac-b2bc-49b9-b0bb-66e5abdcc528"
+            name="_wait_event"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ad7f580d-c7cb-4f87-a698-22d4e5850cb2"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FTimer%2Fbin%2FDebug%2FTimer.dll Namespace%3DThreadedTimer Type%3DTimer Member%3D_wait_event"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="965b29f4-ccf6-4971-b501-2710bb953139"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5de1f32a-bdd5-4554-908c-81fc4e840dc5">
+                    <propertyInstance
+                      Id="aef8c33f-c564-4e60-b131-01c2472adb87"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6018ee1-3ea2-42d7-80b4-2881cd25fe67">
+                    <propertyInstance
+                      Id="69d9d3a8-c4ab-4e32-b1ee-82edb2e57b42"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f7011d2-eebe-4bc7-a7a6-461122421e98">
+                    <propertyInstance
+                      Id="a6b1fbf0-ad8c-4324-8cba-244f17a904a8"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="467c52cc-0fce-4b31-9719-3b25585f62a5">
+                    <propertyInstance
+                      Id="7b714aa3-9124-4245-adc6-efcf35682928"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="da4ca0f8-e600-4d8a-bac8-651c8e71139f">
+                    <propertyInstance
+                      Id="dc70fd78-5eee-4140-b14e-508c687fd6ba"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="e1a4b5c1-fd4e-48f9-936c-7d554eacd505"
+                LastKnownName="ManualResetEvent"
+                LastKnownLocation="Package1_1013.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="98490bed-4985-4fac-afc5-a83b13ce82e4"
+            name="TimeCaptured"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="78613fe6-0696-49f6-ac9e-f0125a33c0b8"
+                handle="viewcode://./CodeSchema_Event?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FTimer%2Fbin%2FDebug%2FTimer.dll Namespace%3DThreadedTimer Type%3DTimer Member%3DTimeCaptured"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="69554e4d-84b9-4796-9bc5-a7b960f2676b"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01a5a602-0d8e-4401-8b2d-a94ab02265b4">
+                    <propertyInstance
+                      Id="78766a8a-6ea4-4b90-a3a8-ad3fe2892481"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba4ed4a1-4f90-4445-802f-ab5c47a52244">
+                    <propertyInstance
+                      Id="51ab9660-92a8-4ca3-8b16-14a24dc04266"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c5987020-8650-43b2-9d95-c201cfbe04d1">
+                    <propertyInstance
+                      Id="de559cfe-7073-497d-addc-06368f1940a7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c863a714-7ce2-4bb4-868a-1ee0bd74bfab">
+                    <propertyInstance
+                      Id="f3ebc3db-5d38-44dd-a6f2-6a6c8210b235"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b355388-0695-4b2f-92ad-02923bb7df59">
+                    <propertyInstance
+                      Id="e49e0b32-35a7-4e9d-b0e5-a02816419d2d"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="3998a8ce-548c-43ac-9bc9-43d3f84ec988"
+                LastKnownName="EventHandler&lt;TimerEventArgs‎&gt;"
+                LastKnownLocation="Package1_1635.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2da13b92-5a2e-4c29-bb1b-016bf9197ebd"
+            name="ThreadStarted"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="2d96552e-d8bb-478c-9e44-97aba9fb38e9"
+                handle="viewcode://./CodeSchema_Event?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FTimer%2Fbin%2FDebug%2FTimer.dll Namespace%3DThreadedTimer Type%3DTimer Member%3DThreadStarted"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9616cbbb-fed3-4954-a090-281656e7a90f"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a0c3ce3-c33b-4709-a751-2de2f1993197">
+                    <propertyInstance
+                      Id="b91bd78c-6110-4e43-9fbf-5543d2490b0e"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e34442a4-6685-49ea-a150-4a4ee5663b32">
+                    <propertyInstance
+                      Id="a9b12e33-0c80-4d49-977f-24b87173edea"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6eaf7c6-54bb-4022-8b7c-a54ba9f11ac4">
+                    <propertyInstance
+                      Id="bcff2cee-65d7-4d1f-9a26-26c78c1d700f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="17ec02d9-95a9-408e-9bc4-708e805f7ead">
+                    <propertyInstance
+                      Id="3129d4b3-5b1f-4a62-a937-e2471c88199d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d043bed9-260d-49fd-a7f4-ee8dc280e7f3">
+                    <propertyInstance
+                      Id="f7253095-17bf-4d0b-a883-3cd1380f3491"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="2578dc19-57e5-433e-86d4-bd74aeaaf6c7"
+                LastKnownName="EventHandler"
+                LastKnownLocation="Package1_1635.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f614b74c-96bf-4db8-9faa-99be8e595c44"
+            name="ThreadStopped"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ab5d887f-faaa-4cef-aad6-d6a4ba4de316"
+                handle="viewcode://./CodeSchema_Event?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FTimer%2Fbin%2FDebug%2FTimer.dll Namespace%3DThreadedTimer Type%3DTimer Member%3DThreadStopped"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fd41e695-4f17-475a-af28-9f2540815b4f"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c2b81902-7b6a-4ad7-91d1-cdea0376af3b">
+                    <propertyInstance
+                      Id="0ed57cab-388d-4351-8b81-9bdacd5315e2"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f2ae78f-067e-49c4-9649-418fb7271ba3">
+                    <propertyInstance
+                      Id="aafc74fb-e49a-46b6-aada-bef55c00f5ed"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7fc4375-3786-451d-9f75-b9cbcbbd7364">
+                    <propertyInstance
+                      Id="2b02f351-f4f1-45ff-bfe2-2b891a2aa50c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="503228f2-6ca4-41f8-b4bf-9bd3c8fc1248">
+                    <propertyInstance
+                      Id="9ab447f7-6192-4d23-9370-b58adc7c5e73"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9bee2a68-3548-4272-9665-1f5501667182">
+                    <propertyInstance
+                      Id="e70da6b2-b91e-4783-9b12-ea4663e143bb"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="2578dc19-57e5-433e-86d4-bd74aeaaf6c7"
+                LastKnownName="EventHandler"
+                LastKnownLocation="Package1_1635.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a3b428f5-271d-4448-9ed0-2b36b341e73a"
+            name="Timer"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4e6c3e1f-d927-487c-9a40-7aa456a09a9d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FTimer%2Fbin%2FDebug%2FTimer.dll Namespace%3DThreadedTimer Type%3DTimer Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cf5faac6-799b-496f-9819-29b71247b067"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e47c077b-2ca9-4eb7-90ec-24044036786b">
+                    <propertyInstance
+                      Id="ff63a75d-8a9a-4381-9596-22f8ac87d6f0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="926895c5-fa41-4bfc-b155-774f73641e3c">
+                    <propertyInstance
+                      Id="94a1289a-8af9-4aca-86a9-879ed9a8b8fc"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef269a9d-b86b-45be-a5c9-1e3df3e58706">
+                    <propertyInstance
+                      Id="e280220c-0675-44bd-b30f-3fccbaebca39"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7010e9f-d33c-43e5-a1d8-e915df6f71cc">
+                    <propertyInstance
+                      Id="eb3d2c09-7a1d-4fbf-a521-fbd6ec30478b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d30f197-b295-425b-b7e8-752c3f4847dc">
+                    <propertyInstance
+                      Id="b11a6aed-7956-4d93-8527-7e70baf400aa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="06a7074c-6e2d-497c-878d-a8d06ea31232">
+                    <propertyInstance
+                      Id="7d903f6c-66bb-4c31-ae24-764dfdadbe39"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="22679755-b752-470b-af60-be99687e56ee"
+            name="SetupThread"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="cfa38acf-f60f-4b9c-95d1-ad6dfecd1660"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FTimer%2Fbin%2FDebug%2FTimer.dll Namespace%3DThreadedTimer Type%3DTimer Member%3DSetupThread"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cc4518c3-1f23-42e8-a39e-ef5e3001efe4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c94afad-9a23-4bad-a56b-91f93c5f4231">
+                    <propertyInstance
+                      Id="66029989-c1fa-4074-9c54-31afeca6c067"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fdc79e4a-c1be-43fb-b33a-f0a61d1c9f30">
+                    <propertyInstance
+                      Id="dd37992d-7d16-481f-a80b-20cb77e56bff"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6bfba5de-b3c2-4ef7-90ba-6ab12842df49">
+                    <propertyInstance
+                      Id="96b0909c-2090-4f96-bd2f-f6f2864f77f9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1fe31e8-f224-49f3-80b0-fedc0f392867">
+                    <propertyInstance
+                      Id="3def4a95-b11c-4ea5-9c44-76223e0a202b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f4bc7dd1-d895-4289-b1b4-dc92596da3fd">
+                    <propertyInstance
+                      Id="aeccb85a-a42c-4607-b8ed-3de83353e9d1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3b302d1-8acf-4d5c-85f2-81a52487edd3">
+                    <propertyInstance
+                      Id="a373fdec-1298-49bb-a8ee-e71d52eeda07"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="894a1330-2e57-4e1d-87b7-7dd40c74674f"
+            name="TimerThread"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="554bcf3c-9549-4c09-b5e9-2d3672a0abf6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FTimer%2Fbin%2FDebug%2FTimer.dll Namespace%3DThreadedTimer Type%3DTimer Member%3DTimerThread"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="16851378-bdfe-4a53-832a-e51ead64b332"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96d2cebf-055f-4a4c-a01d-b59b518c25d9">
+                    <propertyInstance
+                      Id="94df7e24-27c2-45a1-8ecc-38c4ad3eff3b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8988f0c5-b900-4460-a009-80491b771620">
+                    <propertyInstance
+                      Id="959cce09-77b9-44df-8f07-1955f6d1e8f1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ceb7e795-0244-47a0-bcaa-5c03f29fd2a9">
+                    <propertyInstance
+                      Id="2bd62ea1-4c1c-43d2-819f-2a0b54c47d36"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c5d0885-1f0c-4cbd-8a10-d25340d1aa5b">
+                    <propertyInstance
+                      Id="84944eec-e913-4117-adb7-53088107425f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52c33921-0b6e-424c-a7bd-a8a7296f5c59">
+                    <propertyInstance
+                      Id="a46bbf48-e43c-4a1e-811f-e52106af0192"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d7de57d2-f022-416d-915a-c823f1a40686">
+                    <propertyInstance
+                      Id="24ea5dbb-229d-48b0-b56c-5cb38988b001"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="4cba6804-07f4-4751-bdf8-37de59b01985"
+            name="Start"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="89cafdc0-7882-4a45-90ee-515ff9bc40c4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FTimer%2Fbin%2FDebug%2FTimer.dll Namespace%3DThreadedTimer Type%3DTimer Member%3DStart"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="27bc0032-a423-43b1-b746-97629dc89cc4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa5e88ae-c438-4967-83ed-c183f29b3af3">
+                    <propertyInstance
+                      Id="fde36429-5ea1-4b29-921e-86385514b1f3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba7f34c8-d765-4c2d-8056-ed2996ef9387">
+                    <propertyInstance
+                      Id="7552a4cf-e4f8-4664-ada8-cbb4e6d91170"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="77c55b83-bcdc-4aff-8f6e-5e2227fec7a8">
+                    <propertyInstance
+                      Id="089fd89e-e3f1-4ae5-8c1e-b7798be3e53c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="582c6cf3-974f-41e7-9ec0-f2eb66a73b1f">
+                    <propertyInstance
+                      Id="95274aa6-ae42-4772-bcd3-9d05088968f4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3b4c138e-98c4-404c-9d8a-a2153b9aa17d">
+                    <propertyInstance
+                      Id="1a668c19-bbb6-449d-b0b3-4705388a0f17"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c693f4f-3442-45d2-865f-a56eb3d494e5">
+                    <propertyInstance
+                      Id="cc20b445-65b8-49d9-bcf3-e76718ab2ce2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="40be6ea1-b216-472b-94e1-120d1a33e135"
+            name="Stop"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4e10cdb5-4678-4562-a5ba-73a97a573e2f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FTimer%2Fbin%2FDebug%2FTimer.dll Namespace%3DThreadedTimer Type%3DTimer Member%3DStop"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a62b6c16-0892-4ef0-9835-255800727482"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="153d6eb3-696a-4abc-9658-21cfd3082db8">
+                    <propertyInstance
+                      Id="3a962862-02a8-47e9-97e7-a27156395f49"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0dbe5c79-1fa8-49df-b311-d8616088b818">
+                    <propertyInstance
+                      Id="fdd07911-6dcd-4272-a86c-6a38af4086a5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76670082-d121-4a8a-8fb9-73b03f436ee6">
+                    <propertyInstance
+                      Id="4a9e5e7b-6fd2-49eb-9182-79bcd0b8775c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd43ad1f-0a17-46a7-98f5-537a4b5b0b73">
+                    <propertyInstance
+                      Id="9ed54854-7b2c-4f54-b85b-605c35354cc2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87e05734-56b1-49da-8dce-7a62e9fd9e30">
+                    <propertyInstance
+                      Id="761f8f85-24cb-42af-bd7f-f4473d907b89"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="06d28fa6-03e4-4fdd-b27a-88fe47ddc260">
+                    <propertyInstance
+                      Id="107f029b-4022-4f09-9e9f-907b9900a42c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="2ad701f1-3efc-4053-9e05-915fdc471d68"
+            name="GetLastTime"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="11f8ed35-f10b-4857-8060-46fc550a9fba"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FTimer%2Fbin%2FDebug%2FTimer.dll Namespace%3DThreadedTimer Type%3DTimer Member%3DGetLastTime"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4b473eda-acff-4d59-86db-669182fb9db7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="526a8291-4016-46ed-9083-69be4af724a2">
+                    <propertyInstance
+                      Id="37ea58fa-4834-42fd-9672-65d20c3ffdee"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb4da893-611a-45f6-9dd5-3220f9e0588b">
+                    <propertyInstance
+                      Id="63c9566d-9f89-4429-a694-261f715ee284"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c87a99f-879d-4b78-ad71-f4ba664e18a6">
+                    <propertyInstance
+                      Id="31d1145c-da30-4025-b3e9-fcbd9d3b735c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91d47547-c217-4a26-8b38-5d0645ea218b">
+                    <propertyInstance
+                      Id="5fa93470-03f0-427d-998c-7f86c5b07b6a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="408e90f2-c66a-4e1d-b6ed-b50e4946d60a">
+                    <propertyInstance
+                      Id="61e4044d-583a-49fa-94aa-2533725a0727"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee559e02-da8b-4d16-b77a-d46d506c7ead">
+                    <propertyInstance
+                      Id="45ab24e9-9831-4678-9c7e-676b4f17538d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0ba212c4-ab00-4d71-8c11-31f92533aefb"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b5abec4d-81b1-4ac9-9736-9541a8f9eae4"
+                      LastKnownName="TimeSpan"
+                      LastKnownLocation="Package1_1635.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="201a4f67-d9c9-4313-a498-41ce79d729a2"
+        name="TimerEventArgs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="4452b880-7291-4593-a54c-7a94270d5e0f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FTimer%2Fbin%2FDebug%2FTimer.dll Namespace%3DThreadedTimer Type%3DTimerEventArgs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4eec410e-713b-446d-8ad3-ea3f3868924c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4ebb6bf0-06e0-4cab-b47f-adf82ef9f57d">
+                <propertyInstance
+                  Id="af2c3d53-556e-4592-bbe1-40714a061d67"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5dbf59fd-00d3-4421-ae6c-8d54341e93fe">
+                <propertyInstance
+                  Id="9692f9aa-8afb-4e99-ab93-973c0dd61fab"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7139d50d-eb79-4600-924f-423692f4c310">
+                <propertyInstance
+                  Id="6223f774-750f-4308-b352-fe1739e93985"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ace9e86a-7319-49de-a713-c3fa83027232">
+                <propertyInstance
+                  Id="3b9655c0-9544-4f66-bf04-985e1d439f70"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e2dc6e76-7646-473e-bb2c-0531dfc63f7e">
+                <propertyInstance
+                  Id="911f051d-df5d-401f-ad43-66a0cbb9f6d5"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="59fe4e16-2064-4cc9-af0f-e64d2eaf9ad4"
+            isSubstitutable="false">
+            <classMoniker
+              Id="39f96b7f-0336-478e-acf7-33898c238d32"
+              LastKnownName="EventArgs"
+              LastKnownLocation="Package1_1635.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="d7621d3e-c1bf-45b0-a23b-3dee7a393c7a"
+            isDerived="false"
+            sourceEndRoleName="TimerEventArgs"
+            targetEndRoleName="LastTime"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b5abec4d-81b1-4ac9-9736-9541a8f9eae4"
+              LastKnownName="TimeSpan"
+              LastKnownLocation="Package1_1635.uml" />
+            <description>Property LastTime references type TimeSpan.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fefbafed-e0dd-4bed-8aed-3973795059ea"
+                  name="TimerEventArgs"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="294bdf10-fd5e-4e9b-bbeb-eb5517b39057"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="44e641d8-387b-4a9f-95d2-b0742d5df4d9"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="90a658e3-37cd-4304-8a2a-3c31d30394f8"
+                  name="LastTime"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1e0a2a99-3e50-4d97-a963-cf310e0935b1"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="bd7f84c9-f73d-4a39-a179-2756885ea1e8"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="915c172b-2399-42af-b9ba-5375e21c558a"
+            name="LastTime"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ac781ff7-dd0d-4460-8d50-a4944c0ce668"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FTimer%2Fbin%2FDebug%2FTimer.dll Namespace%3DThreadedTimer Type%3DTimerEventArgs Member%3DLastTime"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="11583e0c-cbfa-4ed3-845e-42afaf0a265e"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3672354a-7232-4565-9ff3-37647c0cc344">
+                    <propertyInstance
+                      Id="648ababb-0953-4f74-9767-3b51be5b65e8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5e49391-15e5-45b4-8a9b-3e9a1c05f4e2">
+                    <propertyInstance
+                      Id="6066e854-ad60-4fda-84cf-0e9de381db60"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ec482ad-816d-4b17-97ea-931f35ef7193">
+                    <propertyInstance
+                      Id="c53898ff-cdb1-4d27-afa2-34076c0cb0ed"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc9b9319-81cb-405e-a320-a78db4881328">
+                    <propertyInstance
+                      Id="cb82051f-246c-4ce5-8281-3734cae300b2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8dbd1ef3-e57e-420a-bbf7-30b9250cfc89">
+                    <propertyInstance
+                      Id="973678a3-1a65-4c6b-857f-df54d9836d72"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2070af52-be6d-4ece-8d92-5f9c052b7c6b">
+                    <propertyInstance
+                      Id="9f3993d0-042c-4349-9958-990c07ec6f77"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1bfb78bd-3ccf-4bba-8a92-da0211d600b1">
+                    <propertyInstance
+                      Id="fe1f8620-145a-4a34-8467-818cbaff840b"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="b5abec4d-81b1-4ac9-9736-9541a8f9eae4"
+                LastKnownName="TimeSpan"
+                LastKnownLocation="Package1_1635.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="8d0b31b2-c078-4566-8daa-deaf8c77d746"
+            name="TimerEventArgs"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="cb449f66-1e84-4dd5-a80e-c88e1a043cab"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FTimer%2Fbin%2FDebug%2FTimer.dll Namespace%3DThreadedTimer Type%3DTimerEventArgs Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DTimeSpan)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="78471b44-d64b-42c3-9039-2b57e5aceb9a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9746afb0-fd8f-4ef2-80fb-7e0393a7f3e3">
+                    <propertyInstance
+                      Id="62043daa-7b1a-4d00-bfcc-7c25ee8159b6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63bde4b8-1a22-46fa-b762-0142e63b6162">
+                    <propertyInstance
+                      Id="4f110653-67a1-4037-b6fc-61a8794a678d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="25ff3b61-a2e7-4610-8f66-52301c874313">
+                    <propertyInstance
+                      Id="3dba826e-2114-4ce3-be9e-bcee334b5195"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="95407248-34b7-4f68-a8dd-b4b8b1268417">
+                    <propertyInstance
+                      Id="5a74cd07-b6c2-451d-965a-44c3e2311dbc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="64459ee3-f393-44f0-b204-5ad0af1b4277">
+                    <propertyInstance
+                      Id="3e6baf29-527a-4448-a89f-7f1788ed5fd9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d3945b4-2424-40ac-8fc4-02b81c7b2dc8">
+                    <propertyInstance
+                      Id="472c9346-64c9-4b27-bdca-950a45c5a0ba"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="90885b67-2dfe-4084-8596-52e66e7cff0a"
+                  name="latest"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="22b5c2e4-7995-4ee5-a658-bf2b7624af31"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FTimer%2Fbin%2FDebug%2FTimer.dll Namespace%3DThreadedTimer Type%3DTimerEventArgs Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DTimeSpan)]) ParameterIdentifier%3Dlatest"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b5abec4d-81b1-4ac9-9736-9541a8f9eae4"
+                      LastKnownName="TimeSpan"
+                      LastKnownLocation="Package1_1635.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
