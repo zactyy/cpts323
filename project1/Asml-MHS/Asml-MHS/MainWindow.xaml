@@ -126,13 +126,20 @@
 
             <Label Content="Targeting System Controls" HorizontalAlignment="Right" Margin="0,21,52,0" VerticalAlignment="Top" Height="26" Width="194" FontSize="14" FontWeight="Bold" FontFamily="Arial"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="128" Margin="503,61,0,0" VerticalAlignment="Top" Width="211"/>
-        <Button x:Name="btnStopMode" Content="Stop Mode" HorizontalAlignment="Left" Margin="535,156,0,0" VerticalAlignment="Top" Width="144" FontFamily="Arial" FontWeight="Bold" Height="23" FontSize="10" Background="#FF2147F3" IsEnabled="False">
+        <Button x:Name="btnStopMode" Content="Stop Mode" HorizontalAlignment="Left" Margin="535,156,0,0" VerticalAlignment="Top" Width="144" FontFamily="Arial" FontWeight="Bold" Height="23" FontSize="10" Click="btnStopMode_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFCDCDCD" Offset="1"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Button.Background>
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
 
-            <Button x:Name="btnStartMode" Content="Start Mode" HorizontalAlignment="Left" Margin="535,128,0,0" VerticalAlignment="Top" Width="144" FontFamily="Arial" FontWeight="Bold" Height="23" FontSize="10" IsEnabled="False">
+            <Button x:Name="btnStartMode" Content="Start Mode" HorizontalAlignment="Left" Margin="535,128,0,0" VerticalAlignment="Top" Width="144" FontFamily="Arial" FontWeight="Bold" Height="23" FontSize="10" Click="btnStartMode_Click">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
