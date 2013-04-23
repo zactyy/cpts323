@@ -258,9 +258,8 @@ namespace OperationsManager
                         else
                         {
                             CurrentTarget = target;
-                            _turret.MoveTo(target.Theta, target.Phi);
-                            _turret.Fire();
-                            NumberMissiles -= 1;
+                            TurretMoveToTarget(target.Theta, target.Phi);
+                            TurretFire();
                             _target_manager.validate(target);
                             CurrentTarget = null;
                         }
