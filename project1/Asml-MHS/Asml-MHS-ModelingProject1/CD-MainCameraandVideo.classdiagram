@@ -1,25 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="1da9511a-ca27-4ade-9108-6b4cd4747192" name="CD-MainCameraandVideo" linkedPackageId="8e865012-a0e3-4b79-99b3-f33f39fde494" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="8b73458b-1f56-4c61-9c9a-37072be8db5c">
-      <profileInstance Id="62f07032-078e-4ee2-ae68-204801282dc8" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="eda7811f-5e93-4944-b01e-9aeb821afb97">
-      <profileInstance Id="93853de5-785b-4607-8da5-6d9edc529702" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="15d4a0f0-c088-42c4-b928-66b46407fe8e">
-      <profileInstance Id="b1d9bce4-98c4-437b-9960-11f042c3b22b" name="CSharpProfile">
-        <elementDefinition Id="8f365836-e2e9-4d49-9ef8-735b7d008030" />
-      </profileInstance>
-      <elementDefinition Id="1b6f6a06-95da-4990-8230-4ccf2fa82de7" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="1da9511a-ca27-4ade-9108-6b4cd4747192" name="CD-MainCameraandVideo" linkedPackageId="8e865012-a0e3-4b79-99b3-f33f39fde494" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="f8fa1880-0010-40ad-9088-0493cb4d061d" name="MainWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -67,21 +47,21 @@
         </appliedStereotypesInternal>
         <elementDefinition Id="fd5d0bdb-7eee-41d3-8077-66eebf821b7c" />
         <targetEnds>
-          <association Id="06949dff-5241-4aaf-b23b-2a5e50abced2" isDerived="false" sourceEndRoleName="MainWindow" targetEndRoleName="Camera" isLeaf="false" isAbstract="false">
-            <classMoniker Id="a72e1bf4-ef76-4636-b41c-e1c39820c8f3" LastKnownName="Camera" />
+          <association Id="1273be36-587f-4407-8cb1-a95f090fa05a" isDerived="false" sourceEndRoleName="MainWindow" targetEndRoleName="DefaultVideo" isLeaf="false" isAbstract="false">
+            <classMoniker Id="cdfc0b86-b88c-4e55-b360-3d21f3c1f1e3" LastKnownName="DefaultVideo" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="c5553096-e140-495c-80eb-569483623445" name="MainWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="462fca14-7298-4607-ac8e-d3888b44e2ae" />
+                <memberEnd Id="0bfe4013-9b06-4344-935d-5994355cd09d" name="MainWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1a3f78f0-0390-4b19-bbd4-81e4be4cc75f" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="6d340453-2c49-450e-8d9f-97d332866bd1" name="Camera" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
-                  <elementDefinition Id="e87f7bef-0d94-41d1-9f72-9e099c34c322" />
+                <memberEnd Id="fc54aeb9-0357-47fc-8b61-90037812da50" name="DefaultVideo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="33c5d451-7d8e-4b15-96d5-bb3175dbd8a3" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="18c19e6e-f064-482f-bbaa-2e3432c77302" />
+            <elementDefinition Id="1bf29d78-f286-46b8-8ca5-1a0dd8b9f3e1" />
           </association>
         </targetEnds>
         <ownedAttributesInternal>
@@ -2740,6 +2720,24 @@
           </stereotypeInstance>
         </appliedStereotypesInternal>
         <elementDefinition Id="0963df58-64a4-4280-b3d1-563fa76efa7f" />
+        <targetEnds>
+          <association Id="2fd2f4cd-378c-4891-80ab-ccee3e3e0f71" isDerived="false" sourceEndRoleName="DefaultVideo" targetEndRoleName="Camera" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a72e1bf4-ef76-4636-b41c-e1c39820c8f3" LastKnownName="Camera" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="148f11a5-b4c3-4b40-bf66-6fb0851bf3f1" name="DefaultVideo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="aaf50b70-8b30-4459-a969-b1a8a108c2f6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f8698620-37d5-4977-a34d-24e47217db88" name="Camera" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="f1a182d4-bcf5-4b04-ac91-9e70dc578392" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f5346b2b-469b-4ac1-a43c-9f10651d40d9" />
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property Id="37f53458-c5b1-4eaf-b990-35aa3e743675" name="IsDisposed" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <referencesInternal>
@@ -3906,24 +3904,6 @@
           </stereotypeInstance>
         </appliedStereotypesInternal>
         <elementDefinition Id="b8aa8c32-2eab-4064-aafd-440cee1f4474" />
-        <targetEnds>
-          <association Id="7330e7f4-90b3-4db6-9aea-daafba9eacff" isDerived="false" sourceEndRoleName="Camera" targetEndRoleName="DefaultVideo" isLeaf="false" isAbstract="false">
-            <classMoniker Id="cdfc0b86-b88c-4e55-b360-3d21f3c1f1e3" LastKnownName="DefaultVideo" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="06fc98ff-d9ae-4402-84f9-493bf94ddd57" name="Camera" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="0d481fb1-45de-40cc-a1ba-d0c1a51c5ea6" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="6cc73b26-d92e-40e3-af0e-dd40d5f95dc5" name="DefaultVideo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
-                  <elementDefinition Id="6677d5a8-db0b-48d1-9d0d-34d369050129" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="bfe4ef6c-a870-481c-8878-b0d082873e22" />
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property Id="d06bc128-90fb-4eb5-97d5-60339dd2abfd" name="IsDisposed" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <referencesInternal>
@@ -4483,5 +4463,25 @@
   </packagedElements>
   <package Id="8e865012-a0e3-4b79-99b3-f33f39fde494" name="Asml-MHS-ModelingProject1">
     <elementDefinition Id="254c6c84-496c-425b-a4a7-8779396807bf" />
+    <profileInstances>
+      <packageHasProfileInstances Id="8b73458b-1f56-4c61-9c9a-37072be8db5c">
+        <profileInstance Id="62f07032-078e-4ee2-ae68-204801282dc8" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="eda7811f-5e93-4944-b01e-9aeb821afb97">
+        <profileInstance Id="93853de5-785b-4607-8da5-6d9edc529702" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="15d4a0f0-c088-42c4-b928-66b46407fe8e">
+        <profileInstance Id="b1d9bce4-98c4-437b-9960-11f042c3b22b" name="CSharpProfile">
+          <elementDefinition Id="8f365836-e2e9-4d49-9ef8-735b7d008030" />
+        </profileInstance>
+        <elementDefinition Id="1b6f6a06-95da-4990-8230-4ccf2fa82de7" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

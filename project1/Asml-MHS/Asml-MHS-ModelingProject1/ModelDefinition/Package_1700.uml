@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="b0fa6ebe-dea3-4342-a8ac-f24d86721656"
   name="Asml_McCallisterHomeSecurity"
@@ -88,20 +88,20 @@
         </generalsInternal>
         <targetEnds>
           <association
-            Id="18c19e6e-f064-482f-bbaa-2e3432c77302"
+            Id="1bf29d78-f286-46b8-8ca5-1a0dd8b9f3e1"
             isDerived="false"
             sourceEndRoleName="MainWindow"
-            targetEndRoleName="Camera"
+            targetEndRoleName="DefaultVideo"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
-              Id="b8aa8c32-2eab-4064-aafd-440cee1f4474"
-              LastKnownName="Camera"
-              LastKnownLocation="Package1_1035.uml" />
+              Id="0963df58-64a4-4280-b3d1-563fa76efa7f"
+              LastKnownName="DefaultVideo"
+              LastKnownLocation="Package_1034.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="462fca14-7298-4607-ac8e-d3888b44e2ae"
+                  Id="1a3f78f0-0390-4b19-bbd4-81e4be4cc75f"
                   name="MainWindow"
                   isLeaf="false"
                   isStatic="false"
@@ -114,8 +114,8 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="e87f7bef-0d94-41d1-9f72-9e099c34c322"
-                  name="Camera"
+                  Id="33c5d451-7d8e-4b15-96d5-bb3175dbd8a3"
+                  name="DefaultVideo"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
