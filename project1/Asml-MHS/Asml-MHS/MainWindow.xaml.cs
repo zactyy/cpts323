@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.IO;
 using System.Text;
 using System.Windows.Threading;
 using System.Threading.Tasks;
@@ -18,6 +19,7 @@ using VideoSys;
 using Microsoft.Win32;
 using System.Reflection;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Drawing.Drawing2D;
 using ThreadedTimer;
 
@@ -272,8 +274,18 @@ namespace Asml_McCallisterHomeSecurity
                 g.Dispose();
             }
             /* set image source to new image*/
+            BitmapImage bmpImage = new BitmapImage();
+            using (MemoryStream mem = new MemoryStream())
+            {
+                image.Save(mem, ImageFormat.Bmp);
+                mem.Position = 0;                
+                bmpImage.BeginInit();
+                bmpImage.StreamSource = mem;
+                bmpImage.CacheOption = BitmapCacheOption.OnLoad;
+                bmpImage.EndInit();
+            }
             imgVideo.Source = null;
-            imgVideo.Source = System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(image.GetHbitmap(), IntPtr.Zero, Int32Rect.Empty, System.Windows.Media.Imaging.BitmapSizeOptions.FromEmptyOptions());
+            imgVideo.Source = bmpImage;
             image.Dispose();
         }
        
