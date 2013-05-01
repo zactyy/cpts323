@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="cd2a4fa6-bf13-4da8-952a-87bc58822bd6" name="MHSComponentDiagram" linkedPackageId="c9cb9069-1398-449e-95e3-cf2ba5019610" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="1b9b1dd6-12d0-44f4-a9a1-f1632f985212">
+      <profileInstance Id="826bd610-f78f-4e34-89af-e9e7265e6715" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="7d8137ca-3710-49dc-bbdc-d5740e28871d">
+      <profileInstance Id="1525d392-6ea2-41b8-96e9-385c8c63e29f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="e77061a8-bb7f-47e3-bc6e-4bfd96dcb5bf">
+      <profileInstance Id="9f041da3-a5c7-4378-959d-3b5309d2c1b2" name="CSharpProfile">
+        <elementDefinition Id="8f365836-e2e9-4d49-9ef8-735b7d008030" />
+      </profileInstance>
+      <elementDefinition Id="1b6f6a06-95da-4990-8230-4ccf2fa82de7" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="d5883995-151e-4bbe-aea5-ddcaf1d13713" name="MissileLauncher" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="959f4e49-3f99-4f66-bcbb-5385b3769e51" />
+        <ownedAttributesInternal>
+          <providedInterface Id="a5a38b86-b36f-40f3-8b90-197f36551206" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="768465a6-a5c2-4211-8aac-c2426f475533" />
+            <type_NamedElement>
+              <interfaceMoniker Id="4c8c4f63-a98b-4de3-8eb8-bba75a074b77" LastKnownName="TurretControl" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="4c8c4f63-a98b-4de3-8eb8-bba75a074b77" name="TurretControl" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bd121035-a20e-4721-85fb-a01d269a2ed1" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="ec8a917b-c4cd-48ac-b2d4-961ac2fea78d" name="OperationsManager" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4b20d8cb-a431-481f-a065-a7c3be62c5fb" />
+        <ownedAttributesInternal>
+          <requiredInterface Id="e2dc320c-e871-4b1e-8c96-ef684bef1ce5" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="730054f9-3412-45f9-a358-81aebf576846" />
+            <suppliersInternal>
+              <dependency Id="b667f15b-962e-49de-8a7d-34be3109d9dc">
+                <providedInterfaceMoniker Id="a5a38b86-b36f-40f3-8b90-197f36551206" LastKnownName="Port1" />
+                <elementDefinition Id="b8afb70e-08d1-45c3-8d9f-5f71c73a5a1d" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="3422d736-73e2-42dd-8113-7b1d10f515b6" LastKnownName="TurrectControl" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface Id="1875c46a-f21e-4aa5-ac74-4d85262a18da" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="c4dbd63b-221c-488e-bc1a-e010296012e6" />
+            <suppliersInternal>
+              <dependency Id="af4446a4-5b37-4a22-9a9e-65eb0f961f9d">
+                <providedInterfaceMoniker Id="8a13528e-dc25-4b70-ba58-8a91cdf0b701" LastKnownName="Port1" />
+                <elementDefinition Id="69529435-cdd4-45c9-bd1b-476b25cc1fff" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="06a83640-67e3-417e-8141-e55915e8eee3" LastKnownName="VideoPluggin" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="3422d736-73e2-42dd-8113-7b1d10f515b6" name="TurrectControl" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a0728c30-5e59-4fbf-833e-18694e2741fb" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="06a83640-67e3-417e-8141-e55915e8eee3" name="VideoPluggin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d505333c-f09b-4d99-8918-c91c79d40347" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="2d3e64d1-83bd-401a-8690-b807979f4658" name="IVideoPluggin" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0d8b5ec2-1d0e-4d14-a369-65f16d11e501" />
+        <ownedAttributesInternal>
+          <providedInterface Id="8a13528e-dc25-4b70-ba58-8a91cdf0b701" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="a4c9bd7a-587c-49bd-bcd6-ba1303fe55ba" />
+            <type_NamedElement>
+              <interfaceMoniker Id="915d214f-01f2-4b1f-bb4f-ca6c8c6dc93b" LastKnownName="VideoPluggin" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface Id="32398af3-7e0c-4c2f-8d3b-c68711ab1117" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="6b0d676a-2aa3-4906-8577-15013b187976" />
+            <suppliersInternal>
+              <dependency Id="ef0d23fb-25dc-4ac7-b126-a6cb8f7a051d">
+                <providedInterfaceMoniker Id="365102f3-334d-4f77-abaf-9ea50bd909e4" LastKnownName="Port1" />
+                <elementDefinition Id="2d89b553-47d8-4cf2-ab61-65be816fe3d8" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="05ac3047-0354-4dc5-8d70-12245548db10" LastKnownName="WebCam" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="2398f61f-094b-40fd-bb71-79717740a113" name="IVideo" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5439ed67-694b-4a53-82ed-185b1972ebfe" />
+        <ownedAttributesInternal>
+          <providedInterface Id="365102f3-334d-4f77-abaf-9ea50bd909e4" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="37bfa3f7-bdaf-4157-884b-0b22d1c4433f" />
+            <type_NamedElement>
+              <interfaceMoniker Id="c777b1b6-678e-461d-8823-158dcebce0de" LastKnownName="WebCam" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="915d214f-01f2-4b1f-bb4f-ca6c8c6dc93b" name="VideoPluggin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bda9ace6-b4e3-4150-80ca-c5d92eb6346b" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="05ac3047-0354-4dc5-8d70-12245548db10" name="WebCam" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0c92aede-ddf5-4e3c-b27d-f2ca3e71d2ea" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="c777b1b6-678e-461d-8823-158dcebce0de" name="WebCam" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="53c1b946-bbf8-46c8-9772-2ad0be5ebff0" />
+      </Interface>
+    </modelContainsNamedElements>
+  </packagedElements>
+  <package Id="c9cb9069-1398-449e-95e3-cf2ba5019610" name="Asml-MHS-ModelingProject1">
+    <elementDefinition Id="254c6c84-496c-425b-a4a7-8779396807bf" />
+  </package>
+</componentModel>
