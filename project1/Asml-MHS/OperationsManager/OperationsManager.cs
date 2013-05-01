@@ -354,22 +354,22 @@ namespace OperationsManager
 
         public void TurretMoveLeft()
         {
-            _turret.MoveBy(0,-10);           
+            _turret.MoveBy(0,-5);           
         }
 
         public void TurretMoveRight()
         {
-            _turret.MoveBy(0, 10);
+            _turret.MoveBy(0, 5);
         }
 
         public void TurretMoveUp()
         {
-            _turret.MoveBy(10, 0);            
+            _turret.MoveBy(5, 0);            
         }
 
         public void TurretMoveDown()
         {
-            _turret.MoveBy(-10, 0);           
+            _turret.MoveBy(-5, 0);           
         }
 
         public void TurretFire()
