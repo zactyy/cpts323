@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="b76f704c-6b7c-4a1d-bf91-7ec94ad96f54"
+  name="ASMLEngineSdk"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="12cd79c3-d18d-4cc8-ba05-acc470cd3f4f"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DASMLEngineSdk"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="303431df-abf5-41a7-aed6-3f344542cdaa"
+        name="IMissileLauncher"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="71264850-bad4-4bcf-ae3f-0cde0c56e37e"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2Flib%2FASMLEngineSdk.dll Namespace%3DASMLEngineSdk Type%3DIMissileLauncher"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d7a9fe1d-5cfe-45cf-b46a-0d8c9673b493"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="06868880-2853-4662-96e9-9e5f17ac81b7">
+                <propertyInstance
+                  Id="19b676d6-b52b-43e1-b7b9-bc64860ba1ff"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bf262b5f-a511-4928-b4ab-dd21921d9a9d">
+                <propertyInstance
+                  Id="554c9d3a-7634-4574-9ea0-16162fbc5658"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0b9882a8-37c6-4766-b619-9d722fad7363">
+                <propertyInstance
+                  Id="4dfef3ec-ceaf-47c1-b508-41e5b46f1ae8"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f8f25fe6-94e2-40fd-9ce7-7a60d887bb78">
+                <propertyInstance
+                  Id="76b6e7fa-965c-4347-b1c6-d3a535b9583b"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="406ccfb1-332d-4868-977b-7202148d2dfa"
+        name="IVideo"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="2ccb3c83-67df-41a5-9e4b-b0975d989a89"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2Flib%2FASMLEngineSdk.dll Namespace%3DASMLEngineSdk Type%3DIVideo"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4550aa71-bf44-4621-9348-0b3aa697fdc8"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="40d426d0-4fa5-4276-bb8c-bac86acd7f5b">
+                <propertyInstance
+                  Id="644f26f5-56a3-4dcd-b005-85b4b825aa8e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4a4eced2-48a7-4b74-9d89-e937c1e54994">
+                <propertyInstance
+                  Id="78c0e56a-95ad-4200-810d-8659c9176f60"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cf0057fb-ab69-49a9-8450-ed955162adfb">
+                <propertyInstance
+                  Id="41391e81-da1d-4aa9-926e-988b58f47974"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="63966d5f-4a70-4886-9aab-c51f33dc10ab">
+                <propertyInstance
+                  Id="051f55d0-f343-4ea1-9afc-76d869df88cd"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

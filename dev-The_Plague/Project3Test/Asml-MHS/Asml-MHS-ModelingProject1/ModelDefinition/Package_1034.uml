@@ -1,0 +1,1637 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="fed2fb85-4242-4669-b3f4-2af49896dc45"
+  name="VideoSys"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="d71b15ae-9b86-402d-943b-95da80b82efe"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DVideoSys"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="43d481aa-1aa8-4185-b977-21e17e990469"
+        name="IVideoPlugin"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="4a27c0a4-d954-4621-84e2-d5502895e395"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DIVideoPlugin"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1b4f088f-5d07-4a40-b02c-bbf1198cd9f2"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f64c5ad7-6a52-4dc5-af99-d92d05e7e74c">
+                <propertyInstance
+                  Id="6fd4a20c-b174-47a9-a25f-76d731e50eab"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="405da211-b136-4b8a-ab09-153a592b24cb">
+                <propertyInstance
+                  Id="c222c1c3-9afa-417f-9faa-e9f136558f48"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d9a99bc2-7693-486e-a994-4ee9600c20de">
+                <propertyInstance
+                  Id="d37b44d8-378f-4188-8036-dbe219649b7f"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d4a94629-b527-4da3-8f99-ec1c0f3dac79">
+                <propertyInstance
+                  Id="8f437959-e2b6-4e32-b64b-8a3533134a91"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0963df58-64a4-4280-b3d1-563fa76efa7f"
+        name="DefaultVideo"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="c46279c2-4388-4264-a37f-53f7307b8a13"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DDefaultVideo"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="35313aab-9530-4468-b34b-f937edbac755"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2c84026d-d8a9-4737-86af-472a48a48d52">
+                <propertyInstance
+                  Id="8c222cbd-abf2-4873-a3fc-c31411e26597"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2978e847-1740-4cd4-8938-4835efbce185">
+                <propertyInstance
+                  Id="8c1f1fa0-3c2d-4cac-942b-3e39f81b6074"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="671c730d-6f06-4d7d-a147-8574b10d9749">
+                <propertyInstance
+                  Id="3fb9ab43-5b29-4f57-aed3-15dd78707aee"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="57da25eb-15b7-4de0-bc19-32a06a7143b4">
+                <propertyInstance
+                  Id="32cacc0e-cd33-4081-80cc-eb7590ee2728"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d13eefbf-8dcc-4029-8136-eda4615c38ed">
+                <propertyInstance
+                  Id="47ee57e6-6957-49a1-82d2-96f294f91a49"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="290617ef-cd91-40f8-8d4e-7502b99cf727">
+            <interfaceMoniker
+              Id="e7ff2401-2c9a-4699-bfc7-161605420286"
+              LastKnownName="IDisposable"
+              LastKnownLocation="Package1_1635.uml" />
+          </interfaceRealization>
+          <interfaceRealization
+            Id="92e587b2-f698-40b3-b7ff-8d5136f2af52">
+            <interfaceMoniker
+              Id="43d481aa-1aa8-4185-b977-21e17e990469"
+              LastKnownName="IVideoPlugin"
+              LastKnownLocation="Package_1034.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="f5346b2b-469b-4ac1-a43c-9f10651d40d9"
+            isDerived="false"
+            sourceEndRoleName="DefaultVideo"
+            targetEndRoleName="Camera"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b8aa8c32-2eab-4064-aafd-440cee1f4474"
+              LastKnownName="Camera"
+              LastKnownLocation="Package1_1035.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aaf50b70-8b30-4459-a969-b1a8a108c2f6"
+                  name="DefaultVideo"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f1a182d4-bcf5-4b04-ac91-9e70dc578392"
+                  name="Camera"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="39e9f35e-beec-4390-b2ff-3f2ea63a6f24"
+            name="IsDisposed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="281bffaf-2b1a-4c7f-ad57-88eba242333a"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DDefaultVideo Member%3DIsDisposed"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5a7ecebd-e569-4e02-8adf-5790b72ffc59"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f44fa08b-d55f-4082-9784-f6045ee893ce">
+                    <propertyInstance
+                      Id="bf46352d-8079-47be-90d0-0ac436d18e1e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="242fb618-995e-4dc3-865e-2d66b53c016d">
+                    <propertyInstance
+                      Id="4ac6b190-1fcf-41a9-81e6-7a260ed631ed"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="55652bbe-e756-4d7b-babb-46e690898cc2">
+                    <propertyInstance
+                      Id="46e1607f-c3b2-4051-8644-3883485a1945"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04da4b26-6fdc-4ee9-a608-13143591d576">
+                    <propertyInstance
+                      Id="882baee2-cb65-4931-b3b9-cce58fc61963"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c558c287-b05d-482b-a773-f5ecd3f86ce2">
+                    <propertyInstance
+                      Id="b325da8f-9759-4ee1-ac3c-3e28917d05f3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea4cf5f3-9bc7-4d68-bfee-e8caebcaed06">
+                    <propertyInstance
+                      Id="dfbafd27-5011-4f71-8a47-3c1d4c1f3420"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a5736ea-ba2d-494e-9ab0-e1670eb11b00">
+                    <propertyInstance
+                      Id="77263085-174f-4387-ab7f-f974e3b01568"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c0420b53-5f9a-4331-9279-5d5c38c5863e"
+            name="Framerate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="7107c095-7ed9-48d0-a222-484e3497c39f"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DDefaultVideo Member%3DFramerate"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="84c93399-116d-46f4-8fb3-f1c1c6002d45"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8e5d09a-5399-44c3-8753-2ca6ff4649f7">
+                    <propertyInstance
+                      Id="c54c078e-ae23-42d4-8ca4-505676dfdcce"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4a317045-0fa7-4876-bb13-d78d5dd10442">
+                    <propertyInstance
+                      Id="fe5493ae-f377-4ec2-becf-4d6b3c6cc0e4"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a059b0a-6368-4245-9377-63c2a56d883f">
+                    <propertyInstance
+                      Id="d78c04ca-af85-4afb-af4d-e4809c15d56c"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="282adbbb-4161-4e1c-bebe-1052c10af815">
+                    <propertyInstance
+                      Id="7d3c4277-2b7f-402a-bb87-89001e54ff53"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4ae44481-c723-4db4-a817-fefc03f08cbe">
+                    <propertyInstance
+                      Id="7be6d304-d161-409e-b977-1afe07239d21"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="411bbde4-725e-47bb-b965-335b340acdf9">
+                    <propertyInstance
+                      Id="56acbcb5-8aaa-4e8b-8d24-00196c8b19ae"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3767e179-2458-433c-9176-960505d5e1d0">
+                    <propertyInstance
+                      Id="57d6c9dc-2bef-4395-813a-b87f2d41460a"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f8202c41-8d0d-4dd7-8231-280c1566acb9"
+            name="Height"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d9010f23-f159-44ed-b1ef-f8b76681ed9c"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DDefaultVideo Member%3DHeight"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f7eb44e7-938d-4a20-938a-21a06340aaef"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40b2eb07-72aa-4cdd-92f7-6834a8d9b1c7">
+                    <propertyInstance
+                      Id="3deab24b-f3e3-4da4-863c-e8d1492d6bbf"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c8bcec3-f5d9-4a02-a953-d855bb314f3d">
+                    <propertyInstance
+                      Id="e1b614b9-f48b-4f46-af93-ef0e1c002a0c"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="59bbfd10-1886-4d53-a48f-6d51c279a06d">
+                    <propertyInstance
+                      Id="03584c55-5628-4c95-b2ef-7b6fd574ceb4"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d4ec4b9-62bc-42f7-982a-e1de1eff40f3">
+                    <propertyInstance
+                      Id="3df406fc-3000-4003-86d6-2c016ecc2137"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="65b8bee8-2b08-47b8-8794-8c998968bb01">
+                    <propertyInstance
+                      Id="67c89a9e-91f7-4e1d-996e-08edad8830e9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0818f1d1-f244-4b16-9856-906500673569">
+                    <propertyInstance
+                      Id="17261c1e-257c-4de3-ba80-3ec5d8e6f2d1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="424d4822-11fd-461a-9f1d-c5fd5652fee0">
+                    <propertyInstance
+                      Id="7e2cc417-8555-4aa9-815d-acae2299b450"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c94f4136-2abb-4b7f-b684-275119767c7d"
+            name="Width"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b89df045-022e-4332-9d49-d866587b983f"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DDefaultVideo Member%3DWidth"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b504dd14-2ad2-42f4-8302-c35201ccfba5"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22d029e0-987f-4339-be45-49d0979faaa7">
+                    <propertyInstance
+                      Id="508e31f9-839d-49a3-b7c7-bd7d39b52502"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="585ba8ce-c142-49b5-8c4f-a0c1b21a2123">
+                    <propertyInstance
+                      Id="0ef24fc2-d4df-4491-8403-456bd3cb8dd3"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="109f77e3-a9c6-46ed-be66-9f091ce8bc7b">
+                    <propertyInstance
+                      Id="85128bf0-bf4e-4f11-a752-3b6570cf3fce"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2fbde90-616a-4a93-bac6-d1c60c864c68">
+                    <propertyInstance
+                      Id="937197bc-64b6-4ed9-9489-2e7117f2f804"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cd95553e-f0ee-487b-ac6e-92a8800c099d">
+                    <propertyInstance
+                      Id="74a26868-2256-4fe8-ba9b-e19486d57c44"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="566b3601-4cbc-466f-acd0-f357246c34f3">
+                    <propertyInstance
+                      Id="0b891905-1663-4fc0-85f5-bfa905cd0b41"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc189358-a717-4575-8139-d0641b9f00f7">
+                    <propertyInstance
+                      Id="ea789ed2-3ffe-4422-aab2-1e0d85ebbd2b"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2e6e1887-d38c-4f4c-ba07-825fec102996"
+            name="_webcamera"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="05aaf50b-f492-4754-a7cf-7e499d0e4676"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DDefaultVideo Member%3D_webcamera"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e797e7fc-e969-4e24-bab5-70fb95376996"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ae7a3ec-c340-4388-8c5d-caf38f77585b">
+                    <propertyInstance
+                      Id="8ea10bc1-96e6-473c-af29-07f0997da922"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1693ed20-5532-4adb-aa6b-3a16d3fe5299">
+                    <propertyInstance
+                      Id="6e4e59cd-c207-4671-8b81-e25dc118553c"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e90e9c2-c24d-46d4-bbc7-af2cff17c9e5">
+                    <propertyInstance
+                      Id="897be245-9253-4d30-a1e2-bcea8879070e"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2d209b85-6051-4e31-afee-3e6b57dbc2b5">
+                    <propertyInstance
+                      Id="76433ed1-10cf-4e6d-adf1-075644f035b1"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f6035e6e-0dee-45b4-aad0-50af6ee639f2">
+                    <propertyInstance
+                      Id="de9b9fc0-3ef1-4b81-bc43-2816a50f6b8e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="b8aa8c32-2eab-4064-aafd-440cee1f4474"
+                LastKnownName="Camera"
+                LastKnownLocation="Package1_1035.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="66d67a0a-146a-4c0a-a498-08b45f453998"
+            name="_video_timer"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5cce699c-ff10-49c1-9a46-2d86a4406327"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DDefaultVideo Member%3D_video_timer"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d10cc3b7-61bd-4005-a6d6-0dfff071cf62"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08abfed8-7a3e-4d38-bce3-84509a06c642">
+                    <propertyInstance
+                      Id="1675799e-9d87-4981-948e-ef46abe48276"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2bd72a90-287d-42ad-93b5-c5d513fe2427">
+                    <propertyInstance
+                      Id="d04d65ce-1e7b-4867-aa91-d57466135704"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a3bbcbbf-92c8-4249-8ddc-9c785f305e27">
+                    <propertyInstance
+                      Id="f1c90fcf-3048-4340-bd4e-e32f2cbc62c4"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ea57e72-3555-4165-8162-cd08928b8a4b">
+                    <propertyInstance
+                      Id="be256e97-8f1c-48fc-b12b-68d2a48bede8"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84ed42d0-f9e5-4f95-aba4-a3ddd6d891bc">
+                    <propertyInstance
+                      Id="7ffd5739-556c-4de3-84a7-2aeac7fb3eb2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="d10cef11-2395-40a1-85ea-7b87f4913fb4"
+                LastKnownName="DispatcherTimer"
+                LastKnownLocation="Package2_1035.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="fb0e9f54-04ba-4857-845c-7f9f908be684"
+            name="_image"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="17b1f0f3-47f8-41c1-acc5-d5db4acebff9"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DDefaultVideo Member%3D_image"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7d660774-7f32-4bac-9ba1-64c7bd69c49d"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb499db8-aaa3-4f92-babb-59328a5a4ea3">
+                    <propertyInstance
+                      Id="35373c13-4de6-40ab-9069-1a6d8b00c864"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="788f6e05-71a0-4786-bdbd-fc2c3a6989be">
+                    <propertyInstance
+                      Id="90107ed0-3b0f-4337-bdc6-8c39c3299daf"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c82e9e9c-a0e9-45ce-a50e-cb74a2732412">
+                    <propertyInstance
+                      Id="ede01c39-3845-40c8-90e8-e156b750b0b8"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c0ec917-4610-40f8-8b46-63ce1ec5a740">
+                    <propertyInstance
+                      Id="b73bec02-3c23-42e8-a79c-8d91f8aa7e7c"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18f189a4-a4aa-4ca2-ba6a-c3056db33214">
+                    <propertyInstance
+                      Id="0698f13c-cbd9-4829-997c-6079274921c4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="51739f6a-eac3-4e59-87ff-ea2a37552f96"
+                LastKnownName="Image"
+                LastKnownLocation="Package_1035.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="806d2fcc-ea9e-4a43-aae9-cafb758709d7"
+            name="NewImage"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1f7e8dea-9e41-4837-96dc-f549cdfd6ba7"
+                handle="viewcode://./CodeSchema_Event?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DDefaultVideo Member%3DNewImage"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="dea452bf-51bc-4bda-a110-9207e3af2d25"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="091c7b29-b86a-4c61-aff5-8649bf07e956">
+                    <propertyInstance
+                      Id="58a81a5a-8ae5-4a44-a75c-86b3ba7adbfc"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="53b62719-5ca7-4694-978b-da143c911342">
+                    <propertyInstance
+                      Id="40e3593c-6b32-4819-a7a1-91f95505094d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e3e0011-5104-43f8-a197-bd9cab15709d">
+                    <propertyInstance
+                      Id="fa22955f-1c19-4462-be8a-99eee47bab7c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="61338f2d-e740-4d79-aaac-a6363f6491c7">
+                    <propertyInstance
+                      Id="381672f3-7fc9-46e4-9d71-7831a6c6edd7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="573036ca-9d46-4a44-ace9-b7766785244a">
+                    <propertyInstance
+                      Id="d3e12a12-5020-4982-95a6-729da133c91d"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="2578dc19-57e5-433e-86d4-bd74aeaaf6c7"
+                LastKnownName="EventHandler"
+                LastKnownLocation="Package1_1635.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="866ca840-5f1a-4629-9cc0-e86bcb768da7"
+            name="_framerate"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="34dc8a5a-dece-4ae5-b45b-c90a9f896072"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DDefaultVideo Member%3D_framerate"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1b52f036-8884-46d6-b889-1ecfa6141a66"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8bcd3d9-138c-418a-969d-f147a96744ee">
+                    <propertyInstance
+                      Id="0e8bc036-ed20-4639-9c2d-c48b06f82e82"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23326221-ad3a-41cd-aa97-620bdd87048e">
+                    <propertyInstance
+                      Id="247b5c76-1e70-445d-be29-2c77ffbc13bd"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c668f6c-e154-44b8-b5f2-82f08ea12e18">
+                    <propertyInstance
+                      Id="13557099-a8a5-4747-8979-278f662d8c3f"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a38cf24-c653-4a42-bf9a-4c9a8d02f779">
+                    <propertyInstance
+                      Id="b7f63348-2b78-4b55-8fda-925630bc187f"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a86c6af-f0f9-4704-9b11-677e0ac664a6">
+                    <propertyInstance
+                      Id="a8930b6a-0de3-4bf3-93e6-fe7bc1c900f2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="b5abec4d-81b1-4ac9-9736-9541a8f9eae4"
+                LastKnownName="TimeSpan"
+                LastKnownLocation="Package1_1635.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1bebd3ef-94af-41f8-be75-30725aacb081"
+            name="_lock"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="9b49d284-1c36-4902-add2-3c560a3bb39d"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DDefaultVideo Member%3D_lock"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e121feec-aa5b-436f-ba8f-d5060c547777"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11dbd7d6-4b2a-4f75-9090-27f22534b805">
+                    <propertyInstance
+                      Id="7711fcd0-eeb5-4f35-a4cf-e40798d03740"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4571cafe-fd8d-4097-8fb8-018ec3b2802e">
+                    <propertyInstance
+                      Id="b567d7a8-4849-424e-b48c-efe7f6dec90c"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="776d8f74-9775-4e75-89a7-2bf467f62c94">
+                    <propertyInstance
+                      Id="6ca13633-3c39-4ad9-9983-78360439f14f"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="052e358d-ac96-48d6-9147-fc86f9740196">
+                    <propertyInstance
+                      Id="16bc337c-3926-45cb-bdb3-31bc727c874d"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a0195ca-8760-4dd8-86ff-8965a0505db5">
+                    <propertyInstance
+                      Id="dd6eab4a-6abb-4e93-b9d3-c0bf6c1633dd"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="054ee506-7c81-420e-93e0-f29749d89a48"
+                LastKnownName="Object"
+                LastKnownLocation="Package1_1635.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1ddc46d3-f1db-4dae-8735-90624d80c50c"
+            name="_height"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c1f0de36-350d-4a04-ac91-9857923d7de5"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DDefaultVideo Member%3D_height"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="85b09154-7cda-4258-8c5b-1ca9a2d232b5"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f4ebdc31-b857-4e1a-8a5f-f51afd659ccf">
+                    <propertyInstance
+                      Id="16dfa4cd-c7ea-4060-88ca-c8a179a58d17"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae5afed1-13dd-417f-a0ba-0c824ba74268">
+                    <propertyInstance
+                      Id="0dd7efcc-8b3d-4072-b72b-875a2048d25c"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="612d48d4-dc59-4030-acbb-2c761cd1936c">
+                    <propertyInstance
+                      Id="59d9c09c-1ea1-40e6-b0dc-c67311a56bab"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="244d1ce5-78e8-4a65-b883-e77d86537b4c">
+                    <propertyInstance
+                      Id="d64083e8-2206-46a4-8a89-c1ea510ab26b"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="387b9fd1-02c8-4a67-a798-04abdb1086c6">
+                    <propertyInstance
+                      Id="86106f34-839c-4b32-94c2-74ebcfd734ab"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9dca6e4a-0f5f-4f94-87db-b3f758cd6033"
+            name="_width"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5ad5dfd2-64f3-4418-b565-79b098974db0"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DDefaultVideo Member%3D_width"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b1f650a9-31c4-437a-bc39-44e28fa26d5c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a890bfdf-42e1-404b-bec5-498c4df1696f">
+                    <propertyInstance
+                      Id="8ddbb4f7-b86f-47e8-93cb-c717dbcdda21"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="833e2f40-63a7-424b-ad8a-3a4a901d8179">
+                    <propertyInstance
+                      Id="8adb1abb-2e6e-4f01-8cb9-07396d3be374"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb914ad9-3510-4ce9-83aa-f420a9b5e09f">
+                    <propertyInstance
+                      Id="1c1cb80f-92dd-4a77-9422-8286aa394232"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e22cfc58-b288-41d8-9bd3-c5972cf136da">
+                    <propertyInstance
+                      Id="0087aec1-056d-4ba0-90c8-88920437c2d9"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cad2b6a7-66da-419f-b1ac-c978c2498023">
+                    <propertyInstance
+                      Id="eeb9e1b2-e6c0-4de2-b1a2-fdceff4f091b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="97c68973-d71d-4a37-a5f1-c8715cc558ab"
+            name="DefaultVideo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c6405c3e-e666-4c95-8b8c-53a9b5f09970"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DDefaultVideo Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="345e0419-d0db-4e80-8296-a422422bad41"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9fa3c328-8b2c-4d89-b7df-bf0e12eadf0d">
+                    <propertyInstance
+                      Id="d9f43038-87fa-4025-b644-7705d3a367f2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63204e44-ff70-4c05-8cba-07d7068064c9">
+                    <propertyInstance
+                      Id="db36637e-c462-4ae2-91f6-f13caa7ef6f7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="899d2a50-0925-4964-8110-840758e4a6f0">
+                    <propertyInstance
+                      Id="daff2a87-5855-4c75-8813-1ea564a366ab"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="43722624-7921-4139-9f7b-6e87d970b583">
+                    <propertyInstance
+                      Id="aa8e56ea-6234-43eb-b7e0-8dbb42cbc8c1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18b892d3-978a-496c-b75e-ffdd231e2df3">
+                    <propertyInstance
+                      Id="d3510a73-bff2-4b28-8c03-bf9d9465c670"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c77ad1d6-53a4-4aa9-85dc-56211c923a3d">
+                    <propertyInstance
+                      Id="06f5a6b8-d426-418f-b5db-e8938c38f744"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="43a77f73-6167-40de-a0db-078a10a6be47"
+            name="~DefaultVideo"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7112b820-a01d-488e-b156-b78cef162072"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DDefaultVideo Member%3DFinalize"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b2f303cf-daed-4a5d-9150-1486735abf49"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc860bb3-8d1e-4a7a-9526-7eabc243e6c2">
+                    <propertyInstance
+                      Id="f54fcc3b-ab9a-4632-a022-10ea27e1fa49"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b4d515d-79be-4b2c-b23a-687472ab4d20">
+                    <propertyInstance
+                      Id="4df3d61b-4bea-4d88-95b1-a8fec74aa723"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aff60db2-bd13-4706-a644-8e710aee1290">
+                    <propertyInstance
+                      Id="d2909408-803e-4ab3-a1e8-153103ebc918"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae7e9eec-5e5f-4942-8b58-224298ecc543">
+                    <propertyInstance
+                      Id="d4783035-35a9-41ec-abd8-f27c08c13086"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16c63fd4-d66d-4762-a0f2-a381307003ba">
+                    <propertyInstance
+                      Id="7f8b4487-47fd-46c0-a3cf-a066f4f5adea"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="13e38b63-3948-4010-a6ad-05e9abff9754">
+                    <propertyInstance
+                      Id="d2747e79-7eed-4384-919c-e526667ba39a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="fefb24c1-702d-4472-96b5-6aefb8fbe997"
+            name="Dispose"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b2ca5221-d85e-4d84-89a4-1354a999c8fc"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DDefaultVideo Member%3D(Name%3DDispose OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ca6c8721-cbc3-48dd-8625-a457ca8dc2d8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="14adca1f-a0bc-4f51-bdd7-61168660e061">
+                    <propertyInstance
+                      Id="876b9814-e509-4cf2-a253-2b1e8d1450fa"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f0ce06f9-aa26-4552-95da-71da778060a8">
+                    <propertyInstance
+                      Id="ebf345c9-528e-4a08-9f0a-b75d411865c2"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c23dadf3-f23d-4fa7-ab39-929ddf4d00f0">
+                    <propertyInstance
+                      Id="d510bb46-f8ed-4c53-b8c8-b90c07d53c9e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef6e3b96-e981-4ad7-ae0b-d6dd14daa488">
+                    <propertyInstance
+                      Id="824c499b-7bf9-4f63-957c-39c18ae4abfb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dfd953ed-f8d8-4554-9bd1-389a707726f3">
+                    <propertyInstance
+                      Id="7302fb20-2e32-424a-b310-9901a755f32c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2364a722-d2d4-454d-a4c0-de789ab243dc">
+                    <propertyInstance
+                      Id="795fbbaf-7777-4aea-9066-3f0ff99a6f6f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2141d739-6746-49a4-b4b9-cd9534cded92"
+                  name="cleanupOthers"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1a52da5e-4c7d-496d-8e97-b7c52e099cf8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DDefaultVideo Member%3D(Name%3DDispose OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3DcleanupOthers"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1723f9f3-7493-4967-ac45-d3838755df93"
+            name="Dispose"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d1c39199-5148-4160-8d59-b25daf543c4f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DDefaultVideo Member%3DDispose"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="21035871-12ea-45bd-9445-e38af9aa90a8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="147c3e30-18e4-4c6d-a12d-89d7ece12967">
+                    <propertyInstance
+                      Id="417f5968-123f-4eb3-9929-02269f677cb8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a99e1fd-e0ad-4af7-9b43-80525d763591">
+                    <propertyInstance
+                      Id="3ff13fe4-cd5c-4572-ac18-612c1434bc93"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf998f24-69b7-4824-867c-e49b33dcd0a3">
+                    <propertyInstance
+                      Id="09edf92d-705e-423d-a1c7-81d2a1bc9fab"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b286b9e3-e029-4039-b8c7-045f79c4a93d">
+                    <propertyInstance
+                      Id="8d6949d6-7b81-48bb-affd-51c91ffd33f3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a73cac7f-b963-472c-b2d7-9a2be3c89455">
+                    <propertyInstance
+                      Id="a9473c2b-7395-4149-af5a-5d6c6cfd35fd"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be85ac43-0a6d-4c79-aa14-afa014329ec4">
+                    <propertyInstance
+                      Id="d3f1c0bc-db30-4110-90da-258bd75531f8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="0782305b-988a-4a17-b500-077abd6caa38"
+            name="GetImage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8d42ccf2-24c4-48f6-bca6-0aed9e66cf94"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DDefaultVideo Member%3DGetImage"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="47a677a3-8ffb-4fee-9353-9228c30b8093"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76348733-b796-470e-86a2-40f3c19444de">
+                    <propertyInstance
+                      Id="596e203d-18ed-413b-a5b7-9b8798948767"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="672037c0-ffb0-427e-9b0b-6c19500f1d20">
+                    <propertyInstance
+                      Id="503c69f0-a4c3-48c2-b359-0d80a7919ab9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a858d820-1103-437a-a15c-363659728cb6">
+                    <propertyInstance
+                      Id="dcdb3cd8-1866-4b52-bd15-30984c30ad0a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d926a003-9a8e-4877-983a-409471ed4669">
+                    <propertyInstance
+                      Id="1ee80f1c-bf7b-4847-91a2-b0b7dfca423f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df3b9b9d-c42a-4eda-8c2b-d71ab088173e">
+                    <propertyInstance
+                      Id="fd8fc70e-8563-42b7-8aca-823eadd8bf09"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ceb2e2a4-9780-45ac-a323-729bed341817">
+                    <propertyInstance
+                      Id="b3135108-368d-4c97-a610-46d73331c829"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e649a6d6-443b-412a-950b-694f85e4bd21"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="77f638c2-e907-4f24-8492-c56a7b9ba77f"
+                      LastKnownName="Bitmap"
+                      LastKnownLocation="Package_1035.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fbef70d5-a581-46d1-ad3c-f4a589e0f410"
+            name="Start"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="87a9a3b7-8225-44a1-8d6f-a002e918b586"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DDefaultVideo Member%3DStart"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a892c60c-4e9c-4843-9d1f-79747868af1b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f1c11019-284a-477b-ac9b-c9843c0a6466">
+                    <propertyInstance
+                      Id="04be9e7c-56c6-4af4-b614-56842a0b2c4f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d6019447-2637-4ee3-8bfe-79220c3ca109">
+                    <propertyInstance
+                      Id="ac5f4905-3e15-4ebf-88bb-1fa152719837"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5b3d67a3-c0bc-424b-8c8b-dc8496ceac65">
+                    <propertyInstance
+                      Id="76c33073-57cf-46a9-b7f8-7de65c678b42"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae1a0f12-6e73-4d71-83ce-ff952fa27004">
+                    <propertyInstance
+                      Id="1075ce0b-82f0-4b5a-924f-548126e10844"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="51e29106-5356-4205-acdc-65cdd4849372">
+                    <propertyInstance
+                      Id="c0cd83c7-4187-46b5-ba15-f7555bf85099"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="135ae9ed-20de-45ab-824c-56b9949f0229">
+                    <propertyInstance
+                      Id="99c9466f-5955-4b6c-99ea-72f615066837"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="7fb6b14b-663b-4868-810d-89506800b9ef"
+            name="Stop"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9b22f9d8-7a50-4254-a584-844e542c498b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DDefaultVideo Member%3DStop"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="11c908aa-1a94-47ee-9729-ea741626255f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b063333-3d20-48ce-ad59-1d627b3ee6b2">
+                    <propertyInstance
+                      Id="0ea3bb31-2395-40ea-ba15-114fffbe0f09"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c95eec8d-d031-4f29-b95b-efcf293ac845">
+                    <propertyInstance
+                      Id="55947943-7b80-4f42-8b0d-cedfb05f7c25"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e224a6b-316a-48fc-8a7e-41a6368364b6">
+                    <propertyInstance
+                      Id="2c6a49ce-4b38-4632-b456-c33e2fee19f2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="156d6034-75b3-40d0-9e93-f9b85dc622e5">
+                    <propertyInstance
+                      Id="066a60eb-a5fd-4e62-86d4-c56cfea74f61"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d40c132-a8c4-4d6a-af4e-055ed130e068">
+                    <propertyInstance
+                      Id="6030c249-bf71-42af-837c-113841992971"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d72efc9d-ad31-4408-aeca-7010c7cf5aa1">
+                    <propertyInstance
+                      Id="a652c746-1426-43f4-a74f-c3547ef7196a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="22685bb2-c06f-4a1e-9b94-c976b29da0f6"
+            name="CollectImage"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9d3b99ef-d8a2-4d3e-85d0-3ca9238eebc1"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DDefaultVideo Member%3D(Name%3DCollectImage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="182ca54d-9aa0-4227-b501-63ec4e75ffe7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="20ec8524-0c3d-4e5f-a849-b241ec0ee4e4">
+                    <propertyInstance
+                      Id="1ea451be-9eaa-46a4-9114-df430e16283d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10a47dc7-118b-4e30-b920-4d393903c6b9">
+                    <propertyInstance
+                      Id="f0ecc5f8-3e0e-4a02-8009-2c6e3ab80be3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6174a5c5-41c3-4281-b95b-a1e8f8ca6626">
+                    <propertyInstance
+                      Id="c43e9c0a-29f0-4032-93ad-e83761a4adac"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10f434d6-76b5-43b4-b3d2-0fa8bb0adf45">
+                    <propertyInstance
+                      Id="43adc74c-8c14-4f2a-96bc-1b37043fb13b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44f3c550-eac2-444e-8b96-d297328bbfea">
+                    <propertyInstance
+                      Id="01f92e7d-9a9b-445d-a98a-a1f22587ffa0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="165eeca4-8e2d-4796-8b13-51c083d47095">
+                    <propertyInstance
+                      Id="8587c59f-3f83-4374-a02b-4b5486ca8de9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9e775e22-ea5a-4dd8-a1f5-3de2861002bb"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="cdaa0381-ea66-433a-9ca3-27a80ed60bc1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DDefaultVideo Member%3D(Name%3DCollectImage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="054ee506-7c81-420e-93e0-f29749d89a48"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1635.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0afc65f2-d9be-4169-a2b2-b25f8562395b"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ca7e312a-f82a-4c99-baa2-fc15f1c83a9d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fjen%2FDocuments%2FGitHub%2Fcpts323%2Fproject1%2FAsml-MHS%2FVideo%2Fbin%2FDebug%2FVideo.dll Namespace%3DVideoSys Type%3DDefaultVideo Member%3D(Name%3DCollectImage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="39f96b7f-0336-478e-acf7-33898c238d32"
+                      LastKnownName="EventArgs"
+                      LastKnownLocation="Package1_1635.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="55bdacdc-7a16-47bf-90c9-b8456dab1583" name="AsmlUseCaseDiagram" linkedPackageId="74158a8b-0da0-4150-9c10-b829bafc3d63" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="2d9c8981-5011-40e0-b1f1-cdfb25a47449">
+      <profileInstance Id="90aea1df-4580-4c48-92c9-596fd1816e71" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="579eed0e-bec4-4512-9025-ce0ef747e36f">
+      <profileInstance Id="db2fb657-08ec-4f7d-a65c-05297f0ca2b9" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="683cf03a-337a-48d1-ab9b-5575793a62ea" name="Brian the Judge" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ecc4394c-93ae-43b1-9bdb-721c78d2a13d" />
+        <targetEnds>
+          <association Id="21eeaeb0-546c-4dbb-a681-2a09bf4375e9" isDerived="false" sourceEndRoleName="Brian the Judge" targetEndRoleName="Select Target File" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f451a938-be9e-4840-a8de-cecaea583877" LastKnownName="Select Target File" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cb659ef2-8611-4b26-abc8-0275c0af9ff9" name="Brian the Judge" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8443cc87-03b6-41be-af3a-68fc7107be89" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="35f57960-d000-42f3-a08a-ee330d73f067" name="Select Target File" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="88b352eb-79fa-4250-bba1-77d72e40d826" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="85745ef0-a000-43cb-b544-860a63683638" />
+          </association>
+          <association Id="9922ae56-50c9-45d3-a7f1-0006e6f4db83" isDerived="false" sourceEndRoleName="Brian the Judge" targetEndRoleName="Move Launcher Up" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="942a01a0-7a6a-4d32-9b5d-128d625931ba" LastKnownName="Move Launcher Up" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="16f892e8-c10f-417c-b030-59376d60ccda" name="Brian the Judge" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="17cf346c-2ad7-4fe9-b19c-f53f59ce82b1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a6a3bc58-307a-4d90-83d3-3e9754a4983d" name="Move Launcher Up" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="92888825-d5cd-4190-833b-3c508acad521" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="00b3d0a7-c9c4-4294-a3e2-435854065a38" />
+          </association>
+          <association Id="ad7e5ba4-620d-48c1-bb50-7bf17490f19a" isDerived="false" sourceEndRoleName="Brian the Judge" targetEndRoleName="Move Launcher Left" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ada50826-6a6d-4614-83e8-23d29fb68f55" LastKnownName="Move Launcher Left" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="02a59849-7e80-4496-b6fb-5b113f623b28" name="Brian the Judge" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fcc1b9ea-9969-4173-aae3-5f303544619a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="853c4839-3e79-41c2-9d08-4a1917d29bd6" name="Move Launcher Left" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f9ddd900-7bb4-48d0-8eeb-1e1508e961ae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ef20fb81-e6b8-4d34-8f90-03222afdd4ba" />
+          </association>
+          <association Id="50779be1-aca8-4418-ad68-2e63c07e085f" isDerived="false" sourceEndRoleName="Brian the Judge" targetEndRoleName="Move Launcher Right" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5d0f88e0-e105-4f9e-802b-4676169b698e" LastKnownName="Move Launcher Right" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="132a373b-fa7c-4703-8159-c0da47754891" name="Brian the Judge" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="277a278c-d1e1-446a-b102-1fe2c0bfdd43" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="70574dbb-11a4-48fd-8f6d-4446f5add73a" name="Move Launcher Right" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a29a5973-fb62-4281-bdae-a4205f3e828d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f9126550-8eee-4ca9-943f-65074c86036e" />
+          </association>
+          <association Id="5729cb5e-845c-48ee-a408-9aefb08f7125" isDerived="false" sourceEndRoleName="Brian the Judge" targetEndRoleName="Fire Missile" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="dc356ea3-344a-413a-a9a1-288bdeb4b23e" LastKnownName="Fire Missile" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6a5d598c-3378-4080-a539-3ef86ed298a2" name="Brian the Judge" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f9748987-ad71-4e18-a721-5398306d09b1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9e7415c3-b02e-4ac1-9d47-58ed4e7a0445" name="Fire Missile" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5d105989-e998-4153-a927-ce5e2b8c652b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c33d24d7-8b3a-4a48-a711-7e1edce2f379" />
+          </association>
+          <association Id="0fc8ff31-bc05-444e-8919-99cf330bbc98" isDerived="false" sourceEndRoleName="Brian the Judge" targetEndRoleName="Move Launcher Down" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1be2465f-73ae-464a-a32a-045ebf48012c" LastKnownName="Move Launcher Down" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="18663845-7b18-42b6-812e-ae73fb1f80a2" name="Brian the Judge" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bb353d05-9bd4-473c-b979-9174c36d0fb1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="92f14c49-f5de-4c8e-bf03-f842ddba99cf" name="Move Launcher Down" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bfa2a9d7-2d16-4489-a1ae-1a0346350d36" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="de9ab1e4-a04c-4085-be60-cf5d2a3c5a3d" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="68764e76-3826-4bb4-ab0f-dc25dd14c52e" name="Launcher Controls" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ef730971-d33d-402b-b85c-8e24a2f68a4e" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="dc356ea3-344a-413a-a9a1-288bdeb4b23e" name="Fire Missile" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5e4dfcb0-42ec-4b5f-b640-f1f754f130c5" />
+        <targetEnds>
+          <association Id="dde4c02c-51ab-4413-9b5c-cf45f6e4d252" isDerived="false" sourceEndRoleName="Fire Missile" targetEndRoleName="Launcher" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="cfd2e9b5-e6ea-456c-bf84-cafe373418a9" LastKnownName="Launcher" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b0ffc2e3-4cb2-4194-834a-1f753a9da6bd" name="Fire Missile" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="27185bf4-ee1e-45db-8de8-e60ee3a47d58" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="83493fe1-9ac9-455b-bd52-7c570aadbb5a" name="Launcher" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a2a3c229-eb89-42a7-aeb9-a5825e7d71c7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6e5910fd-07d1-48c9-99df-5964faf4d1d7" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="68764e76-3826-4bb4-ab0f-dc25dd14c52e" LastKnownName="Launcher Controls" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="5d0f88e0-e105-4f9e-802b-4676169b698e" name="Move Launcher Right" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="200c9edc-e5c8-4ccf-8bf0-406f32c67243" />
+        <targetEnds>
+          <association Id="d114b01d-682e-4d1a-9b96-fc493d7e28bc" isDerived="false" sourceEndRoleName="Move Launcher Right" targetEndRoleName="Launcher" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="cfd2e9b5-e6ea-456c-bf84-cafe373418a9" LastKnownName="Launcher" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cf20a995-49dc-4a0b-ab1e-571e5bca1e73" name="Move Launcher Right" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f72d8932-4598-4772-a43c-2972e114441e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6cb8ceea-77df-4e87-b54d-fa8ec92ad04f" name="Launcher" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7994182e-7875-4bbc-b2c6-1307c5474d40" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="eac3420d-83c0-47af-b051-63a81d91d0dd" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="68764e76-3826-4bb4-ab0f-dc25dd14c52e" LastKnownName="Launcher Controls" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="1be2465f-73ae-464a-a32a-045ebf48012c" name="Move Launcher Down" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6e5f498f-1a13-42ca-a676-05a903e0b282" />
+        <targetEnds>
+          <association Id="f46c9ac7-00d5-4ad4-935f-8557de8d849b" isDerived="false" sourceEndRoleName="Move Launcher Down" targetEndRoleName="Launcher" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="cfd2e9b5-e6ea-456c-bf84-cafe373418a9" LastKnownName="Launcher" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8dd4f090-0ae8-48f5-bd06-8d23ee1cfb8a" name="Move Launcher Down" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4b2850f3-a01c-40ec-882a-7b0cd3edc850" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0759e1e5-210e-42fa-aa91-8af3f8be1d22" name="Launcher" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4e644ba5-80ca-4b55-9a02-b11464ee647d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3263fd52-fd39-4e62-bba0-b91829a8d58d" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="68764e76-3826-4bb4-ab0f-dc25dd14c52e" LastKnownName="Launcher Controls" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="942a01a0-7a6a-4d32-9b5d-128d625931ba" name="Move Launcher Up" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2ce815c6-198f-41fa-aa1b-11ca0c59b590" />
+        <targetEnds>
+          <association Id="989e1fa0-319b-401c-9308-94c95089b705" isDerived="false" sourceEndRoleName="Move Launcher Up" targetEndRoleName="Launcher" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="cfd2e9b5-e6ea-456c-bf84-cafe373418a9" LastKnownName="Launcher" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="330ca003-8702-468e-832c-aab909604b00" name="Move Launcher Up" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2a5a8b1a-85fc-465b-836d-789413490854" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b52a2039-64b7-4f4b-917d-792862da5870" name="Launcher" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ef1138cd-0178-4673-80ff-2aee8ba6777a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="47088a8b-171a-426c-bf89-8941108541a7" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="68764e76-3826-4bb4-ab0f-dc25dd14c52e" LastKnownName="Launcher Controls" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="ada50826-6a6d-4614-83e8-23d29fb68f55" name="Move Launcher Left" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2283e271-a83a-4194-82de-d3dd56be62fc" />
+        <targetEnds>
+          <association Id="6e300cb8-d82e-4659-9476-8a6148f596de" isDerived="false" sourceEndRoleName="Move Launcher Left" targetEndRoleName="Launcher" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="cfd2e9b5-e6ea-456c-bf84-cafe373418a9" LastKnownName="Launcher" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c2948cea-7904-4fdc-8c58-0dd6d7a80833" name="Move Launcher Left" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ca55a200-6fc5-407b-a942-fcbe0842cd45" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cb360631-7e72-498b-991b-4b0c59734d46" name="Launcher" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="06f8c9be-198b-4395-b1c1-ae0898ac84e5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4babeef0-e238-4e62-9812-ea9716a70696" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="68764e76-3826-4bb4-ab0f-dc25dd14c52e" LastKnownName="Launcher Controls" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f451a938-be9e-4840-a8de-cecaea583877" name="Select Target File" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9eb91932-5579-4392-90b5-238544b2d4f2" />
+        <extendedCases>
+          <extend Id="d98ed58e-2ea1-48c9-8d17-26d9f464fde9">
+            <useCaseMoniker Id="c6bf665f-bbb5-45ee-8de0-56893011888f" LastKnownName="Read XML File" />
+            <elementDefinition Id="eda86c5f-ac0c-4f48-adb9-61b4a6e8206e" />
+          </extend>
+          <extend Id="54e36e77-64ec-45d0-99d7-8ecf7b643dbf">
+            <useCaseMoniker Id="b379dba8-b3d0-4080-927b-1806ffa30260" LastKnownName="Read INI File" />
+            <elementDefinition Id="7f5e9bce-eee8-4fc0-80ea-6c2614a463a5" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="f7bc5fd0-eb0d-47f4-9150-589d85744949" LastKnownName="Target File Readers" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="17b4baae-3b22-4554-843b-714428fd4bdd" name="Display Targets" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1baef962-bdd4-4bc6-889c-d744afade40a" />
+        <suppliersInternal>
+          <dependency Id="957be4a2-95e0-460d-b608-15ddb65c8f6d">
+            <useCaseMoniker Id="c6bf665f-bbb5-45ee-8de0-56893011888f" LastKnownName="Read XML File" />
+            <elementDefinition Id="be276171-9454-4116-a20e-8a08e7a7771d" />
+          </dependency>
+          <dependency Id="3771eda4-86cc-4384-82fc-5d89e506ef3c">
+            <useCaseMoniker Id="b379dba8-b3d0-4080-927b-1806ffa30260" LastKnownName="Read INI File" />
+            <elementDefinition Id="760a38c3-12c2-4b5b-9b36-dc88c2b97550" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c6bf665f-bbb5-45ee-8de0-56893011888f" name="Read XML File" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fcd450ea-ec01-4d2c-9727-1d991625a4a6" />
+        <targetEnds>
+          <association Id="69254ee7-c454-48dc-bc0f-1725e99cef29" isDerived="false" sourceEndRoleName="Read XML File" targetEndRoleName="Target File" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="64b57ed2-7229-421d-ab60-02e6f7612fcf" LastKnownName="Target File" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="69abff57-7333-4ddc-b3d7-211973f1d3e7" name="Read XML File" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="00939649-a174-4fee-a181-be4fe439c4b2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bd0a8843-2feb-43c4-96eb-ac77faddf45a" name="Target File" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="733ec476-ea7b-4594-a335-e93576a2b1d0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e5058496-f0d0-4ce4-9998-a64b5d6a8e3f" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="f7bc5fd0-eb0d-47f4-9150-589d85744949" LastKnownName="Target File Readers" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b379dba8-b3d0-4080-927b-1806ffa30260" name="Read INI File" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="da1daabf-b294-4eae-89ae-d84d7bc7619c" />
+        <targetEnds>
+          <association Id="d6d048f3-4642-4d7f-898e-cf9b58d1b6fd" isDerived="false" sourceEndRoleName="Read INI File" targetEndRoleName="Target File" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="64b57ed2-7229-421d-ab60-02e6f7612fcf" LastKnownName="Target File" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="33fd8b32-e1b5-4e5b-b1fe-c28ca63dffe9" name="Read INI File" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="34140a3b-4f66-4d1d-b64b-d8dd8d305106" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="02eece35-5b3d-4a29-9f43-8a4f23b273e3" name="Target File" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="36cf5852-ab0f-4026-b456-d9585ec57caa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="186051d3-9c55-46d8-91bb-13cb100ef9f4" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="f7bc5fd0-eb0d-47f4-9150-589d85744949" LastKnownName="Target File Readers" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="cfd2e9b5-e6ea-456c-bf84-cafe373418a9" name="Launcher" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ef35de76-b7a3-4705-8e8b-831b761f6fd3" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="f7bc5fd0-eb0d-47f4-9150-589d85744949" name="Target File Readers" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1f3c5095-f175-4afc-a1b0-24f366cf3cc7" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="64b57ed2-7229-421d-ab60-02e6f7612fcf" name="Target File" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f2efc3fe-3067-4d33-af20-08f0241e08ab" />
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="74158a8b-0da0-4150-9c10-b829bafc3d63" name="ModelingProject1">
+    <elementDefinition Id="e93dbeb4-d0d4-4b89-a233-d4e929903311" />
+  </package>
+</useCaseModelRoot>

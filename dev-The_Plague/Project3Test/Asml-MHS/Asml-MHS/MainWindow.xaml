@@ -1,0 +1,189 @@
+﻿<Window x:Name="winHomeScreen" x:Class="Asml_McCallisterHomeSecurity.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="McCallister Home Security - Version 1.0" Background="#FFA4A3A3" Margin="0" Width="745.948" Height="553.051" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="762"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="#FFE2DFDF" HorizontalAlignment="Left" Height="243" Margin="491,263,0,0" Stroke="#FF474545" VerticalAlignment="Top" Width="232">
+            <Rectangle.Effect>
+                <DropShadowEffect/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Rectangle Fill="#FFE2DFDF" HorizontalAlignment="Left" Height="248" Margin="491,10,0,0" Stroke="#FF474545" VerticalAlignment="Top" Width="232">
+
+            <Rectangle.Effect>
+                <DropShadowEffect/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Rectangle Fill="#FFE2DFDF" HorizontalAlignment="Left" Height="203" Margin="10,303,0,0" Stroke="#FF474545" VerticalAlignment="Top" Width="476">
+            <Rectangle.Effect>
+                <DropShadowEffect/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Rectangle Fill="#FFE2DFDF" HorizontalAlignment="Left" Height="288" Margin="10,10,0,0" Stroke="#FF474545" VerticalAlignment="Top" Width="476">
+            <Rectangle.Effect>
+                <DropShadowEffect/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Button x:Name="btnUp" HorizontalAlignment="Center" Margin="590,309,140,0" VerticalAlignment="Top" Width="32" Height="36" Click="btnUp_Click" BorderBrush="#FF277410">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FF3C8F23"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.003"/>
+                    <GradientStop Color="#FF37AC14" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+            <StackPanel>
+                <Image Source="Resources/arrow_Up.png" Height="20" Width="26"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="btnLeft" HorizontalAlignment="Center" Margin="540,350,186,0" VerticalAlignment="Top" Width="36" Height="32" Click="btnLeft_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB"/>
+                    <GradientStop Color="#FFDDDDDD"/>
+                    <GradientStop Color="#FF37AC14" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+            <StackPanel>
+                <Image Source="Resources/arrow_Left.png" Height="26" Width="20"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="btnDown" HorizontalAlignment="Center" Margin="590,387,140,0" VerticalAlignment="Top" Width="32" Height="36" Click="btnDown_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB"/>
+                    <GradientStop Color="#FFDDDDDD"/>
+                    <GradientStop Color="#FF37AC14" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+
+            <StackPanel>
+                <Image Source="Resources/arrow_Down.png" Height="20" Width="26"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="btnRight" HorizontalAlignment="Center" Margin="636,350,90,0" VerticalAlignment="Top" Width="36" Height="32" Click="btnRight_Click" BorderBrush="#FF277410">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB"/>
+                    <GradientStop Color="#FFDDDDDD"/>
+                    <GradientStop Color="#FF37AC14" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+            <StackPanel>
+                <Image Source="Resources/arrow_Right.png" Height="26" Width="20"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="btnFire" Content="Fire" HorizontalAlignment="Left" Margin="516,441,0,0" VerticalAlignment="Top" Width="50" Height="25" Click="btnFire_Click" FontFamily="Arial" FontWeight="Bold" FontSize="10" Background="#FFE80C0C">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btnReload" Content="Reload" HorizontalAlignment="Left" Margin="653,454,0,0" VerticalAlignment="Top" Width="50" Height="25" FontFamily="Arial" FontWeight="Bold" FontSize="10" Background="#FFFB9419" Click="btnReload_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <ListView Name="lstTargets" HorizontalAlignment="Left" Height="125" Margin="21,371,0,0" VerticalAlignment="Top" Width="453" RenderTransformOrigin="0.408,0.453">
+            <Style TargetType="ListView">
+                <Setter Property="ItemContainerStyle">
+                    <Setter.Value>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Left" />
+                            <Setter Property="VerticalContentAlignment" Value="Center" />
+                        </Style>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <ListView.Effect>
+                <DropShadowEffect/>
+            </ListView.Effect>
+            <ListView.View>
+                <GridView>
+         
+                    <GridViewColumn Width="140" Header="Target Name" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Width="70" Header="x" DisplayMemberBinding="{Binding X_coordinate}"/>
+                    <GridViewColumn Width="70" Header="y" DisplayMemberBinding="{Binding Y_coordinate}"/>
+                    <GridViewColumn Width="70" Header="z" DisplayMemberBinding="{Binding Z_coordinate}"/>
+                    <GridViewColumn Width="70" Header="Friend" DisplayMemberBinding="{Binding Friend}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Target Information" HorizontalAlignment="Left" Margin="176,303,0,0" VerticalAlignment="Top" Height="26" Width="146" FontSize="14" FontFamily="Arial" FontWeight="Bold"/>
+        <Label Content="Manual Launcher Control" HorizontalAlignment="Left" Margin="516,272,0,0" VerticalAlignment="Top" Height="26" Width="185" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="btnLoad" Content="Load Targets" HorizontalAlignment="Left" Margin="535,211,0,0" VerticalAlignment="Top" Width="144" Height="23" Click="btnLoad_Click" Background="#FF79EAE5" FontWeight="Bold" FontFamily="Arial" FontSize="10" BorderBrush="#FF04726D">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+            <Label Content="Targeting System Controls" HorizontalAlignment="Right" Margin="0,21,52,0" VerticalAlignment="Top" Height="26" Width="194" FontSize="14" FontWeight="Bold" FontFamily="Arial"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="128" Margin="503,61,0,0" VerticalAlignment="Top" Width="211"/>
+        <Button x:Name="btnStopMode" Content="Stop Mode" HorizontalAlignment="Left" Margin="535,156,0,0" VerticalAlignment="Top" Width="144" FontFamily="Arial" FontWeight="Bold" Height="23" FontSize="10" Click="btnStopMode_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFCDCDCD" Offset="1"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+            <Button x:Name="btnStartMode" Content="Start Mode" HorizontalAlignment="Left" Margin="535,128,0,0" VerticalAlignment="Top" Width="144" FontFamily="Arial" FontWeight="Bold" Height="23" FontSize="10" Click="btnStartMode_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btnFrameAveraging" Content="Frame Averaging" HorizontalAlignment="Left" Margin="269,255,0,0" VerticalAlignment="Top" Width="144" FontFamily="Arial" FontWeight="Bold" Height="23" FontSize="10" Background="#FF3FAE1E" IsEnabled="False">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label x:Name="lblCurrentMode" Content="Modes" HorizontalAlignment="Left" Margin="584,61,0,0" VerticalAlignment="Top" FontFamily="Arial" Height="24" Width="46"/>
+        <Button x:Name="btnReset" Content="Reset" HorizontalAlignment="Center" Margin="586,354,136,0" VerticalAlignment="Top" Click="btnReset_Click" Width="40" Height="25"  FontSize="10" FontWeight="Bold" FontFamily="Arial" BorderBrush="#FF277410" Background="#FF3FAE1E">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label x:Name="lblRemainingTargets" Content="Missiles &#xD;&#xA;Remaining" HorizontalAlignment="Left" Margin="653,421,0,0" VerticalAlignment="Top" FontFamily="Arial" RenderTransformOrigin="0.866,0.105" FontSize="10" Height="33" Width="58"/>
+        <Label x:Name="lblNumMissiles" Content="#" HorizontalAlignment="Left" Margin="674,397,0,0" VerticalAlignment="Top" Height="26" Width="17"/>
+        <Label x:Name="lblTargetFileName" Content="No Targets Detected" HorizontalAlignment="Left" Margin="90,334,0,0" VerticalAlignment="Top" Height="26" Width="120"/>
+        <Image x:Name="imgVideo" HorizontalAlignment="Left" Height="213" Margin="20,21,0,0" VerticalAlignment="Top" Width="456" Stretch="None">
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Button x:Name="btnVideoStart" Content="Start Video" HorizontalAlignment="Left" Margin="45,254,0,0" VerticalAlignment="Top" Width="89" RenderTransformOrigin="-1.56,0.455" Background="#FF3FAE1E" FontWeight="Bold" Click="btnVideoStart_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btnVideoStop" Content="Stop Video" HorizontalAlignment="Left" Margin="154,254,0,0" VerticalAlignment="Top" Width="89" Background="#FF3FAE1E" FontWeight="Bold" Click="btnVideoStop_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <ComboBox x:Name="cmbModes" HorizontalAlignment="Left" Margin="540,101,0,0" VerticalAlignment="Top" Width="139" SelectedIndex="0" SelectionChanged="cmbModes_SelectionChanged"/>
+    </Grid>
+</Window>

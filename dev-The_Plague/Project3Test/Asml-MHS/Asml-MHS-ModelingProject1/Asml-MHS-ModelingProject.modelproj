@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{770701de-e5e8-4d2b-b80c-222372be0e6f}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>Asml-MHS-ModelingProject</Name>
+    <RootNamespace>Asml-MHS-ModelingProject1</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="CD-MainCameraandVideo.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CD-MainCameraandVideo.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CD-MainCameraandVideo.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="CD-OperationsManager.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CD-OperationsManager.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CD-OperationsManager.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="CD-SearchModes.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CD-SearchModes.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CD-SearchModes.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Package1_1035.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_1035.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_1035.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_1035.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1024.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1034.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1035.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1311.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UC-Proj1.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UC-Proj1.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UC-Proj1.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="ComponentDiagram.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ComponentDiagram.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ComponentDiagram.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Package1_1013.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1013.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SD-SearchandDestroy.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SD-SearchandDestroy.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SD-SearchandDestroy.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Package1_1635.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_1636.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_1638.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_1700.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_1635.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_1700.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_1635.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_1700.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_1635.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package5_1635.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package6_1635.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package7_1635.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1635.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1636.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1638.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1700.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UC-Project2Additions.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UC-Project2Additions.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UC-Project2Additions.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="CD-TargetManager.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CD-TargetManager.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CD-TargetManager.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="SD-TurretControl.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SD-TurretControl.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SD-TurretControl.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="CD-TurretManager.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CD-TurretManager.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CD-TurretManager.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="UC-AllinOne.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UC-AllinOne.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UC-AllinOne.usecasediagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\Asml-MHS-ModelingProject1.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>
