@@ -171,14 +171,10 @@ namespace TargetManagement.TargetFileProcessors
                     return true; // the line is a valid group declaration.
                 }
             }
-            else if (Regex.IsMatch(trimedLine, "^[\\s*\\w\\s*]+=[\\s*\\d\\s*]+$"))
+            else if (Regex.IsMatch(trimedLine, "^[\\s*\\w\\s*]+=.*$"))
             {
                 return false; // the line is a key=value pair.
-            }
-            else if (Regex.IsMatch(trimedLine, "^[\\s*\\w\\s*]+=[\\s*\\d\\.\\d*\\s*]+$"))
-            {
-                return false; // the line is a key=value pair with a decimal number on the right side.
-            }
+            }    
             else
             {
                 throw new InvalidIniFormat(_invalid_ini_format_message); // line is invalid.
