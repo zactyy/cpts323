@@ -171,7 +171,7 @@ namespace TargetManagement.TargetFileProcessors
                     return true; // the line is a valid group declaration.
                 }
             }
-            else if (Regex.IsMatch(trimedLine, "^[\\s*\\w\\s*]+=[\\s*\\w\\s*]+$"))
+            else if (Regex.IsMatch(trimedLine, "^[\\s*\\w\\s*]+=[\\s*\\d\\s*]+$"))
             {
                 return false; // the line is a key=value pair.
             }
