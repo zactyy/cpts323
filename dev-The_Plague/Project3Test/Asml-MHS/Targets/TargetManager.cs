@@ -80,7 +80,7 @@ namespace TargetManagement
         {
             /* for now we just return true if target is shot at, due to lack of anyway to actually validate*/
             //currTarget.Destroyed = true;
-            //currTarget.Destroyed = validator.WasTargetHit(currTarget.Name);
+            currTarget = true;
         }
 
         #region Dispose
