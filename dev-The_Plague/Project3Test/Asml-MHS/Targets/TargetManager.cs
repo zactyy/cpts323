@@ -45,7 +45,7 @@ namespace TargetManagement
 
         public targetsChanged TargetAdded;
 
-        private ITargetValidator validator;
+       // private ITargetValidator validator;
 
 
         /// <summary>
@@ -80,7 +80,7 @@ namespace TargetManagement
         {
             /* for now we just return true if target is shot at, due to lack of anyway to actually validate*/
             //currTarget.Destroyed = true;
-            currTarget.Destroyed = validator.WasTargetHit(currTarget.Name);
+            //currTarget.Destroyed = validator.WasTargetHit(currTarget.Name);
         }
 
         #region Dispose
@@ -116,8 +116,8 @@ namespace TargetManagement
             _targets = new List<Target>();
             _lock = new Object();
             _reader_factory = TargetFileProcessors.FileProcessorFactory.GetInstance();
-            validator = new ASMLTargetValidator.TargetWebServerValidator();
-            validator.Start();
+          //  validator = new ASMLTargetValidator.TargetWebServerValidator();
+            //validator.Start();
         }
 
         /// <summary>
