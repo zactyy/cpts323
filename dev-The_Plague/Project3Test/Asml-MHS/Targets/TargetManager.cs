@@ -14,6 +14,8 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ASMLTargetValidator;
+using ASMLEngineSdk;
 
 namespace TargetManagement
 {
@@ -42,6 +44,8 @@ namespace TargetManagement
         public delegate void targetsChanged();
 
         public targetsChanged TargetAdded;
+
+        private ITargetValidator validator;
 
 
         /// <summary>
@@ -75,7 +79,8 @@ namespace TargetManagement
         public void validate(Target currTarget)
         {
             /* for now we just return true if target is shot at, due to lack of anyway to actually validate*/
-            currTarget.Destroyed = true;
+            //currTarget.Destroyed = true;
+            currTarget.Destroyed = validator.WasTargetHit(currTarget.Name);
         }
 
         #region Dispose
@@ -111,6 +116,8 @@ namespace TargetManagement
             _targets = new List<Target>();
             _lock = new Object();
             _reader_factory = TargetFileProcessors.FileProcessorFactory.GetInstance();
+            validator = new ASMLTargetValidator.TargetWebServerValidator();
+            validator.Start();
         }
 
         /// <summary>
@@ -124,16 +131,26 @@ namespace TargetManagement
         public void AddTarget(double new_x, double new_y, double new_z, bool friend, string new_name = "")
         {
             Target tempTarget = new Target(new_name, new_x, new_y, new_z, friend);
+            bool inList = false;
             lock (_lock)
             {
-                _targets.Add(tempTarget);
-            }
-            if (TargetAdded != null)
-            {
-                TargetAdded();
+                foreach (Target target in _targets)
+                {
+                    if (target == tempTarget)
+                    {
+                        inList = true;
+                    }
+                }
+                if (!inList)
+                {
+                    _targets.Add(tempTarget);
+                    if (TargetAdded != null)
+                    {
+                        TargetAdded();
+                    }
+                }
             }
         }
-
         /// <summary>
         /// Method to add a whole list of targets, that might be read in from 
         /// file into the target list.  
@@ -149,6 +166,55 @@ namespace TargetManagement
             {
                 TargetAdded();
             }
+        }
+
+        public void AddTargets(List<Tuple<Double, Double, Double, Double, Boolean>> targets, double LAUNCHER_OFFSET_FROM_CAMERA)
+        {
+            lock (_lock)
+            {
+                foreach (Tuple<Double, Double, Double, Double, Boolean> target in targets)
+                {
+                    double x_coord = 0;
+                    if (target.Item1 < 320)
+                    {
+                        x_coord = -(target.Item1);
+                    }
+                    else
+                    {
+                        x_coord = target.Item1;
+                    }
+                    double y_coord= 36;
+
+                    double z_coord =0;
+                    if (target.Item3 < 240)
+                    {
+                        z_coord = -(target.Item3 + LAUNCHER_OFFSET_FROM_CAMERA);
+                    }
+                    else
+                    {
+                        z_coord = target.Item3 + LAUNCHER_OFFSET_FROM_CAMERA * 25.818;
+                    }
+                    bool friend = target.Item5;
+                    Target temp = new Target("", x_coord, y_coord, z_coord, friend);
+                    bool inList = false;
+                    foreach (Target t in _targets)
+                    {
+                        if (t == temp)
+                        {
+                            inList = true;
+                        }
+                    }
+                    if(!inList)
+                    {
+                         _targets.Add(temp);
+                    }
+                }
+            }
+            if (TargetAdded != null)
+            {
+                TargetAdded();
+            }
+
         }
 
         /// <summary>

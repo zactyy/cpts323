@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="20fd5436-2d22-45d7-a6b2-c30061863290" name="ActivityDiagram" linkedPackageId="eb4d09c7-b427-4da3-88ad-0a26057a3e8c" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="cedb7a50-c805-435c-973f-a2b993bae348" name="ActivityDiagram" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="8fc65d41-62f0-4159-84a2-d3e961bd5000" />
+        <nodes>
+          <initialNode Id="092b2227-a1af-46e1-9454-acf37f25f5c8" name="Initial1" isLeaf="false">
+            <elementDefinition Id="c5092782-9092-4cdf-86f2-0b29a38c923e" />
+            <objectFlowTargets>
+              <objectFlow Id="8746b852-2f6c-4513-91ad-af6a115b7885" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="c9d6e9a8-8794-4af2-b38a-193c61871666" LastKnownName="OperationsManager" />
+                <elementDefinition Id="b32d4bcd-4d83-442d-ba63-114ef14a4b15" />
+              </objectFlow>
+            </objectFlowTargets>
+          </initialNode>
+          <forkNode Id="2edfe40d-4e5d-4eac-823e-98ddcda48b8a" name="Fork1" isLeaf="false">
+            <elementDefinition Id="79bf6220-c63b-4aa4-bd4b-b5ae7cd2c675" />
+            <objectFlowTargets>
+              <objectFlow Id="cd8354d8-e98d-40c4-9c70-f59f926cbada" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="19ec3c90-9b58-4df0-b287-e83df3faac89" LastKnownName="Video" />
+                <elementDefinition Id="39949638-0abb-4173-ba2e-51d31cad507d" />
+              </objectFlow>
+              <objectFlow Id="1fb801a2-af4d-4b7e-9adf-f447dffdff12" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="0d018e2d-0c7d-409a-a445-a765bacf0a1f" LastKnownName="Turret" />
+                <elementDefinition Id="e359402c-0ddf-4628-aa7f-0445a1e05fd1" />
+              </objectFlow>
+              <objectFlow Id="6544cf81-f6bc-470e-8674-06aa899b48c5" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="5cc4b0b3-12e0-48c3-9ed0-6dc0065d24c7" LastKnownName="Timer" />
+                <elementDefinition Id="822422ee-f62f-43ad-a938-1197b3893c90" />
+              </objectFlow>
+              <objectFlow Id="dc7466ed-418a-4084-900c-2cfbb9cccbf2" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="455e232a-4203-4ebb-965b-c1527a94337b" LastKnownName="TargetDetection" />
+                <elementDefinition Id="3a0cd621-8c44-47a0-b01a-92d0182dd70e" />
+              </objectFlow>
+            </objectFlowTargets>
+          </forkNode>
+          <objectNode Id="c9d6e9a8-8794-4af2-b38a-193c61871666" name="OperationsManager" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="9b792eaa-1e5c-4db3-b7f1-f55ece02948c" />
+            <objectFlowTargets>
+              <objectFlow Id="7b5638f9-4e9a-4736-9410-1c17acbfea5f" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <forkNodeMoniker Id="2edfe40d-4e5d-4eac-823e-98ddcda48b8a" LastKnownName="Fork1" />
+                <elementDefinition Id="6181c4a4-f1c5-4d5a-9815-2cd55d788332" />
+              </objectFlow>
+              <objectFlow Id="96d0fd0c-4bd4-433d-b692-6159c7b2dab6" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="907b19b9-49c7-4e87-acf1-65a685be6a30" LastKnownName="Start Search and Destroy" />
+                <elementDefinition Id="406466d7-2789-4110-9ee2-a256c96b77e4" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="fd27408c-4fa9-4ff7-acb7-66d17866e21c" name="2147483647" value="2147483647">
+                <elementDefinition Id="08a764c7-1fd6-42ea-a99d-d0e05cc98b58" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="19ec3c90-9b58-4df0-b287-e83df3faac89" name="Video" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="3d89d883-12b2-4ade-bf51-eebe276ad768" />
+            <objectFlowTargets>
+              <objectFlow Id="31326dac-40b3-40f9-943b-f97a56404ae5" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <joinNodeMoniker Id="124cf1ab-c662-4d93-badf-112f5e4b6fee" LastKnownName="Join1" />
+                <elementDefinition Id="37cc7e1a-aa85-4175-9068-7e44b92e65dc" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="f3cbed69-0a03-47c7-b8eb-ea05e1a5ce5e" name="2147483647" value="2147483647">
+                <elementDefinition Id="e6047ab6-648a-4ed1-83be-3bd9c9b92c43" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="0d018e2d-0c7d-409a-a445-a765bacf0a1f" name="Turret" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="3f375191-325c-427d-b3f8-dc7346f8bbf2" />
+            <objectFlowTargets>
+              <objectFlow Id="2085e4c8-c80c-4ceb-9aa1-245f81a7dfb8" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <joinNodeMoniker Id="124cf1ab-c662-4d93-badf-112f5e4b6fee" LastKnownName="Join1" />
+                <elementDefinition Id="d67d4ecb-6c0a-49ba-b894-e99115eea21e" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="8c771c8c-8ac5-4f58-8659-e3ceb260a12b" name="2147483647" value="2147483647">
+                <elementDefinition Id="1fe02e3e-2215-440a-b025-0c3e08a6ada5" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="5cc4b0b3-12e0-48c3-9ed0-6dc0065d24c7" name="Timer" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="e974c8dc-99e6-4f27-9840-4229a760183f" />
+            <objectFlowTargets>
+              <objectFlow Id="3fe7af5b-9068-46f1-97b9-67a72af38afd" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <joinNodeMoniker Id="124cf1ab-c662-4d93-badf-112f5e4b6fee" LastKnownName="Join1" />
+                <elementDefinition Id="04597f9d-c098-40af-9f01-8955c64be9a3" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="b79a3c7f-91dc-44ab-94e1-9eb4fc24ee38" name="2147483647" value="2147483647">
+                <elementDefinition Id="c4142128-6994-4e0e-864a-9f10801bdf0f" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="455e232a-4203-4ebb-965b-c1527a94337b" name="TargetDetection" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="57a549d8-a89f-4e0d-9baf-bf8d0244f6db" />
+            <objectFlowTargets>
+              <objectFlow Id="76c8a4f3-b6ef-4107-8073-b94e0f9665c1" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <joinNodeMoniker Id="124cf1ab-c662-4d93-badf-112f5e4b6fee" LastKnownName="Join1" />
+                <elementDefinition Id="c6026103-2aa4-4024-b58e-4e7a73471cda" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="ab7dac75-da45-42c2-8aad-a4b3e62f45ae" name="2147483647" value="2147483647">
+                <elementDefinition Id="005c849d-700d-413c-97eb-561d6352e57a" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <joinNode Id="124cf1ab-c662-4d93-badf-112f5e4b6fee" name="Join1" isLeaf="false">
+            <elementDefinition Id="b9ecae11-0fc9-4873-bbbb-77e6f5d3d520" />
+            <flowNodeTargets>
+              <controlFlow Id="66aa3633-07fa-43c5-a1d2-d1e8735d8dd2" isLeaf="false">
+                <activityFinalNodeMoniker Id="3f9442ee-4947-47f8-969b-72aa590801c4" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="ce72a29f-c994-4df6-9ef9-733c1f6b0ba5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <activityFinalNode Id="3f9442ee-4947-47f8-969b-72aa590801c4" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="5a9cdaef-e159-4f5d-9d8a-b6b453d19a0c" />
+          </activityFinalNode>
+          <opaqueAction Id="907b19b9-49c7-4e87-acf1-65a685be6a30" name="Start Search and Destroy" isLeaf="false">
+            <elementDefinition Id="24267e43-ea48-4795-968a-919cd6e55a65" />
+            <flowNodeTargets>
+              <controlFlow Id="1b3bd5d2-0f3b-4799-b71b-16193851e772" isLeaf="false">
+                <forkNodeMoniker Id="b2dc0f19-5770-46f1-bac6-a2c0781d21f0" LastKnownName="Fork2" />
+                <elementDefinition Id="c9586281-42be-47c9-8482-90475ad2da4c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <objectNode Id="49f8146a-69f5-40b0-b6cf-8dad9f5de673" name="Destroy Thread" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="570a6cf4-fcb8-4636-9d3f-de2b850f7bfb" />
+            <objectFlowTargets>
+              <objectFlow Id="cec60aed-8f01-48dd-82a8-2b7b619ae42c" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <joinNodeMoniker Id="bf5959b0-f4c7-45dd-a206-81e4e37b37d6" LastKnownName="Join2" />
+                <elementDefinition Id="3ed78a12-4c54-442c-8b2a-b2dc87cc4804" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="0d807669-d7e9-4801-a049-53b3d0761e34" name="2147483647" value="2147483647">
+                <elementDefinition Id="9f319987-f873-4c40-bef4-86b03122642d" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <forkNode Id="b2dc0f19-5770-46f1-bac6-a2c0781d21f0" name="Fork2" isLeaf="false">
+            <elementDefinition Id="d0bc9058-08ab-4edc-9223-cce9f933ee16" />
+            <objectFlowTargets>
+              <objectFlow Id="3051fe15-ce4e-4f38-be45-be46bd2dd641" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="49f8146a-69f5-40b0-b6cf-8dad9f5de673" LastKnownName="Destroy Thread" />
+                <elementDefinition Id="2f8824d2-84a5-474e-a1dc-3d6a068b5408" />
+              </objectFlow>
+            </objectFlowTargets>
+          </forkNode>
+          <joinNode Id="bf5959b0-f4c7-45dd-a206-81e4e37b37d6" name="Join2" isLeaf="false">
+            <elementDefinition Id="692a3367-3db1-4931-9e3e-fcba0466e445" />
+            <flowNodeTargets>
+              <controlFlow Id="81df3336-5200-4a6a-b675-17ebd840161a" isLeaf="false">
+                <activityFinalNodeMoniker Id="3f9442ee-4947-47f8-969b-72aa590801c4" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="8f3ce369-bf52-40cc-9db4-be93f2628df2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="eb4d09c7-b427-4da3-88ad-0a26057a3e8c" name="Asml-MHS-ModelingProject1">
+    <elementDefinition Id="254c6c84-496c-425b-a4a7-8779396807bf" />
+    <profileInstances>
+      <packageHasProfileInstances Id="24104ec3-d75e-453b-9670-1e112ca65b0e">
+        <profileInstance Id="534c4ea5-2479-435e-a682-ce04845d4587" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="39ad9e15-ff4c-4cd6-9ae0-3c7ebd47b760">
+        <profileInstance Id="f918c8d9-8165-4e72-aa3b-1b49d68c7075" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="970bf030-bf89-468e-904e-676426b1c7b6">
+        <profileInstance Id="d437457c-7a4d-4fe3-acc7-fa86dbf8d56a" name="CSharpProfile">
+          <elementDefinition Id="8f365836-e2e9-4d49-9ef8-735b7d008030" />
+        </profileInstance>
+        <elementDefinition Id="1b6f6a06-95da-4990-8230-4ccf2fa82de7" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

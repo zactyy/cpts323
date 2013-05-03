@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="254c6c84-496c-425b-a4a7-8779396807bf"
   name="Asml-MHS-ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -11481,6 +11481,310 @@
         Id="e85c0365-a0da-441c-8b4c-a1e2a5dc0ddb"
         LastKnownName="Emgu"
         LastKnownLocation="Package3_1035.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="5392764f-2f97-41a9-b072-ac627e3c354a"
+        name="ActivityDiagram"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="fc4cda93-ed4d-445d-9e50-354006a76582"
+            name="Initial1"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="cda9386a-0c79-4733-9bb2-1509dbfe9593"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="67c77489-5a7c-40ed-a79b-e55d8f60cb47"
+                  LastKnownName="OperationsManager"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </initialNode>
+          <forkNode
+            Id="0eed7d6a-bbef-4c92-ba15-d158ce08c615"
+            name="Fork1"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="aaa50106-aa39-4c4e-82f7-c6a968a2dfd7"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="261c557c-c521-4697-8c71-a828d6b90512"
+                  LastKnownName="Video"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="1819edd6-aee5-44aa-8afc-80f08d970de7"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="0245ea00-f6b3-4ce5-afa3-bd2d623ab1ef"
+                  LastKnownName="Turret"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="d65e895d-9558-4003-ba1f-11167e55577e"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="068dfae1-12d2-4c8e-8728-fcaca5b0023c"
+                  LastKnownName="Timer"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="9677c93c-eee9-4f44-9f96-ce873d7f5dbb"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="08bff2a7-a64b-4ede-b3b4-eeff0615b269"
+                  LastKnownName="TargetDetection"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </forkNode>
+          <objectNode
+            Id="67c77489-5a7c-40ed-a79b-e55d8f60cb47"
+            name="OperationsManager"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="a9ca7bef-ab8b-4334-89eb-ab02a6b3ee4c"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <forkNodeMoniker
+                  Id="0eed7d6a-bbef-4c92-ba15-d158ce08c615"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="7061c531-228f-4b39-9518-13b7663e3063"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="79234a8f-56fb-420d-88dd-761e925f0289"
+                  LastKnownName="Start Search and Destroy"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="fd092690-df1c-4982-8e18-79d7d2cdfd90"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="261c557c-c521-4697-8c71-a828d6b90512"
+            name="Video"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="c6cb41f4-5eb1-4b00-b38c-518741212147"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <joinNodeMoniker
+                  Id="c5f2514b-98b3-47fe-b899-611dac1afb36"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="06e274fb-ca9a-4dde-938f-2f9582eafbe0"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="0245ea00-f6b3-4ce5-afa3-bd2d623ab1ef"
+            name="Turret"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="d00562a3-03d5-4adb-9ea3-40fde5df37c3"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <joinNodeMoniker
+                  Id="c5f2514b-98b3-47fe-b899-611dac1afb36"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="0603296a-64fe-4618-8823-11179595ed12"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="068dfae1-12d2-4c8e-8728-fcaca5b0023c"
+            name="Timer"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="31f29f9e-d40d-4ab7-977c-6d72fed5f4d0"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <joinNodeMoniker
+                  Id="c5f2514b-98b3-47fe-b899-611dac1afb36"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="2f6ea8d0-2214-413e-8253-2b2b87d0ed99"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="08bff2a7-a64b-4ede-b3b4-eeff0615b269"
+            name="TargetDetection"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="0b0338aa-9806-4b53-9273-53b3e4debb43"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <joinNodeMoniker
+                  Id="c5f2514b-98b3-47fe-b899-611dac1afb36"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="d68579b2-fddd-4f02-89e1-e3bb18843f8f"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <joinNode
+            Id="c5f2514b-98b3-47fe-b899-611dac1afb36"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e5f5618f-c2e4-4abe-b187-adf1b353bdde"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="3a46f4ef-7c96-473d-bb01-44641c8a37d7"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <activityFinalNode
+            Id="3a46f4ef-7c96-473d-bb01-44641c8a37d7"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="79234a8f-56fb-420d-88dd-761e925f0289"
+            name="Start Search and Destroy"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="eb8405ed-4678-4cb1-98ea-ee06a436c7dd"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="defe8188-0e56-4a05-b029-aaadadfa8b48"
+                  LastKnownName="Fork2"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <objectNode
+            Id="938b8b1d-0fb0-4b34-a953-d7e0c1a08496"
+            name="Destroy Thread"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="56b71284-b61a-4ae6-81f7-3b6faf3a9e3f"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <joinNodeMoniker
+                  Id="6642876a-b805-4d69-a80f-60941814b5c6"
+                  LastKnownName="Join2"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="bf12ae7a-2a58-460f-8803-fb30719ab103"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <forkNode
+            Id="defe8188-0e56-4a05-b029-aaadadfa8b48"
+            name="Fork2"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="76c1c7c6-c8a1-4544-964a-5de6ed009b98"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="938b8b1d-0fb0-4b34-a953-d7e0c1a08496"
+                  LastKnownName="Destroy Thread"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </forkNode>
+          <joinNode
+            Id="6642876a-b805-4d69-a80f-60941814b5c6"
+            name="Join2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d060f258-b516-4a44-85f4-c13671b0f521"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="3a46f4ef-7c96-473d-bb01-44641c8a37d7"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Asml-MHS-ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+        </nodes>
+      </activity>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

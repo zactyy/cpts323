@@ -28,10 +28,10 @@ namespace Detectors
         private List<Tuple<Double, Double, Double, Double, Boolean>> _targets;
         private BackgroundWorker bw;
         private Object _lock;
-        private const int THRESHOLD_MAX = 140;
-        private const int THRESHOLD_MIN = 70;
+        private const int THRESHOLD_MAX = 150;
+        private const int THRESHOLD_MIN = 75;
         private const double ACCUMULATOR_RESOLUTION = 1;
-        private const double MIN_DISTANCE = 40.0;
+        private const double MIN_DISTANCE = 20.0;
         private const int MIN_RADIUS = 10;
         private const int MAX_RADIUS = 0;
         public event EventHandler ImageProcessed;

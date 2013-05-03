@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timer", "Timer\Timer.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TargetDetector", "TargetDetector\TargetDetector.csproj", "{3870275F-E895-43CE-9BD6-CE05791FAE97}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fleck", "Fleck\Fleck.csproj", "{8B12D929-AFA9-4307-BEFF-2ED0F1070FEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASMLTargetValidator", "TargetValidator\ASMLTargetValidator.csproj", "{04756FD5-D79D-43A8-90B1-78353132F759}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,11 +71,16 @@ Global
 		{3870275F-E895-43CE-9BD6-CE05791FAE97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3870275F-E895-43CE-9BD6-CE05791FAE97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3870275F-E895-43CE-9BD6-CE05791FAE97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B12D929-AFA9-4307-BEFF-2ED0F1070FEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B12D929-AFA9-4307-BEFF-2ED0F1070FEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B12D929-AFA9-4307-BEFF-2ED0F1070FEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B12D929-AFA9-4307-BEFF-2ED0F1070FEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04756FD5-D79D-43A8-90B1-78353132F759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04756FD5-D79D-43A8-90B1-78353132F759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04756FD5-D79D-43A8-90B1-78353132F759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04756FD5-D79D-43A8-90B1-78353132F759}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(Performance) = preSolution
-		HasPerformanceSessions = true
 	EndGlobalSection
 EndGlobal

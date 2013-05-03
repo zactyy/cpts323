@@ -118,7 +118,7 @@
             </ListView.Effect>
             <ListView.View>
                 <GridView>
-         
+
                     <GridViewColumn Width="140" Header="Target Name" DisplayMemberBinding="{Binding Name}"/>
                     <GridViewColumn Width="70" Header="x" DisplayMemberBinding="{Binding X_coordinate}"/>
                     <GridViewColumn Width="70" Header="y" DisplayMemberBinding="{Binding Y_coordinate}"/>
@@ -135,9 +135,9 @@
             </Button.Effect>
         </Button>
 
-            <Label Content="Targeting System Controls" HorizontalAlignment="Right" Margin="0,21,52,0" VerticalAlignment="Top" Height="26" Width="194" FontSize="14" FontWeight="Bold" FontFamily="Arial"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="128" Margin="503,61,0,0" VerticalAlignment="Top" Width="211"/>
-        <Button x:Name="btnStopMode" Content="Stop Mode" HorizontalAlignment="Left" Margin="535,156,0,0" VerticalAlignment="Top" Width="144" FontFamily="Arial" FontWeight="Bold" Height="23" FontSize="10" Click="btnStopMode_Click">
+        <Label Content="Targeting System Controls" HorizontalAlignment="Right" Margin="0,21,52,0" VerticalAlignment="Top" Height="26" Width="194" FontSize="14" FontWeight="Bold" FontFamily="Arial"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="125" Margin="503,52,0,0" VerticalAlignment="Top" Width="211"/>
+        <Button x:Name="btnStopMode" Content="Stop Mode" HorizontalAlignment="Left" Margin="535,137,0,0" VerticalAlignment="Top" Width="144" FontFamily="Arial" FontWeight="Bold" Height="23" FontSize="10" Click="btnStopMode_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFF3F3F3" Offset="0"/>
@@ -150,7 +150,7 @@
             </Button.Effect>
         </Button>
 
-            <Button x:Name="btnStartMode" Content="Start Mode" HorizontalAlignment="Left" Margin="535,128,0,0" VerticalAlignment="Top" Width="144" FontFamily="Arial" FontWeight="Bold" Height="23" FontSize="10" Click="btnStartMode_Click">
+        <Button x:Name="btnStartMode" Content="Start Mode" HorizontalAlignment="Left" Margin="535,109,0,0" VerticalAlignment="Top" Width="144" FontFamily="Arial" FontWeight="Bold" Height="23" FontSize="10" Click="btnStartMode_Click">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
@@ -160,7 +160,7 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Label x:Name="lblCurrentMode" Content="Modes" HorizontalAlignment="Left" Margin="584,61,0,0" VerticalAlignment="Top" FontFamily="Arial" Height="24" Width="46"/>
+        <Label x:Name="lblCurrentMode" Content="Modes" HorizontalAlignment="Left" Margin="584,54,0,0" VerticalAlignment="Top" FontFamily="Arial" Height="24" Width="46"/>
         <Button x:Name="btnReset" Content="Reset" HorizontalAlignment="Center" Margin="586,354,136,0" VerticalAlignment="Top" Click="btnReset_Click" Width="40" Height="25"  FontSize="10" FontWeight="Bold" FontFamily="Arial" BorderBrush="#FF277410" Background="#FF3FAE1E">
             <Button.Effect>
                 <DropShadowEffect/>
@@ -184,6 +184,7 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <ComboBox x:Name="cmbModes" HorizontalAlignment="Left" Margin="540,101,0,0" VerticalAlignment="Top" Width="139" SelectedIndex="0" SelectionChanged="cmbModes_SelectionChanged"/>
+        <ComboBox x:Name="cmbModes" HorizontalAlignment="Left" Margin="535,82,0,0" VerticalAlignment="Top" Width="144" SelectedIndex="0" SelectionChanged="cmbModes_SelectionChanged"/>
+        <CheckBox Content="Optical Target Acquisition" HorizontalAlignment="Left" Margin="532,184,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="check"/>
     </Grid>
 </Window>

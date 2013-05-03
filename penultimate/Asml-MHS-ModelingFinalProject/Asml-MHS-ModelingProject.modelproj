@@ -22,6 +22,13 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="ActivityDiagram.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ActivityDiagram.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ActivityDiagram.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="CD-MainCameraandVideo.classdiagram">
       <SubType>Content</SubType>
     </Content>
@@ -35,6 +42,13 @@
     <Content Include="CD-OperationsManager.classdiagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>CD-OperationsManager.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="CD-Overview.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CD-Overview.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CD-Overview.classdiagram</DependentUpon>
     </Content>
     <Content Include="CD-SearchModes.classdiagram">
       <SubType>Content</SubType>

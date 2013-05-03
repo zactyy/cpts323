@@ -34,6 +34,7 @@ namespace Asml_McCallisterHomeSecurity
         private List<IVideoPlugin> _video_plugins;
         private IVideoPlugin _eye_of_sauron;
         private TimeSpan _elapsed_time;
+        private int _detection_counter;
 
         public MainWindow()
         {
@@ -50,6 +51,7 @@ namespace Asml_McCallisterHomeSecurity
             _rules_them_all._timer.TimeCaptured += new EventHandler<TimerEventArgs>(_timer_TimeCaptured);
             _video_plugins = new List<IVideoPlugin>();
             bool PluginFunctioning = true;
+            _detection_counter = 0;
             try
             {
                 // add video plugins to list here
@@ -262,7 +264,19 @@ namespace Asml_McCallisterHomeSecurity
         {
             Bitmap image = ((IVideoPlugin)sender).GetImage();
             Bitmap sendToDetect = new Bitmap(image);
-            _rules_them_all.DetectTargets(sendToDetect);
+            if (_detection_counter == 0)
+            {
+                _rules_them_all.DetectTargets(sendToDetect);
+                _detection_counter++;
+            }
+            else if (_detection_counter < 29)
+            {
+                _detection_counter++;
+            }
+            else
+            {
+                _detection_counter = 0;
+            }
             List<Tuple<Double, Double, Double, Double, Boolean>> targets = _rules_them_all.DetectedTargets();
             /* draw targets and overlay on the image*/
             using (Graphics g = Graphics.FromImage(image))
@@ -464,5 +478,15 @@ namespace Asml_McCallisterHomeSecurity
         }
 
         #endregion
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            _rules_them_all.VisualToggle();
+        }
+
+        private void check(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

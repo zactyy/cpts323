@@ -125,7 +125,7 @@ namespace VideoSys
         /// <returns>A bitmap image.</returns>
         public Bitmap GetImage()
         {
-            Bitmap test = new Bitmap(Image.FromFile("E:/Users/Chris/Documents/GitHub/cpts323/cpts323/dev-The_Plague/Project3Test/Asml-MHS/foetarget2.jpg"));
+            //Bitmap test = new Bitmap(Image.FromFile("E:/Users/Chris/Documents/GitHub/cpts323/cpts323/dev-The_Plague/Project3Test/Asml-MHS/foetarget2.jpg"));
             System.Drawing.Size imageSize = new System.Drawing.Size(_image.Width, _image.Height);
             Bitmap temp = new Bitmap(imageSize.Width, imageSize.Height);
             using (Graphics g = Graphics.FromImage(temp))
@@ -136,7 +136,7 @@ namespace VideoSys
                     }
                     g.Dispose();
                 }
-                return test;
+                return temp;
         }
 
 

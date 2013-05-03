@@ -42,10 +42,10 @@ namespace TurretManagement
 
         private byte[] GET_STATUS;
         private double MILLISECONDS_PER_DEGREE = 20.4;
-        private int THETAX_MAX = 120;
-        private int THETAX_MIN = -120;
-        private int THETAY_MIN = -20;
-        private int THETAY_MAX = 40;
+        //private int THETAX_MAX = 120;
+        //private int THETAX_MIN = -120;
+        //private int THETAY_MIN = -20;
+        //private int THETAY_MAX = 40;
 
         private UsbHidPort USB;
 
@@ -204,75 +204,32 @@ namespace TurretManagement
         public void AssumeFiringPosition(int NewThetaX, int NewThetaY)
         {
             // TODO need catch for out of range angles
-
-            // find how much turret must move from current position
-            if (ThetaX > 0 && NewThetaX > ThetaX)
+            NewThetaX = NewThetaX - ThetaX;
+            NewThetaY = NewThetaY - ThetaY;
+            if (Math.Abs(NewThetaX) > 120)
             {
-                NewThetaX = ThetaX + (NewThetaX - ThetaX);
-            }
-            else if (ThetaX > 0 && NewThetaX < ThetaX)
-            {
-                NewThetaX = NewThetaX - ThetaX;
-            }
-            else if (ThetaX < 0 && NewThetaX < ThetaX)
-            {
-                NewThetaX = NewThetaX - ThetaX;
-            }
-            else if (ThetaX < 0 && NewThetaX > ThetaX)
-            {
-                NewThetaX = NewThetaX - ThetaX;
-            }
-            else if (ThetaX > 0 && NewThetaX < ThetaX)
-            {
-                NewThetaX = ThetaX - NewThetaX;
-            }
-
-            // find how much turret must move from current position
-            if (ThetaY > 0 && NewThetaY > ThetaY)
-            {
-                NewThetaY = ThetaY + (NewThetaY - ThetaY);
-            }
-            else if (ThetaY > 0 && NewThetaY < ThetaY)
-            {
-                NewThetaY = NewThetaY - ThetaY;
-            }
-            else if (ThetaY < 0 && NewThetaY < ThetaY)
-            {
-                NewThetaY = NewThetaY - ThetaY;
-            }
-            else if (ThetaY < 0 && NewThetaY > ThetaY)
-            {
-                NewThetaY = NewThetaY - ThetaY;
-            }
-            else if (ThetaY > 0 && NewThetaY < ThetaY)
-            {
-                NewThetaY = ThetaY - NewThetaY;
-            }
-            /* check to make sure it's within movement range*/
-            if (Math.Abs(NewThetaX) > THETAX_MAX)
-            {
-                if (NewThetaX < THETAX_MIN)
+                if (NewThetaX < 0)
                 {
-                    NewThetaX = THETAX_MIN + Math.Abs(ThetaX);
+                    NewThetaX = -120 + Math.Abs(ThetaX);
                 }
                 else
                 {
-                    NewThetaX = THETAX_MAX - Math.Abs(ThetaX);
+                    NewThetaX = 120 - Math.Abs(ThetaX);
                 }
             }
-            if (NewThetaY > THETAY_MAX)
+            else if (NewThetaY > 45)
             {
-                NewThetaY = THETAY_MAX - Math.Abs(ThetaY);
+                NewThetaY = 0;
             }
-            else if (NewThetaY < THETAY_MIN)
+            else if (NewThetaY < -20)
             {
-                NewThetaY = THETAY_MIN + Math.Abs(ThetaY);
+                NewThetaY = 0;
             }
-            if (NewThetaY != ThetaY)
+            if (NewThetaY != 0)
             {
                 ModifyAttitude(NewThetaY);
             }
-            if (NewThetaX != ThetaX)
+            if (NewThetaX != 0)
             {
                 ModifyAzimuth(NewThetaX);
             }
@@ -442,9 +399,8 @@ namespace TurretManagement
             if (DevicePresent)
             {
                 this.moveMissileLauncher(this.LEFT, 5500);            
-                this.moveMissileLauncher(this.RIGHT, 2750);
-                this.moveMissileLauncher(this.UP, 2000); 
-                this.moveMissileLauncher(this.DOWN, 500);                
+                this.moveMissileLauncher(this.RIGHT, 2750); 
+                this.moveMissileLauncher(this.DOWN, 2000);                
             }
         }
 

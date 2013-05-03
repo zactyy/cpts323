@@ -138,7 +138,7 @@ namespace OperationsManager
             _timer = new ThreadedTimer.Timer();
             _timer.TimeCaptured += new EventHandler<TimerEventArgs>(_timer_TimeCaptured);
             TurretReset();
-            _visual_target = true;
+            _visual_target = false;
             
         }
 
@@ -272,6 +272,10 @@ namespace OperationsManager
                 while (NumberMissiles > 0)
                 {
                     TurretFire();
+                }
+                if (NumberMissiles <1)
+                {
+                    break;
                 }
             }
             /* remove this event handler from the dowork event so the background worker can be reused by others
@@ -455,18 +459,11 @@ namespace OperationsManager
         // add all detected targets to the target list..but first clear the list.
         private void on_targets_detected(object sender, EventArgs e)
         {
+          //  BackgroundWorker td = new BackgroundWorker();
+
             if (_visual_target == true)
             {
-                List<Tuple<Double, Double, Double, Double, Boolean>> targetInfo = DetectedTargets();
-                _target_manager.ClearTargetList();
-                foreach (Tuple<Double, Double, Double, Double, Boolean> target in targetInfo)
-                {                    
-                    double x_coord = target.Item1;
-                    double y_coord = target.Item2;
-                    double z_coord = target.Item3 + LAUNCHER_OFFSET_FROM_CAMERA;
-                    bool friend = target.Item5;
-                    _target_manager.AddTarget(x_coord, y_coord, z_coord, friend);
-                }
+                _target_manager.AddTargets(DetectedTargets(), LAUNCHER_OFFSET_FROM_CAMERA);
             }
         }
         #endregion
@@ -565,5 +562,10 @@ namespace OperationsManager
             }
         }
         #endregion
+
+        public void VisualToggle()
+        {
+            this._visual_target = !_visual_target;
+        }
     }
 }
